@@ -2,6 +2,7 @@
 
 module.exports = [
   './gulp/tasks/less.js',
+  './gulp/tasks/less.bootstrap.js',
   './gulp/tasks/copy.content.js',
   './gulp/tasks/copy.dist.js',
   './gulp/tasks/copy.fonts.js',

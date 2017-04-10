@@ -28,7 +28,7 @@ $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(
     'less',
-    'copy:content',
+    'less:bootstrap',
     'copy:dist',
     'copy:fonts',
     'copy:html',
