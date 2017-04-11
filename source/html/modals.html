@@ -68,9 +68,9 @@
 
 				<!-- это просто две кнопки для просмотра работы анимации -->
 					<a href="#" class="win-login-open" data-winlogin="win-login_1">Кнопка для первого окна</a><br>
-					<a href="#" class="win-login-open" data-winlogin="win-login_2">Кнопка для второго окна</a>
-				
-
+					<a href="#" class="win-login-open" data-winlogin="win-login_2">Кнопка для второго окна</a><br>
+					<a href="#" class="win-login-open" data-winlogin="win-login_3">Регистрация на мероприятие в текущий момент недоступна</a><br>			
+					<a href="#" class="win-login-open" data-winlogin="win-login_4">Регистрация на мероприятие невозможна. Нет свободных мест.</a>	
 
 
 				</div>
@@ -173,8 +173,15 @@ function app() {
 			  type: "warning",
 			});
 				
+		} else if (dataSet == "win-login_3") {
+			swal({
+			  title: "Регистрация на мероприятие в текущий момент недоступна"
+			});
+		} else if (dataSet == "win-login_4") {
+			swal({
+			  title: "Регистрация на мероприятие невозможна. Нет свободных мест."
+			});
 		}
-
 
 
 	

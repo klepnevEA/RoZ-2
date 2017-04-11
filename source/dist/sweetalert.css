@@ -45,10 +45,12 @@ body.stop-scrolling {
     font-weight: 600;
     text-transform: none;
     position: relative;
-    margin: 25px 0;
+    margin: 25px 10px 0;
     padding: 0;
     line-height: 40px;
     display: block; }
+
+
   .sweet-alert p {
     color: #797979;
     font-size: 16px;
