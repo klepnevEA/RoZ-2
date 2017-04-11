@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:  url('fonts/icon.eot?v1fda9');
-  src:  url('fonts/icon.eot?v1fda9#iefix') format('embedded-opentype'),
-    url('fonts/icon.ttf?v1fda9') format('truetype'),
-    url('fonts/icon.woff?v1fda9') format('woff'),
-    url('fonts/icon.svg?v1fda9#icon') format('svg');
+  src:  url('fonts/icon.eot?9vto7n');
+  src:  url('fonts/icon.eot?9vto7n#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?9vto7n') format('truetype'),
+    url('fonts/icon.woff?9vto7n') format('woff'),
+    url('fonts/icon.svg?9vto7n#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ring-star:before {
+  content: "\e92d";
+}
+.icon-mes-dot:before {
+  content: "\e92e";
+}
 .icon-qest:before {
   content: "\e928";
 }
