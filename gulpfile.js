@@ -31,7 +31,8 @@ $.gulp.task('default', $.gulp.series(
     'less:bootstrap',
     'copy:dist',
     'copy:fonts',
-    'copy:html',
+    //'copy:html',
+    'fileinclude',
     'copy:image',
     'copy:scripts'
   ),

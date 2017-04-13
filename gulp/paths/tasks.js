@@ -9,7 +9,8 @@ module.exports = [
   './gulp/tasks/copy.html.js',
   './gulp/tasks/copy.image.js',
   './gulp/tasks/copy.scripts.js', 
-
+  './gulp/tasks/fileinclude.js',
+  
   './gulp/tasks/serve.js',
   './gulp/tasks/watch.js',
   './gulp/tasks/clean.js',
