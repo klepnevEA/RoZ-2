@@ -5,9 +5,6 @@ global.$ = {
   config: require('./gulp/config'),
   path: {
     task: require('./gulp/paths/tasks.js')
-    // jsFoundation: require('./gulp/paths/js.foundation.js'),
-    // cssFoundation: require('./gulp/paths/css.foundation.js'),
-    // app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
   rimraf: require('del'),
@@ -31,7 +28,7 @@ $.gulp.task('default', $.gulp.series(
     'less:bootstrap',
     'copy:dist',
     'copy:fonts',
-    //'copy:html',
+    'copy:less',
     'fileinclude',
     'copy:image',
     'copy:scripts'
