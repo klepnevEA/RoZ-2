@@ -17,16 +17,16 @@
         display: flex;
         width: 70%;
         height: 35px;
-       & div {
-        margin-right: 5px;
-        width: 24px;
-        height: 24px;
-        background-image: url(../../img/stars-big.svg);
-        -webkit-background-size: 100%;
-             -o-background-size: 100%;
-                background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 0 0;
+        & div {
+            margin-right: 5px;
+            width: 24px;
+            height: 24px;
+            background-image: url(../../img/stars-big.svg);
+            -webkit-background-size: 100%;
+                 -o-background-size: 100%;
+                    background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
         
 
        } 
@@ -46,7 +46,7 @@
     &__block {
         &_row {
             width: 100%;
-            padding-top: 19px;
+            padding-top: 15px;
             min-height: 28px;  
             .clearfix;
             &:first-child {
@@ -57,7 +57,7 @@
             // }
             &_buttons {
                 background-color: #fff;
-                padding-bottom: @sp*2;
+                padding-bottom: @sp;
                 margin-bottom: 0 !important;
                 .clearfix;
             }
@@ -156,14 +156,18 @@
 
     
     &__btns {
+        width: 100%;
         float: left;
-        margin-left: 256px;
+        /* margin-left: 256px; */
+        padding: 0 30px;
 
         .clearfix;
         .btn {
             font-size: 17px;
             line-height: 17px;
-            min-width: 225px;
+            float: right;
+            margin-left: 15px;
+            min-width: 140px;
         }
     }
 }

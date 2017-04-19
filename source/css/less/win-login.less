@@ -30,7 +30,7 @@
 
 		&_middle {
 			width: 860px;
-			padding: 0;			
+		
 		}
 
 	}
@@ -64,6 +64,18 @@
 		padding: 0;
 		font-size: 32px;
 		color: #010101;
+		
+		&-link {
+			display: inline-block;
+			font-family: 'Scada-bold';
+			font-size: 20px;
+			margin-top:@sp;
+			margin-left: 265px;
+			
+			&:hover {
+				text-decoration: none;
+			}			
+		}
 	}
 	&__soc {
 		border-bottom: 2px solid darken(@gray, 10%);
@@ -163,10 +175,7 @@
 			text-decoration: underline;
 		}
 
-		&--buttoms {
-			background-image: none;
-			padding:0;
-		}
+
 	}
 
 	.icon-fb-2 {
