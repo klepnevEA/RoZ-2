@@ -75,13 +75,14 @@
         font-family: 'Scada';
         &_w {
            float: left;
-           width: 235px;
+           width: 30%;
            text-align: right;
            color: #a1a1a1;
            padding-right: 30px;
            font-size:16px;
            line-height: 1.7em;
            font-family: 'Scada'; 
+           box-sizing: border-box;
 
            & sup {
             position: relative;
@@ -97,6 +98,7 @@
         font-family: Scada-Bold;
         color: #000;
         font-size:19px;
+        box-sizing: border-box;
 
         & img {
             width: 144px;
@@ -122,13 +124,14 @@
         
     }
     &__textarea {
-        width: 70.6%;
+        width: 70%;
         height: 80px;
         border:2px solid #dddfe3;
         resize: none;
         padding: 5px;
         font-size: 16px;  
-        float: left;  
+        float: left;
+        box-sizing: border-box;  
     }
     &__input {
         display:none;
@@ -142,8 +145,8 @@
     }
     &__input + label span {
         display:inline-block;
-        width:19px;
-        height:19px;
+        width:20px;
+        height:20px;
         margin:-1px 9px 0 0;
         vertical-align:middle;
         background:url(../../img/checkbox_oncheck.png) no-repeat;
