@@ -1,16 +1,37 @@
 .estimate {
-    padding-top: 48px;
-    background: @gray;
-    min-height: 780px;
+
+    background: #f3f3f3;
     display: flex;
     justify-content: center;
-    padding-bottom: @sp*2;
+    border-radius: 4px;
+    overflow: hidden;
 
     &__hr {
         width: 99.7%;
         border: 1px solid #dddfe3;
         margin: @sp*2 0 10px;
     }
+
+    &__stars {
+        float: left;
+        display: flex;
+        width: 70%;
+        height: 35px;
+       & div {
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../img/stars-big.svg);
+        -webkit-background-size: 100%;
+             -o-background-size: 100%;
+                background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        
+
+       } 
+    }
+
 
     &__contentbox {
         width: 860px;
@@ -31,10 +52,12 @@
             &:first-child {
                 padding-top: 0;     
             }
-            &:last-child {
-                margin-bottom: 35px;   
-            }
+            // &:last-child {
+            //     margin-bottom: 35px;   
+            // }
             &_buttons {
+                background-color: #fff;
+                padding-bottom: @sp*2;
                 margin-bottom: 0 !important;
                 .clearfix;
             }
@@ -88,11 +111,19 @@
                 margin-bottom: 20px;
             }
         }
+
+        &_gray {
+            background-color: @gray;
+            padding: @sp*2;
+            &_row {
+                margin-bottom: 20px;
+            }
+        }
         
     }
     &__textarea {
         width: 70.6%;
-        height: 110px;
+        height: 80px;
         border:2px solid #dddfe3;
         resize: none;
         padding: 5px;
