@@ -1,5 +1,6 @@
 .one-event { 
 	&__list {
+		position: relative;
 		overflow: hidden;
 		height: 100%;
 		width: 260px;
@@ -8,27 +9,30 @@
 	}
 
 	&__elem {
-		width: 100%;
+		width: 260px;
 		height: 100%;
 		flex: 1 0 auto;
 	}
 
 	&__nav {
+		position: absolute;
+		bottom: 0;
 		line-height: 1.1;
 		font-family: 'Scada';
 		font-size: 16px;
-		margin-left: 115px;
+		left: 115px;
 		color: #a6a6a6;
 		
 		&-arrov {
 			color: #a6a6a6;
 			
-			&:hover {
-				color: #23527c;
+			&:focus {
+				color: #a6a6a6;
 				text-decoration: none;
 			}
 
-			&:focus {
+			&:hover {
+				color: @blue;
 				text-decoration: none;
 			}
 
@@ -36,23 +40,20 @@
 				color: black;
 				
 				&:hover {
-					color: #23527c;
+					color: @blue;
 					text-decoration: none;
 				}
 			}
 		}
 
 		&-number {
-			margin: 0 15px;
+			margin: 0 @sp;
 			
 			& .active {
 				font-size: 18px;
 				color: @blue;
 			}
-			
-			& span {
-				
-			}
+
 		}
 	}
 
@@ -159,7 +160,7 @@
 			font-family: 'Scada';
 			font-size: 18px;
 			margin-left: 115px;
-			margin-bottom: @sp;
+			margin-bottom: 10px;
 		}
 	}
 	&__info {
