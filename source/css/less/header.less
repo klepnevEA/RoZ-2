@@ -29,6 +29,7 @@
 			.icon-doun {
 				color: @blue;
 				margin-left: @sp/5;
+				font-size: 11px;
 			}
 		}
 		&-search {
@@ -88,6 +89,14 @@
 				&:hover {
 					text-decoration: none;	
 				}
+
+				i {
+					position: relative;
+					top: 2px;
+					color: @blue;
+					font-size: 17px;
+					margin-right: 5px;
+				}
 			}
 		}
 		&-btn {
@@ -123,5 +132,21 @@
 		}
 	}
 
-	
+	&__map {
+		position: absolute;
+	    top: 37px;
+	    left: 115px;
+	    padding-left: 50px;
+		background-image: url(../../img/map.png);
+		background-repeat: no-repeat;
+		font-size: 15px;
+		font-family: Scada;
+		line-height: 1;
+		color: #000;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: none;			
+		}
+	}
 }

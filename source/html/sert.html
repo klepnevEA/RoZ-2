@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+
+
+<div class="win-login">
+	<div class="win-login__block win-login__block_width-780">
+		<h2 class="win-login__title"><i class="icon icon-medal"></i>Сертификация лекции</h2>
+		
+		<div class="sert">
+			
+			<div class="sert__contentbox">
+				<div class="sert__block_gray">
+						<hr class="sert__hr"/>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Название<sup>*</sup></div>
+							<input type="text" class="sert__input"></input>
+						</div>
+
+						<div class="sert__block_row">
+							<div class="sert__name_w">Длительность в часах<sup>*</sup></div>
+							<input type="text" class="sert__input sert__input_short"></input>
+						</div>
+
+
+
+						<div class="sert__block_row">
+							<div class="sert__name_w">Описание лекции<sup>*</sup><br>(до 2 000 символов)</div>
+							<textarea name="textarea" class="sert__textarea sert__textarea_height-205"></textarea>
+						</div>	
+
+
+						<div class="sert__block_row">
+							<div class="sert__name_w">Дополнительная информация</div>
+							<textarea name="textarea" class="sert__textarea sert__textarea_height-120"></textarea>
+						</div>
+
+						<div class="sert__block_row">
+							
+							<div class="sert__block-gray">
+								<div class="sert__clip"><i class="icon  icon-clip"></i></div>
+								<div>
+									Перетащите файл или кликните на поле для загрузки с компьютера
+								</div>
+							</div>
+						</div>
+							
+						<hr class="sert__hr"/>
+				</div>
+
+				<div class="sert__block_row sert__block_row_buttons">
+					<div class="sert__btns">
+						<button class="btn btn__blue btn__left " >Отмена</button>
+						<button class="btn btn__gray btn__left " >Отправить</button>
+					</div>
+				</div>			
+
+			</div>
+		</div>
+
+	</div>
+</div> 
+
+
+
+<div class="footer__before"></div>
+
+</div>
+
+	@@include('./file-include/footer.html')
+
+</body>
+</html>
