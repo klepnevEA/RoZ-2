@@ -22,6 +22,15 @@
 			color: @red;
 
 		}
+
+		&_doun-arrow {
+			 i {
+			 	display: inline-block;
+			 	color: #000;
+			 	transform: rotate(180deg);
+			 }
+			
+		}
 	}
 	&__userinfo {
 		background: white;
@@ -153,11 +162,13 @@
 				margin-top: @sp/3 !important;
 			}
 		}
+
+
 	}
 	&__tell {
 		display: block;
 		position: relative;
-		margin-bottom: 12px;
+		margin-bottom: 9px;
 		color: black; 
 		&:hover {
 			text-decoration: none;
@@ -166,9 +177,13 @@
 	&__mail, &__skype  {
 		display: block;
 		position: relative;
-		margin-bottom: 12px;
+		margin-bottom: 9px;
 		color: black;
 		text-decoration: underline;
+	}
+
+	&__skype  {
+		margin-bottom: 21px;
 	}
 	&__elect {
 		margin-bottom: @sp*2;
@@ -250,5 +265,140 @@
 
 	}
 
-	
+
+	&__soc {
+		&-elem {
+			display: inline-block;
+			position: relative;
+			left: -30px;
+			background: @red;
+		    color: white;
+		    height: 24px;
+		    width: 24px;
+		    display: block;
+		    text-align: center;
+		    line-height: 27px;
+		    border-radius: 50%;
+		    font-size: 14px;
+		    margin-right: 7px;
+		    float: left;
+		    transition: all 0.2s;
+		    outline: none;
+		    a {
+		    	text-decoration: none;
+		    	outline: none;
+		    }		    
+		    &:hover {
+		    	background: @blue;
+		    	text-decoration: none;
+		    	
+		    	.lk__soc-text {
+		    		opacity:1;
+		    	}
+			    a {
+			    	text-decoration: none;
+			    	outline: none;
+			    }
+		    }
+		    &:active {
+		    	background: @blue;
+		    }
+		    
+		    i {
+		    	color: #fff;
+		    	outline: none;
+		    }
+
+
+
+		}
+
+		&-text {
+  			border-radius: 3px;
+  			background-color: rgb(255, 255, 255);
+  			box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.13);
+  			position: absolute;
+  			left: 15px;
+  			top: 25px;
+			padding: @sp/3 @sp;
+  			z-index: 295;
+  			color: #000;
+  		  	font-size: 14px;
+  			font-family: Scada; 
+  			color: rgb(161, 161, 161);
+  			opacity:0;
+			transition: .3s;
+			white-space: nowrap;
+		}
+	} 
+
+	&__dots {
+		&-list {
+			display: inline-block;
+			float: right;
+		}
+
+		&-elem {
+			display: inline-block;
+			float: left;
+			padding: 10px;
+			
+			& a {
+				display: inline-block;
+				position: relative;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				background-color: #c4c4c4;
+			}
+
+			&:hover {
+				& a {
+					background-color: @blue;
+				}
+			}
+
+			&.active {
+				& a {
+					background-color: @blue;
+					
+					&:after {
+						content: '';
+						top: -5px;
+						left: -5px;
+						border: 2px solid @blue;
+						border-radius: 50%;
+						position: absolute;
+						width: 18px;
+						height: 18px;
+
+					}
+				}				
+			}
+		}
+	}
+
+	&__nav-left,
+	&__nav-right {
+		background: #01aeea;
+	    color: white;
+	    height: 47px;
+	    left: @sp;
+	    top: 153px;
+	    line-height: 55px;
+	    position: absolute;
+	    text-align: center;
+	    width: 47px;
+	    cursor: pointer;
+	    transition: all 0.2s;
+	    z-index: 100;
+	    font-size: 32px;
+	}
+
+	&__nav-right {
+		right: @sp;
+		left: auto;
+	}
 }
+
+
