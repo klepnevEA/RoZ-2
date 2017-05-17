@@ -1,0 +1,109 @@
+.teatcher {
+	overflow: visible;
+	.sert__input {
+		height: 40px;
+		width: calc(~"100% - 178px");
+		&_dp {
+			width: 100%;
+		}
+	}
+	.sert__block_row {
+		padding-top: 10px;
+	}
+	.sert__name_w {
+		width: 178px;
+	}
+	&__title {
+		font-family: Scada-bold; 
+		font-size: 22px;
+		margin-bottom: 20px;
+		color: black;
+		cursor: pointer;
+		i {
+			margin-right: @sp;
+			transform: rotate(180deg);
+			display: block;
+			float: left;
+			margin-top: 5px;
+		}
+		&.active {
+			i {
+				transform: rotate(0deg);
+			}
+		}
+	}
+	&__infoblock { 
+		&.close {
+			display: none;
+		}
+	}
+	&__item {
+		margin: 25px 0;
+		sup {
+			position: relative;
+			top: 0px;
+			color: #eb5427;
+			font-size: 1.2em;
+		}
+		&_strit {
+			width: 380px;
+			float: left;
+			
+			&-name {
+				float: left;
+				width: 178px;
+				text-align: left;
+				color: #a1a1a1;
+				padding-right: 30px;
+				font-size: 16px;
+				line-height: 1.125em;
+				font-family: 'Scada';
+				box-sizing: border-box;
+			}
+			.sert__input {
+				width: 200px;
+				float: left;
+			}
+		}
+		&_home {
+			margin-left: @sp;
+			width: 150px;
+			float: left;
+			&-name {
+				float: left;
+				width: 50px;
+				text-align: left;
+				color: #a1a1a1;
+				padding-right: 30px;
+				font-size: 16px;
+				line-height: 1.125em;
+				font-family: 'Scada';
+				box-sizing: border-box;
+			}
+			.sert__input {
+				width: 100px;
+				float: left;
+			}
+		}
+		&_apartment {
+			margin-left: @sp;
+			width: 110px;
+			float: left;
+			&-name {
+				float: left;
+				width: 35px;
+				text-align: left;
+				color: #a1a1a1;
+				padding-right: 30px;
+				font-size: 16px;
+				line-height: 1.125em;
+				font-family: 'Scada';
+				box-sizing: border-box;
+			}
+			.sert__input {
+				width: 75px;
+				float: left;
+			}
+		}
+	}
+}

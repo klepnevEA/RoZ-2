@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:  url('fonts/icon.eot?iojrqz');
-  src:  url('fonts/icon.eot?iojrqz#iefix') format('embedded-opentype'),
-    url('fonts/icon.ttf?iojrqz') format('truetype'),
-    url('fonts/icon.woff?iojrqz') format('woff'),
-    url('fonts/icon.svg?iojrqz#icon') format('svg');
+  src:  url('fonts/icon.eot?r73jph');
+  src:  url('fonts/icon.eot?r73jph#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?r73jph') format('truetype'),
+    url('fonts/icon.woff?r73jph') format('woff'),
+    url('fonts/icon.svg?r73jph#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dp:before {
+  content: "\e931";
+}
 .icon-medal:before {
   content: "\e930";
 }

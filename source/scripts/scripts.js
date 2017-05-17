@@ -18,3 +18,12 @@ $(function(){
 })
 // --/Рейтинг со звездами
 
+
+$(document).ready(function() {
+    $('.teatcher__title').click(function() {
+        $(this).addClass('active')
+        $('.infoblock').addClass('active')
+    });
+}); 
+
+

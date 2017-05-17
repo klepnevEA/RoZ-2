@@ -1,0 +1,70 @@
+.m-select {
+	position: relative;
+	.clearfix;
+	&__result {
+		margin-bottom: 8px;
+		&-item {
+			font-family: Scada;
+			font-size: 15px;
+			color: white;
+			background: @blue;
+			display: inline-block;
+			padding: 5px 10px 4px;
+			i {
+				font-size: 12px;
+				cursor: pointer;
+				float: right;
+				margin-top: 5px;
+				margin-left: 10px;
+			}
+		} 
+	}
+	&__search {
+		position: relative;
+	}
+	&__input, input[type="search"] {
+		width: 100%;
+		border: 2px solid #dddfe3;
+		resize: none;
+		padding: 5px;
+		font-size: 16px;
+		float: left;
+		box-sizing: border-box;
+		height: 40px;
+		font-family: Scada;
+		padding: 0 55px 0 @sp;
+		background: white;
+		position: relative;
+		z-index: 101;
+		
+	}
+	&__input-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 40px;
+		width: 40px;
+		background: none;
+		border: none;
+		outline: none;
+		color: @blue;
+		line-height: 44px;
+		text-align: center;
+		i {
+			font-size: 18px;
+		}
+	}
+	&__list {
+		background: white;
+		width: calc(~'100% - 4px'); 
+		position: absolute;
+		top: 100%;
+		left: 2px;
+		padding: 35px;
+		box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.39);
+		z-index: 100;
+
+
+
+	}
+}

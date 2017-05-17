@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+
+
+
+<div class="win-login"></div> 
+<div class="win-login__block win-login__block_big" style="width: 780px;"> 
+		<a href="index.html" class="win-login__close"><i class="icon-cross"></i></a>
+		<h2 class="win-login__title">Хочу стать лектором</h2>
+		<div class="sert teatcher">
+
+
+			<div class="sert__contentbox"> 
+				<hr class="sert__hr"/>
+				<div class="sert__block_row">
+					<div class="sert__name_w">Фамилия<sup>*</sup></div>
+					<input type="text" class="sert__input"></input>
+				</div>
+				<div class="sert__block_row">
+					<div class="sert__name_w">Имя<sup>*</sup></div>
+					<input type="text" class="sert__input"></input>
+				</div>
+				<div class="sert__block_row">
+					<div class="sert__name_w">Отчество</div>
+					<input type="text" class="sert__input"></input>
+				</div>
+
+				<div class="sert__block_row">
+					<div class="sert__name_w">Дата рождения<sup>*</sup></div>
+					<div class="datepicer__wrap">
+						<input type="text" class="sert__input sert__input_dp"></input><i class="icon icon-dp"></i>
+					</div>	
+						
+
+				</div>
+				<hr class="sert__hr"/>
+				<div class="teatcher__item">
+					<div class="teatcher__title">
+						<i class="icon icon-doun"></i>Адрес регистрации
+					</div>
+					<div class="teatcher__infoblock"> 
+
+						<div class="sert__block_row">
+							<div class="sert__name_w">Город<sup>*</sup></div>
+							<input type="text" class="sert__input"></input>
+						</div>
+						<div class="sert__block_row">
+							<div class="teatcher__item_strit">
+								<div class="teatcher__item_strit-name">Улица<sup>*</sup></div>
+								<input type="text" class="sert__input"></input>
+							</div>
+							<div class="teatcher__item_home">
+								<div class="teatcher__item_home-name">Дом<sup>*</sup></div>
+								<input type="text" class="sert__input"></input>
+							</div>
+							<div class="teatcher__item_apartment">
+								<div class="teatcher__item_apartment-name">Кв.</div>
+								<input type="text" class="sert__input"></input>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr class="sert__hr"/>
+				<div class="teatcher__item">
+					<div class="teatcher__title">
+						<i class="icon icon-doun"></i>Сфера деятельности <sup>*</sup>
+					</div>
+					<div class="teatcher__infoblock"> 
+
+						<div class="sert__block_row">
+							<div class="m-select">
+								<ul class="m-select__result">
+									<li class="m-select__result-item">Физика<i class="icon icon-close"></i>	 </li>
+									<li class="m-select__result-item">Математика<i class="icon icon-close"></i></li>
+								</ul>
+								<div class="m-select__search">
+									<input type="search" name="q" class="m-select__input" placeholder="Начните вводить название">
+									<button class="m-select__input-btn"><i class="icon icon-magnifier"></i></button>
+								</div>
+								<ui class="m-select__list">
+									<div class="m-select__list-title">Полный список сфер деятельности</div>
+									<li>324234</li>
+									<li>324234</li>
+									<li>324234</li>
+									<li>324234</li>
+								</ui>
+							</div>
+						</div>
+						<div class="sert__block_row">
+							<div class="teatcher__item_strit">
+								<div class="teatcher__item_strit-name">Улица<sup>*</sup></div>
+								<input type="text" class="sert__input"></input>
+							</div>
+							<div class="teatcher__item_home">
+								<div class="teatcher__item_home-name">Дом<sup>*</sup></div>
+								<input type="text" class="sert__input"></input>
+							</div>
+							<div class="teatcher__item_apartment">
+								<div class="teatcher__item_apartment-name">Кв.</div>
+								<input type="text" class="sert__input"></input>
+							</div>
+						</div>
+
+					</div>
+				</div>		
+				<hr class="sert__hr"/>
+
+
+				
+
+				<div>
+					<div class="sert__btns">
+						<button class="btn btn__blue btn__left " >Отмена</button>
+						<button class="btn btn__gray btn__left " >Отправить</button>
+					</div>
+				</div>			
+			</div>
+
+
+			
+		</div>
+	</div>
+
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+
+	<div class="TopNews__wrap gray-back">	
+		<div class="TopNews" style="background: url(../img/top-banner.jpg) no-repeat;  background-size: cover;">
+			<div class="col-xs-5">
+				<h2 class="TopNews__title">Лекции, семинары, выставки и вебинары</h2>
+				<div class="TopNews__location">г. Москва</div>
+				<div class="TopNews__info">
+					<div class="TopNews__value TopNews__value_blue">152</div>
+					<div class="TopNews__text ">запланировано мероприятий на ближайший месяц</div>
+				</div>
+				<div class="TopNews__info">
+					<div class="TopNews__value TopNews__value_red">84</div>
+					<div class="TopNews__text ">запланировано мероприятий на ближайший месяц</div>
+				</div>
+			</div>
+		</div>	
+	</div>		
+	<div class="activities-calendar gray-back">
+		<div class="activities-calendar__header">
+			<div class="row">
+				<div class="col-xs-6"><h2 class="activities-calendar__title-h2">Календарь мероприятий</h2></div>
+				<div class="data-block__wrap">
+					<div class="data-block">
+						<div class="data-block__item">
+							<div class="data-block__data">08</div>
+							<div class="data-block__month">окт</div> 
+						</div>
+					</div>
+					<div class="data-block">
+						<div class="data-block__item active">
+							<div class="data-block__data">27</div>
+							<div class="data-block__month">окт</div>
+						</div>
+					</div>
+					<div class="data-block">
+						<div class="data-block__item">
+							<div class="data-block__data">28</div>
+							<div class="data-block__month">окт</div>
+						</div>
+					</div>
+					<div class="data-block">
+						<div class="data-block__item">
+							<div class="data-block__data">06</div>
+							<div class="data-block__month">ноя</div>
+						</div>
+					</div>
+					<div class="data-block">
+						<div class="data-block__item">
+							<div class="data-block__data">07</div>
+							<div class="data-block__month">ноя</div>
+						</div>
+					</div>
+				</div>
+				<div class="activities-calendar__return">
+					<a href="#" class="activities-calendar__return-link">все мероприятия <i class="icon-st-right"></i></a> 
+				</div>
+				
+
+
+
+			</div>
+		</div>
+
+		<div class="event-block">
+			<div class="row">
+
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
+					</div>
+				</div>
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
+					</div>
+				</div>
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- вебинары -->
+		<div class="activities-calendar__header-h2">
+			<div class="row">
+				<div class="col-xs-6"><h3 class="activities-calendar__title-h3"><i class="icon-web-cam"></i> Ближайшие вебинары</h3></div>
+				
+				<div class="activities-calendar__return">
+					<a href="#" class="activities-calendar__return-link activities-calendar__return-link-h2">все вебинары <i class="icon-st-right"></i></a> 
+				</div>
+			</div>
+		</div>
+
+		<div class="event-block">
+			<div class="row">
+
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+						<div class="event-block__web-cam available"><i class="icon-web-cam"></i></div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>примут участие</span></div>
+					</div>
+				</div>
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+						<div class="event-block__web-cam"><i class="icon-web-cam"></i></div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Подготовка гидов к проведению экскурсий по темам архитектуры Москвы на испанском, итальянс...</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>примут участие</span></div>
+					</div>
+				</div>
+
+				<div class="col-xs-4 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+						<div class="event-block__data">
+							<div class="event-block__data-day">27</div>
+							<div class="event-block__data-month">окт</div>
+						</div>
+						<div class="event-block__web-cam"><i class="icon-web-cam"></i></div>
+					</div>	
+					<div class="event-block__footer">
+						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>примут участие</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- новости -->
+	<div class="news">
+			<div class="row">
+				<div class="col-xs-8">
+					<h2 class="news__title">Новости общества «Знание»</h2>
+				</div>
+				<div class="col-xs-4">
+					<div class="activities-calendar__return">
+						<a href="#" class="activities-calendar__return-link activities-calendar__return-link-news">все новости <i class="icon-st-right"></i></a> 
+					</div>
+				</div>
+				
+
+				<div class="news__block">
+					<div class="col-xs-3">
+					<div class="news__photo" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
+						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+						</div>
+					</div>
+
+					<div class="col-xs-3 news__item">
+						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
+						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					</div>
+
+					<div class="col-xs-3 news__item">
+						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
+						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					</div>
+
+					<div class="col-xs-3 news__item">
+						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
+						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+	</div>
+	<!-- интерактивная карта -->
+	<div class="i-map">
+		<div class="row">
+			<div class="col-xs-3">
+				<h2 class="i-map__title">Интерактивная карта</h2>
+				<div class="i-map__text">Все события, мероприятия и вебинары на карте Российской Федерации. В удобном интерактивном формате. Выбор и запись на мероприятие интуитивно понятно и удобно. Приходите и узнавайте что-то новое!
+				</div>
+				<div class="activities-calendar__return left">
+					<a href="#" class="activities-calendar__return-link activities-calendar__return-link-map">перейти на карту <i class="icon-st-right"></i></a> 
+				</div>
+	
+
+			</div>
+			<div class="col-xs-1"></div>
+			<div class="col-xs-8">
+				<div class="map-place"> 
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- свежее в медиатеке -->
+	<div class="fresh-media gray-back">
+		<div class="activities-calendar__header">
+			<div class="row">
+				<div class="col-xs-6"><h2 class="activities-calendar__title-h2">Свежее в медиатеке</h2></div>
+			</div>
+		</div>
+		<div class="fresh-media__wrap">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="fresh-media__big-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
+						<div class="fresh-media__big-block-value"><i class="icon-photo"></i>38</div>
+						<div class="fresh-media__big-block-info">
+							<h3 class="fresh-media__big-block-title">Выставка печатной и сувенирной продукции, посвященной космонавтике</h3>
+							<div class="fresh-media__big-block-data">Размещен 24 сентября 2016</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="row">
+
+						<div class="col-xs-4">
+							<div class="fresh-media__mini-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
+								<div class="fresh-media__mini-block-value"><i class="icon-photo"></i>38 фото</div>
+								<div class="fresh-media__mini-block-info">
+									<h3 class="fresh-media__mini-block-title">Роль бабушек и дедушек в семейном воспитании <br>(г. Москва)</h3>
+									<div class="fresh-media__mini-block-data">Размещен 24 сентября 2016</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="fresh-media__mini-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
+								<div class="fresh-media__mini-block-value"><i class="icon-photo"></i>38 фото</div>
+								<div class="fresh-media__mini-block-info">
+									<h3 class="fresh-media__mini-block-title">Выступление Полетаева Н.Г.</h3>
+									<div class="fresh-media__mini-block-data">Размещен 24 сентября 2016</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="fresh-media__photo-block">
+								<div class="fresh-media__photo-block-value">
+								<i class="icon-photo"></i>
+								<div class="fresh-media__photo-block-value-files">380 258</div> 
+								</div>
+								<div class="fresh-media__photo-block-value-text">медиафайлов</div>
+								
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="fresh-media__middle-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
+								<div class="fresh-media__middle-block-value"><i class=""></i>45 мин</div>
+								<div class="fresh-media__middle-block-video"><i class="icon-play"></i></div>
+								<div class="fresh-media__middle-block-info">
+									<h3 class="fresh-media__middle-block-title">Как бороться с плохой посещаемостью</h3>
+									<div class="fresh-media__middle-block-data">Размещен 24 сентября 2016</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-6">
+							<div class="fresh-media__middle-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
+								<div class="fresh-media__middle-block-value">18 фото</div>
+								<div class="fresh-media__middle-block-info">
+									<h3 class="fresh-media__middle-block-title">Выступление Ромашева в Москве</h3>
+									<div class="fresh-media__middle-block-data">Размещен 24 сентября 2016</div>
+								</div>
+							</div>
+						</div>
+
+						
+
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="footer__before"></div>
+
+</div>
+
+	@@include('./file-include/footer.html')
+
+</body>
+
+<script>
+	$(document).ready(function() {
+	    $('.teatcher__title').click(function() {
+	        $(this).toggleClass('active')
+	        $ (this).next('.teatcher__infoblock').toggleClass('close')
+	    });
+	}); 
+</script>	
+
+</html>
