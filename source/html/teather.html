@@ -78,16 +78,40 @@
 									<li class="m-select__result-item">Математика<i class="icon icon-close"></i></li>
 								</ul>
 								<div class="m-select__search">
-									<input type="search" name="q" class="m-select__input" placeholder="Начните вводить название">
+									<input type="text"  class="m-select__input" placeholder="Начните вводить название">
 									<button class="m-select__input-btn"><i class="icon icon-magnifier"></i></button>
 								</div>
-								<ui class="m-select__list">
+								<div class="m-select__list">
 									<div class="m-select__list-title">Полный список сфер деятельности</div>
-									<li>324234</li>
-									<li>324234</li>
-									<li>324234</li>
-									<li>324234</li>
-								</ui>
+									<div class="m-select__list-column-1">
+										<ul class="m-select__list-list">
+											<li>Актерское мастерство</li>
+											<li>Астрономия</li>
+											<li>Благотворительность</li>
+											<li>Литература</li>
+											<li>Математика</li>
+											<li>Образование</li>
+											<li>Педагогика</li>
+											<li>Психология</li>
+											<li>Саморазвитие</li>
+											<li>Страхование</li>
+										</ul>
+									</div>
+									<div class="m-select__list-column-2">
+										<ul class="m-select__list-list">
+											<li>Образование</li>
+											<li>Педагогика</li>
+											<li>Психология</li>
+											<li>Саморазвитие</li>
+											<li>Страхование</li>
+											<li>Физика</li>
+											<li>Философия</li>
+											<li>Актерское мастерство</li>
+											<li>Астрономия</li>
+											<li>Благотворительность</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="sert__block_row">
@@ -466,6 +490,12 @@
 	    $('.teatcher__title').click(function() {
 	        $(this).toggleClass('active')
 	        $ (this).next('.teatcher__infoblock').toggleClass('close')
+	    });
+	}); 
+	$(document).ready(function() {
+	    $('.m-select__search').click(function() {
+	        $(this).toggleClass('active')
+	        $ (this).next('.m-select__list').toggleClass('active')
 	    });
 	}); 
 </script>	
