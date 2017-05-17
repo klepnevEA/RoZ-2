@@ -2,14 +2,14 @@
 	&__wrap {
 		margin: 0 auto;
 		width: 1150px;
-		padding-bottom: 50px;
 		.clearfix;  
 	}
 	&__h2 {
 		margin: 0;
 		font-family: 'Scada-Bold';
 		font-size: 40px;
-		padding-bottom: 30px; 
+		padding-bottom: 35px;
+		padding-top: 35px;
 		line-height: 1;
 		&_elect {
 			i {
@@ -24,10 +24,31 @@
 		}
 
 		&_doun-arrow {
+
 			 i {
 			 	display: inline-block;
 			 	color: #000;
-			 	transform: rotate(180deg);
+			 	transform: rotate(0deg);
+			 	transition: 0.3s;
+			 }
+
+			 a.collapsed i{
+			 	transform: rotate(180deg);			 	
+			 }
+
+			 a {
+			 	color: #000;
+			 	text-decoration: none;
+			 	
+			 	&:hover {
+			 		text-decoration: none;
+			 		color: #000;
+			 	}
+
+			 	&:focus {
+			 		text-decoration: none;
+			 		color: #000;
+			 	}
 			 }
 			
 		}
@@ -35,7 +56,7 @@
 	&__userinfo {
 		background: white;
 		padding: 40px;
-		margin-bottom: 55px;
+		padding-bottom: 25px;
 		position: relative;
 		.clearfix;
 		&-edit {
@@ -63,6 +84,7 @@
 			text-transform: uppercase;
 		}
 		&-comment {
+			display: none;
 			margin-left: 220px; 
 			margin-top: @sp*2;
 			&-quantity {
@@ -186,7 +208,11 @@
 		margin-bottom: 21px;
 	}
 	&__elect {
-		margin-bottom: @sp*2;
+
+		& .row.collapse {
+			border: 0px solid #ccc;			
+		}
+
 		.clearfix;
 		.activities-calendar__return {
 			margin-right: 0;
@@ -200,6 +226,10 @@
 		}
 	}
 	&__done {
+
+		& .row.collapse {
+			border: 0px solid #ccc;			
+		}
 		.clearfix;
 		.activities-calendar__return {
 			margin-right: 0;
@@ -216,6 +246,23 @@
 			font-size: 16px;
 		}    
 	}
+
+	&__stars {
+		display: block;
+		margin-left: 220px; 
+		height: 50px;
+		margin-top: -18px;
+		.clearfix;
+		
+		&-count {
+		  font-size: 18px;
+		  font-family: 'Scada';
+		  color: #8d8d8d;
+		  line-height: 1.5;
+		  margin-left: 160px;
+		}
+	}
+
 	&__honors {
 		margin-left: 220px; 
 		margin-top: @sp*2;
@@ -332,72 +379,25 @@
 		}
 	} 
 
-	&__dots {
-		&-list {
-			display: inline-block;
-			float: right;
-		}
-
+	&__places {
+		border-top: 1px solid #cecece;
+		padding: 20px 0 0;
+		margin-top: @sp*2;
+		
 		&-elem {
-			display: inline-block;
 			float: left;
-			padding: 10px;
+			padding-right: 25px;
+			color: #8d8d8d;
+			font-size: 15px;
+			line-height: 1.467;
 			
-			& a {
-				display: inline-block;
+			i {
 				position: relative;
-				border-radius: 50%;
-				width: 8px;
-				height: 8px;
-				background-color: #c4c4c4;
-			}
-
-			&:hover {
-				& a {
-					background-color: @blue;
-				}
-			}
-
-			&.active {
-				& a {
-					background-color: @blue;
-					
-					&:after {
-						content: '';
-						top: -5px;
-						left: -5px;
-						border: 2px solid @blue;
-						border-radius: 50%;
-						position: absolute;
-						width: 18px;
-						height: 18px;
-
-					}
-				}				
+				top: 2px;
+				line-height: 0;
+				font-size: 16px;
 			}
 		}
-	}
-
-	&__nav-left,
-	&__nav-right {
-		background: #01aeea;
-	    color: white;
-	    height: 47px;
-	    left: @sp;
-	    top: 153px;
-	    line-height: 55px;
-	    position: absolute;
-	    text-align: center;
-	    width: 47px;
-	    cursor: pointer;
-	    transition: all 0.2s;
-	    z-index: 100;
-	    font-size: 32px;
-	}
-
-	&__nav-right {
-		right: @sp;
-		left: auto;
 	}
 }
 

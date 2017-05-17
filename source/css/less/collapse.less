@@ -1,0 +1,16 @@
+.collapse {
+	width: 100%;
+	display: block !important;
+	overflow: hidden;
+	max-height: 0;
+	&.in {
+		display: block !important;
+		max-height: 1000px !important;
+		overflow: visible;
+	}
+
+	&.row {
+		.clearfix;
+		border-bottom: 2px solid #dddfe3;
+	}
+}
