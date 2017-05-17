@@ -10,6 +10,11 @@
 			background: @blue;
 			display: inline-block;
 			padding: 5px 10px 4px;
+			cursor: pointer;
+			transition: all 0.2s;
+			&:hover {
+				background: #01a3db ;
+			}
 			i {
 				font-size: 12px;
 				cursor: pointer;
@@ -107,8 +112,15 @@
 				&.active {
 					background: @blue;
 					color: white;
+					&:before {
+						content: "\e932";
+						padding-right: 10px;
+						margin-left: -25px;
+						font-family: icon;
+						font-size: 10px;
+					}
 					&:hover {
-						background: @blue;
+						background: darken(@blue, 3%);
 						color: white;
 					}
 				}
