@@ -37,4 +37,35 @@
 
 
 	}
+
+	&__buttons {
+		.clearfix;
+		&-elem {
+			float: right;
+			font-size: 15px;
+			font-family: Scada;
+			line-height: 1.467;
+			margin-left: @sp*2;
+			margin-top: @sp;
+			color:@red;
+			text-decoration: none;
+			
+			&:hover {
+				text-decoration: none;
+			}
+			
+			i {
+				position: relative;
+				top: 3px;
+				font-size: 20px;
+				line-height: 0;
+				margin-right: 4px;
+			}
+
+			&_blue {
+				color: @blue;
+			}
+
+		}
+	}
 }

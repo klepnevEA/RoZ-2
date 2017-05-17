@@ -7,8 +7,13 @@
 	&__item {
 	}
 
+	&__stars {
+		padding: 25px 0 10px;
+		.clearfix;
+	}
+
 	&__appraisal {
-		margin: 25px 0 @sp;
+		margin: 25px 0 0;
 		width: 145px;
 
 		&-img {
@@ -41,9 +46,10 @@
 		color: darken(@gray, 40%);
 		font-family: Scada-Italic; 
 		font-size: 15px;
-		margin: @sp*2 0 20px;
+		margin: 5px 0 20px;
 		padding-bottom: 20px;
-		height: 165px;
+		height: 125px;
+		overflow: hidden;
 	}
 	&__data {
 		line-height: 1.1;
