@@ -7,7 +7,13 @@
 		&_dp {
 			width: 100%;
 		}
+
+		&_date {
+			width: 160px;
+		}
 	}
+
+
 	.sert__block_row {
 		padding-top: 10px;
 	}
@@ -59,6 +65,7 @@
 		}
 	}
 	&__item {
+		.clearfix;
 		margin: 25px 0;
 		&-left {
 			width: calc(~"100% - 178px");
@@ -70,6 +77,50 @@
 			color: #eb5427;
 			font-size: 1.2em;
 		}
+
+		&_time-xperience {
+		    display: inline-block;
+		    font-family: Scada;
+		    font-size: 16px;
+		    line-height: 2.3;			
+			& .teatcher__label {
+				float: left;
+			}
+
+			& .sert__input_date {
+				float: left;
+				margin-right: 5px;
+			}
+
+			& .teatcher__line-input {
+				line-height: 0;
+			}
+		}
+
+	    &_work-experience {
+	    	width: 48%;
+	    	float: left;
+		    color: #a1a1a1;
+		    font-size: 16px;
+		    line-height: 1.125em;
+		    font-family: 'Scada';
+		    box-sizing: border-box;
+		    
+		    &:last-child {
+		    	float: right;
+		    }
+	    	
+	    	&-name {
+	    		width: 55%;
+	    		float: left;
+	    	}
+
+	    	& .sert__input {
+	    		width: 45%;
+	    		float: right;
+	    	}
+	    }
+
 		&_strit {
 			width: 380px;
 			float: left;
@@ -131,6 +182,60 @@
 			}
 		}
 	}
+<<<<<<< HEAD
+
+
+	&__line {
+		.clearfix;
+		&-input {
+			float: left;
+			width: 495px;
+			position: relative;
+		}
+	}
+
+    &__input {
+        display:none;
+    }
+    &__label {
+        display: inline-block;
+        font-family: Scada;
+        font-size: 16px; 
+        margin-top: 10px;   
+    }
+    &__input + label span {
+        display:inline-block;
+        width:19px;
+        height:19px;
+        margin:-1px 9px 0 0;
+        vertical-align:middle;
+        background:url(../../img/checkbox_oncheck.png) no-repeat;
+        cursor:pointer;
+    }
+    &__input:checked + label span {
+        background:url(../../img/checkbox_check.png) no-repeat;
+    }
+
+    &__table {
+		font-size: 16px;
+		font-family: Scada-bold; 
+		line-height: 1;
+		color: #000;
+		margin-bottom: 5px;
+		
+		& td {
+			padding: 0 @sp*2 11px 0; 
+			text-align: center;
+		}
+		
+		& tr td:first-child {
+			color: #a1a1a1;
+			font-family: Scada; 
+			text-align: left;
+		}
+    }
+
+
 	&__textarea {
 		width: calc(~"100% - 178px");
 		border: 2px solid #dddfe3;
