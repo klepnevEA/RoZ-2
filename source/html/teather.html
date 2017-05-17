@@ -89,7 +89,61 @@
 											<li>Астрономия</li>
 											<li>Благотворительность</li>
 											<li>Литература</li>
-											<li>Математика</li>
+											<li class="active">Математика</li>
+											<li>Образование</li>
+											<li>Педагогика</li>
+											<li>Психология</li>
+											<li>Саморазвитие</li>
+											<li>Страхование</li>
+										</ul>
+									</div>
+									<div class="m-select__list-column-2">
+										<ul class="m-select__list-list">
+											<li>Образование</li>
+											<li>Педагогика</li>
+											<li>Психология</li>
+											<li>Саморазвитие</li>
+											<li>Страхование</li>
+											<li class="active">Физика</li>
+											<li>Философия</li>
+											<li>Актерское мастерство</li>
+											<li>Астрономия</li>
+											<li>Благотворительность</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+				<hr class="sert__hr"/>
+				<div class="teatcher__item">
+					<div class="teatcher__title">
+						<i class="icon icon-doun"></i>Регион <sup>*</sup> <span>Можно выбрать только 1 регион</span>
+					</div>
+					<div class="teatcher__infoblock"> 
+
+						<div class="sert__block_row">
+							<div class="m-select">
+								<ul class="m-select__result">
+									<li class="m-select__result-item">Москва
+										<i class="icon icon-close"></i>	 
+									</li>
+									
+								</ul>
+								<div class="m-select__search">
+									<input type="text"  class="m-select__input" placeholder="Начните вводить название" disabled="">
+									<button class="m-select__input-btn"><i class="icon icon-magnifier"></i></button>
+								</div>
+								<div class="m-select__list">
+									<div class="m-select__list-title">Полный список сфер деятельности</div>
+									<div class="m-select__list-column-1">
+										<ul class="m-select__list-list">
+											<li>Актерское мастерство</li>
+											<li>Астрономия</li>
+											<li>Благотворительность</li>
+											<li>Литература</li>
+											<li class="active">Математика</li>
 											<li>Образование</li>
 											<li>Педагогика</li>
 											<li>Психология</li>
@@ -114,26 +168,73 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<hr class="sert__hr"/>
+				<div class="teatcher__item">
+					<div class="teatcher__title">
+						<i class="icon icon-doun"></i>Трудовая и образовательная деятельность
+					</div>
+					<div class="teatcher__infoblock"> 
+
 						<div class="sert__block_row">
-							<div class="teatcher__item_strit">
-								<div class="teatcher__item_strit-name">Улица<sup>*</sup></div>
-								<input type="text" class="sert__input"></input>
-							</div>
-							<div class="teatcher__item_home">
-								<div class="teatcher__item_home-name">Дом<sup>*</sup></div>
-								<input type="text" class="sert__input"></input>
-							</div>
-							<div class="teatcher__item_apartment">
-								<div class="teatcher__item_apartment-name">Кв.</div>
-								<input type="text" class="sert__input"></input>
-							</div>
+							<div class="sert__name_w">Место работы<sup>*</sup></div>
+							<input type="text" class="sert__input"></input>
 						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Должность<sup>*</sup></div>
+							<input type="text" class="sert__input"></input>
+						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Степени и звания</div>
+							<textarea name="textarea" class="teatcher__textarea"></textarea>
+						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Награды и достижения</div>
+							<textarea name="textarea" class="teatcher__textarea"></textarea>
+						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Образование</div>
+							<textarea name="textarea" class="teatcher__textarea"></textarea>
+						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">Дополнительная информация
+								<span>При наличии, укажите ссылку на видеозапись лекции</span>
+							</div>
+
+							<textarea name="textarea" class="teatcher__textarea"></textarea>
+						</div>
+						<div class="sert__block_row">
+							<div class="sert__name_w">&nbsp;</div> 
+							<div class="teatcher__item-left">
+								<div class="sert__block-gray">
+									<div class="sert__clip"><i class="icon  icon-clip"></i></div>
+									<div>
+										Перетащите файл или кликните на поле для загрузки с компьютера
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="sert__block-gray-result">
+									<div class="sert__block-gray-result-item">
+										<div class="sert__block-gray-filename">Физика и ее природа</div> 
+										<span>(doc, 320 Кб)</span> 
+										<i class="icon icon-close"></i>	
+									</div>
+									<div class="sert__block-gray-result-item">
+										<div class="sert__block-gray-filename">Физика и ее природа</div> 
+										<span>(doc, 320 Кб)</span> 
+										<i class="icon icon-close"></i>	 
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						
 
 					</div>
-				</div>		
-				<hr class="sert__hr"/>
-
-
+				</div>
+				<hr class="sert__hr"/>	
 				
 
 				<div>
@@ -491,13 +592,16 @@
 	        $(this).toggleClass('active')
 	        $ (this).next('.teatcher__infoblock').toggleClass('close')
 	    });
-	}); 
-	$(document).ready(function() {
 	    $('.m-select__search').click(function() {
 	        $(this).toggleClass('active')
 	        $ (this).next('.m-select__list').toggleClass('active')
 	    });
+	    $('.m-select__list-list li').click(function() {
+	        $(this).toggleClass('active')
+	    });
+
 	}); 
+
 </script>	
 
 </html>

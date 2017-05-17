@@ -21,7 +21,38 @@
         font-family: Scada-Italic;
         font-size: 16px;
         line-height: 1.25;
+        &-result {
+            margin-top: 20px;
+            .clearfix;
+            &-item {
+                color: black;
+                font-family: Scada;
+                font-size: 15px;
+                margin-bottom: 10px;
+                .clearfix;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                span {
+                    color: #a1a1a1;
+                    float: left;
+                    display: block;
+                    margin-left: 10px;
+                }
+                i {
+                    color: #a1a1a1;
+                    font-size: 16px;
+                    float: left;
+                    cursor: pointer;
+                    margin-left: 10px;
+                    margin-top: 1px;
+                }
 
+            }
+        }
+        &-filename {
+            float: left;
+        }
 
     }
 
@@ -136,8 +167,9 @@
             &_row {
                 margin-bottom: 20px;
             }
-        }
-        
+     }
+
+
     }
     &__textarea {
         width: 70%;
