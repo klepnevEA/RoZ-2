@@ -1,6 +1,15 @@
 .m-select {
 	position: relative;
 	.clearfix;
+	&_bot {
+		.m-select__list {
+			top: 40px;
+		}
+		.m-select__result {
+			margin-top: 7px;
+			margin-bottom: 22px;
+		}
+	}
 	&__result {
 		margin-bottom: 8px;
 		&-item {
@@ -23,9 +32,11 @@
 				margin-left: 10px;
 			}
 		} 
+		
 	}
 	&__search {
 		position: relative;
+		.clearfix;
 		&.active {
 			.m-select__input {
 				z-index: 101;
@@ -33,6 +44,11 @@
 			
 			.m-select__input-btn {
 				z-index: 102;
+			}
+		}
+		&_disabled {
+			.m-select__input-btn {
+				display: none;
 			}
 		}
 	}

@@ -1,7 +1,9 @@
 .lk-edit {
+	margin-bottom: 115px;
 	&__left {
 		width: 180px;
 		float: left;
+
 	}
 	&__right {
 		float: right;
@@ -94,8 +96,6 @@
 			float: left;
 			width: 410px;
 			position: relative;
-
-
 			&_icon {
 				input {
 					padding-left: 55px;
@@ -144,6 +144,10 @@
 			font-family: 'Scada';
 			margin-bottom: 5px;
 			padding: 10px 20px;
+			outline: none;
+			&:focus {
+				border: 2px #01aeea solid;
+			}
 		}
 		.clearfix;
 	}
@@ -207,6 +211,14 @@
 		font-family: Scada-Italic;
 		padding-left: 45px;
 		display: block;
+		min-height: 40px;
+		display: table-cell;
+		vertical-align: middle;
+		span {
+			height: 40px;
+			display: table-cell;
+			vertical-align: middle;
+		}
 	}
 	&_btn-soc {
 		display: block;
