@@ -11,11 +11,20 @@
 		padding-bottom: 33.5px;
 		padding-top: 33.5px;
 		line-height: 1;
+		color: #000;
+		
+		i {
+    		width: 35px;
+    		margin-right: 5px;
+		}
+
 		&_elect {
 			i {
 				color: @red;
 				font-size: 35px;
 				margin-right: @sp;
+    			width: 35px;
+    			margin-right: 5px;
 			}
 		}
 		span {
@@ -60,6 +69,11 @@
 		margin-bottom: 13px;
 		position: relative;
 		.clearfix;
+		
+		.col-xs-4 {
+			padding-left: 30px;
+		}
+
 		&-edit {
 			background: @blue;
 			display: block;
@@ -83,6 +97,7 @@
 			font-family: Scada-Bold;
 			font-size: 18px;
 			text-transform: uppercase;
+			margin-bottom: 6px;
 		}
 		&-comment {
 			display: none;
@@ -147,19 +162,22 @@
 			height: 40px;
 			background: url(../../img/red-angle.svg);
 		}
+
+
 	}
 	&__name {
-		margin-left: 220px;
+		margin-left: 215px;
 	    color: #000;
 	    font-family: Scada-Bold;
 	    font-size: 22px;
 	    text-transform: uppercase;
-	    margin-top: 41px;
-	    margin-bottom: 25px;
+	    margin-top: 50px;
+	    margin-bottom: 17px;
 	    line-height: 0.7;
 	    height: 22px;
 	    &_lecturer {
 	    	margin-top: 0;
+	    	margin-bottom: 26px;
 	    }
 	}
 	&__subscribe {
@@ -176,12 +194,12 @@
 		font-size: 16px;
 		i {
 			position: absolute;
-			left: -30px;
+			left: -25px;
 			top: 3px;
 			font-size: 18px;
 		}
 		&_lecturer {
-			margin-top: -@sp/3;
+			margin-top: -3px;
 		}
 		&-btn {
 			margin-left: -@sp*2;
@@ -189,7 +207,7 @@
 				margin-right: @sp/3;
 			}
 			.btn {
-				margin-top: @sp/3 !important;
+				margin-top: 2px !important;
 			}
 		}
 
@@ -213,7 +231,7 @@
 	}
 
 	&__skype  {
-		margin-bottom: 21px;
+		margin-bottom: 25px;
 	}
 	&__elect {
 
@@ -258,8 +276,8 @@
 
 	&__stars {
 		display: block;
-		margin-left: 220px; 
-		height: 50px;
+		margin-left: 215px; 
+		height: 52px;
 		margin-top: -18px;
 		.clearfix;
 		
@@ -267,38 +285,43 @@
 		  font-size: 18px;
 		  font-family: 'Scada';
 		  color: #8d8d8d;
-		  line-height: 1.5;
-		  margin-left: 160px;
+		  ine-height: 1.7;
+		  margin-left: 157px;
+		}
+
+		.stars__star {
+			margin-right: 4px;
 		}
 	}
 
 	&__honors {
-		margin-left: 220px; 
-		margin-top: @sp*2;
+		margin-left: 217px; 
+		margin-top: 28px;
 		&-item {
 			font-family: 'Scada';
 			font-size: 16px;
 			color: black;
 			padding-right: @sp*2;
+			line-height: 1.5;
 			span {
 				font-family: 'Scada-bold';
 				font-size: 18px;
-				margin-right: 7px;
+				margin-right: 4px;
 				width: 45px;
 				display: inline-block;
 			}
 		}
 	}
 	&__rezult {
-		margin-left: 0; 
-		margin-top: @sp*2;
+		margin-left: 5px; 
+		margin-top:10px;
 		i {
 			position: absolute;
 			left: -30px;
 			top: 7px;
 			font-size: 18px;
 			color: @blue;
-			font-size: 20px;
+			font-size: 22px;
 		}
 		&-item {
 			display: block;
@@ -315,7 +338,7 @@
 				font-family: 'Scada-bold';
 				display: inline-block;
 				min-width: 25px;
-				margin-right: @sp/2;
+				margin-right: 3.5px;
 			}
 		}
 
@@ -323,6 +346,8 @@
 
 
 	&__soc {
+		margin-left: 5px;
+		margin-top: -5px;
 		&-elem {
 			display: inline-block;
 			position: relative;
@@ -411,5 +436,4 @@
 		}
 	}
 }
-
 
