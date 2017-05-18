@@ -8,9 +8,9 @@
 		&_dp {
 			width: 200px;
 		}
-
 		&_date {
-			width: 160px;
+			width: 150px;
+			margin-left: 10px;
 		}
 	}
 
@@ -38,7 +38,6 @@
 	&__title {
 		font-family: Scada-bold; 
 		font-size: 22px;
-		margin-bottom: 10px;
 		color: black;
 		cursor: pointer;
 		i {
@@ -61,6 +60,7 @@
 		}
 	}
 	&__infoblock { 
+		margin-top: 10px;
 		&.close {
 			display: none;
 		}
@@ -99,7 +99,7 @@
 		}
 
 	    &_work-experience {
-	    	width: 48%;
+	    	width: 318px;
 	    	float: left;
 		    color: #a1a1a1;
 		    font-size: 16px;
@@ -112,12 +112,12 @@
 		    }
 	    	
 	    	&-name {
-	    		width: 55%;
+	    		width: 171px;
 	    		float: left;
 	    	}
 
 	    	& .sert__input {
-	    		width: 45%;
+	    		width: 135px;
 	    		float: right;
 	    	}
 	    }
@@ -248,4 +248,17 @@
 		font-family: Scada;
 		height: 100px;
 	}
+	&__btns {
+		text-align: center;
+		height: 40px;
+		margin-top: 35px;
+		margin-bottom: 10px;
+		.clearfix;
+		.btn {
+			display: inline-block;
+			width: 245px !important;
+			font-size: 17px;
+			line-height: 17px;
+		}
+	} 
 }

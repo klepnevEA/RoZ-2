@@ -39,6 +39,7 @@
 		font-size: 17px;
 		padding: 0;
 		line-height: 42px;
+
 	}
 	&__title {
 		font-family: Scada-Bold;
@@ -224,6 +225,10 @@
 		&.active {
 			color: white;
 			background: @blue;
+			transition: all 0.2s;
+			&:hover {
+				background: darken(@blue, 5%);
+			}
 		}
 	}
 	&__btnblock {
