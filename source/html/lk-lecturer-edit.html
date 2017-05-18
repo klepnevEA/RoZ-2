@@ -17,7 +17,9 @@
 					<div class="lk-edit__photo">
 						<span>Перетащите изображение сюда или воспользуйтесь ссылкой ниже</span>
 					</div>
-					<a href="#" class="btn btn__blue lk-edit__btn">Загрузить фото</a>
+					<a href="#" class="btn btn__blue lk-edit__btn">Загрузить фото
+					<input class="lk-edit__btn__file-open" type="file" />
+					</a>
 					<div class="lk-edit__photo-text ">Рекомендуемый <br>размер изображения 300 х 300 рх</div>
 				</div>
 				<div class="lk-edit__right">
@@ -52,27 +54,76 @@
 							<div class="lk-edit__item-title">Информация о лекторе</div>
 							<div class="lk-edit__line">
 								<div class="lk-edit__label">Регион<i class="lk-edit__label-star"></i></div>
+								
+
 								<div class="lk-edit__line-input">	
 									<input class="question-answer__white-top__input" type="text" placeholder="Начните вводить название">
 
-									<div class="select-active-block">
-										<div class="select-active-block__item"><span>Москва</span><i class="icon icon-close"></i></div>
-										<div class="select-active-block__item"><span>Новокозельск</span><i class="icon icon-close"></i></div>
+									<ul class="m-select__result">
+										<li class="m-select__result-item">Москва<i class="icon icon-close"></i>	 </li>
+										<li class="m-select__result-item">Новосибирск<i class="icon icon-close"></i></li>
+									</ul>
+
+									<!-- ////// -->
+									<div class="lk-edit__list-dropgown">
+										<div class="lk-edit__list-dropgown-title">Полный список сфер деятельности</div>
+										<div class="lk-edit__list-dropgown-column-1">
+											<ul class="lk-edit__list-dropgown-list">
+												<li>Актерское мастерство</li>
+												<li>Астрономия</li>
+												<li>Благотворительность</li>
+												<li>Литература</li>
+												<li class="active">Математика</li>
+												<li>Образование</li>
+												<li>Педагогика</li>
+												<li>Психология</li>
+												<li>Саморазвитие</li>
+												<li>Страхование</li>
+											</ul>
+										</div>
 									</div>
+									<!-- ////// -->
 
 								</div>
+
+
 								<div class="lk-edit__text">Можно указать только 1 регион</div> 
 							</div>
+
+						
+
+
+							<!-- ////////////////////////////////////////// -->
 
 							<div class="lk-edit__line">
 								<div class="lk-edit__label">Сфера деятельности<i class="lk-edit__label-star"></i></div>
 								<div class="lk-edit__line-input">	
-									<input class="question-answer__white-top__input" type="text" placeholder="Начните вводить название">
+									<input class="question-answer__white-top__input question-answer__white-top__input_z-index-50" type="text" placeholder="Начните вводить название">
 
-									<div class="select-active-block">
-										<div class="select-active-block__item"><span>Физика</span><i class="icon icon-close"></i></div>
-										<div class="select-active-block__item"><span>Математика</span><i class="icon icon-close"></i></div>
+									<ul class="m-select__result">
+										<li class="m-select__result-item">Физика<i class="icon icon-close"></i>	 </li>
+										<li class="m-select__result-item">Математика<i class="icon icon-close"></i></li>
+									</ul>
+
+									<!-- ////// -->
+									<div class="lk-edit__list-dropgown lk-edit__list-dropgown_z-index-25">
+										<div class="lk-edit__list-dropgown-title">Полный список сфер деятельности</div>
+										<div class="lk-edit__list-dropgown-column-1">
+											<ul class="lk-edit__list-dropgown-list">
+												<li>Актерское мастерство</li>
+												<li>Астрономия</li>
+												<li>Благотворительность</li>
+												<li>Литература</li>
+												<li class="active">Математика</li>
+												<li>Образование</li>
+												<li>Педагогика</li>
+												<li>Психология</li>
+												<li>Саморазвитие</li>
+												<li>Страхование</li>
+											</ul>
+										</div>
 									</div>
+									<!-- ////// -->
 
 								</div>
 								<div class="lk-edit__text"></div>
@@ -214,7 +265,17 @@
 	</div>
 </div>	
 
+<script>
+	$(document).ready(function() {
+	    $('.question-answer__white-top__input').on('click', function() {
+	    	$(this).parent().find('.lk-edit__list-dropgown').toggleClass('active');
+	    })
+	    $('.lk-edit__list-dropgown-list li').on('click', function() {
+	        $(this).toggleClass('active');
+	    });
+	}); 
 
+</script>
 
 
 <div class="footer__before"></div>

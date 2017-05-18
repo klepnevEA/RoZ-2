@@ -69,7 +69,7 @@
 		.clearfix;
 		margin: 25px 0;
 		&-left {
-			width: calc(~"100% - 178px");
+			width: 100%;
 			float: left;
 		}
 		sup {
@@ -99,6 +99,7 @@
 		}
 
 	    &_work-experience {
+	    	display: table;
 	    	width: 318px;
 	    	float: left;
 		    color: #a1a1a1;
@@ -112,8 +113,9 @@
 		    }
 	    	
 	    	&-name {
+	    		display: table-cell;
+	    		vertical-align: middle;
 	    		width: 171px;
-	    		float: left;
 	    	}
 
 	    	& .sert__input {
@@ -125,9 +127,12 @@
 		&_strit {
 			width: 380px;
 			float: left;
+			display: table;
+
 			
 			&-name {
-				float: left;
+				display: table-cell;
+				vertical-align: middle;
 				width: 178px;
 				text-align: left;
 				color: #a1a1a1;
@@ -143,15 +148,17 @@
 			}
 		}
 		&_home {
-			margin-left: @sp;
+			margin-left: 13px;
 			width: 150px;
 			float: left;
+			display: table;
 			&-name {
-				float: left;
+				display: table-cell;
+				vertical-align: middle;
 				width: 50px;
 				text-align: left;
 				color: #a1a1a1;
-				padding-right: 30px;
+				padding-right: @sp;
 				font-size: 16px;
 				line-height: 1.125em;
 				font-family: 'Scada';
@@ -163,15 +170,17 @@
 			}
 		}
 		&_apartment {
-			margin-left: @sp;
+			margin-left: 13px;
 			width: 110px;
 			float: left;
+			display: table;
 			&-name {
-				float: left;
+				display: table-cell;
+				vertical-align: middle;
 				width: 35px;
 				text-align: left;
 				color: #a1a1a1;
-				padding-right: 30px;
+				padding-right: @sp;
 				font-size: 16px;
 				line-height: 1.125em;
 				font-family: 'Scada';
@@ -238,7 +247,7 @@
 
 
 	&__textarea {
-		width: calc(~"100% - 178px");
+		width: 100%;
 		border: 2px solid #dddfe3;
 		resize: none;
 		padding: 5px;

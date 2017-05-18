@@ -4,6 +4,10 @@
 		 margin-bottom: 5px;
 		 padding-top: @sp*2; 
 	}
+
+	input[disabled] {
+		background: #f3f3f3;
+	} 
 	&__box {
 		background: white;
 		margin-bottom: 22px;
@@ -90,12 +94,18 @@
 		}	
 
 		&__input  {
+			position: relative;
 			width: 100%;
 			margin: 0 20px 9px 0;
 			font-size:15px;
-	    	padding: 8px 12px;
+	    	padding: 7px 12px;
 			border:2px solid #dddfe3;
-			font-family: 'Scada';		    
+			font-family: 'Scada';
+			z-index: 110;
+			
+			&_z-index-50 {
+				z-index: 50;
+			}		    
 		}
 
 		&__text {

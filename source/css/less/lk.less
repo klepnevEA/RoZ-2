@@ -8,8 +8,8 @@
 		margin: 0;
 		font-family: 'Scada-Bold';
 		font-size: 40px;
-		padding-bottom: 35px;
-		padding-top: 35px;
+		padding-bottom: 33.5px;
+		padding-top: 33.5px;
 		line-height: 1;
 		&_elect {
 			i {
@@ -24,6 +24,7 @@
 		}
 
 		&_doun-arrow {
+
 
 			 i {
 			 	display: inline-block;
@@ -148,13 +149,15 @@
 		}
 	}
 	&__name {
-		margin-left: 220px; 
+		margin-left: 220px;
 	    color: #000;
 	    font-family: Scada-Bold;
 	    font-size: 22px;
 	    text-transform: uppercase;
 	    margin-top: 41px;
-	    margin-bottom: @sp;
+	    margin-bottom: 25px;
+	    line-height: 0.7;
+	    height: 22px;
 	    &_lecturer {
 	    	margin-top: 0;
 	    }
@@ -178,7 +181,7 @@
 			font-size: 18px;
 		}
 		&_lecturer {
-			margin-top: @sp/3;
+			margin-top: -@sp/3;
 		}
 		&-btn {
 			margin-left: -@sp*2;
@@ -214,9 +217,10 @@
 	}
 	&__elect {
 
-		& .row.collapse {
-			border: 0px solid #ccc;			
+		.col-xs-12 {
+			width: 101.4%;
 		}
+
 
 		.clearfix;
 		.activities-calendar__return {
@@ -392,15 +396,17 @@
 		&-elem {
 			float: left;
 			padding-right: 25px;
-			color: #8d8d8d;
+			color: #727272;
 			font-size: 15px;
 			line-height: 1.467;
+			font-family: Scada; 
 			
 			i {
 				position: relative;
 				top: 2px;
 				line-height: 0;
 				font-size: 16px;
+				color: #d3d3d3;
 			}
 		}
 	}

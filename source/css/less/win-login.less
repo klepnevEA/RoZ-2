@@ -6,17 +6,26 @@
 	height: 100vh;
 	width: 100%; 
 	z-index: 1000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	white-space: nowrap;
 
+	&:after {
+		display: inline-block;
+		content: '';
+		height: 100%;
+		
+	}
 
 	&__block {
+		display: inline-block;
+		vertical-align: middle;
+		white-space: normal;
+		position: relative;
+		top: -50%;
 		width: 480px;
 		background: @gray;
 		border-radius: 4px;
 		padding: 25px 0 0 0;
-		position: relative;
 		&_big {
 			width: 1020px;
 			top: 150px;
@@ -28,6 +37,8 @@
    			padding: 40px 55px;
 
 		}
+
+
 
 		&_middle {
 			width: 860px;
