@@ -1,5 +1,14 @@
 .teatcher {
 	overflow: visible;
+	&__title-top {
+		font-family: 'Scada-bold';
+	    text-align: center;
+	    margin: 0;
+	    padding: 0;
+	    font-size: 32px;
+	    color: #010101;
+	    margin-top: -5px;
+	}
 	.sert__input {
 		height: 40px;
 		//width: calc(~"100% - 178px");
@@ -7,6 +16,7 @@
 		font-family: Scada;
 		&_dp {
 			width: 200px;
+			border-radius: 0;
 		}
 		&_date {
 			width: 150px;
@@ -29,7 +39,7 @@
 		}
 	}
 	.sert__hr {
-		margin: 25px 0 15px;
+		margin: 25px 0 15px; 
 		color: #a1a1a1;
 	}
 	.sert__block-gray {
@@ -58,6 +68,9 @@
 			color: #9b9b9b;
 			font-family: Scada-Italic;
 		}
+		&_tell {
+			margin-bottom: 15px;
+		}
 	}
 	&__infoblock { 
 		margin-top: 10px;
@@ -67,7 +80,7 @@
 	}
 	&__item {
 		.clearfix;
-		margin: 25px 0;
+		margin: 20px 0;
 		&-left {
 			width: 100%;
 			float: left;
@@ -83,7 +96,9 @@
 		    display: inline-block;
 		    font-family: Scada;
 		    font-size: 16px;
-		    line-height: 2.3;			
+		    line-height: 2.3;
+		    margin-top: 18px;
+		    margin-bottom: -4px;
 			& .teatcher__label {
 				float: left;
 			}
@@ -256,6 +271,10 @@
 		box-sizing: border-box;
 		font-family: Scada;
 		height: 100px;
+		outline: none;
+		&:focus {
+		    border: 2px #01aeea solid;
+		}
 	}
 	&__btns {
 		text-align: center;
