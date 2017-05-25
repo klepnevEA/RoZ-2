@@ -15,7 +15,7 @@
 		color: white;
 		font-family: Scada-Italic;
 		font-size: 16px;
-		width: 180px;
+		width: 180px; 
 		height: 180px;
 		padding: 3px;
 		margin-bottom: @sp/2;
@@ -90,7 +90,8 @@
 		}
 	}
 	&__line {
-
+		display: table;
+		vertical-align: middle !important;
 
 		&-input {
 			float: left;
@@ -156,10 +157,21 @@
 		font-size: 16px;
 		line-height: 0.9;
 		width: 125px;
-		float: left;
-		margin-top: 12px;
+		//float: left;
+		//margin-top: 12px;
 		font-family: Scada;
 		padding-right: 10px;
+		display: table-cell;
+		min-height: 39px;
+		vertical-align: middle;
+		&_top {
+			vertical-align: top;
+			padding-top: 13px;
+			&-top {
+				vertical-align: top;
+				padding-top: 7px;
+			}
+		}
 		
 		i {
 			line-height: 0;
