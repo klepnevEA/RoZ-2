@@ -1,0 +1,187 @@
+.slider-main {
+    background: @gray;
+    padding-bottom: 40px;
+    
+    &__wrap {
+        position: relative;
+        height: 380px;
+        margin: 0 auto;
+        width: 1150px;
+        overflow: hidden;
+    }
+
+
+
+    &__blocks {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 40%;
+        transform: translate(0, -50%);
+        color: #fff;
+        z-index:100;
+        font-size: 26px;
+        outline: 0px;
+        
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+            outline: 0px;
+        }
+
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            outline: 0px;
+        }
+        
+        &_left {
+            left: 24px;
+            transform: rotate(90deg);
+        }
+
+        &_right {
+            right: 24px;
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__elem {
+        position: relative;
+        width: 100%;
+        
+        &__img {
+            position: absolute;
+            width: 100%;
+        }
+
+        &__title {
+            position: absolute;
+            top: 32px;
+            left: 111px;
+            width: 50%;
+            font-size: 36px;
+            font-family: Scada-bold; 
+            text-transform: uppercase;
+            line-height: 1.056;
+            color: #fff;
+        }
+
+        &__list {
+            position: absolute;
+            max-height: 155px;
+            top: 150px;
+            left: 114px;
+            width: 50%;
+            overflow: hidden;
+           
+            &-elem {
+                font-size: 21px;
+                font-family: Scada; 
+                line-height: 1.1;
+                color: #fff; 
+                vertical-align: top;
+                margin-bottom: 7px; 
+                
+                i {
+                    display: inline-block;
+                    height: 100%;
+                    padding-left: 1px;
+                    position: relative;
+                    top: 3px;
+                    color: @blue;
+                    margin-right: @sp/3;
+                    vertical-align: top;
+                }
+
+                span {
+                    display: inline-block;
+                    max-width: 90%;
+                }         
+            }
+            
+
+        }
+    }
+
+    &__blocks {
+        position: absolute;
+    }
+
+    &__list {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__tabs {
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0px;
+        
+        
+        &__list {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, .58);
+            white-space: nowrap;
+        }
+
+        &__elem {
+            display: inline-block;
+            box-sizing: border-box;
+            border-top: 5px solid transparent;
+            width: 230px;
+            height: 100%;
+            margin-right: -4px;
+            vertical-align: top;
+            white-space: normal;
+            
+            &.active {
+                background-color: @gray;
+                border-top: 5px solid @blue;
+                
+                
+                & .slider-main__tabs__link {
+                    color: #000;
+                    cursor: default;
+                }
+            }
+        }
+
+        &__link {
+            position: relative;
+            top: 46%;
+            transform: translate(0, -50%);
+            display: inline-block;
+            width: 100%;
+            padding: 0 5px;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            font-family: Scada;
+            font-size: 20px;
+            line-height: 1.1; 
+            outline: 0px;
+            
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+                outline: 0px;
+            }
+
+            &:focus {
+                text-decoration: none;
+                color: #fff;
+                outline: 0px;
+            }
+        }
+    }
+
+}
+
+

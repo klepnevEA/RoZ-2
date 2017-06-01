@@ -4,6 +4,105 @@
         width: 1150px;
         padding-bottom: 110px; 
         .clearfix;
+        
+
+
+        &_direct-speech {
+            padding-bottom: 0;
+            
+            .management {
+                &__block {
+                    padding: 26px;
+                    margin-bottom: 16px;
+                }
+
+                &__img {
+                    width: 240px;
+                    height: 235px;
+                }
+
+                &__block {
+                    min-height: 0px;
+                }
+
+                &__title {
+                    
+                }
+
+                &__title {
+                    font-family: Scada-bold;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    margin-top: 13px;
+                    margin-bottom: 2px;
+                }
+
+                &__text {
+                    font-size: 20px;
+                    line-height: 1.4em;
+                    color: #727272;
+                    margin-bottom: 27px;
+
+                }
+
+                &__comments {
+                    &__button-play {
+                        float: left;
+                        height: 100%;
+                        margin-right: 13px;
+                        
+                        i {
+                            font-size: 40px;
+                        }
+
+                        a {
+                            color: #d6d6d6;
+                            outline: 0px;
+                            
+                            &:hover {
+                                text-decoration: none;
+                                outline: 0px;
+                            }
+
+                            &:focus {
+                                text-decoration: none;
+                                outline: 0px;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        float: left;
+                        width: 93%;
+                        font-family: Scada-bold;
+                        font-size: 18px;
+                        line-height: 1.222;
+                    }
+
+                    &__date {
+                        margin-top: 9px;
+                        color: @red;
+                        font-size: 15px;
+                        font-family: Scada-bold;
+                        color: rgb(235, 84, 39);
+                        line-height: 1.467;
+                        
+                        i {
+                            position: relative;
+                            top: 2px;
+                            left: 2px;
+                            margin-right: @sp/3;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
     }
     
     &__h1 {
@@ -15,17 +114,22 @@
         text-align: left;
     }
 
+    &__content {
+        float: left;
+        width: 75%;
+    }
+
     &__block {
-        display: flex;
         background: white;
         margin-bottom: 25px;
         padding: @sp*2;
         min-height: 343px;
+        .clearfix;
     }
 
     &__photo {
-        
-        flex: 0 0 200px; 
+        display: inline-block;
+        float: left;
         margin-right: 30px; 
     }
 
