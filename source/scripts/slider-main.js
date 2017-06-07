@@ -11,9 +11,10 @@ $(function(){
 				$(listElem[i]).css('width' , w + '%');
 			}
 		} else {
-			$(listElem[i]).css('width' , '20%');
+			for(var i = 0; i < listElem.length; i++) {
+				$(listElem[i]).css('width' , '20%');
+			}
 		}
-
 	}
 	sliderInit();
 })
