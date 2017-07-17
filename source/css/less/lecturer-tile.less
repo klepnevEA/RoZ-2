@@ -1,0 +1,27 @@
+.lecturer-tile {
+    margin-bottom: @sp*3;
+    .clearfix;
+    .all-worker {
+        background-color: #fff;
+        min-height: 335px;
+        margin-bottom: 25px;
+        
+        &__photo {
+            &:after {
+                content: none;
+            }
+        }
+        
+        &__subject {
+            text-align: center;
+            &-elem {
+                padding: 3px 7px;
+                font-size: 14px;
+                display: inline-block;
+                text-transform: lowercase;
+                background-color: @gray;
+            }
+        }
+    }
+}
+

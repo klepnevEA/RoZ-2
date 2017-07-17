@@ -1,0 +1,219 @@
+.all-worker {
+	padding-top: 35px;
+	margin-bottom: 7px;
+	outline: 0px;
+	position: relative;
+	
+	& .tags {
+		padding: 0 10px;
+		height: 30px;
+		text-align: center;
+		white-space:nowrap;
+		
+		&__modal {
+			text-align: left;
+			white-space:normal;
+		}
+	}
+	
+	
+    &:hover {
+    	& .all-worker__photo:after {
+    		opacity: 0.3;
+    	}
+
+    	& .all-worker__lectures {
+    		opacity: 1;
+    		transform: translate( -50%, -50%) scale(1, 1);
+    	}
+    }
+	
+	&__link {
+		text-decoration: none;
+		color: #000;
+		position: relative;
+		display: inline-block;
+		width: 100%;
+
+		&:hover {
+			text-decoration: none;
+			color: #000;
+			outline: 0px;
+		}
+
+		&:focus {
+			text-decoration: none;
+			color: #000;
+			outline: 0px;
+		}
+	}
+
+	&__photo {
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		width: 125px;
+		height: 125px;
+		margin: 0 auto;
+    	background-size: cover !important;
+        //border: 13px solid #fff;
+        background-position: center center;
+        box-sizing: border-box;
+        margin-bottom:26px;
+        margin-top: 12px;
+        outline: 0px;
+        
+        
+        &:after {
+        	content: '';
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	background-color: #000;
+        	opacity: 0;
+        	transition: 0.3s all ease;
+        	z-index:10;
+        }
+
+	}
+
+	&__grade, &__events {
+		position: absolute;
+	    top: 8px;
+	    right: 20px;
+		font-size: 20px;
+		color: @blue;
+		font-family: Scada-bold;
+		
+		&_gray {
+			color: #a7a7a7;
+		}
+	}
+
+	&__events {
+		display: inline-block;
+		color: @red;
+		left: 20px;
+		width: 55px;
+		height: @sp*2;
+		z-index: 200;
+		i {
+			position: relative;
+			top: 5px;
+		    display: inline-block;
+		    position: relative;
+		    width: 12px;
+		    height: 20px;
+		    margin-right: 5px;
+		    z-index: 1000;
+		    background-size: 100%;
+		    float: left;
+		}
+
+		&:hover {
+			.all-worker__comment {
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+		}
+	}
+
+	&__comment {
+		position: absolute;
+		top: @sp*2;
+		left: @sp*2;
+		padding: 6px 14px;
+		z-index: 200;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.13);
+		font-size: 14px;
+		color: #a1a1a1;
+		white-space: nowrap;
+		opacity: 0;
+		transition: 0.3s;
+		transform: scale(0, 0);
+		
+		&-orange {
+			color: @red;
+		}
+
+	}
+
+	&__name {
+		padding: 0 10px;
+		text-align:  center;
+		margin: 0 10px;
+		font-size: 24px;
+		font-family: Scada-bold;
+		line-height: 1;
+		outline: 0px;
+		margin-bottom: 12px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__subject {
+		text-align:  center;
+		font-family: Scada; 
+		outline: 0px;
+		font-size: 18px;
+		color: #727272;
+		line-height: 1;
+		margin-bottom: 12px;
+		padding: 0 10px;
+	}
+
+
+	
+
+	&__circle {
+	    position: absolute;
+	    z-index: 100;
+	    top: -45px;
+	    left: 12px;
+	    width: 232px;
+	    height: 232px;
+	}
+	
+
+	&__city {
+		text-align:  center;
+		font-family: Scada; 
+		outline: 0px;
+		font-size: 14px;
+		color: #727272;
+		line-height: 1;
+		margin-bottom: @sp/3;	
+		
+		i {
+			position: relative;
+			top: 2px;
+		}	
+	}
+
+	&__lectures {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50%) scale(0.3, 0.3);
+		z-index: 200;
+		text-align: center;
+		font-family: Scada-bold;
+		font-size: 24px;
+		color: #fff;
+		line-height: 1;
+		opacity: 0;
+		transition: 0.3s all ease;
+	
+	}
+
+	& tspan {
+		display: none;
+	}
+}
+
+

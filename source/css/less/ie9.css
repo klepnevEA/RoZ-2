@@ -1,0 +1,9 @@
+.lecturer-tile {
+	.all-worker__circle {
+		top: -55px !important;
+	}	
+}
+
+.all-worker__circle {
+	top: -50px !important;
+}

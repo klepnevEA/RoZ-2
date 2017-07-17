@@ -7,6 +7,7 @@ module.exports = [
   // './gulp/tasks/copy.dist.js',
   // './gulp/tasks/copy.fonts.js',
   // './gulp/tasks/copy.html.js',
+  // './gulp/tasks/copy.ie9.js',
   // './gulp/tasks/copy.image.js',
   // './gulp/tasks/copy.scripts.js', 
   // './gulp/tasks/fileinclude.js', 

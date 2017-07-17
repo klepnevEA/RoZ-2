@@ -5,6 +5,7 @@
 		.clearfix;  
 	}
 	&__h2 {
+		float: left;
 		margin: 0;
 		font-family: 'Scada-Bold';
 		font-size: 40px;
@@ -166,7 +167,7 @@
 
 	}
 	&__name {
-		margin-left: 215px;
+		margin-left: 220px;
 	    color: #000;
 	    font-family: Scada-Bold;
 	    font-size: 22px;
@@ -432,6 +433,77 @@
 				line-height: 0;
 				font-size: 16px;
 				color: #d3d3d3;
+			}
+		}
+	}
+
+	&__superiors {
+		margin-left: 220px;
+		font-size: 16px;
+		font-family: Scada-bold;
+		color: #727272;
+		margin-bottom: 20px;
+		
+		&-name {
+			display: block;
+			color: #000;
+			text-decoration: underline;
+		}
+	}
+
+	&_worker {
+		padding-bottom: 23px;
+		padding-top: 35px;
+		margin-bottom: 8px;
+		
+		& .lk__userphoto {
+			margin-top: 3px;
+		}
+
+		& .lk__name {
+			margin-top: 4px;
+			margin-bottom: 10px;
+		}
+
+		& .lk__position {
+			font-size: 16px;
+			font-family: Scada-bold;
+			margin-bottom: @sp;
+		}	
+
+		& .lk__contactblock {
+			margin-top: 0;
+			
+			& ul {
+				margin-bottom: 20px;
+			}
+		}
+
+		& .lk__mail,& .lk__skype {
+			margin-bottom: 8px;
+		}
+
+		& .lk__places {
+			margin-top: 34px;
+		}
+
+		&-list {
+			& .slick-prev, & .slick-next {
+				top: 87px;
+			}
+
+			& .activities-calendar__return {
+				margin: 13px 0 0 40px;
+			}
+
+			& .activities-calendar__return-link {
+				line-height: 1;
+			}
+
+			& .activities-calendar__return-link i {
+				position: relative;
+				top: 2px;
+				right: 5px;
 			}
 		}
 	}
