@@ -36,7 +36,22 @@ $(document).ready(function() {
             $('.grantz-tabs').removeClass('active');
             $('#'+data_tab).addClass('active');
 
+    });
+
+
+    $('.grantz__searth-input').on('focus', function() {
+        if($(this).val() == 'Введите название') {
+            $(this).css('color', "#000");
+            $(this).val('');
+        }
     })
+    $('.grantz__searth-input').on('blur', function() {
+        if($(this).val() == '') {
+            $(this).css('color', "#c4c4c4");
+            $(this).val('Введите название');
+        }
+    })
+
 }); 
 
 
