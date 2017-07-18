@@ -1,16 +1,52 @@
 .grantz {
-    &__table {
-        margin-bottom: @sp*4;
-        tr {
-            min-height: 65px;
+
+    &__h1 {
+        margin: 0;
+        font-family: 'Scada-Bold';
+        font-size: 48px;
+        padding-bottom: 35px;
+        line-height: 1;
+        width: 50%;
+        float: left;
+    }
+
+    &-tabs {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+
+    &-table {
+        width: 100%;
+        margin-bottom: @sp*3;
+        
+        &_winners {
+            .grantz-table__thead th:first-child div {
+                color: #fff;
+            }
+
+            span {
+                position: relative;
+                top: -8px;
+                margin-left: 20px;
+            }
         }
 
-        td {
+
+        &__td {
             border: 1px solid #e8e8e8;
             text-align: center;
+            vertical-align: middle;
+            height: 54px;
         }
 
-        & tbody {
+        &__th {
+            height: 100%;
+        }
+
+        &__tbody {
             & tr:nth-child(odd) {
                 background-color: #fff;
             }
@@ -26,7 +62,6 @@
                     padding: 0;
                     
                 }
-                
             }
 
             td {
@@ -34,27 +69,28 @@
                 font-family: Scada; 
                 font-size: 16px;
                 line-height: 1;
-                padding: 10px;
+                padding: 0 10px;
             } 
 
             i {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 30px;
+                font-size: 29px;
                 color: @blue;
                 cursor: pointer;
             } 
 
-            .icon-close {
+            .icon-close-square {
                 color: @red;
+            }
+
+            .icon-download {
+                color: #72cd7f;
             }
         }
 
-        & thead {
+        &__thead {
             font-family: Scada-bold;
             color: #fff;
+            border-radius: 5px;
             font-size: 20px;
             tr {
                background-color: transparent; 
@@ -62,18 +98,20 @@
 
             i {
                 position: relative;
-                top: 3px;
-                left: 8px;
+                top: 1px;
+                left: 14px;
                 cursor: pointer;
                 
             }
 
             th {
                 div {
-                    padding: 8px 0;
+                    height: 100%;
+                    padding: 10px 0;
                     background-color: @blue;
                     border: 1px solid #0197cc;
                     border-right: 0px;
+                    font-size: 18px;
                 }
 
                 &:first-child {
@@ -99,6 +137,36 @@
            border: 1px solid #0197cc; 
            border-top: 0px;               
         }
+
+        &__tr {
+            &:last-child{
+                td {
+                   height:auto; 
+                }
+            }
+
+            &_place-1 {
+                i {
+                    color: #eaa602;
+                }
+            }
+
+            &_place-2 {
+                i {
+                    color: #b7b6b2;
+                }
+            }
+
+            &_place-3 {
+                i {
+                    color: #785e4d;
+                }
+            }
+        }
+    }
+
+    &__searth {
+        margin-bottom: 25px;
     }
 
     &__tabs {
@@ -112,13 +180,14 @@
         &-elem {
             float: left;
             margin-right: 10px;
-            font-size: 18px;
+            
             .active {
                 background-color: #FFF;
                 color: @blue;
             }
             .btn {
-                padding: 0 8px;
+                padding: 0 17px;
+                font-size: 18px;
             }
         }
     }
@@ -131,25 +200,35 @@
         .btn {
             width: auto;
             float: left;
-            margin-left: 10px;
+            margin-left: @sp;
+        }
+
+        .btn__ring {
+            text-align: center;
+            padding: 0 13px;
+            min-width: 125px;
+            
+            i {
+                margin-right: 7px;
+            }
         }
     }
 
     &__right-block {
 
         .right-menu__block {
-            padding: @sp 10px;
+            padding: 10px;
         }
         .right-menu__title {
             font-family: Scada-bold; 
             font-size: 20px;
             color: @red;
             line-height: 1;
-            padding: 0 0 10px 0;
+            padding: 0 0 @sp 0;
         }
 
         .tags {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
     }
