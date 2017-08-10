@@ -1,0 +1,105 @@
+.news-leader {
+    &-list {
+        ul {
+            margin-bottom: 25px;
+            span {
+                display: inline-block;
+                text-transform: uppercase;
+                font-family: Scada-bold; 
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 3px;
+            font-family: Scada;
+            font-size: 15px;
+            &:before {
+                content: "\2013";
+                padding-right: 10px;
+                margin-left: 20px;
+                margin-right: -@sp/3; 
+            }
+        }
+    }
+
+    &-title {
+        h4 {
+            font-size: 20px;
+            font-family: 'Scada-Bold';
+            margin-bottom: 25px; 
+            line-height: 1.4;           
+        }
+    }
+
+    &-text {
+        p {
+            font-family: 'Scada';
+            font-size: 15px;
+            line-height: 1.6;  
+            margin-bottom: 25px;
+        }
+    } 
+
+    &-photo {
+            width: 210px;
+            height: 280px;  
+            margin-bottom: @sp;      
+        img {
+            width: 100%;
+        }
+    }
+
+    &-name {
+        font-family: 'Scada-Bold';
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+
+    &-position {
+        font-size: 15px;
+        font-family: "Scada";
+        line-height: 1.5;
+        color: #8c8c8c;
+    }
+
+    &-timeivent {
+        font-size: 15px;
+        font-family: "Scada";
+        line-height: 1.55;
+        margin-bottom: 20px;
+        
+            &:last-child {
+               margin-bottom: 0px; 
+            }
+            &__data {
+                margin-top: 10px;
+                color: @red;
+            }
+    }
+
+    &-news {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        font-family: "Scada";
+        color: @blue;
+        margin-top: 20px;
+    }
+
+    &-block {
+        padding: 25px;
+        margin-bottom: 1px;
+        
+        .right-menu__title {
+            font-size: 24px;
+            text-align: left;
+            line-height: 1.1;
+            padding-top: 0;
+        }
+    }
+}

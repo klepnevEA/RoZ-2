@@ -196,7 +196,7 @@
 		i {
 			position: absolute;
 			left: -25px;
-			top: 3px;
+			top: 2px;
 			font-size: 18px;
 		}
 		&_lecturer {
@@ -204,6 +204,7 @@
 		}
 		&-btn {
 			margin-left: -@sp*2;
+			margin-bottom: 20px;
 			i {
 				margin-right: @sp/3;
 			}
@@ -223,13 +224,19 @@
 			text-decoration: none;
 		}
 	}
-	&__mail, &__skype  {
+	&__mail, &__skype, &__map-case, &__clock  {
 		display: inline-block;
 		position: relative;
 		margin-bottom: 9px;
 		color: black;
 		text-decoration: underline;
 	}
+
+	&__map-case, &__clock {
+		i {
+			color: @red;
+		}
+	} 
 
 	&__skype  {
 		margin-bottom: 25px;
@@ -314,8 +321,8 @@
 		}
 	}
 	&__rezult {
-		margin-left: 5px; 
-		margin-top:10px;
+		margin-left: 4px; 
+		margin-top:12px;
 		i {
 			position: absolute;
 			left: -30px;
@@ -331,9 +338,17 @@
 			font-family: 'Scada';
 			font-size: 16px;
 			text-decoration: underline;
+			float: left;
+    		margin-right: 70px;
+    		
+    		&:last-child {
+    			margin-right: 0px;
+    		}
+
 			&:hover {
 				text-decoration: none;
 			}
+
 			span {
 				font-size: 24px;
 				font-family: 'Scada-bold';
