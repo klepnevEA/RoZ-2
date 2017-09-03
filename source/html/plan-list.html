@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+	<span id="DeltaBreadcrumbDropdown">
+			<div class="breadcrumb">
+				<span>
+					<span>
+						<a class="breadcrumb-item breadcrumb-item-prev" href="/Pages/Main.aspx">Портал Знание</a> 
+					</span>
+					<span></span>
+					<span>
+						<a class="breadcrumb-item" href="/news/Pages/default.aspx">Новости</a>
+					</span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</span>
+
+	<div class="plan gray-back">
+
+		<div class="plan__wrap">
+
+			<h2 class="lk-edit__title">Планы мероприятий</h2> 
+
+			<div class="plan__tabs">
+				<div class="plan__tab">Мои планы мероприятий</div>
+				<div class="plan__tab active">Планы мероприятий других пользователей</div>
+			</div>
+
+			<div class="plan__block">	
+				
+				<div class="row">
+					<div class="col-xs-6">
+						
+						<div class="plan__item">
+
+							<div class="plan__line">
+								<div class="plan__label plan__label_mini"></div>
+								
+
+								
+									
+
+									<div class="m-select m-select_bot">
+										<ul class="m-select__result">
+											<li class="m-select__result-item">Москва<i class="icon icon-close"></i>	 </li>
+										</ul>
+									</div>
+								
+							</div>
+
+							<div class="plan__line">
+								<div class="plan__label plan__label_mini">Регион<i class="lk-edit__label-star"></i></div>
+								<div class="plan__line-input">	
+									<div class="m-select m-select_bot">
+										<div class="m-select__search">
+											<input type="text" class="m-select__input" placeholder="Начните вводить название">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="plan__line">
+								<div class="plan__label plan__label_mini">Неделя<i class="lk-edit__label-star"></i></div>
+								<div class="plan__line-input">
+									<div class="m-select m-select_bot">
+										<div class="m-select__search m-select__search_short">
+											<input type="text" data-provide="datepicker" class="m-select__input">
+											<button class="m-select__input-btn"><i class="mdi mdi-calendar-today"></i></button>
+										</div>
+										<div class="m-select__search-dash"><span>&#8212;</span></div>
+										<div class="m-select__search m-select__search_short">
+											<input type="text" data-provide="datepicker" class="m-select__input">
+											<button class="m-select__input-btn"><i class="mdi mdi-calendar-today"></i></button>
+										</div>
+									</div> 
+								</div>
+							</div>
+
+							
+
+							
+
+						</div>
+
+					</div>
+					<div class="col-xs-6">
+						<div class="plan__item">
+							<div class="plan__line plan__line_free"></div>
+							<div class="plan__line">
+								<div class="plan__label plan__label_mini plan__label_right">Поиск<i class="lk-edit__label-star"></i></div>
+								<div class="plan__line-input">	
+									<div class="m-select m-select_bot">
+										<div class="m-select__search">
+											<input type="text" class="m-select__input" placeholder="Поиск по ФИО">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="plan__line plan__line_check">
+								<input class="answer__input" type="checkbox" id="answer__label" name="answer__label">
+								<label class="answer__label plan__label_all" for="answer__label"><span></span>Обозначить планы назначенные на меня</label>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<button class="btn btn__right btn__blue btn__small-text" type="submit">Найти</button>
+						<button class="btn btn__right btn__gray-light  btn__small-text" type="submit">Сбросить фильтры</button>
+					</div>
+				</div>
+			</div>
+			<div class="plan__result">
+				<div class="plan__result-header"> 
+					<div class="plan__result-title"> 
+						Найдено: 12
+					</div>
+					
+				</div>
+				
+				<table class="plan__table">
+					<tr>
+						<th><div class="plan__table-sort active">Неделя <i class="mdi mdi-chevron-down"></i></div></th>
+						<th><div class="plan__table-sort">Регион <i class="mdi mdi-chevron-down"></i></div></th>
+						<th><div class="plan__table-sort">Создал <i class="mdi mdi-chevron-down"></i></div></th>
+						<th><div class="plan__table-sort">Ответственный <i class="mdi mdi-chevron-down"></i></div></th>
+						<th><div class="plan__table-sort">Статус <i class="mdi mdi-chevron-down"></i></div></th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><div class="plan__table-data">19.03.2017 — 25.06.2017</div></td>
+						<td><div class="plan__table-location">Москва</div></td>
+						<td><a href="#">Анищенков Николай Иванович</a></td>
+						<td><a href="#">Степанов Виктор Владимирович</a></td>
+						<td><div class="plan__table-status plan__table-status_ok">Опубликован</div></td>
+						<td><div class="plan__table-btn"><i class="mdi mdi-lead-pencil"></i></div></td> 
+					</tr>
+					<tr>
+						<td><div class="plan__table-data">19.03.2017 — 25.06.2017</div></td>
+						<td><div class="plan__table-location">Москва</div></td>
+						<td><a href="#">Анищенков Николай Иванович</a></td>
+						<td><a href="#">Степанов Виктор Владимирович</a></td>
+						<td><div class="plan__table-status plan__table-status_ok">Опубликован</div></td>
+						<td><div class="plan__table-btn"><i class="mdi mdi-lead-pencil"></i></div></td> 
+					</tr>
+					<tr>
+						<td><div class="plan__table-data">19.03.2017 — 25.06.2017</div></td>
+						<td><div class="plan__table-location">Москва</div></td>
+						<td><a href="#">Анищенков Николай Иванович</a></td>
+						<td><a href="#">Степанов Виктор Владимирович</a></td>
+						<td><div class="plan__table-status plan__table-status_ok">Опубликован</div></td>
+						<td><div class="plan__table-btn"><i class="mdi mdi-lead-pencil"></i></div></td> 
+					</tr>
+					<tr>
+						<td><div class="plan__table-data">19.03.2017 — 25.06.2017</div></td>
+						<td><div class="plan__table-location">Москва</div></td>
+						<td><a href="#">Анищенков Николай Иванович</a></td>
+						<td><a href="#">Степанов Виктор Владимирович</a></td>
+						<td><div class="plan__table-status plan__table-status_ok">Опубликован</div></td>
+						<td><div class="plan__table-btn"><i class="mdi mdi-lead-pencil"></i></div></td> 
+					</tr>
+					<tr>
+						<td><div class="plan__table-data">19.03.2017 — 25.06.2017</div></td>
+						<td><div class="plan__table-location">Москва</div></td>
+						<td><a href="#">Анищенков Николай Иванович</a></td>
+						<td><a href="#">Степанов Виктор Владимирович</a></td>
+						<td><div class="plan__table-status plan__table-status_ok">Опубликован</div></td>
+						<td></td> 
+					</tr>
+				</table>
+				<!-- пагинатор -->
+				<div class="pagination__wrap">
+					<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li class="pagination__item pagination__item_no-back pagination__item_off">
+					      <a href="#" aria-label="Previous" class="pagination__link">
+					       	<i class="icon-st-left"></i>
+					      </a>
+					    </li>
+					    <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >2</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >3</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >4</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >5</a></li>
+					    <li class="pagination__item pagination__item_no-back"><a href="#" class="pagination__link" >...</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >165</a></li>
+					    <li class="pagination__item pagination__item_no-back">
+					      <a href="#" aria-label="Next" class="pagination__link">
+					        <i class="icon-st-right"></i>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>	
+</div>
+<div class="footer__before"></div>
+	@@include('./file-include/footer.html')
+
+</body>
+</html>

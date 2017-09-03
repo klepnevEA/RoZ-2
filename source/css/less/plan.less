@@ -1,74 +1,335 @@
 .plan {
-    padding-bottom: 100px;
-    .clearfix;
-    
-    &__wrap {
-        margin: 0 auto;
-        width: 1150px;
-        .clearfix;
-    }
-    
-    &__block {
-        padding: @sp*2 35px;
-        background-color: #fff;
-       .clearfix; 
-       
-       .m-select_bot .m-select__result {
-            margin-top: 0px;
-            margin-bottom: 0px;
-       }
-    }
+	padding-bottom: 100px;
+	.clearfix;
+	.m-select__search-dash {
+		width: 40px;
+	}
+	.m-select__search_short {
+		width: calc(~"50% - 20px");
+	}
+	&__tabs {
+		border-top: 2px #dddfe3 solid;
+		padding-bottom: 20px;
+		padding-top: 30px;
+	}
+	&__tab {
+		display: inline-block;
+		font-family: Scada-bold;
+		font-size: 22px;
+		color: #c7c7c7;
+		margin-right: @sp*2;
+		border-bottom: 3px solid;
+		padding-bottom: 7px;
+		cursor: pointer;
+		&.active {
+			color: black;
+			border-bottom: 3px solid @red !important;
+		}
+		&-btn {
+			background: @red;
+			display: inline-block;
+			float: right;
+			color: white;
+			padding: 8px 20px 0;
+			cursor: pointer;
+			border-radius: 30px;
+			font-family: Scada-bold;
+			font-size: 18px;
+			text-transform: uppercase;
+			height: 39px;
 
-    &__item {
-    }
+			&:hover {
+				background: darken(@red, 10%)
+			}
+		}
+	}
+	&__wrap {
+		margin: 0 auto;
+		width: 1150px;
+		.clearfix;
+	}
+	
+	&__block {
+		padding: @sp*2 35px;
+		background-color: #fff;
+	   .clearfix; 
+	   
+	   .m-select_bot .m-select__result {
+			margin-top: 0px;
+			margin-bottom: 0px;
+	   }
+	}
 
-    &__line {
-        display: table; 
-        margin-bottom: 8px;
-    }
+	&__item {
 
-    &__label {
-        display: table-cell;
-        width: 125px;
-        padding-top: 10px;
-        font-family: Scada;
-        font-size: 16px;
-        line-height: 0.9;
-        color: #a1a1a1;
-        vertical-align: top;
-        
-    }
+	}
 
-    &__label-star {
-        &:after {
-            content: " *";
-            color: #eb5427;
-            font-size: 20px;
-        }
-    }
+	&__line {
+		display: table; 
+		margin-bottom: 8px;
+		width: 100%;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&_free {
+			height: 30px;
+			
+		}
+		&_free-2 {
+			height: 78px;
+			
+		}
+		&_check {
+			 height: 50px;
+		}
+		&-input {
+			float: left;
+			position: relative;
+			width: 100%;
+			
+			display: table-cell;
+		}
+		.answer__label {
+			color: #a1a1a1;
+		}
+	}
 
-    &__input {
-        position: relative;
-        padding: @sp/3;
-        width: 100%;
-        border: 2px solid #dddfe3;
-        background: #fff;
-        font-size: 16px;
-        float: left;
-        box-sizing: border-box;
-        height: 40px;
-        font-family: Scada;
-        outline: none;
-        color: #adadad;
-        resize: none; 
-    }
+	&__label {
+		display: table-cell;
+		width: 125px;
+		//padding-top: 10px;
+		font-family: Scada;
+		font-size: 16px;
+		line-height: 0.9;
+		color: #a1a1a1;
+		vertical-align: middle;
+		&_right {
+			padding-left: 20px;
+			// padding-right: @sp;
+		}
+		&_mini {
+			width: 90px;
+		}
+		&_all {
+			width: 100%;
+			padding-left: 90px;
+			color: #a1a1a1;
+		}
+		
 
-    &__line-input {
-        float: left;
-        width: 410px;
-        position: relative;
-    }
+		
+		
+	}
 
+	&__label-star {
+		&:after {
+			content: " *";
+			color: #eb5427;
+			font-size: 20px;
+		}
+	}
 
+	&__input {
+		position: relative;
+		padding: @sp/3;
+		width: 100%;
+		border: 2px solid #dddfe3;
+		background: #fff;
+		font-size: 16px;
+		float: left;
+		box-sizing: border-box;
+		height: 40px;
+		font-family: Scada;
+		outline: none;
+		color: #adadad;
+		resize: none; 
+	}
+	&__result {
+		margin-top: 40px;
+		&-header {
+			border-bottom: 2px solid #dddfe3; 
+			.clearfix;
+		}
+		&-title {
+			font-family: Scada-bold;
+			font-size: 22px;
+			padding-bottom: 30px;
+			display: inline-block;
+			line-height: 1; 
+		}
+		&-clear {
+			display: inline-block;
+			float: right;
+			text-transform: uppercase;
+			color: white;
+			padding: 5px 20px;
+			font-family: Scada-bold;
+			background: #4f5c64;
+			border-radius: 30px;
+			font-size: 18px;
+			margin-top: -10px;
+			cursor: pointer;
+			transition: background 0.2s;
+			i {
+				font-size: 20px;
+			}
+			&:hover {
+				background: @blue;
+			}
+		}
+	}
+	&__table {
+		width: 100%;
+		&_my {
+			td {
+				&:first-child {
+					width: 60px;
+					padding: 0;
+
+				}
+			}
+		}
+		tr {
+			width: 100%;
+			background: white;
+			vertical-align: middle;
+			height: 60px;
+			border-bottom: 10px solid @gray;
+			&:first-child {
+				background: none;
+				border-bottom: 0px solid;
+				height: 50px;
+			}
+		}
+
+		th {
+			font-family: Scada-bold;
+			font-size: 18px;
+			color: #9b9b9b;
+			text-transform: uppercase;
+			text-align: left;
+			padding: 10px 20px;
+			i {
+				margin-left: 0px;
+				font-size: 20px;
+				display: inline-block;
+			}
+		}
+		td {
+			color: black;
+			font-size: 15px;
+			padding: 0 20px;
+			height: 60px;
+			vertical-align: middle;
+			display: table-cell;
+			font-family: Scada;
+			&:last-child {
+				padding-right: 0;
+				width: 60px;
+			}
+
+		}
+		&-sort {
+			cursor: pointer;
+			transition: all 0.2s;
+			&.active {
+				color: @red;
+				i {
+					transform: rotate(180deg);
+				}
+				&:hover {
+					color: darken(@red, 10%)
+				}
+			}
+			&:hover {
+				color: darken(#9b9b9b, 10%)
+			}
+		}
+		&-data {
+			
+			font-family: Scada-bold;
+			font-size: 18px;
+			height: 60px;
+			vertical-align: middle;
+			display: table-cell;
+		}
+		&-location {
+			color: #9b9b9b;
+			
+			font-family: Scada;
+			
+			height: 60px;
+			vertical-align: middle;
+			display: table-cell;
+		}
+		a {
+			color: black;
+			
+			text-decoration: underline;
+			
+			height: 60px;
+			vertical-align: middle;
+			display: table-cell;
+			font-family: Scada;
+
+		}
+		&-status {
+			color: black;
+			
+			height: 60px;
+			vertical-align: middle;
+			display: table-cell;
+			font-family: Scada;
+			&_ok {
+				color: @green;
+			}
+			&_no {
+				color: #9b9b9b;
+			}
+		}
+		&-btn {
+			background: @blue;
+			color: white;
+			font-size: 24px;
+			height: 60px;
+			width: 60px;
+			text-align: center;
+			line-height: 60px;
+			cursor: pointer;
+			transition: all 0.2s;
+			padding: 0;
+			&:hover {
+				background: @red;
+			}
+		}
+		&-check {
+			height: 60px;
+			width: 60px;
+			line-height: 60px;
+			cursor: pointer;
+			transition: all 0.2s;
+			text-align: center;
+			border-right: 3px solid @gray;
+			border-left: 3px solid white;
+			color: #bcbcbc;
+			i {
+				font-size: 24px;
+			}
+			&.active {
+				background: @red;
+				color: white;
+				border-right: 3px solid @red;
+				border-left: 3px solid @red;
+				color: white;
+				&:hover {
+					background: darken(@red, 10%);
+					border-right: 3px solid darken(@red, 10%);
+					border-left: 3px solid darken(@red, 10%);
+				}
+			}
+
+		}
+	}
+	
 
 }
