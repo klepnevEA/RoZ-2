@@ -330,6 +330,226 @@
 
 		}
 	}
-	
+	&-week {
+		margin-top: 20px;
+		&__day {
+			.pagination {
+				margin-top: 10px;
+				margin-bottom: 	12px;
+			}
+			.pagination__link {
+				background: none;
+				font-size: 18px;
+			}
+		}
+		&__header {
+			color: white;
+			text-align: center;
+			position: relative;
+			font-family: Scada-bold;
+			font-size: 18px;
+			text-transform: uppercase;
+			height: 50px;
+			line-height: 50px;
+			background: #4f5c64;
+			margin-top: -2px;
+			&.active {
+				background: @red;
+			}
+			&-btn {
+				position: absolute;
+				right: 13px;
+				top: 10px;
+				border: 2px solid white;
+				background: @blue;
+				color: white;
+				line-height: 27px;
+				height: 30px;
+				padding: 0 10px;
+				font-family: Scada;
+				font-size: 14px;
+				cursor: pointer;
+				transition: background 0.2s;
+				&:hover {
+					background: darken(@blue, 10%)
+				}
+				i {
+					margin-right: 5px;
+				}
+			}
+		}
+		&__table {
+			width: 100%;
+			tr {
+				border-bottom: 2px solid #dddfe3;
+				background: white;
+				&:first-child {
+					background: none;
+				}
 
+			}
+			th {
+				text-align: left;
+				font-size: 14px;
+				font-family: Scada-bold;
+				color: #a1a1a1;
+				text-transform: uppercase;
+				padding: @sp 20px;
+				&:last-child {
+					padding-left: 0;
+				}
+			}
+			&-done {
+				background: #ecfbe9 !important;
+			}
+			&-null {
+				td {
+					padding: @sp 20px !important;
+					text-align: center;
+					color: #a1a1a1;
+					font-family: Scada-Italic !important;
+					font-size: 15px;
+				}
+			}
+			td {
+				padding: 10px 20px;
+				vertical-align: top;
+				font-size: 15px;
+				font-family: Scada;
+				&:last-child {
+					padding: 8px 20px 0 0;
+				}
+			}
+			&-name {
+				font-family: Scada-bold;
+				color: black;
+				text-decoration: underline;
+				line-height: 1.1;
+			}
+			&-status {
+				&_no {
+					color: #a1a1a1;
+				}
+				&_ok {
+					color: @green;
+				}
+			}
+			&-btn {
+				background: #4f5c64;
+				color: white;
+				font-family: Scada;
+				padding: 3px 7px;
+				white-space: nowrap;
+				cursor: pointer;
+				transition: background 0.2s;
+				text-transform: uppercase;
+				font-size: 14px;
+				&:hover {
+					background: @red;
+				}
+				i {
+					margin-right: 3px;
+				}
+
+			}
+		}
+		&__persent {
+			&-value {
+				float: left;
+				width: 24px;
+				text-align: right;
+				color: @green;
+				&_null {
+					color: #a1a1a1;
+				}
+			}
+			&-line {
+				width: 50px;
+				height: 15px;
+				background: @gray;
+				float: left;
+				margin-top: 2px;
+				margin-left: 5px;
+				position: relative;
+				&-ok {
+					background: @green;
+					position: absolute;
+					height: 100%;
+				}
+			}
+		}
+		&__task {
+			width: 370px !important;
+
+			// padding-right: 0 !important;
+
+			&-left {
+				display: inline-block;
+			}
+			&-right {
+				display: inline-block;
+				width: 130px;
+				float: right;
+				
+			}
+			&-block {
+				margin-top: -1px;
+				margin-bottom: 5px;
+				.clearfix;
+			}
+			&-wrap {
+				background: @gray;
+				padding: 5px @sp;
+				
+				margin-bottom: 2px;
+				.clearfix;
+			} 
+			&-status {
+				width: 115px;
+				float: right;
+				font-size: 14px;
+				font-family: Scada;
+				&_ok {
+					color: @green;
+				}
+				&_no {
+					color: #a1a1a1;
+				}
+			}
+			&-text {
+				font-family: Scada;
+				font-size: 14px;
+				float: left;
+				width: calc(~"100% - 115px");
+				padding-right: @sp;
+				line-height: 1.2;
+				a {
+					color: black;
+					text-decoration: underline;
+				}
+			}
+			&-btn {
+				color: @blue;
+				font-family: Scada;
+				cursor: pointer;
+				display: inline-block;
+				text-decoration: underline;
+				i {
+					margin-right: 3px;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+				
+			}
+			&-allert {
+				display: inline-block;
+				float: right;
+				font-size: 14px;
+				font-family: Scada-Italic;
+				color: #a1a1a1;
+				margin-top: 2px;
+			}
+		}
+	}
 }
