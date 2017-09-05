@@ -39,5 +39,28 @@
 		height: 40px;
 		font-size: 17px;
 	}
+	&__all {
+		width: 100%;
+	    border: 2px solid #dddfe3;
+	    resize: none;
+	    padding: 5px;
+	    font-size: 16px;
+	    box-sizing: border-box;
+	    height: 40px;
+	    font-family: Scada;
+	    padding: 0 @sp 0 @sp;
+	    background: white;
+	    position: relative;
+	    outline: none;
+	    color: #757575;
+	    position: relative;
+	    &::-ms-clear {
+			display: none !important;
+		}
+		&::-webkit-input-placeholder {color:#adadad;}
+		&::-moz-placeholder          {color:#adadad;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#adadad;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#adadad;}
+	}
 
 }
