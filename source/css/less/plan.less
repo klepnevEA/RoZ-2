@@ -7,6 +7,36 @@
 	.m-select__search_short {
 		width: calc(~"50% - 20px");
 	}
+	&__text {
+		font-family: Scada;
+		color: black;
+		font-size: 15px;
+		a {
+			color: black;
+			text-decoration: underline;
+			transition: color 0.2s;
+			&:hover {
+
+			}
+		}
+	}
+	&__date {
+		color: @red;
+		font-family: Scada-bold;
+		font-size: 30px;
+		margin-top: -45px;
+		margin-bottom: 40px;
+		line-height: 1;
+	}
+	&__status {
+		&_ok {
+			color: @green;
+		}
+		&_no {
+			color: #a1a1a1;
+		}
+	}
+
 	&__tabs {
 		border-top: 2px #dddfe3 solid;
 		padding-bottom: 20px;
@@ -108,7 +138,10 @@
 			// padding-right: @sp;
 		}
 		&_mini {
-			width: 90px;
+			width: 90px; 
+		}
+		&_mini2 {
+			width: 65px;
 		}
 		&_all {
 			width: 100%;
@@ -332,6 +365,12 @@
 	}
 	&-week {
 		margin-top: 20px;
+		&__btns {
+			margin-top: 40px; 
+			.btn {
+				font-size: 17px;
+			}
+		}
 		&__day {
 			.pagination {
 				margin-top: 10px;
@@ -567,6 +606,9 @@
 				font-family: Scada-Italic;
 				color: #a1a1a1;
 				margin-top: 2px;
+				&_left {
+					float: left;
+				}
 			}
 		}
 	}

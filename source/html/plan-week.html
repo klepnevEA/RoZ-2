@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+	<span id="DeltaBreadcrumbDropdown">
+			<div class="breadcrumb">
+				<span>
+					<span>
+						<a class="breadcrumb-item breadcrumb-item-prev" href="/Pages/Main.aspx">Портал Знание</a> 
+					</span>
+					<span></span>
+					<span>
+						<a class="breadcrumb-item" href="/news/Pages/default.aspx">Новости</a>
+					</span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</span>
+
+	<div class="plan gray-back">
+
+		<div class="plan__wrap">
+
+			<h2 class="lk-edit__title">План мероприятий на неделю</h2>
+			<div class="plan__date">26.06.2017 — 02.07.2017</div>
+
+			<div class="plan__block">	
+				<div class="row">
+					<div class="col-xs-5">
+						
+						<div class="plan__item">
+
+							<div class="plan__line">
+								<div class="plan__label">Создал:</div>
+								<div class="plan__text"><a href="#">Петров Виталий Семенович</a></div>
+							</div>
+							<div class="plan__line">
+								<div class="plan__label">Ответственный:</div>
+								<div class="plan__text"><a href="#">Иванова Светлана Васильевна</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="plan__line">
+							<div class="plan__label plan__label_mini2">Статус:</div>
+							<div class="plan__text"><span class="plan__status plan__status_no">Не опубликован</span></div>
+						</div>
+						<div class="plan__line">
+							<div class="plan__label plan__label_mini2">Регион:</div>
+							<div class="plan__text">Москва</div>
+						</div>
+					</div>	
+					<div class="col-xs-4">
+						<button class="btn btn__right-5 btn__icon btn__icon_black" type="submit">
+							<i class="mdi mdi-close"></i>
+						</button>
+						<button class="btn btn__right-5 btn__icon btn__icon_blue" type="submit">
+							<i class="mdi mdi-lead-pencil"></i>
+						</button>
+						
+						<div class="btn__allert btn__right-5">
+							<button class="btn btn__right-5 btn__blue btn__small-text" type="submit">Опубликовать</button>
+							<div class="btn__allert-text">
+								После публикации план мероприятий станет доступным для просмотра всем сотрудникам. Все задачи и подзадачи будут отправлены ответственным сотрудникам.
+							</div> 
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="plan-week">
+				<div class="plan-week__day">
+					<div class="plan-week__header active">
+						Понедельник, 26.06.2017
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+
+							</th>
+							
+							
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="plan-week__table-name">Реализация планов мероприятий 2017 год</a>
+							</td>
+							<td>Иванов Семен Демьянович</td> 
+							<td><span class="plan-week__table-status plan-week__table-status_no">Не выполнена</span></td>
+							<td>
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">50</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 50%"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="plan-week__task-block">
+									<div class="plan-week__task-wrap">
+										<div class="plan-week__task-text"><a href="#">Аренда помещения для выставки и еще чегонибудь особо длиного для проверки </a></div>
+										<div class="plan-week__task-status plan-week__task-status_ok">Выполнена</div>
+									</div>
+										<div class="plan-week__task-wrap">
+										<div class="plan-week__task-text"><a href="#">Организация фуршета</a></div>
+										<div class="plan-week__task-status plan-week__task-status_no">Не выполнена</div>
+									</div>
+								</div>
+
+								
+								
+							</td> 
+							
+							
+						</tr>
+						<tr class="plan-week__table-done"> 
+							<td>
+								<a href="#" class="plan-week__table-name">Книжная ярмарка</a>
+							</td>
+							<td>Иванов Семен Демьянович</td> 
+							<td><span class="plan-week__table-status plan-week__table-status_ok">Выполнена</span></td>
+							<td>
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">100</div> 
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 100%"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								
+								<div class="plan-week__task-allert plan-week__task-allert_left">Подзадачи не созданы</div>
+							</td> 
+							
+						</tr>
+
+						<tr>
+							<td>
+								<a href="#" class="plan-week__table-name">Выставка книг</a>
+							</td>
+							<td>Иванов Семен Демьянович</td> 
+							<td><span class="plan-week__table-status plan-week__table-status_no">Не выполнена</span></td>
+							<td>
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value plan-week__persent-value_null">0</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 0%"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								
+								<div class="plan-week__task-allert plan-week__task-allert_left">Подзадачи не созданы</div>
+							</td> 
+							
+						</tr>
+						<tr>
+							<td>
+								<a href="#" class="plan-week__table-name">Выставка книг</a>
+							</td>
+							<td>Иванов Семен Демьянович</td> 
+							<td><span class="plan-week__table-status plan-week__table-status_no">Не выполнена</span></td>
+							<td>
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value plan-week__persent-value_null">0</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 0%"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								
+								<div class="plan-week__task-allert plan-week__task-allert_left">Подзадачи не созданы</div>
+							</td> 
+							
+						</tr>
+					</table>
+
+					<!-- пагинатор -->
+					<div class="pagination__wrap">
+						<nav aria-label="Page navigation">
+						  <ul class="pagination">
+						    <li class="pagination__item pagination__item_no-back pagination__item_off">
+						      <a href="#" aria-label="Previous" class="pagination__link">
+						       	<i class="icon-st-left"></i>
+						      </a>
+						    </li>
+						    <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+						    <li class="pagination__item"><a href="#" class="pagination__link" >2</a></li>
+						    <li class="pagination__item"><a href="#" class="pagination__link" >3</a></li>
+						    <li class="pagination__item"><a href="#" class="pagination__link" >4</a></li>
+						    <li class="pagination__item"><a href="#" class="pagination__link" >5</a></li>
+						    <li class="pagination__item pagination__item_no-back"><a href="#" class="pagination__link" >...</a></li>
+						    <li class="pagination__item"><a href="#" class="pagination__link" >165</a></li>
+						    <li class="pagination__item pagination__item_no-back">
+						      <a href="#" aria-label="Next" class="pagination__link">
+						        <i class="icon-st-right"></i>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="plan-week__day">
+					<div class="plan-week__header active">
+						Вторник, 27.06.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+
+							</th>
+							
+							
+						</tr>
+						
+						<tr class="plan-week__table-done"> 
+							<td>
+								<a href="#" class="plan-week__table-name">Книжная ярмарка</a>
+							</td>
+							<td>Иванов Семен Демьянович</td> 
+							<td><span class="plan-week__table-status plan-week__table-status_ok">Выполнена</span></td>
+							<td>
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">100</div> 
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 100%"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								
+								<div class="plan-week__task-allert plan-week__task-allert_left">Подзадачи не созданы</div>
+							</td> 
+							
+						</tr>
+
+					</table>
+				</div>
+
+				<div class="plan-week__day">
+					<div class="plan-week__header">
+						Среда, 28.06.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr class="plan-week__table-null"> 
+							<td colspan="6">
+								Нет созданных задач
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="plan-week__day">
+					<div class="plan-week__header">
+						Четверг, 29.06.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr class="plan-week__table-null"> 
+							<td colspan="6">
+								Нет созданных задач
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="plan-week__day">
+					<div class="plan-week__header">
+						Пятница, 30.06.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr class="plan-week__table-null"> 
+							<td colspan="6">
+								Нет созданных задач
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="plan-week__day">
+					<div class="plan-week__header">
+						Суббота, 01.07.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr class="plan-week__table-null"> 
+							<td colspan="6">
+								Нет созданных задач
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="plan-week__day">
+					<div class="plan-week__header">
+						Воскресенье, 02.07.2017
+						
+					</div>
+					<table class="plan-week__table"> 
+						<tr>
+							<th>Название</th>
+							<th>Ответсвтвенный</th>
+							<th>Статус задачи</th>
+							<th>% завершения</th>
+							<th class="plan-week__task">
+								<div class="plan-week__task-left">Подзадачи</div>
+								<div class="plan-week__task-right">Статус подзадачи</div>
+							</th>
+							<th></th>
+						</tr>
+						<tr class="plan-week__table-null"> 
+							<td colspan="6">
+								Нет созданных задач
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="plan-week__btns"> 
+					<button class="btn btn__right btn__gray">Закрыть</button> 
+				</div>
+			</div>
+
+
+			
+			
+			
+		</div>
+	</div>	
+</div>
+<div class="footer__before"></div>
+	@@include('./file-include/footer.html')
+
+</body>
+</html>
