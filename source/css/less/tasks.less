@@ -1,0 +1,174 @@
+.tasks {
+
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &__hr {
+        width: 99.7%;
+        border: 1px solid #dddfe3;
+        margin: 25px 0 25px;
+        
+        &_bottom {
+            margin-top: @sp;
+        }
+    }
+
+    &__contentbox {
+        width: 100%;
+    }
+
+    &__block {
+        &-row {
+            width: 100%;
+            padding-bottom: 10px;
+            min-height: 28px;  
+            .clearfix;
+            &:first-child {
+                padding-top: 0;     
+            }
+            &_buttons {
+                padding-bottom: @sp;
+                margin-bottom: 0 !important;
+                .clearfix;
+            }
+
+            &_margin-bottom {
+                margin-bottom: 35px;
+            }
+
+            & .m-select__result {
+                margin-bottom: 0;
+                text-align: left;
+                padding-left: 25%;
+                min-height: 32px;
+            }
+        }
+
+        &_gray {
+            background-color: @gray;
+            padding: 0px 50px 10px;
+            &_row {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__name {
+        float: left;
+        width: 12%;
+        text-align: right;
+        color: #a1a1a1;
+        font-family: ;
+        padding-right: 10px;
+        font-size:16px;
+        line-height: 1.1;
+        font-family: 'Scada';
+        &_w {
+           display: table;
+           float: left;
+           width: 25%;
+           min-height: 40px;
+           text-align: left;
+           color: #a1a1a1;
+           padding-right: 10px;
+           font-size:16px;
+           line-height: 1.1;
+           font-family: 'Scada'; 
+           box-sizing: border-box;
+           
+           & span {
+              display: table-cell;
+              vertical-align: middle; 
+           }
+
+           & sup {
+            position: relative;
+            top: 0px;
+            color:@red;
+            font-size: 1.2em;
+           }
+        }
+
+        &_height-30 {
+            min-height: 30px;
+        }
+    }
+    &__text {
+        float: left;
+        text-align: left;
+        width: 75%;
+        font-family: Scada-Bold;
+        color: #000;
+        font-size:19px;
+        box-sizing: border-box;
+
+        & img {
+            width: 144px;
+        }
+
+        & .m-select__search {
+
+            &_short {
+                width: 31%;
+                
+                &:first-child {
+                    margin-right: 45px;
+                }
+            }
+
+            &_fr {
+                float: right;
+            }
+        }
+    }
+
+
+    &__textarea {
+        width: 75%;
+        height: 120px;
+        border:2px solid #dddfe3;
+        resize: none;
+        padding: 5px;
+        font-size: 16px;  
+        float: left;
+        box-sizing: border-box; 
+        font-family: Scada; 
+    }
+
+    
+    &__btns {
+        width: 100%;
+        text-align: center;
+        padding: 0 50px;
+        margin-bottom: 40px;
+
+        .btn {
+            display: inline-block;
+            font-size: 17px;
+            line-height: 17px;
+            margin-left: 15px;
+            min-width: 245px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

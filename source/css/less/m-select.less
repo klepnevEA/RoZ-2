@@ -21,6 +21,7 @@
 			padding: 5px 10px 4px;
 			cursor: pointer;
 			transition: all 0.2s;
+			margin: 0 2px 2px 0;
 			&:hover {
 				background: #01a3db ;
 			}
@@ -76,6 +77,28 @@
 			line-height: 2;
 		    font-size: 20px;
 		    padding: 0 10.5px;
+		}
+
+		&-text {
+			display: table;
+			min-height: 40px;
+			float: left;
+			color: #a1a1a1;
+		    font-size: 16px;
+		    line-height: 1.1;
+		    font-family: Scada;
+		    
+			& span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			& sup {
+				position: relative;
+			    top: 0px;
+			    color: #eb5427;
+			    font-size: 1.2em;
+			}
 		}
 	}
 	&__input {
