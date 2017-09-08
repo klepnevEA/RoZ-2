@@ -19,13 +19,15 @@
 			<div class="tasks__contentbox">
 				<div class="tasks__block_gray">
 						<hr class="tasks__hr"/>
+						
 						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Название<sup>*</sup></span></div>
 							<div class="tasks__text">
 								<input type="text" class="input input__all">
 							</div>
 						</div>
-						<div class="tasks__block-row tasks__block-row_margin-bottom">
+
+						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Дата в плане мероприятий<sup>*</sup></span></div>
 							<div class="tasks__text">
 								<div class="m-select m-select_bot">
@@ -42,22 +44,38 @@
 
 							</div>
 						</div>
+
+						<div class="tasks__block-row">
+							<ul class="m-select__result">
+								<li class="m-select__result-item">Иванова Светлана Васильевна<i class="icon icon-close"></i></li>
+							</ul>
+						</div>
+
 						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Ответственный<sup>*</sup></span></div>
 							<div class="tasks__text">
 								<input type="text" class="input input__all" placeholder="Начните вводить ФИО">
 							</div>
 						</div>
+
 						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Описание</span></div>
 							<textarea name="textarea" class="tasks__textarea"></textarea>
 						</div>
+
 						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Статус</span></div>
 							<div class="tasks__text">
-								<input type="text" class="input input__all">
+								<select tabindex="4" class="dropdown">
+									<option value="" class="label" value="">Не выполнена</option>
+									<option value="1">Статус 1</option>
+									<option value="2">Статус 2</option>
+									<option value="3">Статус 3</option>
+									<option value="4">Статус 4</option>
+								</select>
 							</div>
 						</div>
+
 						<div class="tasks__block-row">
 							<div class="tasks__name_w"><span>Ссылка<br> на мероприятие</span></div>
 							<div class="tasks__text">
