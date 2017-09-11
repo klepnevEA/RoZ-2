@@ -9,7 +9,7 @@
     &__hr {
         width: 99.7%;
         border: 1px solid #dddfe3;
-        margin: 25px 0 25px;
+        margin: 0 0 20px 0;
         
         &_bottom {
             margin-top: @sp;
@@ -21,14 +21,13 @@
     }
 
     &__block {
+        padding: 0px 50px @sp;
+
         &-row {
             width: 100%;
             padding-bottom: 10px;
             min-height: 28px;  
             .clearfix;
-            &:first-child {
-                padding-top: 0;     
-            }
             &_buttons {
                 padding-bottom: @sp;
                 margin-bottom: 0 !important;
@@ -45,28 +44,30 @@
                 padding-left: 25%;
                 min-height: 32px;
             }
+
+            &_padding-top {
+                padding-top: 25px;
+            }
+
+            &_padding-bottom {
+                padding-bottom: @sp/3;
+            }
         }
 
         &_gray {
             background-color: @gray;
-            padding: 0px 50px 10px;
-            &_row {
-                margin-bottom: 20px;
-            }
+        }
+
+        &_white {
+            padding-top: @sp;
+            padding-bottom: @sp;
+            background-color: #fff;
+            border-top: 2px solid #dddfe3;
+            border-bottom: 2px solid #dddfe3;
         }
     }
 
     &__name {
-        float: left;
-        width: 12%;
-        text-align: right;
-        color: #a1a1a1;
-        font-family: ;
-        padding-right: 10px;
-        font-size:16px;
-        line-height: 1.1;
-        font-family: 'Scada';
-        &_w {
            display: table;
            float: left;
            width: 25%;
@@ -90,13 +91,13 @@
             color:@red;
             font-size: 1.2em;
            }
-        }
+
 
         &_height-30 {
             min-height: 30px;
         }
     }
-    &__text {
+    &__info {
         float: left;
         text-align: left;
         width: 75%;
@@ -152,6 +153,68 @@
             margin-left: 15px;
             min-width: 245px;
         }
+    }
+
+    &__text {
+
+        font-size: 14px;
+        font-family: Scada;
+        line-height: 1.8;
+        text-align: left;
+        
+        &-tite {
+            margin-bottom: @sp;
+            font-size: 24px;
+            font-family: Scada-Bold;
+            text-align: left;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        margin-bottom: 20px;
+            &-td {
+                height: 35px;
+                vertical-align: top;
+
+                &:first-child {
+                    width: 230px;
+                    font-size: 16px;
+                    font-family: Scada;
+                    color: #a1a1a1;
+                    text-align: left;
+                }
+
+                 &:nth-child(2) {
+                    font-size: 16px;
+                    font-family: Scada;
+                    text-align: left;
+                }
+
+                &_underline {
+                    text-decoration: underline;
+                }
+
+                &_gray {
+                    color: #a1a1a1;
+                }
+            }
+
+            & .plan-week__persent-line {
+                background-color: #dddfe3;
+            }
+
+            &-link {
+
+                color: rgb(1, 174, 234);
+                text-decoration: underline;
+            }
+    }
+
+    &__buttons-block {
+        position: absolute;
+        top: @sp*2;
+        right: 50px;
     }
 }
 
