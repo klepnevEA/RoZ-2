@@ -11,7 +11,7 @@
 
 <div class="win-login">
 	<div class="win-login__block win-login__block_width-780">
-		<h2 class="win-login__title win-login__title_padding-bottom">Новая задача</h2>
+		<h2 class="win-login__title win-login__title_padding-bottom">Редактирование задачи</h2>
 		<a href="index.html" class="win-login__close"><i class="icon-cross"></i></a>
 		
 
@@ -23,7 +23,7 @@
 						<div class="tasks__block-row">
 							<div class="tasks__name"><span>Название<sup>*</sup></span></div>
 							<div class="tasks__info">
-								<input type="text" class="input input__all">
+								<input type="text" class="input input__all" value="Международная выставка">
 							</div>
 						</div>
 
@@ -32,7 +32,7 @@
 							<div class="tasks__info">
 								<div class="m-select m-select_bot">
 									<div class="m-select__search m-select__search_short">
-										<input type="text" data-provide="datepicker" class="m-select__input">
+										<input type="text" data-provide="datepicker" class="m-select__input" >
 										<button class="m-select__input-btn"><i class="mdi mdi-calendar-today"></i></button>
 									</div>
 									<div class="m-select__search-text"><span>Срок выполнения<sup>*</sup></span></div>
@@ -54,13 +54,13 @@
 						<div class="tasks__block-row">
 							<div class="tasks__name"><span>Ответственный<sup>*</sup></span></div>
 							<div class="tasks__info">
-								<input type="text" class="input input__all" placeholder="Начните вводить ФИО">
+								<input type="text" class="input input__all input_disabled" placeholder="Начните вводить ФИО" disabled >
 							</div>
 						</div>
 
 						<div class="tasks__block-row">
 							<div class="tasks__name"><span>Описание</span></div>
-							<textarea name="textarea" class="tasks__textarea"></textarea>
+							<textarea name="textarea" class="tasks__textarea"><Описание задачи></textarea>
 						</div>
 
 						<div class="tasks__block-row">

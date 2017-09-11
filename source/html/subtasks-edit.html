@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+
+
+<div class="win-login">
+	<div class="win-login__block win-login__block_width-780">
+		<h2 class="win-login__title  win-login__title_padding-bottom">Редактирование подзадачи</h2>
+		<a href="index.html" class="win-login__close"><i class="icon-cross"></i></a>
+		
+
+		<div class="tasks">
+			<div class="tasks__contentbox">
+				<div class="tasks__block tasks__block_gray">
+						<hr class="tasks__hr"/>
+						<div class="tasks__block-row">
+							<div class="tasks__name tasks__name_height-30"><span>Название задачи</span></div>
+							<div class="tasks__info">
+								Международная выставка
+							</div>
+						</div>
+
+						<div class="tasks__block-row">
+							<div class="tasks__name"><span>Название подзадачи<sup>*</sup></span></div>
+							<div class="tasks__info">
+								<input type="text" class="input input__all" value="Подготовка зала">
+							</div>
+						</div>
+
+						<div class="tasks__block-row">
+							<div class="tasks__name"><span>Срок выполнения<sup>*</sup></span></div>
+							<div class="tasks__info">
+								<div class="m-select m-select_bot">
+									<div class="m-select__search m-select__search_short">
+										<input type="text" data-provide="datepicker" class="m-select__input">
+										<button class="m-select__input-btn"><i class="mdi mdi-calendar-today"></i></button>
+									</div>
+								</div>	
+							</div>
+						</div>
+
+						<div class="tasks__block-row tasks__block-row_padding-bottom">
+							<ul class="m-select__result">
+								<li class="m-select__result-item">Иванова Светлана Васильевна<i class="icon icon-close"></i></li>
+							</ul>
+						</div>
+
+						<div class="tasks__block-row">
+							<div class="tasks__name"><span>Ответственный<sup>*</sup></span></div>
+							<div class="tasks__info">
+								<input type="text" class="input input__all input_disabled" disabled placeholder="Начните вводить ФИО">
+							</div>
+						</div>
+
+						<div class="tasks__block-row">
+							<div class="tasks__name"><span>Описание</span></div>
+							<textarea name="textarea" class="tasks__textarea"><Описание задачи></textarea>
+						</div>
+
+						<div class="tasks__block-row">
+							<div class="tasks__name"><span>Статус</span></div>
+							<div class="tasks__info">
+								<select tabindex="4" class="dropdown">
+									<option value="" class="label" value="">Не выполнена</option>
+									<option value="1">Статус 1</option>
+									<option value="2">Статус 2</option>
+									<option value="3">Статус 3</option>
+									<option value="4">Статус 4</option>
+								</select>
+							</div>
+						</div>
+
+
+
+						<hr class="tasks__hr tasks__hr_bottom"/>
+				</div>
+
+				<div class="tasks__block-row tasks__block-row_buttons">
+					<div class="tasks__btns">
+						<button class="btn btn__gray" >Закрыть</button>
+						<button class="btn btn__blue" >Сохранить</button>
+					</div>
+				</div>			
+
+			</div>
+		</div>
+
+	</div>
+</div> 
+
+
+
+<div class="footer__before"></div>
+
+</div>
+
+	@@include('./file-include/footer.html')
+
+</body>
+</html>
