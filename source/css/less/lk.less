@@ -4,6 +4,43 @@
 		width: 1150px;
 		.clearfix;  
 	}
+	&__link {
+		margin-left: 220px;
+		font-size: 16px;
+		font-family: Scada;
+		color: #727272;
+		margin-bottom: -8px;
+		line-height: 1;
+		.clearfix;
+		a {
+			color: black;
+			text-decoration: underline;
+			font-size: 16px;
+		}
+		i {
+			font-size: 30px;
+			float: left;
+			margin-top: -6px;
+			margin-right: 5px;
+		}
+		&_task {
+			i {
+				color: @green;
+			
+			}
+			&-value {
+				color: @green;
+				font-family: Scada-Bold;
+				font-size: 20px;
+			}
+		}
+		&_goplan {
+			i{
+				color: @blue;
+				margin-top: -8px;
+			}
+		}
+	}
 	&__h2 {
 		float: left;
 		margin: 0;
@@ -91,6 +128,21 @@
 			transition: all 0.2s;
 			&:hover {
 				background: lighten(@blue, 10%);
+			}
+		}
+		&-go-lk {
+			color: @blue;
+			font: 15px Scada;
+			position: absolute;
+			top: 240px;
+			left: 40px;
+			z-index: 10;
+			i {
+				font-size: 24px;
+				margin-right: 5px;
+				display: inline-block;
+				margin-top: -5px;
+				float: left;
 			}
 		}
 		&-title {
@@ -519,6 +571,222 @@
 				position: relative;
 				top: 2px;
 				right: 5px;
+			}
+		}
+		&__map {
+			min-height: 600px;
+			position: relative;
+			&-label {
+				display: inline-block;
+				color: black;
+				font-size: 15px;
+				margin-right: @sp;
+				font-family: Scada;
+
+
+			}
+			&-tabs {
+				position: absolute;
+				top: 40px;
+				left: 0;
+				font-family: Scada;
+			}
+			&-tab {
+				display: inline-block;
+				background: white;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				color: #a1a1a1;
+				text-align: center;
+				transition: all 0.2s;
+				cursor: pointer;
+				&:hover {
+					background: darken(white, 50%);
+					color: white;
+				}
+				&.active {
+					background: @blue;
+					color: white;
+				}
+			}
+			&-info {
+				position: absolute;
+				left: 0;
+				top: 125px;
+				width: 240px;
+			}
+			&-logo {
+				background: url(../../img/v-logo.png) no-repeat;
+				height: 80px;
+				width: 100px;
+			}
+			&-value {
+				color: @red;
+				font-size: 72px;
+				font-family: Scada-Bold;
+			}
+			&-text {
+				color: black;
+				font: 24px/1.2 Scada-Bold;
+
+			}
+		}
+		&__report {
+			.clearfix;
+			padding-bottom: 40px;
+			border-bottom: 2px solid #dddfe3;
+			&-regions {
+				margin-bottom: 60px;
+				&-title {
+					font: 30px/1 Scada-Bold;
+					color: black;
+					text-transform: uppercase;
+					margin-bottom: 25px;
+					span {
+						color: @red;
+					}
+				}
+				&-star {
+					background: url(../../img/star-krm.svg) no-repeat;
+					position: relative;
+					width: 51px;
+					height: 74px;
+					position: absolute;
+					top: -20px;
+					right: 50px;
+
+				}
+				&_top {
+					.lk_worker__report-regions-title {
+						span {
+							color: @blue;
+						}
+					}
+					.lk_worker__report-regions-value {
+						background: @blue;
+					}
+				}
+				&-list {
+
+				}
+				&-item {
+					margin-bottom: 3px;
+					&.active {
+						.lk_worker__report-regions-name {
+							font-family: Scada-Bold;
+						}
+					}
+				}
+				&-value {
+					display: inline-block;
+					color: white;
+					background: @red;
+					width: 85px;
+					text-align: center;
+					font: 22px Scada;
+					margin-right: 5px;
+					height: 28px;
+					line-height: 28px;
+				}
+				&-name {
+					display: inline-block;
+					font: 19px Scada;
+					width: calc(~"100% - 95px");
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					height: 27px;
+					vertical-align: middle;
+				}
+			}
+			&-tasks {
+				&-item {
+					padding: 20px;
+					background: white;
+					position: relative;
+					margin-bottom: @sp;
+				}
+				&-h3 {
+					font: 30px/0.8 Scada-Bold;
+					height: 65px;
+					padding-bottom: @sp;
+					display: table-cell;
+					vertical-align: bottom;
+					.clearfix;
+				}
+				&-date {
+					font: 15px Scada-bold;
+					color: black;
+					margin-bottom: @sp;
+					i {
+						color: #797979;
+						margin-right: 5px;
+						
+					}
+				}
+				&-text {
+					font: 15px/1.3 Scada;
+					color: #727272;
+					margin-bottom: 20px;
+				}
+				&-user {
+					color: #727272;
+					font: 15px Scada;
+					span {
+						color: black;
+						font: 15px Scada-bold;
+					}
+				}
+				&-icons {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+				&-icon {
+					background: @blue;
+					width: 45px;
+					height: 45px;
+					text-align: center;
+					color: white;
+					float: right;
+					font: 14px/45px Scada-Bold;
+					i {
+						font-size: 25px;
+					}
+					&_red {
+						background: @red;
+					}
+					&_green {
+						background: @green;
+					}
+					&_b75 {
+						background: darken(@blue, 10%);
+					}
+					&_b50 {
+						background: @blue;
+					}
+					&_b25 {
+						background: lighten(@blue, 10%);
+					}
+				}
+				&-all {
+					text-align: right;
+					font: 20px/1 Scada-Bold;
+					color: black;
+					margin-top: 25px;
+					cursor: pointer;
+					transition: all 0.2s;
+					&:hover {
+						color: lighten(black, 40%);
+					}
+					i {
+						float: right;
+						font-size: 24px;
+						margin-left: 5px;
+						margin-top: -2px;
+					}
+				}
 			}
 		}
 	}
