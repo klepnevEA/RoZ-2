@@ -68,7 +68,7 @@
 								</div>
 							</div>							
 
-							<div class="plan__line">
+							<div class="plan__line plan__line_margin-bottom">
 								<div class="plan__label">Статус</div>
 								<div class="plan__line-input  plan__line-input_width-415">	
 										<div class="plan__info">
@@ -82,24 +82,26 @@
 										</div>
 								</div>
 							</div>
-
-
-							<div class="plan__line">
-								<div class="plan__label">Поиск</div>
-								<div class="plan__line-input plan__line-input_width-415">	
-									<div class="m-select m-select_bot">
-										<input type="text" class="input input__all" placeholder="Поиск по ФИО" >
-									</div>
-								</div>
-							</div>
-
-							<div class="btn__plan-wrap">
-								<button class="btn btn__right btn__blue" type="submit">Найти</button>
-								<button class="btn btn__right btn__gray btn_disabled" disabled type="submit">Сбросить фильтры</button>
-							</div>
 						</div>
 					</div>
 
+				</div>
+
+				<div class="row">
+					<div class="col-xs-7">
+						<div class="plan__line">
+							<div class="plan__label">Поиск</div>
+							<div class="plan__line-input plan__line-input_width-415">	
+								<div class="m-select m-select_bot">
+									<input type="text" class="input input__all" placeholder="Поиск по ФИО" >
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-5">
+						<button class="btn btn__right btn__blue btn__small-text" type="submit">Найти</button>
+						<button class="btn btn__right btn__gray-light btn__small-text" type="submit">Сбросить фильтры</button>
+					</div>
 				</div>
 			</div>
 
@@ -360,6 +362,31 @@
 				</table>
 
 
+			</div>
+
+
+			<div class="pagination__wrap">
+				<nav aria-label="Page navigation">
+				  <ul class="pagination">
+				    <li class="pagination__item pagination__item_no-back pagination__item_off">
+				      <a href="#" aria-label="Previous" class="pagination__link">
+				       	<i class="icon-st-left"></i>
+				      </a>
+				    </li>
+				    <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+				    <li class="pagination__item pagination__item_no-back"><a href="#" class="pagination__link">...</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link">165</a></li>
+				    <li class="pagination__item pagination__item_no-back">
+				      <a href="#" aria-label="Next" class="pagination__link">
+				        <i class="icon-st-right"></i>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
 			</div>
 
 
