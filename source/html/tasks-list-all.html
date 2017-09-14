@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+
+	<span id="DeltaBreadcrumbDropdown">
+			<div class="breadcrumb">
+				<span>
+					<span>
+						<a class="breadcrumb-item breadcrumb-item-prev" href="/Pages/Main.aspx">Портал Знание</a> 
+					</span>
+					<span></span>
+					<span>
+						<a class="breadcrumb-item" href="/news/Pages/default.aspx">Новости</a>
+					</span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</span>
+
+	<div class="plan gray-back">
+
+		<div class="plan__wrap">
+
+			<h2 class="lk-edit__title">Задачи</h2>
+
+			<div class="plan__block">	
+				
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div class="plan__item">
+
+							<div class="plan__line">
+								<div class="plan__label">Срок выполнения</div>
+								<div class="plan__line-input">
+									<div class="m-select m-select_bot">
+										<div class="m-select__search m-select__search_week">
+											<input type="text" data-provide="datepicker" class="m-select__input" value="26.06.2017  —  02.07.2017" style="width: 235px;">
+											<button class="m-select__input-btn"><i class="mdi mdi-calendar-today"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="plan__line">
+								<div class="plan__label">Отобразить</div>
+								<div class="plan__line-input">
+									<div class="btn__radio-wrap">
+										<div class="btn__radio-elem">
+											<input type="radio" class="btn__radio" name="radio-tasks-list-all" id="radio" />
+											<label for="radio">Все задачи</label>
+										</div>
+										<div class="btn__radio-elem">
+											<input type="radio" class="btn__radio" name="radio-tasks-list-all" id="radio2" />
+											<label for="radio2">Назначенные на меня задачи </label>
+										</div>
+										<div class="btn__radio-elem">
+											<input type="radio" class="btn__radio" name="radio-tasks-list-all" id="radio3" />
+											<label for="radio3">Мои поручения</label>
+										</div>
+									</div>
+								</div>
+							</div>							
+
+							<div class="plan__line">
+								<div class="plan__label">Статус</div>
+								<div class="plan__line-input  plan__line-input_width-415">	
+										<div class="plan__info">
+											<select tabindex="4" class="dropdown">
+												<option value="" class="label" value="">Все</option>
+												<option value="1">Все 1</option>
+												<option value="2">Все 2</option>
+												<option value="3">Все 3</option>
+												<option value="4">Все 4</option>
+											</select>
+										</div>
+								</div>
+							</div>
+
+
+							<div class="plan__line">
+								<div class="plan__label">Поиск</div>
+								<div class="plan__line-input plan__line-input_width-415">	
+									<div class="m-select m-select_bot">
+										<input type="text" class="input input__all" placeholder="Поиск по ФИО" >
+									</div>
+								</div>
+							</div>
+
+							<div class="btn__plan-wrap">
+								<button class="btn btn__right btn__blue" type="submit">Найти</button>
+								<button class="btn btn__right btn__gray btn_disabled" disabled type="submit">Сбросить фильтры</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="tasks-list__wrap">
+				<table class="tasks-list__table">
+					<thead class="tasks-list__thead">
+						<tr class="tasks-list__thead-tr">
+							<td class="tasks-list__thead-td" style="width:235px;" >Название <i class="mdi mdi-triangle active"></i></td>
+							<td class="tasks-list__thead-td" style="width:150px;"><span>Срок<br> выполнения</span> <i class="mdi mdi-triangle"></i></td>
+							<td class="tasks-list__thead-td">Создал <i class="mdi mdi-triangle"></i></td>
+							<td class="tasks-list__thead-td">Ответственный <i class="mdi mdi-triangle"></i></td>
+							<td class="tasks-list__thead-td" style="width:145px;">Статус <i class="mdi mdi-triangle"></i></td>
+							<td class="tasks-list__thead-td" style="width:150px;">% завершения <i class="mdi mdi-triangle"></i></td>
+							<td class="tasks-list__thead-td" style="width:110px;">Действия <i class="mdi mdi-triangle"></i></td>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<!-- первый блок -->
+						<tr class="tasks-list__delimiter" colspan="7">
+						<tr class="tasks-list__tr tasks-list__tr_title">
+							<td class="tasks-list__td"><a href="#"><i class="mdi mdi-chevron-down tasks-list__chevron-down"></i>День физики <i class="mdi mdi-bell-ring tasks-list__bell"></i></a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-not-done">Не выполнена</td>
+							<td class="tasks-list__td">
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">50</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 50%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-plus"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr">
+							<td class="tasks-list__td"><a href="#">Подготовка площадки</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr">
+							<td class="tasks-list__td"><a href="#">Подбор лектора</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-not-done">Не выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr">
+							<td class="tasks-list__td"><a href="#">Подбор аппаратуры</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-not-done">Не выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+
+						<!-- второй блок -->
+
+						<tr class="tasks-list__delimiter" colspan="7">
+						<tr class="tasks-list__tr tasks-list__tr_title tasks-list__tr_ready">
+							<td class="tasks-list__td"><a href="#"><i class="mdi mdi-chevron-down  tasks-list__chevron-down"></i>День физики <i class="mdi mdi-bell-ring tasks-list__bell"></i></a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td">
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">100</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 100%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-plus"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black btn_disabled" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr">
+							<td class="tasks-list__td"><a href="#">Подготовка площадки</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black btn_disabled" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr  tasks-list__tr_ready">
+							<td class="tasks-list__td"><a href="#">Подбор лектора</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black btn_disabled" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+						<tr class="tasks-list__tr  tasks-list__tr_ready">
+							<td class="tasks-list__td"><a href="#">Подбор аппаратуры</a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td"></td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black btn_disabled" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+
+
+						<!-- третий блок -->
+
+						<tr class="tasks-list__delimiter" colspan="7">
+						<tr class="tasks-list__tr tasks-list__tr_title tasks-list__tr_alert">
+							<td class="tasks-list__td"><a href="#"><i class="mdi mdi-chevron-down tasks-list__chevron-down"></i>Фестиваль знаний <i class="mdi mdi-bell-ring tasks-list__bell"></i></a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td">
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">100</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 100%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-plus"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_blue" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+
+						<!-- четвертый блок -->
+
+						<tr class="tasks-list__delimiter" colspan="7">
+						<tr class="tasks-list__tr tasks-list__tr_title  tasks-list__tr_ready">
+							<td class="tasks-list__td"><a href="#"><i class="mdi mdi-chevron-down tasks-list__chevron-down"></i>Фестиваль знаний 2 <i class="mdi mdi-bell-ring tasks-list__bell"></i></a></td>
+							<td class="tasks-list__td">30.06.2017</td>
+							<td class="tasks-list__td"><a href="#">Петров Валентин Иванович</a></td>
+							<td class="tasks-list__td"><a href="#">Анищенков Николай Иванович</a></td>
+							<td class="tasks-list__td tasks-list__td_status-done">Выполнена</td>
+							<td class="tasks-list__td">
+								<div class="plan-week__persent">
+									<div class="plan-week__persent-value">100</div>
+									<div class="plan-week__persent-line">
+										<div class="plan-week__persent-line-ok" style="width: 100%"></div>
+									</div>
+								</div>
+							</td>
+							<td class="tasks-list__td">
+								<div class="tasks-list__btn-wrap">
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-plus"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_blue btn_disabled" type="submit">
+										<i class="mdi mdi-lead-pencil"></i>
+									</button>
+									<button class="btn btn__icon btn__icon_black btn_disabled" type="submit">
+										<i class="mdi mdi-close"></i>
+									</button>
+								</div>
+							</td>							
+						</tr>
+					</tbody>
+
+
+				</table>
+
+
+			</div>
+
+
+		</div>
+	</div>	
+</div>
+<div class="footer__before"></div>
+	@@include('./file-include/footer.html')
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+.tasks-list {
+
+    &__table {
+        width: 100%;
+        position: relative;
+        font-size: 14px;
+    }
+
+    &__thead {
+        background-color: #4f5c64;
+
+
+        &-td {
+            padding: 0px @sp;
+            color: #fff;
+            font-family: Scada-bold; 
+            text-transform: uppercase;
+            white-space: nowrap;
+            height: 65px;
+            vertical-align: middle;
+            
+            &:hover {
+                cursor: pointer;
+            }
+
+            & i {
+                position: relative;
+                top: -1px;
+                left: 4px;
+                color: #a6abaf;
+                font-size: 10px;
+                
+                &.active {
+                    color: #fff;
+                }
+                
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+
+    &__delimiter {
+        background-color: @gray;
+        height: 10px;
+    }
+
+
+
+    &__td {
+        position: relative;
+        font-size: 15px;
+        font-family: Scada;
+        padding: @sp/3 @sp;
+        height: 60px;
+        
+        & a {
+            color: #000;
+            text-decoration: underline;
+            
+            &:hover,
+            &:focus {
+                color: #000;
+            }
+        }
+        
+        
+        &:first-child {
+           font-family: Scada-bold;  
+           white-space: nowrap;
+           padding-left: 50px;
+           
+            & .tasks-list__chevron-down {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                font-size: 30px;
+                line-height: 0;
+                padding: 20px;
+               
+           }
+        }
+
+
+        &_status-not-done {
+            color: #a1a1a1;
+            white-space: nowrap;
+        }
+
+        &_status-done {
+            color: @green;
+        }
+
+        & .plan-week__persent {
+           position: relative;
+            top: 10px;
+        }
+    }
+
+    &__tr {
+        background-color: #f7f7f7;
+        border-bottom: 2px solid #dddfe3;
+                
+        &_title {
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        &_ready {
+            color: #a1a1a1;
+            & a {
+                color: #a1a1a1;
+                
+                &:hover,
+                &:focus {
+                    color: #a1a1a1;
+                }
+            }
+        }
+
+        &_alert {
+            & .tasks-list__td {
+                &:first-child {
+                    a {
+                        color: @green;
+                    }
+
+                    .tasks-list__bell {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn-wrap {
+        position: absolute;
+        top: 0;
+        right: -1px;
+        white-space: nowrap;
+    }
+
+    &__bell {
+        display: none;
+        position: relative;
+        top: @sp/3;
+        left: @sp/3;
+        font-size: 23px;
+        line-height: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
