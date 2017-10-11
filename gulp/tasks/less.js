@@ -10,7 +10,6 @@ var path = require('path');
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/css/css'))
-      .pipe($.browserSync.stream());
-
-  })
+      .pipe($.browserSync.stream()); 
+	})
 };
