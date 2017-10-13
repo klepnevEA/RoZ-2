@@ -8,27 +8,41 @@
 
     &__thead {
         background-color: #4f5c64;
+        height: 65px;
 
 
         &-td {
-            padding: 0px @sp;
+            padding: 0px @sp !important;
             color: #fff;
-            font-family: Scada-bold; 
-            text-transform: uppercase;
-            white-space: nowrap;
-            height: 65px;
             vertical-align: middle;
-            
+            height: 65px;
+
+           
+            span {
+                line-height: 1.2;
+                display: table-cell;
+                vertical-align: middle;
+                height: 65px; 
+                font-family: Scada-bold; 
+                text-transform: uppercase;
+                white-space: nowrap;
+
+            }
+
+           
             &:hover {
                 cursor: pointer;
             }
 
             & i {
-                position: relative;
-                top: -1px;
-                left: 4px;
+                
                 color: #a6abaf;
                 font-size: 10px;
+                display: table-cell;
+                vertical-align: middle;
+                height: 65px;
+                padding-left: 10px;
+               
                 
                 &.active {
                     color: #fff;
@@ -36,6 +50,13 @@
                 
                 &:before {
                     transform: rotate(180deg);
+                }
+            }
+            &.up-t {
+                i {
+                    &:before {
+                     transform: rotate(0deg);
+                    } 
                 }
             }
         }
