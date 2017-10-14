@@ -3,30 +3,102 @@
 			<div class="row">
 				<div class="col-xs-3">
 					<a href="#" class="header__logo"></a>
-					<a href="#" class="header__map">Интерактивная
-карта</a>
+					<a href="#" class="header__map"><span>Интерактивная карта</span></a>
 				</div>
 				<div class="col-xs-9">
 					<div class="header__top">
+						<div class="header__top-btns mob">
+							<div class="header__menu-btn header__menu-btn_map"></div>
+							<div class="header__menu-btn"><i class="mdi mdi-magnify"></i></div>
+							<div class="header__menu-btn"><i class="mdi mdi-account-circle"></i></div>
+							<div class="header__menu-btn "><i class="mdi mdi-menu"></i></div>
+						</div> 
 						<div class="header__top-sity">
 							Москва <i class="icon-doun"></i>
 						</div>
+						
+
+						<div class="header__top-search-mob mob">
+							<div class="header__top-search-mob-box">
+								<div class="header__top-search-mob-wrap">
+									<input class="header__top-search-mob-input" type="text">
+									<i class="mdi mdi-magnify"></i>
+									<i class="mdi mdi-close"></i>
+								</div>
+							</div>
+						</div>
+						<div class="header__mobilmenu mob">
+								<div class="header__mobilmenu-header">
+									<div class="header__mobilmenu-logo"></div>
+									<div class="header__mobilmenu-text">
+										<div class="header__mobilmenu-loc">Ваш регион:</div>
+										<div class="header__top-sity">
+											Москва <i class="icon-doun"></i>
+										</div>
+									</div>
+									<i class="mdi mdi-close"></i> 
+								</div>
+									<div class="header__mobilmenu-list">
+										<ul>
+											<li>Календарь мероприятий<i class="mdi mdi-chevron-down"></i></li>
+											<li>Новости <i class="mdi mdi-chevron-down"></i></li>
+											<li>Об обществе <i class="mdi mdi-chevron-down"></i></li>
+											<li>Медиатека <i class="mdi mdi-chevron-down"></i></li>
+											<li>Вебинары <i class="mdi mdi-chevron-down"></i></li>
+										</ul>
+									</div>
+									
+								
+						</div>
+
+						<script>
+							$( document ).ready(function() {
+								$(".header__menu-btn .mdi-magnify" ).click(function() {
+								  $(".header__top-search-mob-box" ).toggleClass( "active");
+								});
+								$(".header__top-search-mob-wrap .mdi-close" ).click(function() {
+								  $(".header__top-search-mob-box" ).toggleClass( "active");
+								});
+								$(".header__menu-btn .mdi-menu" ).click(function() {
+								  $(".header__mobilmenu" ).toggleClass( "active");
+								});
+								$(".header__mobilmenu .mdi-close" ).click(function() {
+								  $(".header__mobilmenu" ).toggleClass( "active");
+								});
+								
+
+							});
+						</script>
+
+
+
+
+
 						<div class="header__top-search">
 							<input type="text" name="" id="" class="input input_search" placeholder="Поиск по сайту">
 							<button class="header__top-search-btn"><i class="icon-magnifier"></i></button>
 						</div>
-						<div class="header__top-spectacles">	
-						<a href="#" ><i class="icon-spectacles"></i></a>
+						<div class="header__top-spectacles">
+								<a href="#" ><i class="icon-spectacles"></i></a>
 						</div>
 						<div class="header__top-authorization">
-							<a href="login-2.html" class="header__top-authorization-link"><i class="icon-user"></i> Личный кабинет</a>
+							<a href="login-2.html" class="header__top-authorization-link">
+								<i class="icon-user"></i> <span>Личный кабинет</span>
+							</a>
 						</div>
 						<div class="header__top-btn">
 							<button class="btn btn-header">Написать нам</button>
 						</div>
 
 
+						
+
+
 					</div>
+
+
+			
+		
 					<div class="header__menu">
 						<ul class="header__menu-list">
 							<li class="header__menu-item"><a href="events.html" class="header__menu-link">Календарь мероприятий</a></li>

@@ -1,4 +1,5 @@
 @import "display-n.less";
+@import "header.less";
 @import "management.less";
 @import "activities-calendar.less";
 @import "event-block.less"; 
@@ -10,7 +11,7 @@
 
 .header__content {
 	width: calc(~"100% - 30px");
-	display: none;
+	
 }
 .wrapper {
 	min-width: 100%;
@@ -19,3 +20,54 @@
 	
 	
 }
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.mob {
+	display: block;
+}
+.desk {
+  display: none;
+}
+
+.link-all {
+	width: 100%;
+	line-height: 1.1;
+	text-align: center;
+	.clearfix; 
+	&__link {
+		line-height: 1.1;
+		color: black;
+		color: black;
+		font-size: 18px;
+		border-top: 1px solid #e5e5e5;
+		font-family: Scada-bold;
+		display: inline-block;
+		text-decoration: none;
+		border: none;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		&:hover {
+			text-decoration: none;
+		}
+		
+		i {
+			margin-left: 5px;
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			
+		}
+
+	}
+		
+	}

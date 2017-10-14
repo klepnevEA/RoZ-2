@@ -1,0 +1,214 @@
+.header {
+	&__map {
+		width: 100px;
+		height: 50px;
+		display: none;
+		
+	}
+
+	&__menu {
+		display: none;
+		&-btn {
+			width: 30px;
+			height: 30px;
+			font-size: 30px;
+			cursor: pointer;
+			color: #01aeea;
+			padding: 0;
+			margin: 0;
+			line-height: 30px;
+			transition: all 0.2s;
+			&_map {
+				background: url(../../img/map.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 48px;
+			}
+			
+			&:hover {
+				color: black;
+			}
+		}
+	}
+	&__top {
+		
+		&-spectacles, &-authorization {
+			display: none;
+		}
+		&-sity {
+			display: none;
+		}
+		&-btn {
+			display: none;
+		}
+		&-btns {
+			display: flex; 
+			float: right; 
+			min-width: 195px;
+			align-items: center;
+			justify-content: space-between;
+			&.mob {
+				display: flex;
+			}
+		}
+		&-authorization {
+			width: 25px;
+			height: 25px;
+			font-size: 25px;
+			cursor: pointer;
+			color: #01aeea;
+			float: right;
+			padding: 0;
+			margin: 0;
+			line-height: 25px;
+			span {
+				display: none;
+			}
+		}
+		&-btns {
+
+		}
+	}
+	&__top-search {
+		display: none;
+		&-mob {
+			&-box {
+				display: none;
+				background: #01aeea;
+				color: white;
+				position: fixed;
+				top: 0;
+				right: 0;
+				left: 0;
+				padding: 20px 18px 40px;
+				z-index: 1000;
+				&.active {
+					display: block; 
+				}
+			}
+			
+			&-input {
+				border: none;
+				background: none;
+				color: white;
+				border-bottom: 1px solid white;
+				padding:  7px 30px;
+				width: 100%;
+				outline: none;
+				font-size: 16px;
+				font-family: Scada;
+
+			}
+			&-wrap {
+				position: relative;
+				.mdi-magnify {
+					width: 25px;
+					height: 25px;
+					position: absolute;
+					top: 2px;
+					left: 0;
+					font-size: 25px;
+					cursor: pointer;
+				}
+				.mdi-close {
+					width: 25px;
+					height: 25px;
+					position: absolute;
+					top: 2px;
+					right: 0;
+					font-size: 25px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	&__mobilmenu {
+		background: white;
+		color: 	black;
+		display: none;
+		position: relative;
+		
+		&.mob {
+			display: none;
+		}
+		&.active {
+
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			.header__top-sity {
+				display: block;
+			}
+		}
+		.mdi-close {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 15px;
+			right: 10px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		&-loc {
+			color: #a1a1a1;
+			font-size: 16px;
+			font-family: Scada;
+		}
+		&-header {
+			padding: 30px 0;
+			box-sizing: border-box;
+			height: 110px;
+			.clearfix;
+		}
+		.header__top-sity {
+			font-size: 26px;
+			color: 	black;
+			margin-top: 0;
+			.icon-doun {
+				font-size: 17px;
+			}
+		}
+		&-logo {
+			float: left;
+			width: 55px;
+			height: 55px;
+			background: url(../../img/logo-mini.png) no-repeat;
+			background-position: left top;
+			background-size: 36px auto;
+			margin-left: 18px;
+
+		}
+		&-text {
+			float: left;
+		}
+		&-list {
+			display: block;
+			background: #f3f3f3;
+			padding: 40px 30px 40px 40px;
+			ul {
+				li {
+					font-size: 24px;
+					color: black;
+					display: block;
+					padding: 10px 0 ;
+					position: relative;
+					font-family: Scada;
+					line-height: 1.1;
+					padding-right: 	40px;
+					i.mdi-chevron-down {
+						position: absolute;
+						top: 7px;
+						right: 0;
+						color: #01aeea;
+						font-size: 30px;
+						transform: rotate(-90deg);
+					}
+				}
+			}
+		}
+	}
+}
