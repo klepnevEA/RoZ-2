@@ -40,11 +40,27 @@
 								</div>
 									<div class="header__mobilmenu-list">
 										<ul>
-											<li>Календарь мероприятий<i class="mdi mdi-chevron-down"></i></li>
-											<li>Новости <i class="mdi mdi-chevron-down"></i></li>
-											<li>Об обществе <i class="mdi mdi-chevron-down"></i></li>
-											<li>Медиатека <i class="mdi mdi-chevron-down"></i></li>
-											<li>Вебинары <i class="mdi mdi-chevron-down"></i></li>
+											<li class="header__mobilmenu-item"><span>Календарь мероприятий</span> <i class="mdi mdi-chevron-down"></i>
+												<ul class="header__mobilmenu-sublist">
+													<li>История и современность</li>
+													<li class="active">Документы</li>
+													<li>Руководство</li>
+													<li>Координационный совет</li>
+													<li>Наблюдательный совте</li>
+												</ul>
+											</li>
+											<li class="header__mobilmenu-item"><span>Новости</span> <i class="mdi mdi-chevron-down"></i>
+												<ul class="header__mobilmenu-sublist">
+													<li>История и современность</li>
+													<li class="active">Документы</li>
+													<li>Руководство</li>
+													<li>Координационный совет</li>
+													<li>Наблюдательный совте</li>
+												</ul>
+											</li>
+											<li class="header__mobilmenu-item"><span>Об обществе</span> <i class="mdi mdi-chevron-down"></i></li>
+											<li class="header__mobilmenu-item"><span>Медиатека</span> <i class="mdi mdi-chevron-down"></i></li>
+											<li class="header__mobilmenu-item"><span>Вебинары</span> <i class="mdi mdi-chevron-down"></i></li>
 										</ul>
 									</div>
 									
@@ -65,6 +81,17 @@
 								$(".header__mobilmenu .mdi-close" ).click(function() {
 								  $(".header__mobilmenu" ).toggleClass( "active");
 								});
+
+								$(".header__mobilmenu-list .header__mobilmenu-item span" ).click(function() {
+								  $(".header__mobilmenu-sublist" ).toggleClass( "active");
+								  $(this).parent().toggleClass( "active");
+								});
+
+								$(".header__mobilmenu-list .header__mobilmenu-item li" ).click(function() {
+								  $(".header__mobilmenu-list .header__mobilmenu-item li" ).removeClass( "active");
+								  $(this).toggleClass( "active");
+								});
+
 								
 
 							});
