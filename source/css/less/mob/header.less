@@ -125,6 +125,205 @@
 			}
 		}
 	}
+	//Меню смены региона
+	&__mobilmenu-reg {
+		background: white;
+		color: black;
+		display: none;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: none;
+		position: fixed;
+		&.mob {
+			display: none;
+		}
+		&.active {
+			display: block;
+			animation: a-menu 0.3s;
+			.header__top-sity {
+				display: block;
+			}
+		}
+		.mdi-close {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 15px;
+			right: 10px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		&-region {
+			font-size: 21px;
+			font-family: Scada;
+			color: black;
+			line-height: 1.2;
+			margin-top: 6px;
+		}
+		&-wrap {
+			height: calc(~"100vh - 110px");
+			background: #f3f3f3;
+		}
+		&-head {
+			padding: 25px 20px 30px; 
+			border-bottom: 2px solid #dddfe3;
+			&-text {
+				color: #a1a1a1;
+				font-size: 16px;
+				line-height: 1.2;
+				font-family: Scada; 
+				margin-top: 15px;
+
+			}
+			.input {
+				font-family: Scada;
+				font-size: 18px;
+				padding: 12px 15px;
+				line-height: 1;
+				border: 2px solid #dddfe3;
+				outline: none !important;
+
+			} 
+		}
+		&-list {
+			padding: 25px 0 10px;
+			height: calc(~"100vh - 289px");
+			overflow: scroll;
+
+		}
+		&-item {
+			position: relative;
+			&_sep {
+				margin-bottom: 20px;
+			}
+			&.active {
+				&:before {
+					content: "";
+					position: absolute;
+					height: 2px;
+					width: 30px;
+					left: 0;
+					top: calc(~"50% - 2px");
+					background: #eb5427;
+				}
+				.header__mobilmenu-reg-link {
+					color: #eb5427;
+				}
+			}
+		}
+		&-link {
+			display: block;
+			color: black;
+			font-size: 18px;
+			font-family: Scada;
+			padding: 10px 42px;
+			text-decoration: none !important;
+			line-height: 1.2;
+		}
+		
+		
+
+	}
+	// Меню юзера
+	&__mobilmenu-user {
+		background: white;
+		color: black;
+		display: none;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: none;
+		position: fixed;
+		&.mob {
+			display: none;
+		}
+		&.active {
+			display: block;
+			animation: a-menu 0.3s;
+			.header__top-sity {
+				display: block;
+			}
+		}
+		.mdi-close {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 15px;
+			right: 10px;
+			font-size: 25px;
+			cursor: pointer;
+		}
+		&-loc {
+			color: #a1a1a1;
+			font-size: 16px;
+			font-family: Scada;
+		}
+		&-header {
+			padding: 30px 0;
+			box-sizing: border-box;
+			height: 110px;
+			.clearfix;
+		}
+		&-name {
+			font-size: 24px;
+			font-family: Scada;
+			color: black;
+			line-height: 1.2;
+			margin-top: 6px;
+		}
+		&-list {
+			height: calc(~"100vh - 110px");
+			background: #f3f3f3;
+		}
+		&-item {
+			background: white;
+			padding: 0 35px 0 35px;
+			&_close {
+				background: #f3f3f3;
+				.header__mobilmenu-user-link {
+					border: none;
+					i {
+						color: #eb5427 !important;
+						transform: rotate(180deg);
+					}
+				}
+				}
+		}
+		&-link {
+			color: black;
+			font-family: Scada;
+			font-size: 18px; 
+			border-top: 1px solid #e1e1e1;
+			padding: 16px 0;
+			width: 100%;
+			display: block;
+			.clearfix;
+			span {
+				display: inline-block;
+				float: left;
+				line-height: 30px;
+			}
+			i {
+				font-size: 30px;
+				display: inline-block;
+				float: left;
+				margin-right: 10px;
+				line-height: 30px;
+				color: #01aeea ;
+				
+
+			}
+
+		}
+		&-text {
+			margin-left: 35px;
+		}
+	}
+	//конец меню юзера
+	// Левое меню 
+
+
 	&__mobilmenu {
 		background: white;
 		color: black;
@@ -271,6 +470,7 @@
 				}
 			}
 		}
+
 	}
 }
 @keyframes a-menu {
