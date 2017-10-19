@@ -35,23 +35,29 @@
 			<h1 class="all-news__h1">Новости общества «Знание»</h1>
 			<div class="all-news__filter">
 				<div class="all-news__item">
-					<div class="all-news__label">Выберите год</div>
-					<div class="all-news__select-block all-news__select-block_big"> 
-						<select tabindex="4" class="dropdown">
-							<option value="" class="label" value="">2016</option>
-							<option value="1">2016</option>
-							
-						</select>
+					<div class="all-news__item-left">
+						<div class="all-news__label">Выберите год</div>
+						<div class="all-news__select-block all-news__select-block_big"> 
+							<select tabindex="4" class="dropdown">
+								<option value="" class="label" value="">2016</option>
+								<option value="1">2016</option>
+								
+							</select>
+						</div>
 					</div>
-					<div class="all-news__label">Выберите месяц</div>
-					<div class="all-news__select-block"> 
-						<select tabindex="4" class="dropdown">
-							<option value="" class="label" value="">Все месяцы</option>
-							<option value="1">Все месяцы</option>
-						</select>
+					<div class="all-news__item-right">
+						<div class="all-news__label">Выберите месяц</div>
+						<div class="all-news__select-block"> 
+							<select tabindex="4" class="dropdown">
+								<option value="" class="label" value="">Все месяцы</option>
+								<option value="1">Все месяцы</option>
+							</select>
+						</div>
 					</div>
 				</div> 
-				<a href="news.html" class="btn btn__blue btn-filter">Показать</a>
+
+				
+				<button class="btn btn__blue btn-filter">Показать</button>
 			</div>
 
 			<div class="all-news__line">
@@ -134,8 +140,8 @@
 	<div class="footer__before"></div>
 
 </div>
-
-	@@include('./file-include/footer.html')
-
+	<div class="footer__white">
+		@@include('./file-include/footer.html')
+	</div>
 </body>
 </html>
