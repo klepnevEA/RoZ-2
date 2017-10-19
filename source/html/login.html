@@ -1,70 +1,181 @@
 <!DOCTYPE html>
 <html>
-	@@include('./file-include/head.html')	 
+	@@include('./file-include/head.html')
+
 <body>
 
-
-<div class="win-login">
-	<div class="win-login__block">
-		<a href="index.html" class="win-login__close"><i class="icon-cross"></i></a>
-		<h2 class="win-login__title">Зарегистрироваться</h2>
-		<div class="win-login__soc">
-			<a href="#" class="win-login__soc-link"><i class="icon-fb-2"></i></a>
-			<a href="#" class="win-login__soc-link"><i class="icon-vk"></i></a>
-			<a href="#" class="win-login__soc-link"><i class="icon-gplus"></i></a>
-			<a href="#" class="win-login__soc-link"><i class="icon-ok-2"></i></a>
-		</div>
-		<div class="win-login__form">
-			<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-dog"></i></div><input type="text" class="input__win-login" placeholder="E-mail"></div>
+	<div class="win-login">
+		<div class="win-login__block">
+			<a href="index.html" class="win-login__close"><i class="icon-cross"></i></a>
+			<h2 class="win-login__title">Зарегистрироваться</h2>
 			
-			<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-user"></i></div><input type="text" class="input__win-login" placeholder="Ваше имя"></div>
-			<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-сastle-2"></i></div><input type="text" class="input__win-login" placeholder="Пароль"></div>
-			<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-сastle-2"></i></div><input type="text" class="input__win-login" placeholder="Повторите пароль"></div> 
-			
-		</div>
-		<div class="win-login__capcha" style="display: none;">
-			<h3 class="win-login__capcha-text">Введите код, указанный на картинке</h3>
-			<div class="win-login__capcha-content"></div>
-		</div>
-		<div class="win-login__checkbox"><input type="checkbox" id="r1"> <lable for="r1">Согласие на обработку данных</lable></div>	
-		<a class="btn btn__blue btn-win-login" href="index.html"> Отправить</a>
 
-		<div class="win-login__footer">
-			Уже есть аккаунт в обществе «Знание»?<br>
-			<a href="login-2.html" class="win-login__footer-link">Войти в личный кабинет</a>
+			<div class="win-login__header mob">
+				
+					<div class="header__mobilmenu-logo"></div>
+					<div class="header__mobilmenu-text">
+						<div class="header__mobilmenu-loc">Российское общество «Знание»</div>
+						<div class="win-login__header-reg">
+							Зарегистрироваться  
+						</div>
+					</div>
+					<i class="mdi mdi-close"></i> 
+				
+			</div>
+
+			<div class="win-login__wrap"> 
+				<div class="win-login__soc">
+					<a href="#" class="win-login__soc-link"><i class="icon-fb-2"></i></a>
+					<a href="#" class="win-login__soc-link"><i class="icon-vk"></i></a>
+					<a href="#" class="win-login__soc-link"><i class="icon-gplus"></i></a>
+					<a href="#" class="win-login__soc-link"><i class="icon-ok-2"></i></a>
+				</div>
+				<div class="win-login__form">
+					<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-dog"></i></div><input type="text" class="input__win-login" placeholder="E-mail"></div>
+					
+					<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-user"></i></div><input type="text" class="input__win-login" placeholder="Ваше имя"></div>
+					<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-сastle-2"></i></div><input type="text" class="input__win-login" placeholder="Пароль"></div>
+					<div class="win-login__form-line"><div class="win-login__form-icon"><i class="icon-сastle-2"></i></div><input type="text" class="input__win-login" placeholder="Повторите пароль"></div> 
+					
+				</div>
+				<div class="win-login__capcha" >
+					<h3 class="win-login__capcha-text">Введите код, указанный на картинке</h3>
+					<div class="win-login__capcha-content"></div>
+				</div>
+				<div class="win-login__checkbox"><input type="checkbox" id="r1"> <label for="r1">Согласие на обработку данных</label></div>	
+				<a class="btn btn__blue btn-win-login" href="index.html"> Отправить</a>
+
+				<div class="win-login__footer">
+					Уже есть аккаунт на сайте<br>
+					<a href="login-2.html" class="win-login__footer-link">Войти в личный кабинет</a>
+				</div>
+			</div>
 		</div>
-
-
 	</div>
-</div> 
-
-
 
 <div class="wrapper">
 
 	@@include('./file-include/header.html')
 
+	<div class="slider-main">
+		<div class="slider-main__wrap">
+			<div class="slider-main__blocks">
+				<ul class="slider-main__list">
+					<!-- один блок -->
+					<li class="slider-main__elem">
+						<img class="slider-main__elem__img" src="../img/new-1/ph-4.jpg" alt="" />
+						<h2 class="slider-main__elem__title">Удобный календарь мероприятий</h2>
+						<ul class="slider-main__elem__list">
+							<li class="slider-main__elem__list-elem">
+								<i class="icon icon-boolet"></i> <span>удобный поиск</span>
+							</li>
+							<li class="slider-main__elem__list-elem">
+								<i class="icon icon-boolet"></i> <span>возможность добавлять в избранное</span>
+							</li>
+							<li class="slider-main__elem__list-elem">
+								<i class="icon icon-boolet"></i> <span>запись на мероприятия с сайта</span>
+							</li>
+						</ul>
 
-	<div class="TopNews__wrap gray-back">	
-		<div class="TopNews" style="background: url(../img/top-banner.jpg) no-repeat;  background-size: cover;">
-			<div class="col-xs-5">
-				<h2 class="TopNews__title">Лекции, семинары, выставки и вебинары</h2>
-				<div class="TopNews__location">г. Москва</div>
-				<div class="TopNews__info">
-					<div class="TopNews__value TopNews__value_blue">152</div>
-					<div class="TopNews__text ">запланировано мероприятий на ближайший месяц</div>
-				</div>
-				<div class="TopNews__info">
-					<div class="TopNews__value TopNews__value_red">84</div>
-					<div class="TopNews__text ">запланировано мероприятий на ближайший месяц</div>
+					</li>
+
+ 
+				</ul>
+			</div>
+			<div class="slider-main__tabs">
+				<ul class="slider-main__tabs__list">
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Нововведения<br>в образовании</a>	
+					</li>
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Современная<br>методика обучения</a>
+					</li>
+					<li class="slider-main__tabs__elem active">
+						<a class="slider-main__tabs__link" href="#">Удобный календарь<br> мероприятий</a>
+					</li>
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Особенный<br> формат лекций</a>
+					</li>
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Пополняемый<br>список лекторов</a>
+					</li>
+
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Пополняемый<br>список лекторов</a>
+					</li>
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Пополняемый<br>список лекторов</a>
+					</li>
+
+					<li class="slider-main__tabs__elem">
+						<a class="slider-main__tabs__link" href="#">Пополняемый<br>список лекторов</a>
+					</li>					
+				</ul>
+
+			</div>
+
+			<a class="slider-main__arrow slider-main__arrow_left" href="#"><i class="icon-doun"></i></a>
+			<a class="slider-main__arrow slider-main__arrow_right" href="#"><i class="icon-doun"></i></a>
+		</div>
+	</div>
+
+	<div class="management gray-back">
+		<div class="management__wrap management__wrap_direct-speech">
+			<div class="row">
+				<div class="col-xs-12">
+
+
+
+					<div class="management__block">
+						<div class="management__content mob">
+								<div class="management__title">Прямая речь</div>
+								<div class="management__text">
+										Председателя Общероссийской общественно-государственной просветительской организации «Российское общество «Знание» Л.Н. Духаниной
+								</div>
+								<div class="management__comments">
+									<div class="management__comments__button-play">
+										<a href="#">
+											<i class="icon-play"></i>
+										</a>
+									</div>
+								</div>
+						</div>
+
+
+
+						<div class="management__photo">
+							<img class="management__img" src="../img/photo.png" alt="photo" title="photo">
+						</div>
+						<div class="management__content ">
+								<div class="management__title hidden-xs">Прямая речь</div>
+								<div class="management__text hidden-xs">
+										Председателя Общероссийской общественно-государственной просветительской организации «Российское общество «Знание» Л.Н. Духаниной
+								</div>
+								<div class="management__comments">
+									<div class="management__comments__button-play">
+										<a href="#">
+											<i class="icon-play"></i>
+										</a>
+									</div>
+									<div class="management__comments__text">Встреча Председателя «Российское общество «Знание» Л.Н.Духаниной с Председателем Национального Собрания Республики Армения Г.Г.Саакяном. Ереван, 3 марта 2017 года.
+										<div class="management__comments__date">
+											<i class="icon-clock"></i>
+											<span>22 сентября</span>
+										</div>
+									</div>
+
+								</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>	
-	</div>		
+		</div>
+	</div>
+	
 	<div class="activities-calendar gray-back">
 		<div class="activities-calendar__header">
 			<div class="row">
-				<div class="col-xs-6"><h2 class="activities-calendar__title-h2">Календарь мероприятий</h2></div>
+				<div class="col-sm-6 col-xs-12"><h2 class="activities-calendar__title-h2">Календарь мероприятий</h2></div>
 				<div class="data-block__wrap">
 					<div class="data-block">
 						<div class="data-block__item">
@@ -97,8 +208,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="activities-calendar__return">
-					<a href="#" class="activities-calendar__return-link">все мероприятия <i class="icon-st-right"></i></a> 
+				<div class="activities-calendar__return hidden-xs">
+					<a href="events.html" class="activities-calendar__return-link">все мероприятия <i class="icon-st-right"></i></a> 
 				</div>
 				
 
@@ -109,52 +220,54 @@
 
 		<div class="event-block">
 			<div class="row">
-
-
-				<div class="col-xs-4 event-block__item">
-					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+				<div class="col-sm-4 col-xs-12 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
 						<div class="event-block__data">
-							<div class="event-block__data-day">27</div>
-							<div class="event-block__data-month">окт</div>
+							<div class="event-block__data-day">10</div>
+							<div class="event-block__data-month">Мар</div>
 						</div>
 					</div>	
 					<div class="event-block__footer">
-						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<a href="events/event-1.html" class="event-block__title">Причины снижения зрения и профилактика глазных болезней</a>
 						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
 					</div>
 				</div>
 
-				<div class="col-xs-4 event-block__item">
-					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+				<div class="col-sm-4 col-xs-12 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event/e2.jpg) no-repeat;  background-size: cover;">
 						<div class="event-block__data">
-							<div class="event-block__data-day">27</div>
-							<div class="event-block__data-month">окт</div>
+							<div class="event-block__data-day">29</div>
+							<div class="event-block__data-month">фев</div>
 						</div>
 					</div>	
 					<div class="event-block__footer">
-						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
+						<a href="events/event-2.html" class="event-block__title">C чего начинается родина</a>
 						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
 					</div>
 				</div>
 
-				<div class="col-xs-4 event-block__item">
-					<div class="event-block__img" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;"">
+				<div class="col-sm-4 col-xs-12 event-block__item">
+					<div class="event-block__img" style="background: url(../img/event/e3.jpg) no-repeat;  background-size: cover;">
 						<div class="event-block__data">
-							<div class="event-block__data-day">27</div>
-							<div class="event-block__data-month">окт</div>
+							<div class="event-block__data-day">15</div>
+							<div class="event-block__data-month">фев</div>
 						</div>
 					</div>	
 					<div class="event-block__footer">
-						<a href="#" class="event-block__title">Лекция-экскурсия по залам Третьяковской галереи</a>
-						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
+						<a href="events/event-3.html" class="event-block__title">Историческое наследие Победы – гордость семьи</a>
+						<div class="event-block__value"><i class="icon-run-man"></i> 104 <span>хотят пойти</span></div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="link-all mob">
+			<a href="events.html" class="link-all__link">все мероприятия <i class="icon-st-right"></i></a> 
+		</div>
+
 
 		<!-- вебинары -->
-		<div class="activities-calendar__header-h2">
+		<div class="activities-calendar__header-h2" style="display: none;">
 			<div class="row">
 				<div class="col-xs-6"><h3 class="activities-calendar__title-h3"><i class="icon-web-cam"></i> Ближайшие вебинары</h3></div>
 				
@@ -164,7 +277,7 @@
 			</div>
 		</div>
 
-		<div class="event-block">
+		<div class="event-block" style="display: none;">
 			<div class="row">
 
 
@@ -216,41 +329,58 @@
 	<!-- новости -->
 	<div class="news">
 			<div class="row">
-				<div class="col-xs-8">
+				<div class="col-sm-8 col-xs-12">
 					<h2 class="news__title">Новости общества «Знание»</h2>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4 hidden-xs">
 					<div class="activities-calendar__return">
-						<a href="#" class="activities-calendar__return-link activities-calendar__return-link-news">все новости <i class="icon-st-right"></i></a> 
+						<a href="news.html" class="activities-calendar__return-link activities-calendar__return-link-news">все новости <i class="icon-st-right"></i></a> 
 					</div>
 				</div>
 				
 
 				<div class="news__block">
-					<div class="col-xs-3">
-					<div class="news__photo" style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
+					<div class="col-sm-3 col-xs-12"> 
+					<a href="news/news-1.html"> 
+					<div class="news__photo" style="background: url(../img/new-1/top-1n.jpg) center center no-repeat;  background-size: cover;">
+						<div class="news__name">II Слет народных университетов</div>
 						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
-						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+						<div class="news__data"><i class="icon-clock"></i>15 ноября</div>
 						</div>
+					</a>	
 					</div>
 
-					<div class="col-xs-3 news__item">
-						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
-						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
-						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					<div class="col-sm-3 col-xs-12 news__item">
+						<a href="news/news-2.html">
+						<div class="news__name">В Крыму прошел 24-й международный детский кинофестиваль</div>
+						<div class="news__text">В этом году фестиваль детского кино «Алые паруса «Артека» приурочен к двум юбилейным датам: 80 лет исполняется студии «Союзмультфильм» и 45 — знаменитой картине «Офицеры». Церемония открытия собрала на трибунах детей всех восьми лагерей международного детского центра «Артек».
+						</div>
+
+						<div class="news__data"><i class="icon-clock"></i>2 июля</div>
+						</a>
 					</div>
 
-					<div class="col-xs-3 news__item">
-						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
-						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+					<div class="col-sm-3 hidden-xs news__item">
+					<a href="news/news-3.html">
+						<div class="news__name">Новости наших грантополучателей: Чебоксары</div>
+						<div class="news__text">3 июля премьерой спектакля "Сарпике" Е.Никитина Чувашский государственный театр кукол официально закрыл 71 сезон.
+
+Как сказано в пресс-релизе Министерства культуры, по делам национальностей и архивного дела Чувашской Республики, национальная постановка создана в федеральном проекте "Школа юного театрала".</div>
 						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					</a>	
 					</div>
 
-					<div class="col-xs-3 news__item">
-						<div class="news__name">Прошел региональный этап Всероссийского чемпионата по компьютерному многоборью среди пенсионеров</div>
-						<div class="news__text">18 мая 2016 года в Санкт-Петербурге в Обществе "Знание" (Территориальном ресурсном центре по работе с пожилыми людьми) собрались 18 участников финала - самые смелые и продвинутые пенсионеры со всего города - от 55 до 76 лет.</div>
+					<div class="col-sm-3 hidden-xs news__item">
+					<a href="news/news-4.html">
+						<div class="news__name">Орёл: Университет золотого возраста</div>
+						<div class="news__text">22 сентября 2016 года состоялась торжественная церемония открытия Орловского народного университета золотого возраста областной организации общества «Знание». Поздравить участников торжества пришли партнеры, друзья, представители общественных ветеранских, молодежных организаций, органов государственной власти.</div>
 						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-12 mob">
+					<div class="link-all">
+						<a href="news.html" class="link-all__link">все новости <i class="icon-st-right"></i></a> 
 					</div>
 				</div>
 
@@ -262,7 +392,7 @@
 	<!-- интерактивная карта -->
 	<div class="i-map">
 		<div class="row">
-			<div class="col-xs-3">
+			<div class="col-sm-3 col-xs-12">
 				<h2 class="i-map__title">Интерактивная карта</h2>
 				<div class="i-map__text">Все события, мероприятия и вебинары на карте Российской Федерации. В удобном интерактивном формате. Выбор и запись на мероприятие интуитивно понятно и удобно. Приходите и узнавайте что-то новое!
 				</div>
@@ -272,10 +402,32 @@
 	
 
 			</div>
-			<div class="col-xs-1"></div>
-			<div class="col-xs-8">
+			<div class="col-sm-1 hidden-xs"></div>
+			<div class="col-sm-8 hidden-xs">
 				<div class="map-place"> 
-					
+					<div class="map-home">
+					    <div class="map-home__lector">
+                            <div class="map-home__value map-home__value_red">
+                            <i class="map-home__man"></i>
+                            2 358
+                            </div> 
+                            <div class="map-home__text map-home__text_red">лекторов<br>по всей России</div>
+					    </div>
+					    <div class="map-home__events">
+					    	<div class="map-home__value map-home__value_blue">
+					    	<i class="map-home__mic"></i>
+					    	185
+					    	</div> 
+					    	<div class="map-home__text map-home__text_blue">событий<br>ежеденевно</div>
+					    </div>
+					    <div class="map-home__web">
+					    	<div class="map-home__value">
+					    	<i class="map-home__wcam"></i>
+					    	16
+					    	</div> 
+					    	<div class="map-home__text">вебинаров<br>в неделю</div>
+					    </div> 
+					</div>
 				</div>
 
 			</div>
@@ -286,12 +438,13 @@
 	<div class="fresh-media gray-back">
 		<div class="activities-calendar__header">
 			<div class="row">
-				<div class="col-xs-6"><h2 class="activities-calendar__title-h2">Свежее в медиатеке</h2></div>
+				<div class="col-sm-6 col-xs-12"><h2 class="activities-calendar__title-h2">Свежее в медиатеке</h2></div>
 			</div>
 		</div>
+
 		<div class="fresh-media__wrap">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-sm-6 col-xs-12">
 					<div class="fresh-media__big-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
 						<div class="fresh-media__big-block-value"><i class="icon-photo"></i>38</div>
 						<div class="fresh-media__big-block-info">
@@ -300,10 +453,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-sm-6 col-xs-12">
 					<div class="row">
 
-						<div class="col-xs-4">
+						<div class="col-xs-4 hidden-xs">
 							<div class="fresh-media__mini-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
 								<div class="fresh-media__mini-block-value"><i class="icon-photo"></i>38 фото</div>
 								<div class="fresh-media__mini-block-info">
@@ -312,7 +465,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-sm-4 col-xs-6">
 							<div class="fresh-media__mini-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
 								<div class="fresh-media__mini-block-value"><i class="icon-photo"></i>38 фото</div>
 								<div class="fresh-media__mini-block-info">
@@ -321,7 +474,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-sm-4 col-xs-6">
 							<div class="fresh-media__photo-block">
 								<div class="fresh-media__photo-block-value">
 								<i class="icon-photo"></i>
@@ -334,8 +487,8 @@
 						
 					</div>
 
-					<div class="row">
-						<div class="col-xs-6">
+					<div class="row hidden-xs">
+						<div class="col-xs-6 ">
 							<div class="fresh-media__middle-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
 								<div class="fresh-media__middle-block-value"><i class=""></i>45 мин</div>
 								<div class="fresh-media__middle-block-video"><i class="icon-play"></i></div>
@@ -346,7 +499,7 @@
 							</div>
 						</div>
 
-						<div class="col-xs-6">
+						<div class="col-xs-6 hidden-xs">
 							<div class="fresh-media__middle-block" style="background: url(../img/kosmos.jpg) no-repeat; background-size: cover;">
 								<div class="fresh-media__middle-block-value">18 фото</div>
 								<div class="fresh-media__middle-block-info">
