@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
-	@@include('./file-include/head.html')
+	@@include('./file-include/head-viz.html')
 
-<body>
+
+
+
+<body class="fontSizeMedium ColorWhite">
 
 	
 
 <div class="wrapper"> 
 
 	@@include('./file-include/header.html')
+	@@include('./file-include/header-viz.html')
+
+	
+
+	<script>
+		$(document).ready(function() {
+			$('.menu-viz .menu-viz__item').click(function() {
+				$('.menu-viz__item').removeClass('active');
+				$(this).addClass('active');
+			});
+			$('.controlpanel__item_font .controlpanel__item-btn').click(function() {
+				$('.controlpanel__item_font .controlpanel__item-btn').removeClass('active');
+				$(this).addClass('active');
+			});
+			$('.controlpanel__list_color .controlpanel__item-btn').click(function() {
+				$('.controlpanel__item_color .controlpanel__item-btn').removeClass('active');
+				$(this).addClass('active');
+			});
+
+			$('.controlpanel__item_font .controlpanel__item-btn').click(function() {
+			    $font = $(this).attr('id');
+			    $('body').removeClass('fontSizeSmall');
+			    $('body').removeClass('fontSizeMedium');
+			    $('body').removeClass('fontSizeBig');
+			    $('body').addClass($font);
+			 });
+
+			$('.controlpanel__item_color .controlpanel__item-btn').click(function() {
+			    $color = $(this).attr('id');
+			    $('body').removeClass('ColorWhite');
+			    $('body').removeClass('ColorBlack');
+			    $('body').removeClass('ColorBlue');
+			    $('body').addClass($color);
+			 });
+
+			$('.management__comments__button-play a').text('Перейти к новости');
+			$('.management__comments__date .icon-clock').text('Опубликовано:');
+			$('.activities-calendar .link-all__link').text('Перейти ко всем мероприятиям');
+			$('.news .link-all__link').text('Перейти ко всем новостям');
+			$('.news__data .icon-clock').text('Опубликовано: ');
+
+		});
+	</script> 
 
 	<div class="slider-main">
 		<div class="slider-main__wrap">
@@ -164,10 +210,6 @@
 				<div class="activities-calendar__return hidden-xs">
 					<a href="events.html" class="activities-calendar__return-link">все мероприятия <i class="icon-st-right"></i></a> 
 				</div>
-				
-
-
-
 			</div>
 		</div>
 
@@ -184,6 +226,12 @@
 						<a href="events/event-1.html" class="event-block__title">Причины снижения зрения и профилактика глазных болезней</a>
 						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
 					</div>
+					<div class="event-block__footer-info viz">
+						<div class="event-block__footer-item">Категория: Филология и исскустоведенье</div>
+						<div class="event-block__footer-item">Дата и время проведения: 20 октября 2017 12:30 (UCT +03:00)</div>
+						<div class="event-block__footer-item">Место проведения: г. Ярославль, ул.  Богоявления, 8 Дом дружбы Ярославль-Пуатье</div>
+						
+					</div>
 				</div>
 
 				<div class="col-sm-4 col-xs-12 event-block__item">
@@ -196,6 +244,12 @@
 					<div class="event-block__footer">
 						<a href="events/event-2.html" class="event-block__title">C чего начинается родина</a>
 						<div class="event-block__value"><i class="icon-run-man"></i> 152 <span>хотят пойти</span></div>
+					</div>
+					<div class="event-block__footer-info viz">
+						<div class="event-block__footer-item">Категория: Филология и исскустоведенье</div>
+						<div class="event-block__footer-item">Дата и время проведения: 20 октября 2017 12:30 (UCT +03:00)</div>
+						<div class="event-block__footer-item">Место проведения: г. Ярославль, ул.  Богоявления, 8 Дом дружбы Ярославль-Пуатье</div>
+						
 					</div>
 				</div>
 
@@ -210,11 +264,17 @@
 						<a href="events/event-3.html" class="event-block__title">Историческое наследие Победы – гордость семьи</a>
 						<div class="event-block__value"><i class="icon-run-man"></i> 104 <span>хотят пойти</span></div>
 					</div>
+					<div class="event-block__footer-info viz">
+						<div class="event-block__footer-item">Категория: Филология и исскустоведенье</div>
+						<div class="event-block__footer-item">Дата и время проведения: 20 октября 2017 12:30 (UCT +03:00)</div>
+						<div class="event-block__footer-item">Место проведения: г. Ярославль, ул.  Богоявления, 8 Дом дружбы Ярославль-Пуатье</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="link-all mob">
+		<div class="link-all mob viz"> 
 			<a href="events.html" class="link-all__link">все мероприятия <i class="icon-st-right"></i></a> 
 		</div>
 
@@ -285,7 +345,7 @@
 				<div class="col-sm-8 col-xs-12">
 					<h2 class="news__title">Новости общества «Знание»</h2>
 				</div>
-				<div class="col-sm-4 hidden-xs">
+				<div class="col-sm-4 hidden-xs not-viz">
 					<div class="activities-calendar__return">
 						<a href="news.html" class="activities-calendar__return-link activities-calendar__return-link-news">все новости <i class="icon-st-right"></i></a> 
 					</div>
@@ -316,9 +376,7 @@
 					<div class="col-sm-3 hidden-xs news__item">
 					<a href="news/news-3.html">
 						<div class="news__name">Новости наших грантополучателей: Чебоксары</div>
-						<div class="news__text">3 июля премьерой спектакля "Сарпике" Е.Никитина Чувашский государственный театр кукол официально закрыл 71 сезон.
-
-Как сказано в пресс-релизе Министерства культуры, по делам национальностей и архивного дела Чувашской Республики, национальная постановка создана в федеральном проекте "Школа юного театрала".</div>
+						<div class="news__text">3 июля премьерой спектакля "Сарпике" Е.Никитина Чувашский государственный театр кукол официально закрыл 71 сезон. Как сказано в пресс-релизе Министерства культуры, по делам национальностей и архивного дела Чувашской Республики, национальная постановка создана в федеральном проекте "Школа юного театрала".</div>
 						<div class="news__data"><i class="icon-clock"></i>22 сентября</div>
 					</a>	
 					</div>
@@ -331,7 +389,7 @@
 					</div>
 					</a>
 				</div>
-				<div class="col-xs-12 mob">
+				<div class="col-xs-12 mob viz">
 					<div class="link-all">
 						<a href="news.html" class="link-all__link">все новости <i class="icon-st-right"></i></a> 
 					</div>

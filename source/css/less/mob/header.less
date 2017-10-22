@@ -159,7 +159,7 @@
 			font-family: Scada;
 			color: black;
 			line-height: 1.2;
-			margin-top: 6px;
+			margin-top: 2px;
 		}
 		&-wrap {
 			height: calc(~"100vh - 110px");
@@ -343,7 +343,8 @@
 			display: block;
 			animation: a-menu 0.3s;
 			.header__top-sity {
-				display: block;
+				display: flex;
+				flex-wrap: nowrap;
 			}
 		}
 		.mdi-close {
@@ -366,17 +367,9 @@
 			height: 110px;
 			.clearfix;
 		}
-		.header__top-sity {
-			font-size: 26px;
-			color: 	black;
-			margin-top: 0;
-			.icon-doun {
-				font-size: 17px;
-			}
-		}
 		&-logo {
 			float: left;
-			width: 55px;
+			width: 45px;
 			height: 55px;
 			background: url(../../img/logo-mini.png) no-repeat;
 			background-position: left top;
@@ -385,8 +378,37 @@
 
 		}
 		&-text {
-			float: left;
+			max-width: calc(~"100% - 79px");
+			overflow: hidden;
+			white-space: nowrap;
+			margin-top: 6px;
+			
 		}
+		.header__top-sity {
+			font-size: 26px;
+			color: 	black;
+			margin-top: 0;
+			width: auto;
+			width: 100%;
+			display: flex;
+			flex-wrap: nowrap;
+			.icon-doun {
+				font-size: 17px;
+				display: block;
+				width: 21px;
+				height: 21px;
+				margin-left: 10px;
+				margin-top: 4px;
+			}
+			span {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				line-height: 1;
+
+			}
+		}
+		
+		
 		&-list {
 			display: block;
 			background: #f3f3f3;

@@ -1,0 +1,183 @@
+.controlpanel {
+	background: #dadada;
+	position: fixed;
+	padding-top: 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	height: 80px;
+	&__box {
+		min-width: 1024px;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+	&__item {
+		float: left;
+		padding-right: @sp;
+		font-size: 17px;
+		label {
+			font-size: 17px;
+			display: block;
+			float: left;
+			line-height: 36px;
+			margin-right: 5px;
+		}
+		&_font {
+			width: 30%;
+		}
+		&_color {
+			width: 25%;
+		}
+		
+		&_imgs {
+			width: 260px;
+			text-align: center;
+			cursor: pointer;
+			float: right;
+			padding-right: 30px;
+			
+			label {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+			i {
+				font-size: 24px;
+				margin-right: 5px;
+				float: left;
+				margin-top: -1px;
+				cursor: pointer;
+			}
+		}
+		&_full {
+			float: right;
+			text-align: right !important;
+			width: 230px;
+
+			
+			label {
+				float: right;
+				cursor: pointer;
+				text-decoration: underline;
+			}
+			i {
+				font-size: 24px;
+				margin-right: 5px;
+				float: right;
+				margin-top: -1px;
+				cursor: pointer;
+			}
+		}
+
+	}
+	&__list {
+		display: inline-block;
+		margin-left: 5px;
+		&_color {
+			.controlpanel__item-btn {
+				color: black;
+				font-size: 17px;
+				&:nth-child(1) {
+					font-size: 17px;
+					background: white;
+					&.active {
+						background: white;
+					}
+					
+				}
+				&:nth-child(2) {
+					font-size: 17px;
+					color: white;
+					&.active {
+						background: black;
+						color: white;
+					}
+					
+				}
+				&:nth-child(3) {
+					font-size: 17px;
+					background: #9dd1ff;
+					color: #195183;
+					border: 2px solid #9dd1ff; 
+					&.active {
+						background: #9dd1ff;
+						color: #195183;
+						border: 2px solid black; 
+					}
+				}
+				
+			}
+		}
+	}
+	&__item-btn {
+		float: left;
+		width: 36px;
+		height: 36px;
+		border: 2px solid black;
+		border-radius: 4px;
+		line-height: 33px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		color: white;
+		background: black;
+		margin-right: 10px;
+		cursor: pointer;
+		&:nth-child(2) {
+			font-size: 17px;
+			
+		}
+		&:nth-child(3) {
+			font-size: 23px;
+			
+		}
+		&.active {
+			background: none;
+			color: black;
+			position: relative;
+			&.active {
+				background: none;
+				&:before {
+					content: "";
+					position: absolute;
+					top: 100%;
+					left: 0px;
+					width: 35px;
+					height: 11px;
+					background: url(../../img/st-bot.svg) no-repeat;
+					background-size: 33px 11px;
+					
+				}
+			}
+		}
+	}
+}
+.ColorBlack {
+	.controlpanel {
+		background: #262626;
+		*{
+			color: white;
+		}
+		&__item-btn {
+			background: white ;
+			color: black ;
+			border-color: white;
+			&.active {
+				background: black;
+				color: white;
+				&:before {
+					background: url(../../img/st-bot-w.svg) no-repeat;
+				}
+			}
+		}
+	}
+}
+.ColorBlue  {
+	.controlpanel {
+		background: #448fd2;
+		color: white;
+		&__item {
+			background: none;
+		}
+	}
+}

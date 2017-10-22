@@ -1,0 +1,120 @@
+
+.management {
+	border-bottom: 3px solid #989898;
+	padding-bottom: 65px;
+	.clearfix;
+
+	&__text {
+		font-weight: bold;
+	}
+	&__comments {
+		&__button-play {
+			margin: 40px 0;
+
+			a {
+				background: black;
+				color: white;
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				border: none;
+				text-align: center;
+				border-radius: 5px;
+				font-weight: bold;
+				padding: 0 15px;
+				outline: none;
+				text-decoration: none;
+				&:hover, &:focus, &:visited {
+					color: white;
+					text-decoration: none;
+				}
+			}
+			
+		}
+		&__date {
+			margin-top: 20px;
+			.icon-clock {
+				font-family: Arial !important;
+				&:before {
+					content:'';
+				}
+
+			}
+		}
+	}
+	&__title {
+		color: black;
+	}
+}
+
+
+.fontSizeSmall {
+	.management {
+		&__title {
+			font-size: 21px;
+			font-weight: bold;
+			margin-bottom: 40px;
+		}
+	}
+}
+.fontSizeMedium {
+	.management {
+		&__title {
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 40px;
+		}
+	}
+}
+.fontSizeBig {
+	.management {
+		&__title {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 40px;
+		}
+		&__comments {
+			&__button-play {
+				a {
+					padding: 0 30px;
+					line-height: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+
+.ColorBlack {
+	.management {
+		*{
+			color: white;
+		}
+		&__comments {
+			&__button-play {
+				a {
+					background: white;
+					color: black;
+				}
+			}
+			
+		}
+	}
+}
+.ColorBlue {
+	.management {
+		border-bottom: 3px solid @blue-dark;
+		*{
+			color: @blue-dark;
+		}
+		&__comments {
+			&__button-play {
+				a {
+					background: @blue-dark;
+					color: @blue;
+				}
+			}
+			
+		}
+	}
+}

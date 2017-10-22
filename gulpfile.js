@@ -26,6 +26,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'less',
     'less:mob',
+    'less:viz',
     'less:bootstrap',
     'copy:dist',
     'copy:fonts',

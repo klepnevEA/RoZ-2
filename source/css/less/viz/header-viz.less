@@ -1,0 +1,120 @@
+.header-viz {
+	margin-top: 80px;
+	height: 232px;
+	&__logo-box {
+		float: left;
+		width: 285px;
+		height: 232px;
+		font-weight: bold;
+		padding: 42px 0 0 120px;
+		position: relative;
+
+		&-text {
+			width: 100px; 
+			font-size: 17px;
+			line-height: 1.25;
+		}
+	}
+	&__center-box {
+		float: left;
+		
+		height: 232px;
+		width: calc(~"100% - 535px");
+		box-sizing: border-box;
+		padding-top: 42px;
+
+	}
+	&__right-box {
+		padding-top: 42px;
+		float: right;
+		width: 250px;
+		
+		height: 232px; 
+		.btn {
+			margin-bottom: 10px;
+		}
+	} 
+	&__logo {
+		width: 85px;
+		height: 125px;
+		position: absolute;
+		top: 42px;
+		left: 0;
+		background: url(../../img/logo1-black.svg) no-repeat;
+		background-size: 85px auto;
+
+	}
+	&__location {
+		float: left;
+		width: 45%;
+		padding-right: @sp*2;
+	}
+	&__lk {
+		float: left;
+		width: 55%;
+		padding-right: @sp*2;
+	}
+	&__label {
+		margin-bottom: 10px;
+		display: block;
+		font-size: 17px; 
+		strong {
+			font-size: 17px;
+		}
+	}
+	&__seach {
+		margin-top: 34px;
+		padding-right: 30px;
+		position: relative;
+		.header-viz__label {
+			position: absolute;
+			top: 10px;
+			left: -165px;
+			display: inline-block;
+		}
+		&-box {
+			float: left;
+			width: calc(~"100% - 107px");
+
+		}
+	}
+	.btn {
+		font-size: 17px;
+		line-height: 1;
+	}
+	label {
+		font-size: 17px;
+		line-height: 1;
+	}
+
+}
+.ColorBlack {
+	.header-viz {
+		background: black;
+		.btn {
+			background: white;
+			color: black;
+		}
+		*{
+			color: white;
+		}
+		&__logo {
+			background: url(../../img/logo1-white.svg) no-repeat;
+		}
+	}
+}
+.ColorBlue { 
+	.header-viz {
+		
+		.btn {
+			background: @blue-dark;
+			color: @blue; 
+		}
+		*{
+			color: @blue-dark;
+		}
+		&__logo {
+			background: url(../../img/logo1-blue.svg) no-repeat;
+		}
+	}
+}
