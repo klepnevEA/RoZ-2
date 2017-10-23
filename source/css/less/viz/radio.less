@@ -1,0 +1,59 @@
+.radio {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 35px;
+  height: 35px;
+  
+  &-list {
+    padding: 0 0 15px 0;
+  }
+
+  & + label {
+    cursor: pointer;
+  }
+}
+
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  display: inline-block;
+  position: relative; 
+  padding: @sp 0 @sp 60px;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+}
+
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 50%;
+}
+
+
+.radio:checked + label:after {
+  content: '\2022';
+  text-align: center;
+  line-height: 0.53;
+  font-size: 60px;
+  color: #000;
+}
