@@ -22,11 +22,26 @@
 	&__body {
 		width: 680px;
 		background: white;
-		padding: 55px 60px;
+		padding: 55px 0;
 		position: relative;
 		margin: 120px auto;
 		animation: a-menu 0.3s;
 		position: relative;
+		
+		.clearfix;
+		&-wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 300010
+		}
+	}
+	&__content {
+		// max-height: calc(~'100vh - 240px');
+		// overflow: auto;
+		padding: 0 60px;
+
 	}
 	&__close {
 		position: absolute;

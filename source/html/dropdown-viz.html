@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head-viz.html')
+
+
+
+
+<body class="fontSizeMedium ColorWhite">
+
+	
+
+<div class="wrapper"> 
+
+	@@include('./file-include/header.html')
+	@@include('./file-include/header-viz.html')
+	<br>
+	<div class="dropdown-viz">
+		<div class="dropdown-viz__wrap">
+			<div class="dropdown-viz__btn">
+				<ul class="dropdown-viz__list">
+					<li class="dropdown-viz__elem">
+						<span class="dropdown-viz__elem-text">Значение 1 <a href="#"><i class="mdi mdi-close"></i></a></span>
+					</li>
+					<li class="dropdown-viz__elem">
+						<span class="dropdown-viz__elem-text">Значение 2 <a href="#"><i class="mdi mdi-close"></i></a></span>
+					</li>
+					<li class="dropdown-viz__elem">
+						<span class="dropdown-viz__elem-text">Значение 3 <a href="#"><i class="mdi mdi-close"></i></a></span>
+					</li>
+				</ul>
+
+				<div class="dropdown-viz__arrow-down">
+					<a href="#">
+						<i class="mdi mdi-menu-down"></i>
+					</a>
+				</div>
+
+				<div class="dropdown-viz__block">
+					<div class="dropdown-viz__block-head">
+						<div class="dropdown-viz__seach">
+							<label for="" class="dropdown-viz__label">Поле для поиска доступных для выбора вариантов</label>
+							<div class="dropdown-viz__seach-box">
+								<input type="text" class="input">
+							</div>
+						</div>
+					</div>
+					<div class="dropdown-viz__block-body">
+						<ul class="checkbox-list">
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-1" />
+								<label for="checkbox-1">Значение для выбора 1</label>
+							</li>
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-2" />
+								<label for="checkbox-2">Значение для выбора 2</label>
+							</li>
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-3" />
+								<label for="checkbox-3">Значение для выбора 3</label>
+							</li>
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-4" />
+								<label for="checkbox-4">Значение для выбора 4</label>
+							</li>
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-5" />
+								<label for="checkbox-5">Значение для выбора 5</label>
+							</li>
+							<li class="checkbox-elem">
+								<input type="checkbox" class="checkbox" id="checkbox-6" />
+								<label for="checkbox-6">Значение для выбора 6</label>
+							</li>
+						</ul>
+					</div>
+					<div class="dropdown-viz__block-footer">
+						<button class="btn btn_black btn_right">Закрыть</button>
+						<button class="btn btn_black btn_right">Выбрать все</button>
+						<button class="btn btn_black btn_right">Сбросить выбор</button>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="dropdown-viz__btn-right">
+				<button class="btn btn_black">Выбрать</button>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+
+<div class="footer__before"></div>
+
+</div>
+
+	@@include('./file-include/footer.html')
+
+</body>
+</html>

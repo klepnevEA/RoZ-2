@@ -22,20 +22,24 @@
 		display: block;
 		width: auto;
 		float: left;
+		margin-right: @sp/3;
 	}
 	&_right {
 		display: block;
 		float: right;
 		width: auto;
+		margin-left: @sp/3;
 	}
 	&_lk {
-		width: calc(~"100% - 107px");
+		width: calc(~"100% - 108px");
 		margin-right: 3px;
 	}
+
 	&_times {
 		font-family: TimesNewRoman, "Times New Roman" !important;
 		font-weight: normal;
 		padding: 0 20px;
+		font-size: 16px !important; 
 	}
 	&_mid {
 		letter-spacing: 0.2em !important;
@@ -44,5 +48,9 @@
 	&_big {
 		letter-spacing: 0.5em !important;
 		padding: 0 20px;
+	}
+
+	&-block {
+		margin-bottom: @sp*2;
 	}
 }
