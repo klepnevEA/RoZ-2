@@ -5,7 +5,7 @@
 
 
 
-<body class="fontSizeMedium ColorWhite">
+<body class="fontSizeMedium ColorWhite LetterSpacingSmall FontFamilyArial">
 
 	
 
@@ -41,7 +41,7 @@
 
 			$('.controlpanel__item_color .controlpanel__item-btn').click(function() {
 			    $color = $(this).attr('id');
-			    $('body').removeClass('ColorWhite');
+			    $('body').removeClass('');
 			    $('body').removeClass('ColorBlack');
 			    $('body').removeClass('ColorBlue');
 			    $('body').addClass($color);
@@ -53,6 +53,45 @@
 			$('.news .link-all__link').text('Перейти ко всем новостям');
 			$('.news__data .icon-clock').text('Опубликовано: ');
 
+
+
+			//модалки задаем кнопке class = 'modal" и id, cамой модалкe даем класс равный id 
+
+			$('.modall').click(function() {
+				$id = this.id;
+				$('.viz-modal' + '.'+ $id ).addClass('active');
+				$('html, body').scrollTop( 0 );	
+			});
+
+			$('.viz-modal__close').click(function() {
+				$(this).closest('.viz-modal').removeClass('active');
+			});
+			$('.viz-modal .viz-modal__btns .btn').click(function() {
+				$(this).closest('.viz-modal').removeClass('active');
+			});
+
+
+
+
+			$('.viz-modal__box-btns_cer .btn').click(function() {
+				$('.viz-modal__box-btns_cer .btn').removeClass('active');
+				$(this).addClass('active');
+
+				$Letter = $(this).attr('id');
+				$('body').removeClass('LetterSpacingSmall');
+				$('body').removeClass('LetterSpacingMedium');
+				$('body').removeClass('LetterSpacingBig');
+				$('body').addClass($Letter);
+			});
+			$('.viz-modal__box-btns_font .btn').click(function() {
+				$('.viz-modal__box-btns_font .btn').removeClass('active'); 
+				$(this).addClass('active');
+
+				$fontf = $(this).attr('id');
+				$('body').removeClass('FontFamilyArial');
+				$('body').removeClass('FontFamilyTimesNewRoman');
+				$('body').addClass($fontf);
+			});
 		});
 	</script> 
 
@@ -561,6 +600,84 @@
 </div>
 
 	@@include('./file-include/footer.html')
+
+
+
+
+
+
+<div class="viz-modal mod-1">
+	<div class="viz-modal__background"></div>
+	<div class="viz-modal__body-wrap"> 
+		<div class="viz-modal__body">
+				<div class="viz-modal__content">	
+					<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
+					
+					<div class="viz-modal__header">Настройки отображения</div>
+					<div class="viz-modal__box">
+
+						<div class="viz-modal__box-name">Настройки шрифта</div>
+						<div class="viz-modal__box-label">Выберете шрифт</div>
+						<div class="viz-modal__box-btns viz-modal__box-btns_font">
+							<button class="btn btn_black btn_left active" id="FontFamilyArial">Arial</button>
+							<button class="btn btn_black btn_left btn_times" id="FontFamilyTimesNewRoman">Times New Roman</button>
+						</div>
+						<div class="viz-modal__box-label">Интервал между буквами (Кернинг)</div>
+						<div class="viz-modal__box-btns viz-modal__box-btns_cer">
+							<button class="btn btn_black btn_left active" id="LetterSpacingSmall">Стандартный</button>
+							<button class="btn btn_black btn_left btn_mid" id="LetterSpacingMedium">Средний</button>
+							<button class="btn btn_black btn_right btn_big" id="LetterSpacingBig">Большой</button> 
+						</div>
+					</div>
+					<div class="viz-modal__box">
+						<div class="viz-modal__box-name">Выбор цветовой схемы</div>
+						<div style="height: 500px;"></div>
+						
+						
+					</div>
+					
+					
+					<div class="viz-modal__btns"> 
+						<button class="btn btn_black btn_right">Закрыть</button>
+						<button class="btn btn_black btn_right">Применить</button> 
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="viz-modal mod-2">
+	<div class="viz-modal__background">
+		<div class="viz-modal__body">
+			<div class="viz-modal__content">	
+				<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
+				
+				
+				<div class="viz-modal__box">
+					<div class="viz-modal__box-name">Настройки отображения2</div>
+					123
+				</div>
+				<div class="viz-modal__box">
+					<div class="viz-modal__box-name">Выбор цветовой схемы</div>
+					3434
+				</div>
+				
+				
+				<div class="viz-modal__btns"> 
+					<button class="btn btn_black btn_right">Закрыть</button>
+					<button class="btn btn_black btn_right">Применить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 </body>
 </html>
