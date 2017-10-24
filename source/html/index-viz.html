@@ -53,37 +53,34 @@
 			$('.news__data .icon-clock').text('Опубликовано: ');
 
 
+			$(".viz-modal__box input[type='radio']").change(function() {
+				if($(".viz-modal__box #radio-1").prop("checked")) { 
+		        		console.log('белый');
+		        		$('body').removeClass('ColorBlack');
+		        		$('body').removeClass('ColorBlue');
+		        		$('.controlpanel__item_color .controlpanel__item-btn').removeClass('active');
+	        			$('.controlpanel__list_color #ColorWhite').addClass('active');
 
-			if($(".viz-modal__box #radio-1").prop("checked") === 'checked') { 
-	        		console.log('белый');
-    		}
-    		if($(".viz-modal__box #radio-2").prop("checked") === 'checked') { 
-	        		console.log('черный');
-    		}
-    		if($(".viz-modal__box #radio-2").prop("checked") === 'checked') { 
-	        		console.log('синий');
-    		}
+	    		}
+	    		if($(".viz-modal__box #radio-2").prop("checked")) { 
+		        		console.log('черный');
+		        		$('body').removeClass('ColorBlue');
+		        		$('body').addClass('ColorBlack');
 
-
-			// $(".viz-modal__box #radio-1").prop("checked");	{
-				
-			//     $('body').removeClass('ColorBlack');
-			//     $('body').removeClass('ColorBlue');
-			// };
-			// $(".viz-modal__box #radio-2").prop("checked");	{
-			// 	$color = ColorBlack;
-			// 	console.log('Черный');
-			//     $('body').removeClass('ColorBlack');
-			//     $('body').removeClass('ColorBlue');
-			//     $('body').addClass($color);
-			// };
-			// $(".viz-modal__box #radio-3").prop("checked");	{
-			// 	$color = ColorBlue;
-			// 	console.log('Синий');
-			//     $('body').removeClass('ColorBlack');
-			//     $('body').removeClass('ColorBlue');
-			//     $('body').addClass($color);
-			// };
+	        			$('.controlpanel__item_color .controlpanel__item-btn').removeClass('active');
+	        			$('.controlpanel__list_color #ColorBlack').addClass('active');
+		        		
+		        		
+	    		}
+	    		if($(".viz-modal__box #radio-3").prop("checked")) { 
+		        		console.log('синий');
+		        		$('body').removeClass('ColorBlack');
+		        		$('body').addClass('ColorBlue');
+		        		$('.controlpanel__item_color .controlpanel__item-btn').removeClass('active');
+		        		$('.controlpanel__list_color #ColorBlue').addClass('active');
+	    		}
+			});
+			
 					
 
 			//модалки задаем кнопке class = 'modal" и id, cамой модалкe даем класс равный id 
@@ -672,7 +669,7 @@
 							
 							<div class="radio-list">
 								<li class="radio-elem radio-elem_white">
-									<input name="radio" type="radio" class="radio" checked id="radio-1">
+									<input name="radio" type="radio" class="radio" checked="" id="radio-1">
 									<label for="radio-1"><span>Черным по белому</span></label>
 								</li>
 								<li class="radio-elem radio-elem_black">
@@ -683,8 +680,13 @@
 									<input name="radio" type="radio" class="radio" id="radio-3">
 									<label for="radio-3"><span>Синим по голубому</span></label>
 								</li>
-							</div>						
+							</div>
+
+							
+							
 						</div>
+						
+						
 						<div class="viz-modal__btns"> 
 							<button class="btn btn_black btn_right">Закрыть</button>
 							<button class="btn btn_black btn_right">Применить</button> 
