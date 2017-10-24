@@ -41,7 +41,6 @@
 
 			$('.controlpanel__item_color .controlpanel__item-btn').click(function() {
 			    $color = $(this).attr('id');
-			    $('body').removeClass('');
 			    $('body').removeClass('ColorBlack');
 			    $('body').removeClass('ColorBlue');
 			    $('body').addClass($color);
@@ -55,12 +54,45 @@
 
 
 
+			if($(".viz-modal__box #radio-1").prop("checked") === 'checked') { 
+	        		console.log('белый');
+    		}
+    		if($(".viz-modal__box #radio-2").prop("checked") === 'checked') { 
+	        		console.log('черный');
+    		}
+    		if($(".viz-modal__box #radio-2").prop("checked") === 'checked') { 
+	        		console.log('синий');
+    		}
+
+
+			// $(".viz-modal__box #radio-1").prop("checked");	{
+				
+			//     $('body').removeClass('ColorBlack');
+			//     $('body').removeClass('ColorBlue');
+			// };
+			// $(".viz-modal__box #radio-2").prop("checked");	{
+			// 	$color = ColorBlack;
+			// 	console.log('Черный');
+			//     $('body').removeClass('ColorBlack');
+			//     $('body').removeClass('ColorBlue');
+			//     $('body').addClass($color);
+			// };
+			// $(".viz-modal__box #radio-3").prop("checked");	{
+			// 	$color = ColorBlue;
+			// 	console.log('Синий');
+			//     $('body').removeClass('ColorBlack');
+			//     $('body').removeClass('ColorBlue');
+			//     $('body').addClass($color);
+			// };
+					
+
 			//модалки задаем кнопке class = 'modal" и id, cамой модалкe даем класс равный id 
 
 			$('.modall').click(function() {
 				$id = this.id;
 				$('.viz-modal' + '.'+ $id ).addClass('active');
 				$('html, body').scrollTop( 0 );	
+
 			});
 
 			$('.viz-modal__close').click(function() {
@@ -92,8 +124,14 @@
 				$('body').removeClass('FontFamilyTimesNewRoman');
 				$('body').addClass($fontf);
 			});
+
+
+
+
+
 		});
 	</script> 
+
 
 	<div class="viz pagename">
 		<div class="pagename__title">Главная страница</div>
@@ -606,78 +644,64 @@
 
 
 
-<div class="viz-modal mod-1">
-	<div class="viz-modal__background"></div>
-	<div class="viz-modal__body-wrap"> 
-		<div class="viz-modal__body">
-				<div class="viz-modal__content">	
-					<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
-					
-					<div class="viz-modal__header">Настройки отображения</div>
-					<div class="viz-modal__box">
-
-						<div class="viz-modal__box-name">Настройки шрифта</div>
-						<div class="viz-modal__box-label">Выберете шрифт</div>
-						<div class="viz-modal__box-btns viz-modal__box-btns_font">
-							<button class="btn btn_black btn_left active" id="FontFamilyArial">Arial</button>
-							<button class="btn btn_black btn_left btn_times" id="FontFamilyTimesNewRoman">Times New Roman</button>
-						</div>
-						<div class="viz-modal__box-label">Интервал между буквами (Кернинг)</div>
-						<div class="viz-modal__box-btns viz-modal__box-btns_cer">
-							<button class="btn btn_black btn_left active" id="LetterSpacingSmall">Стандартный</button>
-							<button class="btn btn_black btn_left btn_mid" id="LetterSpacingMedium">Средний</button>
-							<button class="btn btn_black btn_right btn_big" id="LetterSpacingBig">Большой</button> 
-						</div>
-					</div>
-					<div class="viz-modal__box">
-						<div class="viz-modal__box-name">Выбор цветовой схемы</div>
-						<div style="height: 500px;"></div>
+	<div class="viz-modal mod-1">
+		<div class="viz-modal__background"></div>
+		<div class="viz-modal__body-wrap"> 
+			<div class="viz-modal__body">
+					<div class="viz-modal__content">	
+						<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
 						
-						
+						<div class="viz-modal__header">Настройки отображения</div>
+						<div class="viz-modal__box">
+
+							<div class="viz-modal__box-name">Настройки шрифта</div>
+							<div class="viz-modal__box-label">Выберете шрифт</div>
+							<div class="viz-modal__box-btns viz-modal__box-btns_font">
+								<button class="btn btn_black btn_left active" id="FontFamilyArial">Arial</button>
+								<button class="btn btn_black btn_left btn_times" id="FontFamilyTimesNewRoman">Times New Roman</button>
+							</div>
+							<div class="viz-modal__box-label">Интервал между буквами (Кернинг)</div>
+							<div class="viz-modal__box-btns viz-modal__box-btns_cer">
+								<button class="btn btn_black btn_left active" id="LetterSpacingSmall">Стандартный</button>
+								<button class="btn btn_black btn_left btn_mid" id="LetterSpacingMedium">Средний</button>
+								<button class="btn btn_black btn_right btn_big" id="LetterSpacingBig">Большой</button> 
+							</div>
+						</div>
+						<div class="viz-modal__box">
+							<div class="viz-modal__box-name">Выбор цветовой схемы</div>
+							
+							<div class="radio-list">
+								<li class="radio-elem radio-elem_white">
+									<input name="radio" type="radio" class="radio" checked id="radio-1">
+									<label for="radio-1"><span>Черным по белому</span></label>
+								</li>
+								<li class="radio-elem radio-elem_black">
+									<input name="radio" type="radio" class="radio"  id="radio-2">
+									<label for="radio-2"><span>Белым по черному</span></label> 
+								</li>
+								<li class="radio-elem radio-elem_blue">
+									<input name="radio" type="radio" class="radio" id="radio-3">
+									<label for="radio-3"><span>Синим по голубому</span></label>
+								</li>
+							</div>						
+						</div>
+						<div class="viz-modal__btns"> 
+							<button class="btn btn_black btn_right">Закрыть</button>
+							<button class="btn btn_black btn_right">Применить</button> 
+						</div>
 					</div>
-					
-					
-					<div class="viz-modal__btns"> 
-						<button class="btn btn_black btn_right">Закрыть</button>
-						<button class="btn btn_black btn_right">Применить</button> 
-					</div>
-				</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-<div class="viz-modal mod-2">
-	<div class="viz-modal__background">
-		<div class="viz-modal__body">
-			<div class="viz-modal__content">	
-				<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
-				
-				
-				<div class="viz-modal__box">
-					<div class="viz-modal__box-name">Настройки отображения2</div>
-					123
-				</div>
-				<div class="viz-modal__box">
-					<div class="viz-modal__box-name">Выбор цветовой схемы</div>
-					3434
-				</div>
-				
-				
-				<div class="viz-modal__btns"> 
-					<button class="btn btn_black btn_right">Закрыть</button>
-					<button class="btn btn_black btn_right">Применить</button>
-				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
-</body>
+
+
+
+
+
+
+
+
+	</body>
 </html>
