@@ -347,7 +347,7 @@
 					<div class="event-block__footer-info viz">
 						<div class="event-block__footer-item">Категория: Филология и исскустоведенье</div>
 						<div class="event-block__footer-item">Дата и время проведения: 20 октября 2017 12:30 (UCT +03:00)</div>
-						<div class="event-block__footer-item">Место проведения: г. Ярославль, ул.  Богоявления, 8 Дом дружбы Ярославль-Пуатье</div>
+						<div class="event-block__footer-item">Место проведения: г. Ярославль, ул.  Богоявления, 8 Дом дружбы Ярославль-Пуатье</div> 
 						
 					</div>
 				</div>
@@ -636,74 +636,8 @@
 
 	@@include('./file-include/footer.html')
 
-
-
-
-
-
-	<div class="viz-modal mod-1">
-		<div class="viz-modal__background"></div>
-		<div class="viz-modal__body-wrap"> 
-			<div class="viz-modal__body">
-					<div class="viz-modal__content">	
-						<div class="viz-modal__close"><i class="mdi mdi-close "></i></div>
-						
-						<div class="viz-modal__header">Настройки отображения</div>
-						<div class="viz-modal__box">
-
-							<div class="viz-modal__box-name">Настройки шрифта</div>
-							<div class="viz-modal__box-label">Выберете шрифт</div>
-							<div class="viz-modal__box-btns viz-modal__box-btns_font">
-								<button class="btn btn_black btn_left active" id="FontFamilyArial">Arial</button>
-								<button class="btn btn_black btn_left btn_times" id="FontFamilyTimesNewRoman">Times New Roman</button>
-							</div>
-							<div class="viz-modal__box-label">Интервал между буквами (Кернинг)</div>
-							<div class="viz-modal__box-btns viz-modal__box-btns_cer">
-								<button class="btn btn_black btn_left active" id="LetterSpacingSmall">Стандартный</button>
-								<button class="btn btn_black btn_left btn_mid" id="LetterSpacingMedium">Средний</button>
-								<button class="btn btn_black btn_right btn_big" id="LetterSpacingBig">Большой</button> 
-							</div>
-						</div>
-						<div class="viz-modal__box">
-							<div class="viz-modal__box-name">Выбор цветовой схемы</div>
-							
-							<div class="radio-list">
-								<li class="radio-elem radio-elem_white">
-									<input name="radio" type="radio" class="radio" checked="" id="radio-1">
-									<label for="radio-1"><span>Черным по белому</span></label>
-								</li>
-								<li class="radio-elem radio-elem_black">
-									<input name="radio" type="radio" class="radio"  id="radio-2">
-									<label for="radio-2"><span>Белым по черному</span></label> 
-								</li>
-								<li class="radio-elem radio-elem_blue">
-									<input name="radio" type="radio" class="radio" id="radio-3">
-									<label for="radio-3"><span>Синим по голубому</span></label>
-								</li>
-							</div>
-
-							
-							
-						</div>
-						
-						
-						<div class="viz-modal__btns"> 
-							<button class="btn btn_black btn_right">Закрыть</button>
-							<button class="btn btn_black btn_right">Применить</button> 
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
+	@@include('./file-include/viz-modal-1.html')
+	@@include('./file-include/viz-modal-2.html')
 
 	</body>
 </html>

@@ -1,0 +1,105 @@
+.registration {
+	.viz-modal__box-name {
+		padding-bottom: 7px;
+	}
+	&__soc {
+		// background: red;
+		margin: 35px 0;
+		.clearfix; 
+		&-list {
+			padding-left: 0;
+		}
+		&-item {
+			margin-bottom: 7px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&-link {
+			text-decoration: none;
+			i {
+				width: 40px;
+				height: 40px;
+				background: black;
+				color: white;
+				margin-right: 8px;
+				font-size: 23px;
+				line-height: 40px;
+				display: inline-block;
+				text-align: center;
+				border-radius: 50%;
+			}
+			span {
+				text-decoration: underline;
+				color: black;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__reglist {
+		margin-top: 35px;
+		.clearfix;
+		&-item {
+			margin-bottom: 25px;
+		}
+		&-title {
+			font-weight: bold;
+			font-size: 21px;
+			color: black;
+			padding-bottom: 7px;
+		}
+		&-text {
+			font-size: 14px;
+			color: black;
+			margin-bottom: 7px;
+		}
+		&-btn-right {
+			float: right;
+			width: 200px;
+		}
+	}
+	&__pass {
+		margin-bottom: 15px;
+
+		.clearfix;
+		.registration__reglist-input {
+			float: left;
+			width: calc(~"100% - 210px");
+		}
+	}
+	&__captcha {
+		&-place {
+			background: #dedede;
+			min-height: 70px; 
+			margin-top: 25px;
+			margin-bottom: 15px;
+			.clearfix;
+		}
+		&-btns {
+			margin-bottom: 15px;
+			.clearfix;
+		}
+	}
+	&__footer {
+		border-top: 3px solid #989898;
+		margin-top: 30px;
+		padding-top: 30px;
+		.clearfix;
+		&-text {
+			font-size: 14px;
+		}
+		&-link {
+			font-weight: bold;
+			text-decoration: underline;
+			font-size: 14px;
+			color: black;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
