@@ -8,10 +8,25 @@
 		position: relative;
 		width: 100%;
 		float: left;
+		
+		&.active {
+			.m-select {
+				&__block {
+					display: block;
+				}
+
+				&__arrow-down {
+					.mdi-menu-down:before{
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
 	}
 
 	&__block {
 		position: absolute;
+		display: none;
 		top: 40px;
 		left: -3px;
 		width: calc(~'100% + 6px');
@@ -79,13 +94,21 @@
 		font-family: 'Arial';
 		font-weight: bold;
 		line-height: 1.8;
-		font-size: 17px;
+		font-size: 17px !important;
 		color: #fff;
 		height: @sp*2;
 		background-color: #000;
         border-radius: 3px;
         margin-right: 2px;
         margin-bottom: 2px;
+        
+        &-text {
+        	font-size: 17px !important;
+        	
+        	a {
+        		font-size: 17px !important;
+        	}
+        }
         
         a {
         	position: relative;

@@ -1,0 +1,103 @@
+.region {
+
+	&__title {
+	    font-weight: bold;
+	    font-size: 21px;
+	    color: black;
+	    padding-bottom: @sp/3;
+	}
+
+	&__text {
+		font-size: 14px;
+		margin-bottom: 10px;
+		
+		&_mb {
+			margin-bottom: -5px;
+		}
+	}
+
+	&__input {
+		.clearfix;
+		margin-bottom: 45px;
+		.input {
+			float: left;
+			width: 78%;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__country {
+		font-size: 21px;
+		font-family: "Arial";
+		font-weight: bold;
+		text-decoration: underline;
+		margin-bottom: 25px;
+	}
+
+	&__federal-district {
+		&-list {
+			display: inline-block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			margin-bottom: @sp;
+			column-count: 4;
+		}
+
+		&-elem {
+			page-break-inside: avoid;
+  			break-inside: avoid;
+  			margin-bottom: @sp;
+		}
+
+		&-title {
+			display: inline-block;
+			font-size: 21px;
+			font-family: "Arial";
+			font-weight: bold;
+			margin-bottom: 20px;
+			margin-right: @sp;
+			color: #000;
+			
+			&:hover,
+			&:focus {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		
+		&-wrap {
+			padding: @sp 0;
+		}
+	}
+
+	&__elem {
+		padding-right: @sp;
+		
+		a {
+			display: inline-block;
+			font-size: 14px;
+			font-family: "Arial";
+			text-decoration: underline;
+			line-height: 1.5;
+			margin-bottom: 19px;
+			color: #000;
+			
+			&:hover,
+			&:focus {
+				color: #000;
+				text-decoration: underline;
+			}
+		}
+		
+
+	}
+}
+
+
+

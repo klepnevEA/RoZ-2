@@ -16,7 +16,6 @@ $(document).ready(function() {
 
             $('.grantz-tabs').removeClass('active');
             $('#'+data_tab).addClass('active');
-
     });
 
 
@@ -154,6 +153,6 @@ $('.viz-modal__box-btns_font .btn').click(function() {
     });
 
     $(".m-select .mdi-menu-down").click(function() {
-        $(".m-select .m-select__block").toggle();
+        $(".m-select .m-select__wrap").toggleClass('active');
     });
 });
