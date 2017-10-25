@@ -1,14 +1,26 @@
-.m-select {
+.dropdown  {
 	width: 100%;
-	.clearfix;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	.clearfix; 
 	
 	&__wrap {
-		.clearfix;
 		position: relative;
 		width: 100%;
 		float: left;
+		.clearfix;
 	}
 
+	&__box {
+		padding: 3px 10px;
+		cursor: pointer;
+		font-size: 17px;
+		span {
+			font-size: 17px;
+			display: inline-block;
+			font-weight: bold;
+		}
+	}
 	&__block {
 		position: absolute;
 		top: 40px;
@@ -20,16 +32,29 @@
 		z-index:1000;
 		margin: 0;
 		padding: @sp 25px 35px;
-		margin-bottom: @sp*2;
-		
+		display: none;
 		&-body {
-
-		}
-
-
-		&-footer {
-			padding-top: @sp*2;
-			border-top: 3px solid #989898;
+			&-list {
+				margin: 0;
+				padding: 0;
+			}
+			&-item {
+				font-size: 14px;
+				font-weight: bold;
+				display: block;
+				padding: 15px 20px;
+				cursor: pointer;
+				&.active {
+					background: lighten(black, 80%);
+					color: black;
+					&:hover {
+						background: lighten(black, 80%);
+					}
+				}
+				&:hover {
+					background: lighten(black, 95%);
+				}
+			}
 		}
 	}
 
@@ -45,6 +70,7 @@
 		margin-bottom: 10px;
 	}
 
+
 	&__btn {
 		position: relative;
 		border: 3px solid #000;
@@ -52,12 +78,26 @@
 		margin-right: 1%;
 		float: left;
 		height: 40px;
-		width: 89%;
+		width: calc(~"100% - 127px");
+		&.active {
+			.dropdown__arrow-down {
+				.mdi-menu-down {
+					transform: rotate(180deg);
+				}
+			}
+			.dropdown__block {
+				display: block;
+			}
+		}
 	}
 
 	&__btn-right {
 		float: right;
-		width: 10%;
+		width: 115px;
+		font-size: 17px;
+		.btn {
+			font-size: 17px !important;
+		}
 	}
 
 	&__list {
@@ -70,37 +110,7 @@
 		overflow: hidden;
 	} 
 
-	&__elem {
-		display: inline-block;
-		position: relative;
-		float: left;
-		padding: 0 @sp;
-		font-family: 'Arial';
-		font-weight: bold;
-		line-height: 1.8;
-		font-size: 17px;
-		color: #fff;
-		height: @sp*2;
-		background-color: #000;
-        border-radius: 3px;
-        margin-right: 2px;
-        margin-bottom: 2px;
-        
-        a {
-        	position: relative;
-        	top: 4px;
-        	margin-left: 10px;
-        	color: #fff;
-        	&:hover {
-        		color: #fff;
-        	}
-        }
-
-        i {
-        	line-height: 1;
-        	font-size: 22px;
-        }
-	}
+	
 
 	&__arrow-down {
 		position: absolute;
@@ -110,18 +120,13 @@
 		height: 100%;
 		border-left: 3px solid #000;
 		text-align: center;
-		
-		a {
-			color: #000;
-        	&:hover {
-        		color: #000;
-        	}
-		}
-
+		color: black;
+		cursor: pointer;
 
         i {
         	line-height: 1;
         	font-size: 33px;
+        	display: inline-block;
         }
 	}
 
