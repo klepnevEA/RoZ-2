@@ -1,0 +1,109 @@
+.question {
+	
+	&-title {
+		background-color: #000;
+		color: #fff;
+		padding: @sp @sp @sp 35px;
+		
+		.icon-doun {
+			margin-right: 10px;
+		}
+
+	}
+
+	&-answer {
+		color: #000;
+		font-size: 21px;
+		
+		&__label-viz {
+			font-weight: bold;
+			margin-bottom: @sp/3;
+		}
+
+		&__label-commit-viz {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		&__white-top__input {
+			width: 100%;
+			border: 3px solid #000;
+			color: #000;
+			padding: @sp/3 10px;
+			margin-bottom: 25px;
+			
+		    &::-webkit-input-placeholder { color: #fff !important; }
+		    &::-moz-placeholder          { color: #fff !important; }/* Firefox 19+ */
+		    &:-moz-placeholder           { color: #fff !important; }/* Firefox 18- */
+		    &:-ms-input-placeholder      { color: #fff !important; }
+		}
+
+			textarea {
+		    	width: 100%;
+		    	height: 130px;
+				border:3px solid #000;
+				resize: none;
+		    	margin-bottom: @sp/3;	
+		    	padding: 10px 10px;
+		    	margin-bottom: 25px;
+
+		    	&::-webkit-input-placeholder { color: #fff !important; }
+		    	&::-moz-placeholder          { color: #fff !important; }/* Firefox 19+ */
+		    	&:-moz-placeholder           { color: #fff !important; }/* Firefox 18- */
+		    	&:-ms-input-placeholder      { color: #fff !important; }	 			
+			}
+
+		&__white-top__text {
+			display: none;
+		}
+
+		&__box-blue {
+			display: none;
+		}
+
+		&__box {
+			font-size: 14px;
+			padding-bottom: 30px;
+			margin-bottom: 20px;
+			border-bottom: 3px solid #989898;
+		}
+
+		&__box-content-title-viz {
+			font-size: 21px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		&__box-title {
+			margin-bottom: 10px;
+		}
+
+		&__box-author {
+			font-weight: bold;
+			
+			span {
+				font-weight: normal;
+			}
+		}
+
+		&__box-content-date-viz {
+			font-weight: bold;
+			margin-bottom: 10px;
+			
+			span {
+				font-weight: normal;
+			}
+		}
+
+		&__box-answer {
+			.icon-enter {
+				display: none;
+			}
+		}
+
+		&__box-answer-title-viz {
+			font-weight: bold;
+		}
+
+	}
+}
