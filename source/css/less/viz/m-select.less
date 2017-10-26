@@ -149,3 +149,109 @@
         }
 	}
 }
+
+
+.ColorBlack {
+	.m-select {
+		background: black;
+		
+		&__elem {
+			background-color: #fff;
+			color: #000;
+			
+			.mdi-close {
+				color: #000;
+			}
+			
+		}
+
+		&__btn {
+			background-color: #000;
+			border-color: #fff;
+		}
+
+		&__arrow-down {
+			border-left: 3px solid #fff;
+			a {
+				color: #fff;
+			}    
+		}
+
+		.btn {
+			background: white;
+			color: black;
+		}
+
+		&__block {
+			background-color: #000;
+			border: 3px solid #fff;
+		}
+
+		&__label {
+			color: #fff;
+		}
+
+		.checkbox  + label{
+			color: #fff;
+		}
+	}
+}
+
+
+.ColorBlue {
+	.m-select {
+		background: @blue;
+		
+		&__elem {
+			background-color: @blue-dark;
+			color: @blue;
+			
+			.mdi-close {
+				color: @blue;
+			}
+			
+		}
+
+		&__btn {
+			background-color: @blue;
+			border-color: @blue-dark;
+		}
+
+		&__arrow-down {
+			border-left: 3px solid @blue-dark;
+			a {
+				color: @blue-dark;
+			}    
+		}
+
+		.btn {
+			background: @blue-dark;
+			color: @blue;
+		}
+
+
+		&__block {
+			background-color: @blue;
+			border: 3px solid @blue-dark;
+		}
+
+		&__label {
+			color: @blue-dark;
+		}
+
+		.checkbox  + label{
+			color: @blue-dark;
+			
+			&:after {
+				background-color: @blue;
+				border-color: @blue-dark;
+			}
+		}
+
+		.checkbox:checked + label:after {
+			background-image: url(../../img/check-vis-blue.svg);
+		}
+	}
+}
+
+

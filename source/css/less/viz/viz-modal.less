@@ -165,3 +165,67 @@
 		transform: translateY(0px);
 	}
 }
+
+
+
+.ColorBlack {
+	.viz-modal {
+		
+		
+		&__body {
+			background: black;
+		}
+		
+		& * {
+			color: #fff;
+		}
+
+		.btn {
+			background-color: #FFF;
+			color: #000;
+		}
+
+		&__hr {
+			border-bottom: 3px solid #fff;
+		}
+
+		&__close {
+			background-color: #FFF;
+			i {
+				color: #000;
+			}
+		}		
+		
+	}
+}
+
+
+.ColorBlue {
+	.viz-modal {
+		
+		
+		&__body {
+			background: @blue;
+		}
+		
+		& * {
+			color: @blue-dark;
+		}
+
+		.btn {
+			background-color: @blue-dark;
+			color: @blue;
+		}
+
+		&__hr {
+			border-bottom: 3px solid @blue-dark;
+		}
+		
+		&__close {
+			background-color: @blue-dark;
+			i {
+				color: @blue;
+			}
+		}			
+	}
+}

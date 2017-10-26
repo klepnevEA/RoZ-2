@@ -134,3 +134,145 @@
 
 }
 
+
+.ColorBlack {
+	.dropdown {
+		background: black;
+		
+		&__box {
+			color: #fff;
+		}
+		
+		&__elem {
+			background-color: #fff;
+			color: #000;
+			
+			.mdi-close {
+				color: #000;
+			}
+			
+		}
+
+		&__btn {
+			background-color: #000;
+			border-color: #fff;
+		}
+
+		&__arrow-down {
+			border-left: 3px solid #fff;
+			i {
+				color: #fff;
+			}    
+		}
+
+		.btn {
+			background: white;
+			color: black;
+		}
+
+		&__block {
+			background-color: #000;
+			border: 3px solid #fff;
+			
+			&-body-item {
+				color: #fff;
+				
+				&.active {
+					background-color: #fff;
+					color: #000;
+				}
+
+				&:hover {
+					background-color: #fff;
+					color: #000;
+				}
+
+			}
+		}
+
+		&__label {
+			color: #fff;
+		}
+
+		.checkbox  + label{
+			color: #fff;
+		}
+	}
+}
+
+
+.ColorBlue {
+	.dropdown {
+		background: @blue;
+		
+		&__box {
+			color: @blue-dark;
+		}
+		
+		&__elem {
+			background-color: @blue-dark;
+			color: @blue;
+			
+			.mdi-close {
+				color: @blue;
+			}
+			
+		}
+
+		&__btn {
+			background-color: @blue;
+			border-color: @blue-dark;
+		}
+
+		&__arrow-down {
+			border-left: 3px solid @blue-dark;
+			i {
+				color: @blue-dark;
+			}    
+		}
+
+		.btn {
+			background: @blue-dark;
+			color: @blue;
+		}
+
+
+		&__block {
+			background-color: @blue;
+			border: 3px solid @blue-dark;
+			
+			&-body-item {
+				color: @blue-dark;
+				
+				&.active {
+					background-color: @blue-dark;
+					color: @blue;
+				}
+
+				&:hover {
+					background-color: @blue-dark;
+					color: @blue;
+				}
+
+			}
+		}
+
+		&__label {
+			color: @blue-dark;
+		}
+
+		.checkbox  + label{
+			color: @blue-dark;
+			
+			&:after {
+				background-color: @blue;
+				border-color: @blue-dark;
+			}
+		}
+
+		.checkbox:checked + label:after {
+			background-image: url(../../img/check-vis-blue.svg);
+		}
+	}
+}
+
