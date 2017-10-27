@@ -2,12 +2,17 @@
 	display: none;
 
 	* {
-		letter-spacing: normal ;
+		
 		font-family: Arial;
 		font-size: 17px;
 	}
+
+	.btn {
+		letter-spacing: normal ;
+	}
+
 	&__background {
-		background: #333333;
+		background: rgba(0,0,0,0.8);
 		position: fixed;
 		left: 0;
 		right: 0;
@@ -59,11 +64,13 @@
 		border-radius: 6px;
 		transition: all 0.2s;
 		cursor: pointer;
+		
 		i {
 			font-size: 30px;
+			letter-spacing: normal;
 		}
 		&:hover {
-			background: red;
+			background: black;
 		}
 	}
 	&__header {
@@ -153,6 +160,27 @@
 		font-size: 14px;
 		margin-bottom: @sp;
 	}
+
+	.radio {
+		&:not(checked) + label {
+			&:before {
+				background-color: transparent;
+			}
+
+			&:after {
+				letter-spacing: normal;
+			}
+		}
+
+		&-elem {
+			&_white {
+				 label span {
+				 	border: 3px solid black;
+    				color: black;
+				 }
+			}
+		}
+	}
 }
 
 @keyframes a-menu {
@@ -169,11 +197,19 @@
 
 
 .ColorBlack {
-	.region .viz-modal {
+	.viz-modal {
+		&__background {
+			background: rgba(255,255,255,0.8);
+		}
 		
 		
 		&__body {
 			background: black;
+		}
+
+		&__header,
+		&__box {
+			border-bottom: 3px solid #fff;
 		}
 		
 		& * {
@@ -183,6 +219,12 @@
 		.btn {
 			background-color: #FFF;
 			color: #000;
+			
+			&.active {
+				background-color: #000;
+				color: #fff;
+				border:3px solid #fff;
+			}
 		}
 
 		&__hr {
@@ -194,6 +236,72 @@
 			i {
 				color: #000;
 			}
+		}
+
+		.radio {
+			&-elem {
+				&_white {
+					 label span {
+					 	border: 3px solid #fff;
+	    				color: #000;
+	    				background-color: #FFF;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: #000;
+		    				border: 3px solid #fff;
+						}
+					}
+				}
+
+				&_black {
+					 label span {
+					 	border: 3px solid #fff;
+	    				color: #fff;
+	    				background-color: #000;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: #000;
+		    				border: 3px solid #fff;
+		    				color: #fff;
+						}
+					}
+				}
+
+				&_blue {
+					 label span {
+					 	border: 3px solid @blue;
+	    				color: @blue-dark;
+	    				background-color: @blue;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: #000;
+		    				border: 3px solid #fff;
+		    				color: #fff;
+						}
+					}
+				}
+			}
 		}		
 		
 	}
@@ -201,11 +309,18 @@
 
 
 .ColorBlue {
-	.region .viz-modal {
-		
+	.viz-modal {
+		&__background {
+			background: rgba(25,81,131,0.8);
+		}		
 		
 		&__body {
 			background: @blue;
+		}
+
+		&__header,
+		&__box {
+			border-bottom: 3px solid @blue-dark;
 		}
 		
 		& * {
@@ -215,6 +330,12 @@
 		.btn {
 			background-color: @blue-dark;
 			color: @blue;
+			
+			&.active {
+				background-color: @blue;
+				color: @blue-dark;
+				border:3px solid @blue-dark;
+			}
 		}
 
 		&__hr {
@@ -225,6 +346,72 @@
 			background-color: @blue-dark;
 			i {
 				color: @blue;
+			}
+		}
+
+
+		.radio {
+			&-elem {
+				&_white {
+					 label span {
+					 	border: 3px solid #fff;
+	    				color: #000;
+	    				background-color: #FFF;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: @blue;
+		    				border: 3px solid @blue-dark;
+						}
+					}
+				}
+
+				&_black {
+					 label span {
+					 	border: 3px solid #000;
+	    				color: #fff;
+	    				background-color: #000;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: @blue;
+		    				border: 3px solid @blue-dark;
+						}
+					}
+				}
+
+				&_blue {
+					 label span {
+					 	border: 3px solid @blue-dark;
+	    				color: @blue-dark;
+	    				background-color: @blue;
+					 }
+
+
+					 label {
+						&:before {
+							background-color: transparent;
+						}
+
+						&:after {
+							background: @blue;
+		    				border: 3px solid @blue-dark;
+		    				color: @blue-dark;
+						}
+					}
+				}
 			}
 		}			
 	}

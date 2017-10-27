@@ -28,6 +28,7 @@
 				display: inline-block;
 				text-align: center;
 				border-radius: 50%;
+				letter-spacing: normal;
 			}
 			span {
 				text-decoration: underline;
@@ -77,6 +78,7 @@
 			min-height: 70px; 
 			margin-top: 25px;
 			margin-bottom: 15px;
+			padding:0 10px;
 			.clearfix;
 		}
 		&-btns {
@@ -100,6 +102,52 @@
 			&:hover {
 				color: black;
 			}
+		}
+	}
+}
+
+
+
+.ColorBlack {
+	.registration {
+
+		&__footer {
+			border-top: 3px solid #fff;
+		}
+
+		&__soc-link {
+			i {
+				background: #fff;
+				color: #000;
+			}
+		}
+
+		&__captcha-place {
+			background-color: #fff;
+			color: #000;
+		}
+
+
+	}
+}
+
+
+.ColorBlue {
+	.registration {
+		&__footer {
+			border-top: 3px solid @blue-dark;
+		}
+
+		&__soc-link {
+			i {
+				background: @blue-dark;
+				color: @blue;
+			}
+		}
+
+		&__captcha-place {
+			background-color: @blue-dark;
+			color: @blue;
 		}
 	}
 }

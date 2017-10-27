@@ -155,4 +155,10 @@ $('.viz-modal__box-btns_font .btn').click(function() {
     $(".m-select .mdi-menu-down").click(function() {
         $(".m-select .m-select__wrap").toggleClass('active');
     });
+
+    // question-answer-viz.html выпадающая плашка
+    $(".question-title").click(function() {
+        $(".all-events-white-top__form").toggleClass('active');
+        $(".question-title .icon-doun").toggleClass('active');
+    });
 });
