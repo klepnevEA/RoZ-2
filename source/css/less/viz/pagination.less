@@ -81,3 +81,63 @@
 
 }
 
+.ColorBlack {
+	.pagination {
+		border-bottom: 3px solid #fff;
+
+		&__link {
+			color: #000;
+			background-color: #fff;
+    		border: 3px solid #fff;
+		}
+
+		&__item {
+			&:first-child a,
+			&:last-child a {
+				color: #fff;
+			}
+
+			&.active {
+
+				a {
+					color: #fff;
+					background-color: #000;
+		    		border: 3px solid #fff;
+				}
+
+			}	
+		}
+
+	}
+}
+
+
+.ColorBlue {
+	.pagination {
+		border-bottom: 3px solid @blue-dark;
+		
+		&__link {
+			color: @blue;
+			background-color: @blue-dark;
+    		border: 3px solid @blue-dark;
+		}
+
+		&__item {
+			&:first-child a,
+			&:last-child a {
+				color: @blue-dark;
+			}
+
+			&.active {
+
+				a {
+					color: @blue-dark;
+					background-color: @blue;
+		    		border: 3px solid @blue-dark;
+				}
+
+			}	
+		}
+
+	}
+}
