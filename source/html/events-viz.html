@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+	<!-- @@include('./file-include/head.html')	 -->
+	@@include('./file-include/head-viz.html')
+
+<body class="fontSizeMedium ColorWhite LetterSpacingSmall FontFamilyArial"> 
+
+<div class="wrapper">
+		
+	<!-- @@include('./file-include/header.html') -->
+	@@include('./file-include/header-viz.html')
+
+	<div class="breadcrumb viz">
+		<span class="breadcrumb__text">Вы здесь:</span>
+		<ul class="breadcrumb__list">
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Главная страница</a>
+			</li>
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Мероприятия</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="searchblock-viz viz">
+		<div class="searchblock-viz__title">Параметры поиска</div>
+		<div class="searchblock-viz__box">
+
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Регион</div>
+				<div class="searchblock-viz__box-text">Выберите из списка регион, в котором проводится мероприятие</div>
+				<div class="searchblock-viz__box-select">
+					<div class="dropdown">
+						<div class="dropdown__wrap">
+							<div class="dropdown__btn">
+								<div class="dropdown__box">
+									<span>Москва</span>
+								</div>
+
+								<div class="dropdown__arrow-down">
+									<i class="mdi mdi-menu-down"></i> 
+								</div>
+
+								<div class="dropdown__block" >
+									<div class="dropdown__block-head">
+										<div class="dropdown__seach">
+											<label for="" class="dropdown__label">Поле для поиска доступных для выбора вариантов</label>
+											<div class="dropdown__seach-box">
+												<input type="text" class="input">
+											</div>
+										</div>
+									</div>
+									<div class="dropdown__block-body">
+										<ul class="dropdown__block-body-list">
+											<li class="dropdown__block-body-item active">Пункт 1</li>
+											<li class="dropdown__block-body-item">Пункт 2</li>
+											<li class="dropdown__block-body-item">Пункт 3</li>
+											<li class="dropdown__block-body-item">Пункт 4</li>
+											<li class="dropdown__block-body-item">Пункт 5</li>
+										</ul>
+									</div>
+									
+
+								</div>
+							</div>
+
+							<div class="dropdown__btn-right">
+								<button class="btn btn_black">Выбрать</button>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Поиск мероприятия</div>
+				<div class="searchblock-viz__box-text">Введите название мероприятия, лектора, место проведения, ключевое слово или категорию мероприятия</div>
+				<div class="searchblock-viz__box-input">
+					<input type="text" class="input">
+				</div>
+			</div>
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Период</div>
+				<div class="searchblock-viz__box-text">Выберите период, за который отобразить мероприятия</div>
+				<div class="searchblock-viz__box-btns">
+					<button class="btn btn_black btn_left">За неделю</button>
+					<button class="btn btn_black btn_left active">За месяц</button>
+					<button class="btn btn_black btn_left">За день</button>
+				</div>
+			</div>
+
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Дата проведения мероприятия</div>
+				<div class="searchblock-viz__box-text">Укажите дату, к которой будет относиться выбранный период, в формате «дд.мм.гггг», например, 01.01.2017. Или нажмите кнопку «Выбрать» для выбора даты в календаре</div>
+				<div class="searchblock-viz__box-date">
+					<div class="searchblock-viz__box-dp">
+						<input type="text" class="input" value="07.08.2017">
+					</div>
+					<button class="btn btn_black btn_left">Выбрать</button>
+				</div>
+			</div>
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Способ проведения мероприятия</div>
+				<div class="searchblock-viz__box-text">Установите флажок напротив значений, которые необходимо отобразить</div>
+				<div class="searchblock-viz__box-cbox">
+					<div class="searchblock-viz__box-cbox-item">
+						<li class="checkbox-elem">
+							<input type="checkbox" class="checkbox" id="checkbox-1" />
+							<label for="checkbox-1">Реальное</label>
+						</li>
+					</div>
+					<div class="searchblock-viz__box-cbox-item">
+						<li class="checkbox-elem">
+							<input type="checkbox" class="checkbox" id="checkbox-2" />
+							<label for="checkbox-2">Виртуальное</label>
+						</li>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Катерогии</div>
+				<div class="searchblock-viz__box-text">Выберите категории мероприятий, которые необходимо отобразить</div>
+				<div class="searchblock-viz__box-select">
+					<div class="m-select">
+						<div class="m-select__wrap">
+							<div class="m-select__btn">
+								<ul class="m-select__list">
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 1 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 2 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 3 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+								</ul>
+
+								<div class="m-select__arrow-down">
+									<a href="#">
+										<i class="mdi mdi-menu-down"></i>
+									</a>
+								</div>
+
+								<div class="m-select__block">
+									<div class="m-select__block-head">
+										<div class="m-select__seach">
+											<label for="" class="m-select__label">Поле для поиска доступных для выбора вариантов</label>
+											<div class="m-select__seach-box">
+												<input type="text" class="input">
+											</div>
+										</div>
+									</div>
+									<div class="m-select__block-body">
+										<ul class="checkbox-list">
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-1" />
+												<label for="checkbox-1">Значение для выбора 1</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-2" />
+												<label for="checkbox-2">Значение для выбора 2</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-3" />
+												<label for="checkbox-3">Значение для выбора 3</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-4" />
+												<label for="checkbox-4">Значение для выбора 4</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-5" />
+												<label for="checkbox-5">Значение для выбора 5</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-6" />
+												<label for="checkbox-6">Значение для выбора 6</label>
+											</li>
+										</ul>
+									</div>
+									<div class="m-select__block-footer">
+										<button class="btn btn_black btn_right">Закрыть</button>
+										<button class="btn btn_black btn_right">Выбрать все</button>
+										<button class="btn btn_black btn_right">Сбросить выбор</button>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="m-select__btn-right">
+								<button class="btn btn_black">Выбрать</button>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="searchblock-viz__box-item">
+				<div class="searchblock-viz__box-title">Ключевые слова</div>
+				<div class="searchblock-viz__box-text">Выберите ключевые слова, которые необходимо отобразить</div>
+				<div class="searchblock-viz__box-select">
+					<div class="m-select">
+						<div class="m-select__wrap">
+							<div class="m-select__btn">
+								<ul class="m-select__list">
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 1 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 2 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+									<li class="m-select__elem">
+										<span class="m-select__elem-text">Значение 3 <a href="#"><i class="mdi mdi-close"></i></a></span>
+									</li>
+								</ul>
+
+								<div class="m-select__arrow-down">
+									<a href="#">
+										<i class="mdi mdi-menu-down"></i>
+									</a>
+								</div>
+
+								<div class="m-select__block">
+									<div class="m-select__block-head">
+										<div class="m-select__seach">
+											<label for="" class="m-select__label">Поле для поиска доступных для выбора вариантов</label>
+											<div class="m-select__seach-box">
+												<input type="text" class="input">
+											</div>
+										</div>
+									</div>
+									<div class="m-select__block-body">
+										<ul class="checkbox-list">
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-1" />
+												<label for="checkbox-1">Значение для выбора 1</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-2" />
+												<label for="checkbox-2">Значение для выбора 2</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-3" />
+												<label for="checkbox-3">Значение для выбора 3</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-4" />
+												<label for="checkbox-4">Значение для выбора 4</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-5" />
+												<label for="checkbox-5">Значение для выбора 5</label>
+											</li>
+											<li class="checkbox-elem">
+												<input type="checkbox" class="checkbox" id="checkbox-6" />
+												<label for="checkbox-6">Значение для выбора 6</label>
+											</li>
+										</ul>
+									</div>
+									<div class="m-select__block-footer">
+										<button class="btn btn_black btn_right">Закрыть</button>
+										<button class="btn btn_black btn_right">Выбрать все</button>
+										<button class="btn btn_black btn_right">Сбросить выбор</button>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="m-select__btn-right">
+								<button class="btn btn_black">Выбрать</button>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="searchblock-viz__box-footer">
+				<button class="btn btn_black btn_left">Свернуть форму</button>
+				<button class="btn btn_black btn_right">Найти</button>
+				<button class="btn btn_black btn_right">Очистить параметры поиска</button>
+			</div>
+
+
+			
+		</div>
+	</div>
+
+
+
+
+	<div class="all-events gray-back">
+		<div class="all-events__wrap">
+			<div class="all-events__search">
+					<div class="search-region">Москва <i class="icon-doun"></i></div>
+					<input type="text" class="input input__all-events" placeholder="Поиск мероприятия по ключевым словам">
+					<button class="btn btn__blue btn-filter">Найти</button>
+				
+			</div>
+			<h1 class="all-events__h1 not-viz" >Популярные мероприятия</h1>
+			<h1 class="all-events__h1 viz">Результаы поиска: 25</h1>
+			<div class="all-events__text viz">Начало мероприятий указано по местному времени</div>
+
+			
+			<div class="all-events__filter">
+				<span class="all-events__filter-elem">
+					<a class="all-events__filter-link" href="#">за неделю</a></span>
+				<span class="all-events__filter-elem">
+					<a class="all-events__filter-link active" href="#">за месяц</a></span>
+				<span class="all-events__filter-elem">
+					<a class="all-events__filter-link" href="#">за сегодня</a></span>			
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-9">
+					<div class="row">
+
+						<div class="all-events__list">
+							<div class="col-xs-4">
+								<div class="all-events__item">
+
+
+									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+										<div class="all-events__data">
+											<div class="all-events__data-day">10</div>
+											<div class="all-events__data-month">мар</div>
+										</div> 
+									</div>
+
+
+									<div class="all-events__footer">
+									        <div class="all-events__title">
+									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
+									        </div>
+									        <div class="mediateka__category">
+									            
+											    <span  class="tag-item mediateka__category_item">
+											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
+											    </span>
+											    <div class="tags__tag-all">
+											        <i class="icon-dots-horizontal"></i>
+											    </div>
+											</div>
+
+											<div class="tags__tag-all">
+											    <div class="tags__modal">
+											    	<span class="viz">Категория:</span>
+											       <span >
+											            <a class="tags__tag" href="#">Физика и астрономия</a>
+											        </span>
+											    </div>
+											</div>
+
+									</div>
+
+									<div  class="all-events__dt viz">
+										<span >Дата и время проведения:</span>
+										<span class="all-events__dt-date">20 октября 2017</span>
+										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
+									</div>
+
+
+									<div  class="all-events__place">
+							            <span class="all-events__place__name">Место:</span>
+							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
+									</div>
+
+		
+							        <div class="all-events__place-region">
+							            <i class="icon-geo-pin"></i>
+							            <span>Самарская область</span>
+							        </div>
+
+							        <div class="all-events__value-wrap">
+							            <div class="all-events__value" title="Хотят пойти">
+							                <i class="icon-run-man"></i>
+							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
+							            </div>
+							            <div class="all-events__value" title="Комментарии">
+							                <i class="icon-message"></i>
+							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
+							            </div>
+							            <div class="all-events__value" title="Количество просмотров">
+							                <i class="icon-eye"></i>
+							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
+							            </div>
+							        </div>
+
+									<div class="clearfix not-viz"></div>
+
+							        <div class="tags">
+								        <div id="tagsBlock">
+										    <span class="tag-item">
+										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
+										    </span>
+
+
+										    <div class="tags__tag-all">
+										        <i class="icon-dots-horizontal"></i>
+
+										        <div class="tags__modal">
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
+										            </span>
+										        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="all-events__item">
+
+
+									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+										<div class="all-events__data">
+											<div class="all-events__data-day">10</div>
+											<div class="all-events__data-month">мар</div>
+										</div> 
+									</div>
+
+
+									<div class="all-events__footer">
+									        <div class="all-events__title">
+									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
+									        </div>
+									        <div class="mediateka__category">
+									            
+											    <span  class="tag-item mediateka__category_item">
+											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
+											    </span>
+											    <div class="tags__tag-all">
+											        <i class="icon-dots-horizontal"></i>
+											    </div>
+											</div>
+
+											<div class="tags__tag-all">
+											    <div class="tags__modal">
+											    	<span class="viz">Категория:</span>
+											       <span >
+											            <a class="tags__tag" href="#">Физика и астрономия</a>
+											        </span>
+											    </div>
+											</div>
+
+									</div>
+
+									<div  class="all-events__dt viz">
+										<span >Дата и время проведения:</span>
+										<span class="all-events__dt-date">20 октября 2017</span>
+										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
+									</div>
+
+
+									<div  class="all-events__place">
+							            <span class="all-events__place__name">Место:</span>
+							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
+									</div>
+
+		
+							        <div class="all-events__place-region">
+							            <i class="icon-geo-pin"></i>
+							            <span>Самарская область</span>
+							        </div>
+
+							        <div class="all-events__value-wrap">
+							            <div class="all-events__value" title="Хотят пойти">
+							                <i class="icon-run-man"></i>
+							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
+							            </div>
+							            <div class="all-events__value" title="Комментарии">
+							                <i class="icon-message"></i>
+							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
+							            </div>
+							            <div class="all-events__value" title="Количество просмотров">
+							                <i class="icon-eye"></i>
+							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
+							            </div>
+							        </div>
+
+									<div class="clearfix not-viz"></div>
+
+							        <div class="tags">
+								        <div id="tagsBlock">
+										    <span class="tag-item">
+										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
+										    </span>
+
+
+										    <div class="tags__tag-all">
+										        <i class="icon-dots-horizontal"></i>
+
+										        <div class="tags__modal">
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
+										            </span>
+										        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="all-events__item">
+
+
+									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+										<div class="all-events__data">
+											<div class="all-events__data-day">10</div>
+											<div class="all-events__data-month">мар</div>
+										</div> 
+									</div>
+
+
+									<div class="all-events__footer">
+									        <div class="all-events__title">
+									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
+									        </div>
+									        <div class="mediateka__category">
+									            
+											    <span  class="tag-item mediateka__category_item">
+											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
+											    </span>
+											    <div class="tags__tag-all">
+											        <i class="icon-dots-horizontal"></i>
+											    </div>
+											</div>
+
+											<div class="tags__tag-all">
+											    <div class="tags__modal">
+											    	<span class="viz">Категория:</span>
+											       <span >
+											            <a class="tags__tag" href="#">Физика и астрономия</a>
+											        </span>
+											    </div>
+											</div>
+
+									</div>
+
+									<div  class="all-events__dt viz">
+										<span >Дата и время проведения:</span>
+										<span class="all-events__dt-date">20 октября 2017</span>
+										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
+									</div>
+
+
+									<div  class="all-events__place">
+							            <span class="all-events__place__name">Место:</span>
+							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
+									</div>
+
+		
+							        <div class="all-events__place-region">
+							            <i class="icon-geo-pin"></i>
+							            <span>Самарская область</span>
+							        </div>
+
+							        <div class="all-events__value-wrap">
+							            <div class="all-events__value" title="Хотят пойти">
+							                <i class="icon-run-man"></i>
+							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
+							            </div>
+							            <div class="all-events__value" title="Комментарии">
+							                <i class="icon-message"></i>
+							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
+							            </div>
+							            <div class="all-events__value" title="Количество просмотров">
+							                <i class="icon-eye"></i>
+							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
+							            </div>
+							        </div>
+
+									<div class="clearfix not-viz"></div>
+
+							        <div class="tags">
+								        <div id="tagsBlock">
+										    <span class="tag-item">
+										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
+										    </span>
+
+
+										    <div class="tags__tag-all">
+										        <i class="icon-dots-horizontal"></i>
+
+										        <div class="tags__modal">
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
+										            </span>
+										        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="all-events__item">
+
+
+									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+										<div class="all-events__data">
+											<div class="all-events__data-day">10</div>
+											<div class="all-events__data-month">мар</div>
+										</div> 
+									</div>
+
+
+									<div class="all-events__footer">
+									        <div class="all-events__title">
+									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
+									        </div>
+									        <div class="mediateka__category">
+									            
+											    <span  class="tag-item mediateka__category_item">
+											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
+											    </span>
+											    <div class="tags__tag-all">
+											        <i class="icon-dots-horizontal"></i>
+											    </div>
+											</div>
+
+											<div class="tags__tag-all">
+											    <div class="tags__modal">
+											    	<span class="viz">Категория:</span>
+											       <span >
+											            <a class="tags__tag" href="#">Физика и астрономия</a>
+											        </span>
+											    </div>
+											</div>
+
+									</div>
+
+									<div  class="all-events__dt viz">
+										<span >Дата и время проведения:</span>
+										<span class="all-events__dt-date">20 октября 2017</span>
+										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
+									</div>
+
+
+									<div  class="all-events__place">
+							            <span class="all-events__place__name">Место:</span>
+							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
+									</div>
+
+		
+							        <div class="all-events__place-region">
+							            <i class="icon-geo-pin"></i>
+							            <span>Самарская область</span>
+							        </div>
+
+							        <div class="all-events__value-wrap">
+							            <div class="all-events__value" title="Хотят пойти">
+							                <i class="icon-run-man"></i>
+							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
+							            </div>
+							            <div class="all-events__value" title="Комментарии">
+							                <i class="icon-message"></i>
+							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
+							            </div>
+							            <div class="all-events__value" title="Количество просмотров">
+							                <i class="icon-eye"></i>
+							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
+							            </div>
+							        </div>
+
+									<div class="clearfix not-viz"></div>
+
+							        <div class="tags">
+								        <div id="tagsBlock">
+										    <span class="tag-item">
+										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
+										    </span>
+
+
+										    <div class="tags__tag-all">
+										        <i class="icon-dots-horizontal"></i>
+
+										        <div class="tags__modal">
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
+										            </span>
+										        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+				</div>
+			
+
+				<div class="pagination__wrap">
+					<nav aria-label="Page navigation">
+					  <ul class="pagination">
+					    <li class="pagination__item pagination__item_no-back pagination__item_off">
+					      <a href="#" aria-label="Previous" class="pagination__link">
+					       	<i class="icon-st-left"></i>
+					      </a>
+					    </li>
+					    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+					    <li class="pagination__item active"><a href="#" class="pagination__link" >2</a></li>
+					    <li class="pagination__item"><a href="#" class="pagination__link" >3</a></li>
+					    <li class="pagination__item pagination__item_no-back">
+					      <a href="#" aria-label="Next" class="pagination__link">
+					        <i class="icon-st-right"></i>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+
+			</div>
+
+
+				
+			<div class="col-xs-3 right-menu">
+
+				<div class="calendar">
+					<div class="right-menu__block">
+						<h3 class="right-menu__title">Выберите способ проведения</h3>
+						<button class="btn btn__ring"><i class="icon-check-off"></i>Реальное</button>
+						<button class="btn btn__ring btn__ring_blue"><i class="icon-check-on"></i>Виртуальное</button>
+					</div>
+				</div>	
+				<div class="right-menu__block">
+					<h3 class="right-menu__title">Выберите теги</h3>
+					<div class="tags">
+						<a href="#" class="tags__tag active">театр</a>
+						<a href="#" class="tags__tag">молодеж</a>
+						<a href="#" class="tags__tag ">театр</a>
+						<a href="#" class="tags__tag">здравоохранение</a>
+						<a href="#" class="tags__tag active">история</a>
+						<a href="#" class="tags__tag">космос</a>
+						<a href="#" class="tags__tag ">законодательство</a>
+						<a href="#" class="tags__tag">здравоохранение</a>
+						<a href="#" class="tags__tag ">архитектура</a>
+						<a href="#" class="tags__tag">регион</a>
+						<a href="#" class="tags__tag ">выставка</a>
+						<a href="#" class="tags__tag">цветоводство</a>
+					</div>
+				</div>
+				<div class="right-menu__block  right-menu__block_delivery">
+					<div class="right-menu__block_delivery-logo"></div>
+					<div class="right-menu__block_delivery-text">
+					Хотите получать<br>
+					<span>рассылку</span><br>
+					свежих событий
+					</div>
+					<button class="btn btn__ring btn__red">Подписаться</button>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>	
+
+	<div class="footer__before"></div>
+
+</div>
+
+
+	@@include('./file-include/footer.html')
+
+
+	@@include('./file-include/viz-modal-1.html')
+	@@include('./file-include/viz-modal-2.html')
+	@@include('./file-include/viz-modal-3.html')
+	@@include('./file-include/viz-modal-4.html')
+	@@include('./file-include/viz-modal-5.html')
+
+	<script>
+		$(document).ready(function() {
+			$('.all-events__place-region .icon-geo-pin').text('Регион: ');
+			$('.tags .tags__tag-all .tags__modal').prepend('<span>Ключевые слова: </span>');
+		});
+	</script>
+
+</body>
+</html>

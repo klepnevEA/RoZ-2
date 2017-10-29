@@ -1,0 +1,163 @@
+.searchblock-viz {
+	margin-bottom: 50px;
+	.clearfix;
+	&__title {
+		margin-bottom: 30px;
+		font-weight: bold;
+		line-height: 1;
+		color: black;
+	}
+	&__box {
+		border: 3px solid black;
+		padding: 30px;
+		
+		&-title {
+			font-weight: bold;
+			padding-bottom: 7px;
+			line-height: 1;
+			color: black;
+		}
+		&-text {
+			font-size: 14px; 
+			padding-bottom: 12px;
+			line-height: 1.2;
+		}
+		&-item {
+			margin-bottom: 30px;
+			.clearfix;
+		}
+		&-btns {
+			.btn {
+				min-width: 150px;
+			}
+		}
+		&-date {
+			.clearfix;
+			.btn {
+				min-width: 125px;
+			}
+		}
+		&-dp {
+			width: 330px;
+			margin-right: 5px;
+			float: left;
+		}
+		&-cbox {
+			&-item {
+				width: 160px;
+				float: left;
+			}
+			.checkbox-elem {
+				label {
+					padding: 15px 0 15px 52px;
+					font-weight: normal;
+				}
+			}
+		}
+		&-footer {
+			.clearfix;
+			border-top: 3px solid black;
+			padding-top: 30px;
+			.btn {
+				min-width: 108.5px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.fontSizeSmall {
+	.searchblock-viz {
+		&__title {
+			font-size: 21px;
+		}
+		&__box {
+			&-title {
+				font-size: 14px;
+			}
+		}
+	}
+}
+.fontSizeMedium {
+	.searchblock-viz {
+		&__title {
+			font-size: 25px;
+		}
+		&__box {
+			&-title {
+				font-size: 19px;
+			}
+			&-text {
+				font-size: 14px; 
+			}
+		}
+	}
+}
+.fontSizeBig {
+	.searchblock-viz {
+		&__title {
+			font-size: 36px;
+			margin-bottom: 40px;
+		}
+		&__box {
+			&-title {
+				font-size: 25px;
+			}
+			&-text {
+				font-size: 16px; 
+			}
+		}
+	}
+}
+
+
+
+.ColorBlack {
+	.searchblock-viz {
+		color: #fff;
+		
+		&__h1 {
+			color: #fff;
+		}
+		&__title {
+			color: #fff;;
+		}
+		&__box {
+			border-color: white;
+			&-title {
+				color: white;
+			}
+			&-footer {
+				.clearfix;
+				border-top: 3px solid white;
+			}
+		}
+	}
+}
+
+
+.ColorBlue {
+	.searchblock-viz {
+		color: @blue-dark;
+		&__title {
+			color: @blue-dark;;
+		}
+		&__h1 {
+			color: @blue-dark;
+		}	
+		&__box {
+			border-color: @blue-dark;
+			&-title {
+				color: @blue-dark;
+			}
+			&-footer {
+				.clearfix;
+				border-top: 3px solid @blue-dark;
+			}
+		}
+	}
+}

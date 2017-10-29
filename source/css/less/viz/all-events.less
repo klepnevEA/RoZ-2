@@ -2,12 +2,18 @@
 	&__h1 {
 		margin: 0;
 		padding: 0;
-		padding-bottom: 30px;
+		padding-bottom: 10px;
 		font-weight: bold; 
 		line-height: 1;
 		float: left;
 		font-size: 21px;
-		letter-spacing: 1px;
+		letter-spacing: normal;
+		display: block;
+		float: none;
+
+		&.not-viz {
+			display: none;
+		}
 	}
 
 	&-white-top__form {
@@ -25,15 +31,120 @@
 			border-top: 0px;
 		}
 	}
+	// скрываем блоки
+	&__search, 
+	&__filter, 
+	&__img, 
+	&__value-wrap,
+	.mediateka__category ,
+	.right-menu,
+	.icon-dots-horizontal,
+	.tag-item
+	{
+		display: none;
+	}
 
 
+	.col-xs-9 {
+		width: 100%;
+		
+	}
+	&__text {
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+	&__item {
+		margin-bottom: 25px;
+		.clearfix; 
+		& > div {
+			margin-bottom: 7px;
+		}
+		
+
+	}
+	&__list {
+		margin-bottom: 20px;
+		.clearfix; 
+	}
+	.col-xs-4 {
+		width: 100%;
+	}
+	&__title {
+		font-weight: bold;
+		text-decoration: none;
+		display: block;
+		margin-bottom: 18px; 
+		a, span {
+			color: black;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+				color: black;
+			}
+		}
+
+	}
+	&__footer {
+		.tags__modal {
+			.viz {
+				display: inline-block; 
+			}
+			.tags__tag {
+				color: black;
+				text-decoration: underline;
+				&:hover {
+					color: black;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&__place-region {
+		i {
+			display: inline-block;
+			font-family: inherit !important;
+			&:before {
+				content: '';
+			}
+		}
+	}
+	.tags {
+		
+		.tags__tag {
+			color: black;
+			text-decoration: underline;
+			&:hover {
+				color: black;
+				text-decoration: underline; 
+			}
+		}
+
+	}
 }
+.fontSizeSmall {
+	.all-events{
+		
+	}
+}
+.fontSizeMedium {
+	.all-events{
+		
+	}
+}
+.fontSizeBig {
+	.all-events{
+		&__title {
+			margin-bottom: 25px;
+		}
+	}
+}
+
 
 .ColorBlack {
 	.all-events {
 		color: #fff;
 		
-		&__h1 {
+		&__h1, &__title a  {
 			color: #fff;
 		}
 
@@ -41,7 +152,19 @@
 			border: 3px solid #fff;
 			border-top: 0px;
 		}
-
+		&__footer {
+			.tags__modal {
+				.tags__tag {
+					color: white;
+				}
+			}
+		}
+		
+		.tags {
+			.tags__tag {
+				color: white;
+			}
+		}
 	}
 }
 
@@ -50,13 +173,27 @@
 	.all-events {
 		color: @blue-dark;
 		
-		&__h1 {
+		&__h1, &__title a {
 			color: @blue-dark;
 		}	
 
 		&-white-top__form {
 			border: 3px solid @blue-dark;
 			border-top: 0px;
-		}	
+		}
+		&__footer {
+			.tags__modal {
+				.tags__tag {
+					color: @blue-dark;
+				}
+			}
+		}
+		
+		.tags {
+			.tags__tag {
+				color: @blue-dark;
+			}
+		}
+		
 	}
 }

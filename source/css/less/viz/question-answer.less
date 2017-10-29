@@ -1,4 +1,16 @@
 .question {
+	&__h1 {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 37px;
+		font-weight: bold; 
+		line-height: 1;
+		float: left;
+		font-size: 21px;
+		letter-spacing: normal;
+		display: block;
+		float: none;
+	}
 	
 	&-title {
 		background-color: #000;
@@ -186,8 +198,10 @@
 
 .ColorBlack {
 	.question {
-		
-		&-title {
+		&__h1 {
+			color: #fff;
+		}
+		&-title  {
 			background-color: #fff;
 			color: #000;
 		}
@@ -248,8 +262,10 @@
 
 .ColorBlue {
 	.question {
-		
-		&-title {
+		&__h1 {
+			color: @blue-dark;
+		}
+		&-title,  {
 			background-color: @blue-dark;
 			color: @blue;
 		}
