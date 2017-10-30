@@ -80,6 +80,15 @@
 		padding-bottom: 30px;
 		margin-bottom: 30px;
 		color: black;
+		a {
+			text-decoration: underline;
+			color: black;
+			line-height: 1.1;
+			&:hover {
+				text-decoration: underline;
+				color: black;
+			}
+		}
 	}
 	&__box {
 		// padding-bottom: 30px;
@@ -117,6 +126,18 @@
 			}
 			
 		}
+		&-link {
+			color: black;
+			text-decoration: underline;
+			&:hover {
+				color: black;
+				text-decoration: underline;
+			}
+		}
+	}
+	&__sttext {
+		font-weight: bold;
+		font-size: 14px;
 	}
 	&__btns {
 		.clearfix;
@@ -181,6 +202,31 @@
 			}
 		}
 	}
+	&__cbox {
+		.clearfix;
+		&-item {
+			float: left;
+			width: calc(~"(100% - 195px) / 5");
+			&_btn {
+				width: 180px;
+				float: right;
+				padding-top: 5px;
+			}
+			.radio:not(checked) + label {
+				padding-left: 45px;
+			}
+		}
+	}
+	&__textarea {
+		.clearfix;
+
+	}
+	&__hr {
+		height: 3px;
+		background: #989898;
+	}
+	
+
 }
 
 @keyframes a-menu {

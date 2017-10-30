@@ -121,3 +121,21 @@
 		}
 	}
 }
+.ColorBlack {
+	.radio:not(checked) + label:after {
+		border-color: white;
+		background: black;
+	}
+	.radio:checked + label:after {
+		color: white;
+	}
+}
+.ColorBlue {
+	.radio:not(checked) + label:after {
+		border-color: @blue-dark;
+		background: @blue;
+	}
+	.radio:checked + label:after {
+		color:  @blue-dark;
+	}
+}
