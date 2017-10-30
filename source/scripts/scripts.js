@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
 
-//скрипты для главной стр для слабовидящих
+//скрипты для главной стр для слабовидящих 
 
 $('.menu-viz .menu-viz__item').click(function() {
     $('.menu-viz__item').removeClass('active');

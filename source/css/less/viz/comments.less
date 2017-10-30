@@ -1,0 +1,269 @@
+.comments {
+	&__titleblock {
+		padding: 15px 30px 15px 20px;
+		font-weight: bold;
+		position: relative;
+		font-size: 21px;
+		line-height: 21px;
+		background: white;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+		cursor: pointer;
+		text-decoration: underline;
+		margin-top: -3px;
+		&:before {
+			content: "\F35D";
+			position: absolute;
+			font-size: 35px;
+			top: 10px;
+			left: -13px;
+			font-family: "Material Design Icons" !important;
+			transform: rotate(-90deg);
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+		}
+		
+		span {
+			font-size: 21px;
+		}
+	}
+
+	&__comment {
+		display: none;
+		margin: 20px 0;
+		padding: 0;
+		padding-bottom: 30px;
+		border-bottom: 3px solid #989898;
+
+		.clearfix;
+		.col-xs-9, .col-xs-3 {
+			padding: 0
+		}
+		.col-xs-3 {
+			width: 100%;
+
+		}
+		&-text {
+			.clearfix;
+		}
+		&-data  {
+			display: none;
+		}
+		&-btns {
+			border-bottom: 3px solid black;
+			padding-bottom: 35px;
+			padding-top: 20px;
+			.clearfix;
+			.btn  {
+				display: block;
+				width: auto;
+				float: left;
+				margin-right: 5px;
+				background: black;
+				color: white;
+				height: 40px;
+				border: none;
+				text-align: center;
+				border-radius: 5px;
+				font-weight: bold;
+				padding: 0 15px;
+				min-width: 100px;
+				outline: none;
+				min-width: 135px;
+				line-height: 40px;
+				i {
+					display: none;
+				}
+			}
+		}
+		&-autor {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+	}
+	&.active {
+		.comments__comment {
+			display: block !important; 
+		}
+		.comments__titleblock {
+			display: block;
+			background: black;
+			color: white;
+			border-top: 3px solid transparent;
+			border-bottom: 3px solid transparent;
+			padding: 15px 30px 15px 65px;
+			text-decoration: none;
+			&:before {
+				content: "\F35D";
+				position: absolute;
+				font-size: 35px;
+				top: 7px;
+				left: 25px;
+				font-family: "Material Design Icons" !important;
+				transform: none;
+			}
+		}
+	} 
+	&__buttons {
+		.clearfix;
+		margin-top: 25px;
+		.comments__buttons-elem {
+			display: block;
+			width: auto;
+			float: left;
+			margin-right: 5px;
+			background: black;
+			color: white;
+			height: 40px;
+			border: none;
+			text-align: center;
+			border-radius: 5px;
+			font-weight: bold;
+			padding: 0 15px;
+			min-width: 100px;
+			outline: none;
+			min-width: 135px;
+			line-height: 40px;
+			i {
+				display: none;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+
+.fontSizeSmall {
+	.comments {
+		&__titleblock {
+			font-size: 16px;
+			span {
+				font-size: 16px;
+			}
+		}
+		.comments__buttons-elem {
+			font-size: 14px;
+		}
+		&__comment-btns {
+			.btn {
+				font-size: 14px !important; 
+			}
+		}
+	}
+}
+.fontSizeMedium {
+	.comments {
+		&__titleblock {
+			font-size: 19px; 
+			span {
+				font-size: 19px;
+			}
+		}
+		.comments__buttons-elem {
+			font-size: 17px;
+		}
+		&__comment-btns {
+			.btn {
+				font-size: 17px !important; 
+			}
+		}
+	}
+}
+.fontSizeBig {
+	.comments {
+		&__titleblock {
+			font-size: 25px;
+			span {
+				font-size: 25px;
+			}
+		}
+		.comments__buttons-elem{
+			font-size: 19px; 
+		}
+		&__comment-btns {
+			.btn {
+				font-size: 19px !important; 
+			}
+		}
+	}
+}
+
+.ColorBlack {
+	.comments {
+		color: white;
+		a {
+			color: white;
+		}
+		&__text {
+			border-color: white;
+		}
+		&__titleblock {
+			color: white;
+			background: black;
+			border-color: white;
+		}
+		&.active {
+			h3.comments__titleblock  {
+				background: white;
+				color: black;
+			}
+		}
+		&__buttons {
+			.comments__buttons-elem {
+				background: white;
+				color: black;
+			}
+		}
+		&__comment-btns {
+			border-color: white;
+			.btn {
+				background: white;
+				color: black;
+			}
+		}
+	}
+	
+}
+.ColorBlue {
+	.comments {
+		color: @blue-dark;
+		a {
+			color: @blue-dark;
+		}
+		&__text {
+			border-color: @blue-dark;
+		}
+		&__titleblock {
+			color: @blue-dark;
+			background: @blue;
+			border-color: @blue-dark;
+		}
+		&.active {
+			h3.comments__titleblock  {
+				background: @blue-dark;
+				color: @blue;
+			}
+		}
+		&__buttons {
+			.comments__buttons-elem {
+				background: @blue-dark;
+				color: @blue;
+			}
+		}
+		&__comment-btns {
+			border-color: @blue-dark;
+			.btn {
+				background: @blue-dark;
+				color: @blue;
+			}
+		}
+		&__comment {
+			border-color: @blue-dark;
+		}
+	}
+}

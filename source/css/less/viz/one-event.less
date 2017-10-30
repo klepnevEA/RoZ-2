@@ -1,0 +1,247 @@
+.one-event {
+	color: black;
+	.clearfix;
+	&__h1 {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 35px;
+		font-weight: bold; 
+		line-height: 1;
+		font-size: 21px;
+		letter-spacing: normal;
+		display: block;
+		float: none;
+		
+	}
+
+	// скрываем блоки
+	.right-menu, .gallery, &__tags, &__shareblock, &__attached-event
+	{
+		display: none;
+	}
+	.col-xs-9 {
+		width: 100%;
+	}
+	&__info-viz {
+		margin-bottom: 35px;
+		&-value {
+			font-weight: bold;
+			display: block;
+			.clearfix;
+			
+		}
+		&-line {
+			margin-bottom: 20px;
+			.clearfix;
+			&_btns {
+				min-width: 5px;
+			}
+		}
+		&-list {
+			padding: 0;
+		}
+		&-link {
+			color: black;
+			font-weight: bold;
+			text-decoration: underline;
+			&:hover {
+				color: black;
+				text-decoration: underline;
+
+			}
+		}
+	}
+	&__text {
+		display: block;
+		padding-bottom: 35px;
+		.clearfix;
+		border-bottom: 3px solid #989898;
+
+		&-clarification {
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+	}
+	&-reg {
+		&-title {
+			font-weight: bold; 
+			line-height: 1;
+			font-size: 21px;
+			padding: 40px 0 15px;
+		}
+		&-info {
+			margin-bottom: 20px;
+		}
+	}
+	&__contact {
+		&.active {
+			.one-event__contact-header {
+				display: block;
+				background: black;
+				color: white;
+				padding: 15px 30px 15px 65px;
+				border-top: 3px solid transparent;
+				border-bottom: 3px solid transparent;
+				position: relative;
+				text-decoration: none;
+				&:before {
+					content: "\F35D";
+					position: absolute;
+					font-size: 35px;
+					top: 7px;
+					left: 22px;
+					font-family: "Material Design Icons" !important;
+					transform: none;
+					display: block;
+					width: 35px;
+					height: 35px;
+					line-height: 35px;
+
+				}
+
+				.one-event__contact-title {
+					color: white;
+					font-weight: bold;
+
+				}
+			}
+			.one-event__contact-box {
+				display: block ;
+			}
+		}
+		&-box {
+			display: none;
+			margin-top: 25px;
+			padding-bottom: 10px;
+
+		}
+		&-header {
+			cursor: pointer;
+			padding: 15px 30px 15px 20px;
+			font-weight: bold;
+			position: relative;
+			font-size: 21px;
+			line-height: 1;
+			background: white;
+			border-top: 3px solid black;
+			border-bottom: 3px solid black;
+			cursor: pointer;
+			text-decoration: underline;
+			&:before {
+				content: "\F35D";
+				position: absolute;
+				font-size: 35px;
+				top: 10px;
+				left: -13px;
+				font-family: "Material Design Icons" !important;
+				transform: rotate(-90deg);
+			}
+		}
+		&-line {
+			margin-bottom: 20px;
+		}
+		&-title {
+			line-height: 21px;
+			font-size: 21px;
+		}
+		&-text {
+			font-weight: bold;
+		}
+		
+	}
+}
+
+
+.fontSizeSmall {
+	.one-event {
+		&__contact {
+			&-title {
+				font-size: 16px;
+			}
+		}
+		
+	}
+}
+.fontSizeMedium {
+	.one-event {
+		&__contact {
+			&-title {
+				font-size: 19px; 
+			}
+		}
+		
+	}
+}
+.fontSizeBig {
+	.one-event {
+		&__contact {
+			&-title {
+				font-size: 25px;
+			}
+		}
+		
+	}
+}
+
+
+
+.ColorBlack {
+	.one-event {
+		color: white;
+		a {
+			color: white;
+		}
+		&__text {
+			border-color: white;
+		}
+		&__contact {
+			&-header {
+				background: none;
+				color: white;
+				border-color: white;
+			}
+			&-title {
+				color: white;
+			}
+			&.active {
+				.one-event__contact-header {
+					background: white;
+					color: black;
+				}
+				.one-event__contact-title {
+					color: black;
+				}
+			}
+		}
+	}
+}
+.ColorBlue {
+	.one-event {
+		color: @blue-dark;
+		a {
+			color: @blue-dark;
+		}
+		&__text {
+			border-color: @blue-dark;
+		}
+		&__contact {
+			&-header {
+				background: none;
+				color: @blue-dark;
+				border-color: @blue-dark;
+			}
+			&-title {
+				color: @blue-dark;
+			}
+			&.active {
+				.one-event__contact-header {
+					background: @blue-dark;
+					color: @blue;
+				}
+				.one-event__contact-title {
+					color: @blue;
+				}
+			}
+		}
+	}
+}
