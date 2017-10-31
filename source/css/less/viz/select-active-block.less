@@ -1,0 +1,26 @@
+.select-active-block {
+	margin-top: -3px;
+	margin-bottom: @sp;
+	&__item {
+		background: @blue;
+		color: white;
+		font-family: Scada;
+		display: inline-block;
+		padding: 5px 10px;
+		cursor: pointer;
+		transition: all 0.2s;
+		&:hover {
+			background: darken(@blue, 5%);
+		}
+		span {
+			float: left;
+
+		}
+		i {
+			float: left;
+			margin-left: 10px;
+			font-size: 13px;
+			margin-top: 4px;
+		}
+	}
+}

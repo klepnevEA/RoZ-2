@@ -1,0 +1,181 @@
+.one-news {
+
+	&__h1 {
+		font-size: 21px;
+		color: #000;
+		font-weight: bold;
+		margin-bottom: @sp*2;
+		margin-top: 0;
+		line-height: 1.4;
+	}
+
+	&__wrap {
+		.clearfix;
+		padding-bottom: @sp*5;
+		border-bottom: 3px solid #000;
+	}
+
+	&__datatime {
+		font-size: 14px;
+		margin-bottom: 25px;
+		color: #000;
+
+		span {
+			font-weight: bold;
+		}
+		i:before {
+			display: none;
+		}
+	}
+
+
+
+	.gallery {
+		display: none;
+	}
+
+	&__geo {
+		display: none;
+	}
+
+	&__text,
+	&__text-before {
+		font-size: 14px;
+		color: #000;
+		
+		p, h4, a {
+			margin-top: 0;
+			margin-bottom: 20px;
+			color: #000;
+			font-size: 14px;
+			line-height: 1.75;
+			
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+	}
+
+}
+
+.ColorBlack {
+	.one-news {
+
+		&__h1 {
+			color: #fff;
+		}
+
+		&__text,
+		&__text-before {
+			color: #fff;
+			
+			p, h4, a {
+				color: #fff;
+				
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+
+		&__wrap {
+			.clearfix;
+			border-bottom: 3px solid #fff;
+		}
+
+		&__datatime {
+			color: #fff;
+		}
+
+	}
+}
+
+
+.ColorBlue {
+	.one-news {
+
+		&__h1 {
+			color: @blue-dark;
+		}
+
+		&__text,
+		&__text-before {
+			color: @blue-dark;
+			
+			p, h4, a {
+				color: @blue-dark;
+				
+				&:hover {
+					color: @blue-dark;
+				}
+			}
+		}
+
+		&__wrap {
+			.clearfix;
+			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__datatime {
+			color: @blue-dark;
+		}
+	}
+}
+
+.fontSizeSmall {
+	.one-news {
+		&__h1 {
+			font-size: 21px;
+		}
+
+		&__text,
+		&__text-before {
+			p, h4, a {
+				font-size: 14px;
+			}
+		}
+
+		&__datatime {
+			font-size: 14px;
+		}
+	}
+}
+.fontSizeMedium {
+	.one-news {
+		&__h1 {
+			font-size: 25px;
+		}
+
+		&__text,
+		&__text-before {
+			p, h4, a {
+				font-size: 16px;
+			}
+		}
+
+		&__datatime {
+			font-size: 16px;
+		}
+	}
+}
+
+.fontSizeBig {
+	.one-news {
+		&__h1 {
+			font-size: 36px;
+		}
+
+		&__text,
+		&__text-before {
+			p, h4, a {
+				font-size: 23px;
+			}
+		}
+
+		&__datatime {
+			font-size: 23px;
+		}
+	}
+
+}

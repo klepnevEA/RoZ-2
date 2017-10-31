@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	@@include('./file-include/head-viz.html')	 
+<body>
+
+<div class="wrapper">
+
+	@@include('./file-include/header.html')
+	@@include('./file-include/header-viz.html')
+		
+	<div class="nav-menu-viz">
+		<ul class="nav-menu-viz__list">
+			<li class="nav-menu-viz__elem active">
+				<a href="#" class="nav-menu-viz__link">Новости</a>
+			</li>
+			<li class="nav-menu-viz__elem">
+				<a href="#" class="nav-menu-viz__link">Гранты</a>
+			</li>
+			<li class="nav-menu-viz__elem">
+				<a href="#" class="nav-menu-viz__link">Конкурсы</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="breadcrumb viz">
+		<span class="breadcrumb__text">Вы здесь:</span>
+		<ul class="breadcrumb__list">
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Главная страница</a>
+			</li>
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Ярославская область</a>
+			</li>
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link modall" id="mod-6">Мероприятия</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+	<div class="all-news gray-back">
+		<div class="all-news__wrap">
+
+
+			<h1 class="all-news__h1">Новости общества «Знание»</h1>
+			<div class="all-news__filter">
+				<div class="all-news__item">
+					<div class="all-news__item-left">
+						<div class="all-news__label">Выберите год</div>
+						<div class="all-news__select-block all-news__select-block_big"> 
+							<div class="dropdown">
+								<div class="dropdown__wrap">
+									<div class="dropdown__btn">
+										<div class="dropdown__box">
+											<span>2016</span>
+										</div>
+
+										<div class="dropdown__arrow-down">
+											<i class="mdi mdi-menu-down"></i> 
+										</div>
+
+										<div class="dropdown__block" >
+											<div class="dropdown__block-body">
+												<ul class="dropdown__block-body-list">
+													<li class="dropdown__block-body-item active">2017</li>
+													<li class="dropdown__block-body-item">2018</li>
+													
+												</ul>
+											</div>
+											
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="all-news__item-right">
+						<div class="all-news__label">Выберите месяц</div>
+						<div class="all-news__select-block"> 
+							<div class="dropdown">
+								<div class="dropdown__wrap">
+									<div class="dropdown__btn">
+										<div class="dropdown__box">
+											<span>Январь</span>
+										</div>
+
+										<div class="dropdown__arrow-down">
+											<i class="mdi mdi-menu-down"></i> 
+										</div>
+
+										<div class="dropdown__block" >
+											<div class="dropdown__block-body">
+												<ul class="dropdown__block-body-list">
+													<li class="dropdown__block-body-item active">Январь</li>
+													<li class="dropdown__block-body-item">Февраль</li>
+													<li class="dropdown__block-body-item">Март</li>
+													<li class="dropdown__block-body-item">Апрель</li>
+													<li class="dropdown__block-body-item">Май</li>
+												</ul>
+											</div>
+											
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+
+				
+				<button class="btn btn_black btn-filter">Показать</button>
+			</div>
+
+			<div class="all-news__line">
+				<a href="news/news-1.html" class="all-news__img" style="background: url(../img/new-1/top-1n.jpg) no-repeat center center;  background-size: cover; "></a>
+				<div class="all-news__content">
+					<h3 class="all-news__title">Содействие трудоустройству в «Школе карьеры»</h3>
+					<div class="all-news__text">18 октября члены Тульского регионального отделения Российского общества «Знание» приняли участие в IV Региональной научно-практической конференции с всероссийским участием</div>
+					<div class="news__data"><i class="icon-clock"></i>Опубликовано: 20 октября 2017</div>
+				</div>
+			</div>
+
+			<div class="all-news__line">
+				<a href="news/news-3.html" class="all-news__img" style="background: url(../img/new-3/top.jpg) no-repeat center center;  background-size: cover;"></a>
+				<div class="all-news__content">
+					<h3 class="all-news__title">История Второй мировой войны в экспозициях школьных музеев</h3>
+					<div class="all-news__text">Круглый стол на эту тему прошел в Иванове. Его участниками стали сотрудники музеев образовательных организаций, заместители директоров школ по воспитательной работе, классные руководители, исследователи истории Великой Отечественной войны</div>
+					<div class="news__data"><i class="icon-clock"></i>
+					Опубликовано: 20 октября 2017</div>
+				</div>
+			</div>
+
+			<div class="all-news__line">
+				<a href="news/news-4.html" class="all-news__img" style="background: url(../img/new-4/top.jpg) no-repeat center center;  background-size: cover;"></a>
+				<div class="all-news__content">
+					<h3 class="all-news__title">Лекционный день в Клубе людей зрелого возраста</h3>
+					<div class="all-news__text">18 октября в Уфе в Клубе людей зрелого возраста «Наших лет золотые россыпи» прошел плановый лекционный день</div>
+					<div class="news__data"><i class="icon-clock"></i>Опубликовано: 20 октября 2017</div>
+				</div>
+			</div>
+
+			<div class="pagination__wrap">
+				<nav aria-label="Page navigation">
+				  <ul class="pagination">
+				    <li class="pagination__item pagination__item_no-back pagination__item_off">
+				      <a href="#" aria-label="Previous" class="pagination__link">
+				       	<i class="icon-st-left"></i>
+				      </a>
+				    </li>
+				    <li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link" >2</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link" >3</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link" >4</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link" >5</a></li>
+				    <li class="pagination__item pagination__item_no-back"><a href="#" class="pagination__link" >...</a></li>
+				    <li class="pagination__item"><a href="#" class="pagination__link" >165</a></li>
+				    <li class="pagination__item pagination__item_no-back">
+				      <a href="#" aria-label="Next" class="pagination__link">
+				        <i class="icon-st-right"></i>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="footer__before"></div>
+
+</div>
+	<div class="footer__white">
+		@@include('./file-include/footer.html')
+	</div>
+
+	@@include('./file-include/viz-modal-1.html')
+	@@include('./file-include/viz-modal-2.html')
+	@@include('./file-include/viz-modal-3.html')
+	@@include('./file-include/viz-modal-4.html')
+	@@include('./file-include/viz-modal-5.html')
+</body>
+</html>

@@ -148,8 +148,9 @@ $('.viz-modal__box-btns_font .btn').click(function() {
 
 //dropdown
 
-    $(".dropdown .dropdown__box, .dropdown .dropdown__arrow-down").click(function() {
-        $(".dropdown .dropdown__btn").toggleClass('active');
+    $(".dropdown").click(function() {
+        $(this).find(".dropdown__btn").toggleClass('active');
+        
     });
 
     $(".m-select .mdi-menu-down").click(function() {

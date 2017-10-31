@@ -1,0 +1,216 @@
+.all-news {
+
+	&__h1 {
+		 font-size: 21px;
+
+		 font-weight: bold;
+		 color: #000;
+		 margin-bottom: 35px;
+		 margin-top: 0;	
+	}
+
+	&__filter {
+		.clearfix;
+		position: relative;	
+        box-sizing: border-box;
+        padding: 20px @sp*2; 
+        border: 3px solid #000;
+        margin-bottom: 50px;
+	}
+
+	&__item-left,
+	&__item-right {
+		float: left;
+		width: calc(~'44% - 20px');
+		margin-right: 20px;	
+	}
+
+	.btn-filter {
+		float: left;	
+		width: 12%;	
+		letter-spacing: 1px;
+	}
+
+	&__label {
+		color: #000;
+		font-weight: bold;
+		font-size: 	21px;
+		margin-bottom: 	@sp;		
+	}
+
+	.btn-filter {
+		position: absolute;	
+		bottom: @sp*2;	
+	}
+
+	&__img {
+		display: none;	
+	}
+
+	&__line {
+		margin-bottom: 	40px;
+	}
+
+	&__title {
+		font-size: 14px;
+		color: #000;
+		font-weight: bold;
+		text-decoration: underline;
+		margin-bottom: 	@sp;
+	}
+
+	&__text {
+		font-size: 14px;
+		color: #000;
+		margin-bottom: 	@sp;
+	}
+
+	.news__data {
+		font-size: 14px;
+		color: #000;
+		margin-bottom: 	@sp;
+		margin-top: 0;	
+		
+		i {
+			font-family:  Arial;
+			&:before {
+				content: '';
+				font-size: 14px;
+				color: #000;
+				display: none;	
+			}
+		}
+	}
+
+	.dropdown__btn {
+		width: 100%;
+	}
+
+	.icon-clock {
+		display: none;
+	}
+
+}
+
+.ColorBlack {
+	.all-news {
+
+		&__h1 {
+			color: #fff;
+		}
+
+		&__filter {
+			border: 3px solid #fff;
+			background-color: #000;
+		}	
+
+		&__label {
+			color: #fff;
+		}
+
+		&__title {
+			color: #fff;
+		}
+
+		&__text {
+			color: #fff;
+		}
+
+		.news__data {
+			color: #fff;
+		}
+	}
+}
+
+
+.ColorBlue {
+	.all-news {
+
+		&__h1 {
+			color: @blue-dark;
+		}
+
+		&__filter {
+			border: 3px solid @blue-dark;
+			background-color: @blue;
+		}	
+
+		&__label {
+			color: @blue-dark;
+		}
+
+		&__title {
+			color: @blue-dark;
+		}
+
+		&__text {
+			color: @blue-dark;
+		}
+
+		.news__data {
+			color: @blue-dark;
+		}
+	}
+}
+
+
+.fontSizeSmall {
+	.all-news {
+
+		&__h1 {
+			font-size: 21px;
+		}
+
+		&__title {
+			font-size: 14px;
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+
+		.news__data {
+			font-size: 14px;
+		}
+	}
+}
+.fontSizeMedium {
+	.all-news {
+		&__h1 {
+			font-size: 25px;
+		}
+
+		&__title {
+			font-size: 16px;
+		}
+
+		&__text {
+			font-size: 16px;
+		}
+
+		.news__data {
+			font-size: 16px;
+		}
+	}
+}
+
+.fontSizeBig {
+	.all-news {
+		&__h1 {
+			font-size: 36px;
+		}
+
+		&__title {
+			font-size: 23px;
+		}
+
+		&__text {
+			font-size: 23px;
+		}
+
+		.news__data {
+			font-size: 23px;
+		}
+	}
+
+}
