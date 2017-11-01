@@ -1,0 +1,86 @@
+.comments {
+	&__comment {
+
+		overflow: hidden;
+		max-height:0px;
+		min-height: 0px;
+		box-sizing: border-box;
+		margin-bottom: 0px;
+
+		&-text {
+			margin: 0;
+			font-size: 15px;
+		}
+
+		&-info {
+			margin-bottom: 20px;
+		}
+
+		&-img {
+			width: 50px;
+			height: 50px;
+			top: -5px;
+			left: 0;
+		}
+
+		&-autor {
+			margin-left: 70px;
+			margin-top: 25px;
+			margin-bottom: 10px;
+		}
+
+		&-data {
+			margin-top: 0;
+			margin-left: 70px;
+			font-size: 14px;
+			font-family: Scada;
+		}
+
+
+	}
+
+	&__buttons {
+		.clearfix;
+		margin-bottom: 15px;
+
+		
+		
+		
+		&-elem {
+
+			&_red {
+				float: right;
+			}
+
+			&_blue {
+				float: left;
+			}
+			margin-left: 0;
+		}
+	}
+
+	&.active {
+		.comments {
+			&__comment {
+
+				overflow: hidden;
+				max-height:10000px;
+				min-height: 0px;
+				box-sizing: border-box;
+				margin-bottom: 020px;
+			}
+		}
+
+		.one-event {
+			&__title-h3 {
+				i {
+					&:before {
+						ransform: rotate(-180deg);
+					}
+				}
+				
+			}
+		}
+	}
+	
+}

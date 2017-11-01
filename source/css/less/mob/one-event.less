@@ -1,0 +1,114 @@
+.one-event { 
+
+
+	.btn {
+		text-align: center;
+	}
+
+	&__title-h3 {
+		i {
+			display: inline;
+			position: relative;
+			top: 5px;
+			left: -8px;
+			font-size: 40px;
+		}
+		
+	}
+
+	&__wrap {
+		width: 100%;
+		padding:0 15px;
+	}
+
+	&__h1 {
+		font-size: 28px;
+	}
+
+	&__rating-yourmark {
+		margin-left: 0;
+	}
+
+	&__info {
+		flex-direction: column;
+		.clearfix;
+		height: auto;
+	}
+
+	&__datatime {
+		.clearfix;
+		margin-bottom: 20px;
+	}
+
+	&__geo {
+		margin-bottom: 20px;
+		i {
+			display: inline-block;
+			margin-right: 10px;
+			float: left;
+			min-height: 80px;
+			position: relative;
+			left: 0;
+		}
+	}
+
+	&__elem {
+		.clearfix;
+	}
+
+	&__autor {
+		.clearfix;
+		min-height: 100px;
+	}
+
+	&__list {
+		width: 100%;
+	}
+
+	&__nav {
+		bottom: 10px
+	}
+
+	&__shareblock {
+		margin-bottom: 40px;
+		&-soc {
+			margin-right: 3px;
+			a {
+				line-height: 2.2;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+
+	&__attached-event {
+		display: none;
+	}
+
+	&__back {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		color: #000;
+		text-decoration: none;
+		padding: 60px 0;
+		font-size: 18px;
+		
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: #000;
+				outline: 0px;
+			}
+	}
+
+
+}
+
+@media (max-width: 321px) {
+	.one-event {
+		&__h1 {
+			font-size: 25px;
+		}
+	}	
+}

@@ -1,0 +1,68 @@
+.contacts-organizer {
+	display: none;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #dddfe3;
+	
+	&__btn {
+		display: inline-block;
+		font-size: 20px;
+		font-family: Scada-bold;
+		color: #000;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		
+		i {
+			position: relative;
+			top: 7px;
+			left: -8px;
+			margin-right: -8px;
+			font-size: 40px;
+		}
+		
+		&:focus,
+		&:active {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+
+	&__elem {
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-family: Scada;
+		font-size: 16px;
+		color: #8c8c8c;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		font-family: Scada;
+		font-size: 16px;
+		color: #000;
+	}
+
+	&__wrap {
+		overflow: hidden;
+		max-height:0;
+	}
+
+	&.active {
+		.contacts-organizer {
+			&__wrap {
+				max-height: 10000px;
+			}
+
+			&__btn {
+				i {
+					&:before {
+						transform: rotate(-180deg);
+					}
+					
+				}
+			}
+		}
+	}
+}

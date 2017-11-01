@@ -162,4 +162,17 @@ $('.viz-modal__box-btns_font .btn').click(function() {
         $(".all-events-white-top__form").toggleClass('active');
         $(".question-title .icon-doun").toggleClass('active');
     });
+
+
+/*мобилка - event-mob.html - выпадашка*/
+    $(".contacts-organizer__btn").click(function(e) {
+        e.preventDefault();
+        $(".contacts-organizer").toggleClass('active');
+    });
+
+    $(".one-event__title-h3").click(function(e) {
+        e.preventDefault();
+        $(".comments").toggleClass('active');
+    });
+
 });

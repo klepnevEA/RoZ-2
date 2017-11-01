@@ -1,0 +1,60 @@
+.radio {
+  
+  &-list {
+    padding: 10px 0 0 0;
+  }
+
+
+	& + label {
+		cursor: pointer;
+	}
+}
+
+.radio:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+.radio:not(checked) + label {
+	display: inline-block;
+	position: relative; 
+	padding: 5px 0 5px 40px;
+	font-family: Scada;
+	font-size: 18px;
+	color: #727272;
+	
+}
+
+.radio:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	box-sizing: border-box;
+}
+
+.radio:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 25px;
+	height: 25px;
+	background: transparent;
+	border: 2px solid @blue;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+
+.radio:checked + label:after {
+	content: '\2022';
+	padding-top: 9.45px;
+	line-height: 0;
+	font-size: 55px;
+	color: @blue;
+	box-sizing: border-box;
+}
+
+
