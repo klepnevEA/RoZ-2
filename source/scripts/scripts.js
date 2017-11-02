@@ -165,14 +165,14 @@ $('.viz-modal__box-btns_font .btn').click(function() {
 
 
 /*мобилка - event-mob.html - выпадашка*/
-    $(".contacts-organizer__btn").click(function(e) {
+    $(".right-menu__title-h2").click(function(e) {
         e.preventDefault();
-        $(".contacts-organizer").toggleClass('active');
+        $(this).parent(".right-menu__contact-wrap").toggleClass('active');
     });
 
     $(".one-event__title-h3").click(function(e) {
         e.preventDefault();
-        $(".comments").toggleClass('active');
+        $(this).parent(".comments").toggleClass('active');
     });
 
 });

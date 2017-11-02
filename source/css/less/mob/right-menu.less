@@ -1,3 +1,49 @@
 .right-menu {
 	display: none;
+	
+	&__contact {
+		overflow: hidden;
+		max-height: 0px;
+		margin: 0;
+		box-sizing: border-box;
+		
+		&-wrap {
+			border-bottom: 2px solid #dddfe3;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__title-h2 {
+		text-transform: uppercase;
+		font-size: 20px;
+		i {
+			display: inline;
+			position: relative;
+			left: -18px;
+			top: 8px;
+			margin-right: -18px;
+			font-size: 40px;
+			
+		}
+	}
+	
+	&__contact-wrap {
+		&.active {
+			.right-menu {
+				&__contact {
+					max-height: 1000px;
+				}
+
+				&__title-h2 {
+					i {
+						&:before {
+							transform: rotate(-180deg);
+						}
+					}
+				}
+			}
+
+			
+		}
+	}
 }
