@@ -1,168 +1,110 @@
 .popup-mob {
-	&__wrap {
-		width: 100%;
-		& > .row {
-			margin-left: 0;
-			margin-right: 0;
+	position: absolute;	
+	top: 0;	
+	left: 0;	
+	width: 100vw;
+	z-index: 9900;
+	background-color: #f3f3f3;
+	
+	&__header {
+		position: relative;	
+		background-color: #fff;
+		padding: 25px 40px;
+		
+		&-text {
+			font-family: Scada;
+			color: #000;
+			font-size: 	24px;
+			line-height: 	1.2;
 		}
 	}
-	&__filter {
-		display: none;
-		&-mob {
-			position: relative;
-			i {
-				position: absolute;
-				font-size: 35px;
-				color: #01aeea;
-				width: 40px;
-				height: 40px;
-				right: 10px;
-				top: 0;
-			}
-		}
-	}
-	&__search {
-		padding: 30px 18px;
-		position: relative;
-		.mdi-magnify {
-			position: absolute;
-			color: #01aeea;
-			display: block;
-			width: 40px;
-			height: 40px;
-			line-height: 40px;
-			text-align: center;
-			font-size: 30px;
-			bottom: 30px;
-			right: 18px;
 
-		}
-	}
-	&__h1 {
-		width: 100%;
-		padding: 0 18px 35px;
-		font-size: 36px;
-		background: none;
-	}
-	.right-menu {
-		display: none;
-	}
-	&__img {
-		height: 260px;
-	}
-	&__data {
-		width: 70px;
-		&-day {
-			font-size: 44px;
-			line-height: 1;
-			height: 70px;
-			line-height: 70px;
-			padding: 0;
-		}
-		&-month {
-			font-size: 22px;
-			line-height: 1;
-			padding: 10px 0;
-		}
-	}
-	&__footer {
-		height: auto;
-	}
-	&__title {
-		font-size: 18px;
-	}
-	&__value {
-		font-size: 20px;
-		padding: 0;
-		margin-right: 20px;
+	&__close {
+		position: absolute;	
+		top: 15px;	
+		right: 15px;
+		color: #000;
+		font-size: 	30px;	
+		
 		i {
-			font-size: 20px;
-			padding-right: 5px;
+			color: #000;
 		}
 	}
-	&__modal {
-		&.mob {
-			display: none;
-			background: white;
-			color: black;
-			top: 0;
-			left: 0;
-			right: 0;
-			display: none;
-			position: fixed;
-			.mdi-close {
-				width: 25px;
-				height: 25px;
-				position: absolute;
-				top: 15px;
-				right: 10px;
-				font-size: 25px;
-				cursor: pointer;
-			}
-		}
-		&.mob.active {
-			display: block;
-			animation: a-menu 0.3s;
-		}
-		&-header {
-			height: 85px;
-			.clearfix;
-			&-text {
-				font-family: Scada;
-				font-size: 24px;
-				padding: 30px 40px 0;
-				line-height: 1;
-			}
-		}
-		&-content {
-			background: #f3f3f3;
-			padding: 0 18px;
-			height: calc(~"100vh - 85px");
-			overflow: auto;
-		}
-		&-item {
-			padding: 30px 0px;
-			margin: 0px 24px;
-			border-bottom: 2px solid #dddfe3;
-			&_nohr {
-				border-bottom: none;
-			}
-		}
-		&-title {
-			text-transform: uppercase;
-			font-family: Scada-bold;
-			font-size: 20px;
-			color: #eb5427;
 
+	&__content {
+		padding: 20px 40px
+	}
+
+	&__text-gray {
+		font-family: Scada;
+		color: #adadad;
+		font-size: 18px;
+		margin-bottom: 5px;
+		
+		span {
+			color: #eb5427;
 		}
-		&-btns {
-			display: flex;
-			justify-content: space-between;
-			padding: 30px 0 55px;
-			.btn {
-				min-width: 47%;
-				padding: 0 !important;
-				height: 50px;
-				line-height: 50px;
-			}
+	}
+
+	&__text-black {
+		font-family: Scada-bold;
+		color: #000;
+		font-size: 	19px;
+		margin-bottom: 	15px;
+	}
+
+	.stars {
+		margin-bottom: 10px;
+		
+		&__star {
+			width: 35px;	
+			height: 35px;
+	        background-size: 35px 115px;		
+	        
+	        &_half {
+	        	background-position: 0 -43.3px;
+	        }
+
+	        &_empty {
+	        	background-position: 0 -83.5px;
+	        }
 		}
-		&-dp {
-			background: white;
-			height: 400px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+	}
+
+	&__textarea {
+		resize: none;
+		border: 2px solid #dddfe3;
+		font-size: 18px;
+		background-color: #fff;
+		width: 100%;	
+		height: 120px;
+
+		
+		&-text {
+			font-family: Scada;
+			color: #adadad;
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+
+		&_mb {
+			margin-bottom: 	15px;
+		}
+	}
+
+	&__hr {
+		bottom: 0;	
+		border-bottom: 	2px solid #dddfe3;
+	}
+
+	&__btns {
+		display: flex;	
+		padding-top: 35px;	
+		justify-content: space-between;
+		.btn {
+			margin: 0;
+			height: 50px;	
+			min-width: 	155px;
 		}
 	}
 }
-//какой то диавол верстал этот блок в десктопной версии
-// .search-region {
-// 	width: 100%;
-// 	margin-bottom: 10px;
-// 	position: relative;
-	
-// }
-// .input__all-events {
-// 	width: 100%;
-// 	padding-right: 40px;
-// }
