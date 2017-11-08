@@ -24,7 +24,6 @@
 			padding-left: 60px;
 			font-weight: bold;
 			font-size: 21px;
-			// margin-bottom: 30px;
 			border: 3px solid black;
 			box-sizing: border-box;
 			cursor: pointer;
@@ -113,6 +112,121 @@
 		&-right {
 			margin-bottom: 30px;
 			.clearfix;
+		}
+	}
+}
+
+.fontSizeSmall {
+	.regions  {
+		&__menu {
+			&-itemname {
+				font-size: 21px;
+				span {
+					font-size: 21px;
+				}
+			}
+		}
+		&__geo, &__number {
+		 	font-size: 21px;
+		}
+	}
+}
+.fontSizeMedium {
+	.regions  {
+		&__menu {
+			&-itemname{
+				font-size: 25px;
+				span {
+					font-size: 25px;
+				}
+			}
+		}
+		&__geo, &__number {
+		 	font-size: 25px;
+		}
+	}
+}
+.fontSizeBig {
+	.regions  {
+		&__menu {
+			&-itemname {
+				font-size: 36px;
+				span {
+					font-size: 36px;
+				}
+			}
+		}
+		&__geo, &__number {
+		 	font-size: 36px;
+		}
+		
+	}
+}
+
+
+
+
+.ColorBlack {
+	.regions {
+		* {
+			color: white;
+		}
+		&__menu {
+			border-bottom: 3px solid white;
+			&-itemname {
+				color: white;
+				border: 3px solid white;
+				i, span {
+					color: white;
+				}
+			}
+			&-item {
+				&.active {
+					.regions__menu-itemname {
+						background: white;
+						color: black;
+						border: 3px solid transparent;
+						i, span {
+							color: black;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+.ColorBlue {
+	.regions {
+		* {
+			color: @blue-dark;
+		}
+		&__menu {
+			border-bottom: 3px solid @blue-dark;
+			&-itemname {
+				color: @blue-dark;
+				border: 3px solid @blue-dark;
+				i, span {
+					color: @blue-dark;
+				}
+			}
+			&-item {
+				&.active {
+					.regions__menu-itemname {
+						background: @blue-dark;
+						color: @blue;
+						border: 3px solid transparent;
+						i, span {
+							color: @blue;
+						}
+					}
+				}
+			}
+		}
+		&__submenu{
+			&-list {
+				border-bottom: 3px solid @blue-dark;
+			}
 		}
 	}
 }
