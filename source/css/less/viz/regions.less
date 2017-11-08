@@ -1,0 +1,118 @@
+.regions {
+	* {
+		color: black;
+	}
+	.all-events__h1 {
+		font-weight: bold;
+		font-size: 21px;
+		margin-top: 0;
+		margin-bottom: 40px;
+	}
+	&__menu {
+		border-bottom: 3px solid black;
+		padding-bottom: 20px;
+		&-list {
+			padding: 0;
+			margin: 0;
+		}
+		&-itemname {
+			position: relative;
+			background: none;
+			color: black;
+			height: 58px;
+			line-height: 52px;
+			padding-left: 60px;
+			font-weight: bold;
+			font-size: 21px;
+			// margin-bottom: 30px;
+			border: 3px solid black;
+			box-sizing: border-box;
+			cursor: pointer;
+			i, span {
+				color: black;
+				font-weight: bold;
+				font-size: 21px;
+			}
+			.icon-doun {
+				&:before {
+					content: "\F35D";
+					position: absolute;
+					font-size: 38px;
+					transform: rotate(90deg);
+					top: 7px;
+					left: 20px;
+					font-family: "Material Design Icons" !important;
+				}
+			}
+		}
+		&-item {
+			padding-bottom: 30px;
+			&.active {
+				.regions__submenu-list {
+					display: block;
+					padding-top: 30px;
+				}
+				.regions__menu-itemname {
+					position: relative;
+					background: black;
+					color: white;
+					border: 3px solid transparent;
+					i, span {
+						color: white;
+					}
+					.icon-doun {
+						&:before {
+							transform: none;
+						}
+					}
+				}
+			}
+
+		}
+	}
+	&__submenu{
+		&-list {
+			padding: 0;
+			margin: 0;
+			display: none;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 3px solid #989898;
+		}
+	}
+	&__geo {
+		display: inline-block;
+		color: black;
+		font-size: 21px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		br {
+			display: none;
+		}
+
+
+	}
+	&__number {
+		display: inline-block;
+		color: black;
+		font-size: 21px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__manager {
+		color: lighten(black, 50%);
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	&__name {
+		display: inline-block;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__item {
+		&-right {
+			margin-bottom: 30px;
+			.clearfix;
+		}
+	}
+}
