@@ -1,18 +1,42 @@
 
 .management {
 
+	&__h1 {
+		color: #000;
+		font-size: 21px;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+	}
+
 	.link-all {
 		padding-bottom: 50px;
 	}
 	.clearfix;
+	
+	&_border-bottom {
+		padding-bottom: 35px;
+		border-bottom: 3px solid #000;
+	}
 
 	&__text {
 		font-weight: bold;
+		margin-bottom: 20px;
+		line-height: 1.6;
+		
+		&_mb-0 {
+			margin-bottom: 0;
+		}
 	}
 
 	&__block {
-		border-top: 3px solid #989898;
+		border-top: 3px solid #000;
 		padding-top: 40px;
+		
+		&_bt-0 {
+			border-top: 0px solid #000 !important;
+			padding-top: 35px;
+		}
 	}
 
 	&__comments {
@@ -52,14 +76,30 @@
 		}
 	}
 	&__title {
+		.clearfix;
 		color: black;
+		margin-bottom: 10px !important;
+		
 	}
+
+	&__surname,
+	&__name {
+		display: inline-block;
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	&__post {
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: @sp/3;
+	}
+
 	&__photo {
 		display: none;
 	}
-	&__text {
-		margin-bottom: 20px;
-	}
+
 }
 
 
@@ -70,6 +110,16 @@
 			font-weight: bold;
 			margin-bottom: 40px;
 		}
+
+		&__surname,
+		&__name,
+		&__h1 {
+			font-size: 21px;
+		}
+
+		&__post {
+			font-size: 14px;
+		}
 	}
 }
 .fontSizeMedium {
@@ -78,6 +128,16 @@
 			font-size: 25px;
 			font-weight: bold;
 			margin-bottom: 40px;
+		}
+
+		&__surname,
+		&__name,
+		&__h1 {
+			font-size: 25px;
+		}
+
+		&__post {
+			font-size: 17px;
 		}
 	}
 }
@@ -88,6 +148,17 @@
 			font-weight: bold;
 			margin-bottom: 40px;
 		}
+
+		&__surname,
+		&__name,
+		&__h1 {
+			font-size: 36px;
+		}
+
+		&__post {
+			font-size: 23px;
+		}
+
 		&__comments {
 			&__button-play {
 				a {
@@ -109,6 +180,10 @@
 		&__block {
 			border-top: 3px solid #fff;
 		}
+
+		&_border-bottom {
+			border-bottom: 3px solid #fff;
+		}
 		
 	}
 }
@@ -120,6 +195,10 @@
 
 		&__block {
 			border-top: 3px solid @blue-dark;
+		}
+
+		&_border-bottom {
+			border-bottom: 3px solid @blue-dark;
 		}
 		
 	}
