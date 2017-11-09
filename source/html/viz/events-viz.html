@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<!-- @@include('./file-include/head.html')	 -->
-	@@include('./file-include/head-viz.html')
+	@@include('../file-include/head-viz.html')
 
 <body class="fontSizeMedium ColorWhite LetterSpacingSmall FontFamilyArial"> 
 
 <div class="wrapper">
 		
-	<!-- @@include('./file-include/header.html') -->
-	@@include('./file-include/header-viz.html')
+	<!-- @@include('../file-include/header.html') -->
+	@@include('../file-include/header-viz.html')
 
 	<div class="breadcrumb viz">
 		<span class="breadcrumb__text">Вы здесь:</span>
@@ -335,7 +335,7 @@
 								<div class="all-events__item">
 
 
-									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+									<div class="all-events__img" style="background: url(../../img/event/e1.jpg) no-repeat;  background-size: cover;">
 										<div class="all-events__data">
 											<div class="all-events__data-day">10</div>
 											<div class="all-events__data-month">мар</div>
@@ -436,7 +436,108 @@
 								<div class="all-events__item">
 
 
-									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+									<div class="all-events__img" style="background: url(../../img/event/e1.jpg) no-repeat;  background-size: cover;">
+										<div class="all-events__data">
+											<div class="all-events__data-day">10</div>
+											<div class="all-events__data-month">мар</div>
+										</div> 
+									</div>
+
+
+									<div class="all-events__footer">
+									        <div class="all-events__title">
+									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
+									        </div>
+									        <div class="mediateka__category">
+									            
+											    <span  class="tag-item mediateka__category_item">
+											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
+											    </span>
+											    <div class="tags__tag-all">
+											        <i class="icon-dots-horizontal"></i>
+											    </div>
+											</div>
+
+											<div class="tags__tag-all">
+											    <div class="tags__modal">
+											    	<span class="viz">Категория:</span>
+											       <span >
+											            <a class="tags__tag" href="#">Физика и астрономия</a>
+											        </span>
+											    </div>
+											</div>
+
+									</div>
+
+									<div  class="all-events__dt viz">
+										<span >Дата и время проведения:</span>
+										<span class="all-events__dt-date">20 октября 2017</span>
+										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
+									</div>
+
+
+									<div  class="all-events__place">
+							            <span class="all-events__place__name">Место:</span>
+							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
+									</div>
+
+		
+							        <div class="all-events__place-region">
+							            <i class="icon-geo-pin"></i>
+							            <span>Самарская область</span>
+							        </div>
+
+							        <div class="all-events__value-wrap">
+							            <div class="all-events__value" title="Хотят пойти">
+							                <i class="icon-run-man"></i>
+							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
+							            </div>
+							            <div class="all-events__value" title="Комментарии">
+							                <i class="icon-message"></i>
+							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
+							            </div>
+							            <div class="all-events__value" title="Количество просмотров">
+							                <i class="icon-eye"></i>
+							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
+							            </div>
+							        </div>
+
+									<div class="clearfix not-viz"></div>
+
+							        <div class="tags">
+								        <div id="tagsBlock">
+										    <span class="tag-item">
+										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
+										    </span>
+
+
+										    <div class="tags__tag-all">
+										        <i class="icon-dots-horizontal"></i>
+
+										        <div class="tags__modal">
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a>
+										            </span> 
+										            <span>
+										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
+										            </span>
+										        </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="all-events__item"> 
+
+
+									<div class="all-events__img" style="background: url(../../img/event/e1.jpg) no-repeat;  background-size: cover;">
 										<div class="all-events__data">
 											<div class="all-events__data-day">10</div>
 											<div class="all-events__data-month">мар</div>
@@ -537,108 +638,7 @@
 								<div class="all-events__item">
 
 
-									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
-										<div class="all-events__data">
-											<div class="all-events__data-day">10</div>
-											<div class="all-events__data-month">мар</div>
-										</div> 
-									</div>
-
-
-									<div class="all-events__footer">
-									        <div class="all-events__title">
-									            <a href="#" title="Встреча с космонавтом С.В. Авдеевым">Встреча с космонавтом С.В. Авдеевым</a>
-									        </div>
-									        <div class="mediateka__category">
-									            
-											    <span  class="tag-item mediateka__category_item">
-											        <a href="#" title="Физика и астрономия">Физика и астрономия</a>
-											    </span>
-											    <div class="tags__tag-all">
-											        <i class="icon-dots-horizontal"></i>
-											    </div>
-											</div>
-
-											<div class="tags__tag-all">
-											    <div class="tags__modal">
-											    	<span class="viz">Категория:</span>
-											       <span >
-											            <a class="tags__tag" href="#">Физика и астрономия</a>
-											        </span>
-											    </div>
-											</div>
-
-									</div>
-
-									<div  class="all-events__dt viz">
-										<span >Дата и время проведения:</span>
-										<span class="all-events__dt-date">20 октября 2017</span>
-										<span class="all-events__dt-time">12:30 (UTC + 03:00)</span>
-									</div>
-
-
-									<div  class="all-events__place">
-							            <span class="all-events__place__name">Место:</span>
-							            <span> г. Чебоксары, Московский проспект, 15, корпус "Г" Чувашского государственного университета, аудитория Г-301</span>
-									</div>
-
-		
-							        <div class="all-events__place-region">
-							            <i class="icon-geo-pin"></i>
-							            <span>Самарская область</span>
-							        </div>
-
-							        <div class="all-events__value-wrap">
-							            <div class="all-events__value" title="Хотят пойти">
-							                <i class="icon-run-man"></i>
-							                <span ng-bind="ctrl.event.Attendees?ctrl.event.Attendees:0" class="ng-binding">32</span>
-							            </div>
-							            <div class="all-events__value" title="Комментарии">
-							                <i class="icon-message"></i>
-							                <span ng-bind="ctrl.event.Comments?ctrl.event.Comments:0" class="ng-binding">0</span>
-							            </div>
-							            <div class="all-events__value" title="Количество просмотров">
-							                <i class="icon-eye"></i>
-							                <span ng-bind="ctrl.event.Views?ctrl.event.Views:0" class="ng-binding">11</span>
-							            </div>
-							        </div>
-
-									<div class="clearfix not-viz"></div>
-
-							        <div class="tags">
-								        <div id="tagsBlock">
-										    <span class="tag-item">
-										        <a href="#" class="tags__tag ng-binding">Санкт-Петербург</a>
-										    </span>
-
-
-										    <div class="tags__tag-all">
-										        <i class="icon-dots-horizontal"></i>
-
-										        <div class="tags__modal">
-										            <span>
-										                <a class="tags__tag" href="#">Санкт-Петербург</a>
-										            </span> 
-										            <span>
-										                <a class="tags__tag" href="#">Санкт-Петербург</a>
-										            </span> 
-										            <span>
-										                <a class="tags__tag" href="#">Санкт-Петербург</a>
-										            </span> 
-										            <span>
-										                <a class="tags__tag" href="#">Санкт-Петербург</a> 
-										            </span>
-										        </div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-4">
-								<div class="all-events__item">
-
-
-									<div class="all-events__img" style="background: url(../img/event/e1.jpg) no-repeat;  background-size: cover;">
+									<div class="all-events__img" style="background: url(../../img/event/e1.jpg) no-repeat;  background-size: cover;">
 										<div class="all-events__data">
 											<div class="all-events__data-day">10</div>
 											<div class="all-events__data-month">мар</div>
@@ -811,19 +811,19 @@
 </div>
 
 
-	@@include('./file-include/footer.html')
+	@@include('../file-include/footer.html')
 
 
- 	@@include('./file-include/viz-modal-1.html')
-	@@include('./file-include/viz-modal-2.html')
-	@@include('./file-include/viz-modal-3.html')
-	@@include('./file-include/viz-modal-4.html')
-	@@include('./file-include/viz-modal-5.html')
-	@@include('./file-include/viz-modal-6.html')
+ 	@@include('../file-include/viz-modal-1.html')
+	@@include('../file-include/viz-modal-2.html')
+	@@include('../file-include/viz-modal-3.html')
+	@@include('../file-include/viz-modal-4.html')
+	@@include('../file-include/viz-modal-5.html')
+	@@include('../file-include/viz-modal-6.html')
 
 	<!-- модальные окна с радиокнопками и чекбоксами -->
-	@@include('./file-include/viz-modal-7.html')
-	@@include('./file-include/viz-modal-8.html')
+	@@include('../file-include/viz-modal-7.html')
+	@@include('../file-include/viz-modal-8.html')
 
 
 	<script>
