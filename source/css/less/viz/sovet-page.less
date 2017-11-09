@@ -1,0 +1,328 @@
+.sovet-page {
+
+	hr {
+		margin-top: @sp*2;
+		border-top: 3px solid #989898;
+	}
+
+	.all-events__h1 {
+		padding-bottom: 25px;
+	}
+
+	&__text {
+		h3 {
+			display: none;
+			font-size: 21px;
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10;
+		}
+
+		ul {
+			margin-left: 0;
+			padding-left: 6px;
+			
+		}
+
+		li {
+			font-size: 14px;
+			color: #000;
+			line-height: 2.4;
+			&:before {
+				content:  "—";
+			    position: relative;
+			    left: -5px;
+			}
+		}
+	}
+
+	&__title {
+		position: relative;
+		font-size: 21px;
+		font-weight: bold;
+		padding-left: 60px;
+		color: #000;
+		background-color: #fff;
+		cursor: pointer;
+		border: 3px solid black;
+		margin-bottom: @sp*2;
+		line-height: 52px;
+		text-transform: none;
+		
+		&.active {
+			background-color: #000;
+			color: #fff;
+			
+			.icon-doun {
+				&:before {
+					content: "\F35D";
+					font-family: "Material Design Icons" !important;
+					position: absolute;
+				    font-size: 38px;
+				    transform: rotate(0deg);
+				    top: 7px;
+				    left: 20px;
+				    color: #fff;
+				}
+			}
+		}
+		
+		.icon-doun {
+			&:before {
+				content: "\F35D";
+				font-family: "Material Design Icons" !important;
+				position: absolute;
+			    font-size: 38px;
+			    transform: rotate(90deg);
+			    top: 7px;
+			    left: 20px;
+			    color: #000;
+			}
+		}
+	}
+
+	&__title-label {
+		display: none;
+		font-size: 14px;
+		color: #000;
+	}
+
+	&__item {
+		margin-bottom: 35px;
+		&-name {
+			font-size: 14px;
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			font-size: 14px;
+			color: #000;
+		}
+
+		&_doc {
+			font-size: 14px;
+			color: #000;
+		}
+
+		&-img-big {
+			display: none;
+		}
+
+		&-position {
+			font-size: 21px;
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 25px;
+		}
+
+		&-wrap {
+			overflow: hidden;
+			max-height:0;
+			border-bottom: 3px solid #000;
+			
+			&.active {
+				max-height:100000px;
+			}
+		}
+	}
+
+
+
+
+
+	
+}
+.ColorBlack {
+	.sovet-page {
+		h3 {
+			color: #fff;
+		}
+
+		li {
+			color: #fff;
+		}
+
+		hr {
+			border-top: 3px solid #fff;
+		}
+
+		&__title {
+			border: 3px solid #fff;
+			background-color: #000;
+			color: #fff;
+			
+			.icon-doun {
+				&:before {
+					color: #fff;
+				}
+			}
+
+			&.active {
+				background-color: #fff;
+				color: #000;
+				
+				.icon-doun {
+					&:before {
+					    color: #000;
+					}
+				}
+			}
+		}
+
+		&__title-label {
+			color: #000;
+		}
+
+		&__item {
+			&-name {
+				color: #fff;
+			}
+
+			&-text {
+				color: #fff;
+			}
+
+			&_doc {
+				color: #fff;
+			}
+			&-position {
+				color: #fff;
+			}
+
+			&-wrap { 
+				border-bottom: 3px solid #fff;
+			}
+		}
+	}
+}
+.ColorBlue  {
+	.sovet-page {
+		h3 {
+			color: @blue-dark;
+		}
+
+		li {
+			color: @blue-dark;
+		}
+
+		hr {
+			border-top: 3px solid @blue-dark;
+		}
+
+		&__title {
+			border: 3px solid @blue-dark;
+			background-color: @blue;
+			color: @blue-dark;
+			
+			.icon-doun {
+				&:before {
+					color: @blue-dark;
+				}
+			}
+
+			&.active {
+				background-color: @blue-dark;
+				color: @blue;
+				
+				.icon-doun {
+					&:before {
+					    color: @blue;
+					}
+				}
+			}
+		}
+
+		&__title-label {
+			color: @blue;
+		}
+
+		&__item {
+			&-name {
+				color: @blue-dark;
+			}
+
+			&-text {
+				color: @blue-dark;
+			}
+
+			&_doc {
+				color: @blue-dark;
+			}
+			&-position {
+				color: @blue-dark;
+			}
+
+			&-wrap { 
+				border-bottom: 3px solid @blue-dark;
+			}
+		}
+	}
+}
+
+
+.fontSizeSmall {
+	.sovet-page { 
+		&__text {
+			li {
+				font-size: 14px;
+			}
+		}
+
+		&__item {
+			&-name,
+			&-text {
+				font-size: 14px;
+			}
+		}
+
+		&__title,
+		&__item-position {
+			font-size: 21px;
+		}
+
+	}
+}
+.fontSizeMedium {
+	.sovet-page {
+		&__text {
+			li {
+				font-size: 17px;
+			}
+		}
+
+		&__item {
+			&-name,
+			&-text {
+				font-size: 17px;
+			}
+		}
+
+		&__title,
+		&__item-position {
+			font-size: 25px;
+		}
+	}
+}
+.fontSizeBig {
+	.sovet-page {
+		&__text {
+			li {
+				font-size: 23px;
+			}
+		}
+
+		&__item {
+			&-name,
+			&-text {
+				font-size: 23px;
+			}
+		}
+
+		&__title,
+		&__item-position {
+			font-size: 36px;
+		}
+	}
+}
