@@ -1,7 +1,7 @@
 .sovet-page {
 
 	hr {
-		margin-top: @sp*2;
+		margin-top: 0;
 		border-top: 3px solid #989898;
 	}
 
@@ -21,6 +21,7 @@
 		ul {
 			margin-left: 0;
 			padding-left: 6px;
+			margin-bottom: @sp*2;
 			
 		}
 
@@ -45,9 +46,10 @@
 		background-color: #fff;
 		cursor: pointer;
 		border: 3px solid black;
-		margin-bottom: @sp*2;
+		margin-bottom: @sp;
 		line-height: 52px;
 		text-transform: none;
+		margin-top: @sp;
 		
 		&.active {
 			background-color: #000;
@@ -120,10 +122,16 @@
 		&-wrap {
 			overflow: hidden;
 			max-height:0;
-			border-bottom: 3px solid #000;
+			margin-bottom: 0;
+			padding-top: @sp;
 			
 			&.active {
 				max-height:100000px;
+				margin-bottom: @sp*3;
+			}
+
+			&_border-bottom {
+				border-bottom: 3px solid #000;
 			}
 		}
 	}
@@ -192,7 +200,10 @@
 			}
 
 			&-wrap { 
-				border-bottom: 3px solid #fff;
+				
+				&_border-bottom {
+					border-bottom: 3px solid #fff;
+				}
 			}
 		}
 	}
@@ -255,7 +266,10 @@
 			}
 
 			&-wrap { 
-				border-bottom: 3px solid @blue-dark;
+				
+				&_border-bottom {
+					border-bottom: 3px solid @blue-dark;
+				}
 			}
 		}
 	}
