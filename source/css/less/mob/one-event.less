@@ -1,4 +1,4 @@
-.one-event { 
+.one-event {  
 	.btn {
 		text-align: center;
 	}
@@ -98,6 +98,53 @@
 				color: #000;
 				outline: 0px;
 			}
+	}
+
+	&__contact {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid #dddfe3;
+		font-family: Scada;
+		.clearfix;
+
+		&.active {
+			.one-event__title-h3 {
+				i {
+					&:before {
+						transform: rotate(180deg);
+					}
+				}
+			}
+			.one-event__contact-wrap {
+				display: block;
+			}
+
+		}
+		&-wrap {
+			margin-top: 5px;
+			display: none;
+		}
+		.one-event__title-h3 {
+			i {
+				&:before {
+					transform: rotate(0deg);
+				}
+			}
+		}
+		
+		
+		&-label {
+			color: #8c8c8c;
+			font-size: 16px;
+			margin-bottom: 3px;
+			
+		}
+		p {
+			font-size: 16px;
+			font-family: Scada;
+			margin-bottom: 20px;
+		}
 	}
 
 
