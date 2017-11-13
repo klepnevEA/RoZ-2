@@ -1,0 +1,129 @@
+.grantz {
+
+    &-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        
+        .all-events__modal {
+            display: none;
+        }
+
+        &.active {
+            .all-events__modal {
+                display: block;
+            }
+        }
+    }
+
+    &__h1 {
+        font-size: 36px;
+        padding-bottom: 20px;
+        margin: 0 15px;
+        clear: both;
+        
+        &_margin-0 {
+            margin: 0;
+            padding-bottom: 15px;
+        }
+
+        &_width-100 {
+            width: 100%;
+            padding-right: 60px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        font-family: Scada; 
+        margin-bottom: 15px;
+    }
+
+    &__tabs {
+        &-elem {
+            position: relative;
+            left: -15px;
+            width: calc(~'100% + 15px');
+            background-color: #fff;
+            margin-bottom: 5px;
+            font-size: 18px;
+            
+            
+            
+            .btn {
+                position: relative;
+                width: 100% !important;
+                background-color: #fff;
+                color: #000;
+                text-transform: none;
+                text-align: left;
+                font-family: Scada; 
+                padding: 4px 17px;
+                height: auto;
+
+                
+                &.active {
+                    color: #01aeea;;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        width: 10px;
+                        height: 2px;
+                        background-color: #01aeea;;
+                    }
+                }
+            }
+        }
+
+        &-list {
+            margin-bottom: 0;
+        }
+    }
+
+    &__buttoms {
+        &-top {
+            margin-bottom: 10px;
+            float: left;
+            .btn {
+                background-color: transparent;
+                margin-left: 0px;
+                color: #000;
+                width: 100%;
+                text-align: left;
+                font-family: Scada; 
+                padding: 0;
+                
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-table {
+        margin: 0;
+        box-sizing: border-box;
+
+        &__thead {
+
+            th div {
+                padding: 10px;
+                white-space: nowrap;
+            }
+        
+        }
+
+        &__scrol {
+            box-sizing: border-box;
+            margin: 0;
+            overflow-x: scroll;
+            width: 100% !important;
+        }
+    }
+
+}
+

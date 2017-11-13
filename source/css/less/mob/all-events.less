@@ -1,4 +1,9 @@
 .all-events {
+	&__h1 {
+		font-size: 36px; // мобильная версия в grands.html
+		padding: 0 0px 35px;
+	}
+
 	&__wrap {
 		width: 100%;
 		& > .row {
@@ -105,12 +110,12 @@
 			animation: a-menu 0.3s;
 		}
 		&-header {
-			height: 85px;
+			min-height: 85px;
 			.clearfix;
 			&-text {
 				font-family: Scada;
 				font-size: 24px;
-				padding: 30px 40px 0;
+				padding: 30px 40px 10px;
 				line-height: 1;
 			}
 		}
