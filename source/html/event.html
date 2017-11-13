@@ -307,7 +307,32 @@
 			</div>
 
 
+			<div class="col-xs-12 mob">
+				<div class="one-event__contact mob">
+					<!-- <h3 class="one-event__contact-h3"><i class="mdi mdi-chevron-down"></i> Контакты организатора</h3> -->
+					<h3 class="one-event__title-h3"><i class="mdi mdi-chevron-down"></i>Контакты организатора</h3>
+					<div class="one-event__contact-wrap active">
+						<div class="one-event__contact-text">
+							<div class="one-event__contact-label">Организатор:</div>
+							<p>Факультет дополнительного профессионального образования, Волонтерский центр РЭУ им. Г.В. Плеханова</p>
+							<div class="one-event__contact-label">Контактное лицо:</div>
+							<p>Екатерина Власова</p>
+							<div class="one-event__contact-label">Телефон:</div>
+							<p>8-968-681-42-33</p>
+							<div class="one-event__contact-label">Электропочта:</div>
+							<p>virobjev@mail.ru</p>
+						</div>
 
+					</div>
+				</div>
+				<script>
+					$(document).ready(function(){
+					    $(".one-event__contact .one-event__title-h3").click(function(){
+					        $(this).parent('.one-event__contact').toggleClass("active");
+					    });
+					});
+				</script>
+			</div>
 			<div class="col-xs-12">	
 				<div class="comments">
 					<h3 class="one-event__title-h3 desk">Комментарии: <span>2</span></h3>

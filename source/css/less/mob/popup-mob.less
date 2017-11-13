@@ -10,12 +10,21 @@
 		position: relative;	
 		background-color: #fff;
 		padding: 25px 40px;
+		height: 110px;
+
 		
 		&-text {
 			font-family: Scada;
 			color: #000;
 			font-size: 	24px;
 			line-height: 	1.2;
+			height: 50px;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
 		}
 	}
 
