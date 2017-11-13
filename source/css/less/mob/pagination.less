@@ -1,0 +1,40 @@
+.pagination {
+	margin-bottom: 30px; 
+	&__item {
+		position: relative;
+		float: left;
+		margin: 0 3px;
+		min-width: 30px;
+
+		&:first-child {
+			position: relative;
+			left: -10px;
+			margin-right: 3px;
+			
+			.pagination {
+				&__link {
+					background-color: transparent;
+				}
+			}
+		}
+
+		&:last-child {
+			position: relative;
+			left: 10px;
+			margin-left: 3px;
+			
+			.pagination {
+				&__link {
+					background-color: transparent;
+				}
+			}
+		}
+		
+	}
+
+	&__link {
+		margin: 0;
+		min-width: 30px;
+		font-size: 24px;
+	}
+}
