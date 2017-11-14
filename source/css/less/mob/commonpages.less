@@ -10,16 +10,42 @@
 		width: 100vw;
 		margin: 0;
 		padding: 18px;
-		background: red;
 		&__image {
 			display: none;
 
 		}
+		&__header {
+
+		}
 		&-wrap {
-			box-sizing: border-box; 
-			background: green;
 			.one-news__text {
 				margin: 0;
+				ul {
+					margin-bottom: 30px;
+					li {
+						display: flex;
+						&:before {
+							flex: 0 0 20px;
+						}
+						a {
+							border-bottom: none;
+							text-decoration: underline;	
+						}
+					}
+				}
+				p {
+					margin-bottom: 15px;
+				}
+			}
+			box-sizing: border-box; 
+			.row {
+				width: 100%;
+			}
+			.one-news__h1 {
+				padding-left: 18px;
+			}
+			.one-news__wrap {
+				padding-bottom: 0;
 			}
 		}
 	}
