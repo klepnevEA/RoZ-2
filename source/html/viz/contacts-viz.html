@@ -50,8 +50,9 @@
 					<h2>Контакты</h2>
 					<div class="contacts__info">
 						<div class="contacts__info-left">
-							<div class="contacts__tell"><span class="viz">Телефон: </span><i class="icon-tel desk"></i>+7 (495) 691-12-38</div>
 							<div class="contacts__mail"><span class="viz">E-mail: </span><i class="icon-mail-2 desk"></i><a href="mail:info@znanierussia.ru">info@znanierussia.ru</a></div>
+							<div class="contacts__tell"><span class="viz">Телефон: </span><i class="icon-tel desk"></i>+7 (495) 691-12-38</div>
+							
 						</div>
 						<div class="contacts__info-right desk">
 							<div class="contacts__time">
@@ -100,13 +101,5 @@
 	@@include('../file-include/viz-modal-4.html')
 	@@include('../file-include/viz-modal-5.html')
 
-<script> 
-	$(document).ready(function(){
-		$('.sovet-page__title').click(function(){
-		 	$(this).toggleClass('active');
-		 	$(this).next().next().toggleClass('active'); 
-		 });
-	});
-</script>
 </body>
 </html>

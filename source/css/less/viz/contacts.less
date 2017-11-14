@@ -1,4 +1,8 @@
 .contacts {
+	h2 {
+		margin-bottom: @sp*2;
+	}
+
 	&__info,
 	&_photo {
 		span {
@@ -7,13 +11,50 @@
 			margin-right: 5px;
 		}
 	}
+
+	&__tell,
+	&__mail,
+	&_photo-geo,
+	&_photo-metro {
+		color: #000;
+		margin-bottom: 35px;
+		
+		a {
+			color: #000;
+			text-decoration: underline;
+			
+			&:hover,
+			&:focus {
+				color: #000;
+			}
+		}
+	}
+
+	&_photo-geo {
+		margin-bottom: 85px;
+	}
+
+	&_photo-metro {
+		margin-top: 35px;
+	}
 }
 
 .ColorBlack {
 	.contacts {
-		ul,
-		a {
-			color: #FFF;
+		&__tell,
+		&__mail,
+		&_photo-geo,
+		&_photo-metro {
+			color: #fff;
+			
+			a {
+				color: #fff;
+				
+				&:hover,
+				&:focus {
+					color: #fff;
+				}
+			}
 		}
 	}
 }
@@ -21,9 +62,20 @@
 
 .ColorBlue {
 	.contacts {
-		ul,
-		a {
+		&__tell,
+		&__mail,
+		&_photo-geo,
+		&_photo-metro {
 			color: @blue-dark;
+			
+			a {
+				color: @blue-dark;
+				
+				&:hover,
+				&:focus {
+					color: @blue-dark;
+				}
+			}
 		}
 	}
 }
