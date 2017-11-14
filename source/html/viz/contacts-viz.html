@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	@@include('../file-include/head-viz.html') 
+
+<body>
+
+<div class="wrapper"> 
+
+	@@include('../file-include/header.html')
+	@@include('../file-include/header-viz.html')
+	@@include('../file-include/nav-menu-viz.html')
+
+	<div class="breadcrumb viz">
+		<span class="breadcrumb__text">Вы здесь:</span>
+		<ul class="breadcrumb__list">
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Главная страница</a>
+			</li>
+			<li class="breadcrumb__elem">
+				<a href="#" class="breadcrumb__link">Об обществе</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+<div class="staticpage gray-back">
+	<div class="staticpage__wrap">
+
+		<div class="row">
+			<div class="col-xs-3 desk">
+				<div class="staticpage__menu">
+				<ul class="staticpage__menu-list">
+					<li class="staticpage__menu-item"><a href="#" class="staticpage__menu-link">История и современность</a></li>
+					<li class="staticpage__menu-item"><a href="#" class="staticpage__menu-link">Руководство</a></li>
+					<li class="staticpage__menu-item"><a href="#" class="staticpage__menu-link">Документы</a></li>
+					<li class="staticpage__menu-item"><a href="#" class="staticpage__menu-link">Наши партнеры</a></li>
+					<li class="staticpage__menu-item"><a href="#" class="staticpage__menu-link">Международное сотрудничество</a></li>
+					<li class="staticpage__menu-item active"><a href="#" class="staticpage__menu-link">Контакты</a></li>
+				</ul>
+				</div>
+			</div>	
+
+
+
+
+
+			<div class="col-xs-12">
+				<div class="contacts">
+					<h2>Контакты</h2>
+					<div class="contacts__info">
+						<div class="contacts__info-left">
+							<div class="contacts__tell"><span class="viz">Телефон: </span><i class="icon-tel desk"></i>+7 (495) 691-12-38</div>
+							<div class="contacts__mail"><span class="viz">E-mail: </span><i class="icon-mail-2 desk"></i><a href="mail:info@znanierussia.ru">info@znanierussia.ru</a></div>
+						</div>
+						<div class="contacts__info-right desk">
+							<div class="contacts__time">
+								<i class="icon-clock desk"></i>
+								Мы работаем по рабочим дням <br> с 10:00 до 18:00 часов <br><span>(время Московское)</span>
+							</div>  
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contacts_map desk">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d341551.6381324465!2d37.22714202301241!3d55.77891820151973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1485956324666" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="contacts_photo">
+						<div class="contacts_photo-geo"><span class="viz">Адрес: </span>
+						119019, Москва, улица Новый Арбат, дом 11, строение 1, 15 этаж
+						<div class="contacts_photo-metro"> 
+							<span class="viz">Проезд: </span>
+							<i class="icon-metro desk"></i>
+							Арбатская
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+
+
+
+
+
+		</div>
+	</div>
+</div>	
+
+<div class="footer__before"></div>
+
+</div>
+	<div class="footer__white">
+		@@include('../file-include/footer.html')
+	</div>
+
+	@@include('../file-include/viz-modal-1.html')
+	@@include('../file-include/viz-modal-2.html')
+	@@include('../file-include/viz-modal-3.html')
+	@@include('../file-include/viz-modal-4.html')
+	@@include('../file-include/viz-modal-5.html')
+
+<script> 
+	$(document).ready(function(){
+		$('.sovet-page__title').click(function(){
+		 	$(this).toggleClass('active');
+		 	$(this).next().next().toggleClass('active'); 
+		 });
+	});
+</script>
+</body>
+</html>
