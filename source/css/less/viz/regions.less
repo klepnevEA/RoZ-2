@@ -6,8 +6,15 @@
 		font-weight: bold;
 		font-size: 21px;
 		margin-top: 0;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
+
+	&__manager {
+		float: left;
+		margin-right: 5px;
+	}
+
+
 	&__menu {
 		border-bottom: 3px solid black;
 		padding-bottom: 20px;
@@ -49,7 +56,7 @@
 			&.active {
 				.regions__submenu-list {
 					display: block;
-					padding-top: 30px;
+					padding-top: 20px;
 				}
 				.regions__menu-itemname {
 					position: relative;
@@ -194,6 +201,10 @@
 
 			}
 		}
+
+		&__submenu-list {
+			border-bottom: 3px solid #fff;
+		}
 	}
 }
 .ColorBlue {
@@ -227,6 +238,10 @@
 			&-list {
 				border-bottom: 3px solid @blue-dark;
 			}
+		}
+
+		&__submenu-list {
+			border-bottom: 3px solid @blue-dark;;
 		}
 	}
 }

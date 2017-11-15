@@ -1,8 +1,21 @@
 .sovet-page {
 
+	&__h1 {
+		color: #000;
+	    font-size: 21px;
+	    font-weight: bold;
+	    margin: 0;
+	    padding: 0;
+	    margin-bottom: 25px;
+	}
+
 	hr {
 		margin-top: 0;
 		border-top: 3px solid #989898;
+	}
+
+	.col-xs-9 {
+		width: 100%;
 	}
 
 	.all-events__h1 {
@@ -48,6 +61,7 @@
 		border: 3px solid black;
 		margin-bottom: @sp;
 		line-height: 52px;
+		height: 58px;
 		text-transform: none;
 		margin-top: @sp;
 		
@@ -108,6 +122,10 @@
 			color: #000;
 		}
 
+		&-img {
+			display: none;
+		}
+
 		&-img-big {
 			display: none;
 		}
@@ -117,6 +135,10 @@
 			color: #000;
 			font-weight: bold;
 			margin-bottom: 25px;
+		}
+
+		&-name {
+			font-size: 21px;
 		}
 
 		&-wrap {
@@ -144,6 +166,11 @@
 }
 .ColorBlack {
 	.sovet-page {
+
+		&__h1 {
+			color: #fff;
+		}
+
 		h3 {
 			color: #fff;
 		}
@@ -210,6 +237,11 @@
 }
 .ColorBlue  {
 	.sovet-page {
+
+		&__h1 {
+			color: @blue-dark;
+		}
+
 		h3 {
 			color: @blue-dark;
 		}
@@ -285,9 +317,13 @@
 		}
 
 		&__item {
-			&-name,
+			
 			&-text {
 				font-size: 14px;
+			}
+
+			&-name {
+				font-size: 21px;
 			}
 		}
 
@@ -295,6 +331,8 @@
 		&__item-position {
 			font-size: 21px;
 		}
+
+
 
 	}
 }
@@ -307,9 +345,13 @@
 		}
 
 		&__item {
-			&-name,
+			
 			&-text {
 				font-size: 17px;
+			}
+
+			&-name {
+				font-size: 25px;
 			}
 		}
 
@@ -328,9 +370,13 @@
 		}
 
 		&__item {
-			&-name,
+			
 			&-text {
 				font-size: 23px;
+			}
+
+			&-name {
+				font-size: 36px;
 			}
 		}
 
