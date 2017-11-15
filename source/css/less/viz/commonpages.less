@@ -1,0 +1,283 @@
+.commonpages {
+
+	&__h1 {
+		font-size: 21px !important;
+		font-weight: bold;
+		margin-bottom: 30px;
+		margin-top: 0;
+		color: #000;
+	}
+
+	&__docs {
+
+		p {
+			margin-bottom: 28px;
+		}
+
+		&__image {
+			display: none;
+		}
+
+		&__header {
+			strong {
+				font-size: 21px;
+			}
+			
+		}
+
+		ul {
+			padding-left: 0;
+		}
+
+		li {
+			a {
+			    display: block;
+			    position: relative;
+			    margin-left: 25px;
+			    margin-bottom: 22px;
+			    text-decoration: underline;
+			    
+			    &:hover {
+			    	text-decoration: underline;
+			    }
+			    
+			    &:before {
+			    	content: '—';
+				    position: absolute;
+				    left: -25px;
+				    top: 50%;
+				    transform: translate(0, -50%);
+				    line-height: 0;
+			    }
+
+			    &:after {
+			    	content: '';
+				    display: inline-block;
+				    position: absolute;
+				    width: 30px;
+				    height: 7px;
+				    background-color: #fff;
+				    bottom: 0;
+				    left: -40px;
+			    }
+
+			    &.btn {
+			    	width: 100px;
+    				letter-spacing: normal;
+    				padding: 0;
+    				padding-top: 3px;
+    				text-decoration: none;
+    				margin-left: 0;
+    				margin-bottom: 32px;
+    				border: 3px solid #000; 
+    				
+    				&_black {
+    					background: black;
+    					color: white;
+    				}
+
+    				&:after,
+    				&:before {
+    					content: none;
+    				}
+			    }
+			}
+		}
+		
+	}
+
+	&__contacts {
+		font-weight: normal;
+		margin-bottom: 50px;
+		
+		&__map {
+			display: none;
+		}
+
+		span {
+			color: #000;
+		}
+
+		span span {
+			font-weight: bold;
+			margin-right: 5px;
+		}
+
+		a {
+			font-weight: normal;
+			color: #000;
+			
+			
+			&:hover,
+			&:active {
+				text-decoration: none;
+				color: #000	
+			}
+		}
+	}
+
+	&__partners {
+		color: #000;
+		border-bottom: 3px solid #000;
+		
+		a {
+			display: inline-block;
+			color: #000;
+			text-decoration: underline;
+			margin-bottom: 10px;
+			font-weight: bold;
+			
+			&:hover,
+			&:active {
+				color: #000	
+			}
+		}
+	}
+
+}
+
+		ymaps {
+			display: none !important;
+		}
+
+.ColorBlack {
+	.commonpages {
+
+		&__h1 {
+			color: #fff;
+		}
+
+		&__docs {
+			li {
+				a {
+					&:after {
+						background-color: #000;
+					}
+					&.btn {
+						color: #000;
+						background-color: #fff;
+						border: 3px solid #fff;
+					}
+				}
+			}
+		}
+
+		&__contacts {
+			span {
+				color: #fff;
+			}
+			a {
+				color: #fff;
+				
+				&:hover,
+				&:active {
+					text-decoration: none;
+					color: #fff	
+				}
+			}
+		}
+
+		&__partners {
+			color: #fff;
+			border-bottom: 3px solid #fff;
+			
+			a {
+				color: #fff;
+					
+				&:hover,
+				&:active {
+					color: #fff;	
+				}
+			}
+		}
+	}
+}
+.ColorBlue  {
+	.commonpages {
+
+		&__h1 {
+			color: @blue-dark;
+		}
+
+		&__docs {
+				li {
+					a {
+						&:after {
+							background-color: @blue;
+						}
+						&.btn {
+							color: @blue;
+							background-color: @blue-dark;
+							border: 3px solid @blue-dark;
+						}
+					}
+				}
+			}
+
+			&__contacts {
+				span {
+					color: @blue-dark;
+				}
+				a {
+					color: @blue-dark;
+					
+					&:hover,
+					&:active {
+						text-decoration: none;
+						color: @blue-dark;	
+					}
+				}
+			}
+
+			&__partners {
+				color: @blue-dark;
+				border-bottom: 3px solid @blue-dark;
+				
+				a {
+					color: @blue-dark;
+					
+					&:hover,
+					&:active {
+						color: @blue-dark;	
+					}
+				}
+			}
+	}
+
+}
+
+.fontSizeSmall {
+	.commonpages {
+		&__docs {
+			&__header {
+				strong {
+				    font-size: 21px;
+				}
+			}
+		}
+	}
+}
+.fontSizeMedium {
+	.commonpages {
+		&__docs {
+			&__header {
+				strong {
+				    font-size: 25px;
+				}
+			}
+		}
+	}
+}
+
+.fontSizeBig {
+	.commonpages {
+		&__docs {
+			&__header {
+				strong {
+				    font-size: 36px;
+				}
+			}
+		}
+	}
+
+}

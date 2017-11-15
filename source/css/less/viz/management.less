@@ -9,6 +9,11 @@
 		padding: 0;
 	}
 
+	.col-sm-6 {
+		width: 100%;
+	}
+
+
 	.link-all {
 		padding-bottom: 50px;
 	}
@@ -30,7 +35,7 @@
 	}
 
 	&__block {
-		border-top: 3px solid #000;
+		
 		padding-top: 40px;
 		
 		&_bt-0 {
@@ -94,6 +99,8 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: @sp/3;
+		margin-left: 0;
+		color: #000;
 	}
 
 	&__photo {
@@ -174,12 +181,12 @@
 			color: white;
 		}
 
-		&__block {
-			border-top: 3px solid #fff;
-		}
-
 		&_border-bottom {
 			border-bottom: 3px solid #fff;
+		}
+
+		&__post {
+			color: #fff;
 		}
 		
 	}
@@ -190,12 +197,12 @@
 			color: @blue-dark;
 		}
 
-		&__block {
-			border-top: 3px solid @blue-dark;
-		}
-
 		&_border-bottom {
 			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__post {
+			color: @blue-dark;
 		}
 		
 	}
