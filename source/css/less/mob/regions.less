@@ -1,0 +1,73 @@
+.regions {
+  &__menu {
+    &-item {
+      background-color: #red;
+    }
+    &-itemname {
+      font-size: 20px;
+      line-height: 1.1;
+      position: relative;
+      padding: 20px 80px 20px 35px;
+      span {
+        position: absolute;
+        top: 19px;
+        right: 0;
+      }
+      .icon-doun {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        left: 0;
+        top: 22px;
+        color: black !important;
+      }
+
+    }
+    .active {
+      .regions__menu-itemname {
+        color: black;
+        font-size: 20px;
+        padding: 20px 80px 20px 35px;
+        .icon-doun {
+          fwidth: 20px;
+          height: 20px;
+          font-size: 20px;
+          left: 0;
+          top: 22px;
+          color: black !important;
+        }
+      }
+    }
+  }
+  &__submenu {
+    &-list {
+
+    }
+  }
+  &__item {
+    &-right {
+
+      padding-left: 70px;
+    }
+  }
+  &__number {
+    width: 50px;
+    font-size: 20px;
+  }
+  &__geo {
+    width:auto;
+    margin-left: 70px;
+    font-size:20px;
+    padding-top: 20px;
+    height:auto;
+    float: none;
+    min-height:auto;
+  }
+  &__manager {
+    display: inline-block;
+    padding-top:15px;
+  }
+  &__position {
+    display: inline-block;
+  }
+}
