@@ -1,0 +1,339 @@
+.teatcher {
+
+	.dropdown {
+		margin-bottom: 25px;
+		&__btn {
+			width: 100%;
+		}
+	}
+
+	&__table {
+		margin-bottom: 25px;
+		tr {
+			td:first-child{
+				padding-right: 5px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.sert {
+
+
+
+		&__name_w {
+			font-weight: bold;
+			font-size: 21px;
+			color: #000;
+			margin-bottom: 5px;
+			
+			sup {
+				display: none;
+			}
+		}
+
+		&__input {
+			display: inline-block;
+			height: 40px;
+			width: 100%;
+			border: 3px solid #000;
+			font-size: 14px;
+			padding: 7px;
+			color: #000;
+			margin-bottom: 25px;
+			outline: 0px;
+			
+			&_width {
+				width: 59%;
+			}
+			
+			&-wrap {
+				margin-bottom: 40px;
+				.clearfix;
+				.sert {
+					&__input {
+						float: left;
+						width: calc(~'100% - 160px');
+						
+					}
+				}
+
+				.btn {
+					width: 155px;
+					float: right;
+				}
+			}
+		}
+
+		&__text {
+			color: #000;
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+
+		&__hr {
+			display: none;
+		}
+	}
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		color: #000;
+		border: 3px solid #000;
+		background-color: #fff;
+		width: 100%;
+		padding: 11px 11px 11px 37px;
+		font-size: 21px;
+		font-weight: bold;
+		margin-bottom: @sp*2;
+		cursor: pointer;
+		
+		sup {
+			display: none;
+		}
+		
+		i {
+			position: absolute;
+			top: 50%;
+			left: 0px;
+			transform: translate(0, -50%);
+			font-size: 42px;
+			line-height: 0;
+		}
+
+		&_tell {
+			cursor: default;
+			border: 0;
+			padding: 0;
+			border: 0px solid #fff !important;
+			margin-bottom: @sp;
+		}
+	}
+
+	&__infoblock {
+		overflow: hidden;
+		max-height:0;
+	}
+
+	&__item {
+		&_strit-name,
+		&_home-name,
+		&_apartment-name,
+		&_work-experience-name {
+			font-weight: bold;
+		    font-size: 21px;
+		    color: #000;
+		    margin-bottom: 5px;
+		    
+			sup {
+				display: none;
+			}
+		}
+
+		&-file-name {
+			font-weight: bold;
+			font-size: 21px;
+			float: left;
+			width: calc(~'100% - 105px');
+		}
+
+		&-file-download {
+			div {
+				.clearfix;
+				margin-bottom: 25px;
+			}
+		}
+
+		&.active {
+			.teatcher {
+				&__infoblock {
+					max-height: 10000px;
+					overflow: visible;
+				}
+
+				&__title {
+					background-color: #000;
+					color: #fff;
+					
+					i {
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+	}
+
+
+	&__textarea {
+		width: 100%;
+		border: 3px solid #000;
+		height: 120px;
+		resize: none;
+		margin-bottom: 25px;
+		padding: 5px 10px;
+		color: #000;
+	}
+
+	&__line-input {
+		margin-bottom: @sp*2;
+		padding-bottom: @sp*2;
+		border-bottom: 3px solid #989898;
+	}
+
+}
+.ColorBlack {
+	.teatcher {
+		.sert {
+			&__name_w,
+			&__text {
+				color: #fff;
+			}
+
+			&__input {
+				color: #fff;
+				background-color: #000;
+				border: 3px solid #fff;
+			}
+		}
+
+		&__title {
+			border: 3px solid #fff;
+			background-color: #000;
+			color: #fff;
+		}
+
+		&__item {
+			&.active {
+				.teatcher {
+					&__title {
+						border: 3px solid #fff;
+						background-color: #fff;
+						color: #000;
+						
+						i {
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+
+		&__line-input {
+			border-bottom: 3px solid #fff;
+		}
+	}
+}
+.ColorBlue  {
+	.teatcher {
+		.sert {
+			&__name_w,
+			&__text {
+				color: @blue-dark;
+			}
+
+			&__input {
+				color: @blue-dark;
+				background-color: @blue;
+				border: 3px solid @blue-dark;
+			}
+		}
+
+		&__title {
+			border: 3px solid @blue-dark;
+			background-color: @blue;
+			color: @blue-dark;
+		}
+
+		&__item {
+			&.active {
+				.teatcher {
+					&__title {
+						border: 3px solid @blue-dark;
+						background-color: @blue-dark;
+						color: @blue;
+						
+						i {
+							color: @blue;
+						}
+					}
+				}
+			}
+		}
+
+		&__line-input {
+			border-bottom: 3px solid @blue-dark;
+		}
+	}
+}
+
+.fontSizeSmall {
+	.teatcher {
+		.sert {
+			&__name_w {
+				font-size: 21px;
+			}
+
+			&__text,
+			&__input {
+				font-size: 14px;
+			}
+		}
+
+		&__title,
+		&__table {
+			font-size: 21px;
+		}
+		
+	}
+}
+.fontSizeMedium {
+	.teatcher {
+		.sert {
+			&__name_w {
+				font-size: 25px;
+			}
+
+			&__text,
+			&__input {
+				font-size: 17px;
+			}
+		}
+
+		&__title {
+			font-size: 25px;
+		}
+
+		&__table { 
+			td {
+				font-size: 17px;
+			}
+		}
+		
+	}
+}
+.fontSizeBig {
+	.teatcher {
+		.sert {
+			&__name_w {
+				font-size: 36px;
+			}
+
+			&__text,
+			&__input {
+				font-size: 23px;
+			}
+		}
+
+		&__title {
+			font-size: 36px;
+		}
+
+		&__table { 
+			td {
+				font-size: 23px;
+			}
+		}
+		
+	}
+}
