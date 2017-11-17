@@ -1,0 +1,52 @@
+.partners {
+  padding-left:3px;
+  padding-right:3px;
+  h2 {
+    font-size: 30px;
+    border-bottom:none;
+    padding-bottom: 0;
+
+  }
+  &__item {
+    h3 {
+      position: relative;
+      padding-left:38px;
+      font-size: 20px;
+      margin-bottom:20px;
+      a {
+        color: black;
+      }
+      &:before {
+        background: none;
+        content: "\F140";
+        font-family: "Material Design Icons";
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        left: 0px;
+        top: -5px;
+        font-size: 31px;
+      }
+    }
+    &-text {
+      font-size: 16px;
+      color: black;
+      p {
+        color: black;
+      }
+      a {
+        color: #01aeea;
+      }
+    }
+    &.close {
+      h3 {
+        &:before {
+          transform: rotate(180deg);
+        }
+      }
+      .partners__item-text {
+        display: none;
+      }
+    }
+  }
+}
