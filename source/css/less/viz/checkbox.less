@@ -26,6 +26,7 @@
 	font-family: 'Arial';
 	font-weight: bold;
 	font-size: 14px;
+	color: #000;
 	
 }
 
@@ -92,6 +93,10 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
+
+	.checkbox:not(checked) + label {
+		color: #fff;
+	}
 }
 
 
@@ -108,31 +113,27 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
+
+	.checkbox:not(checked) + label {
+		color: @blue-dark;
+	}
 	
 }
 
 .fontSizeSmall {
-	.checkbox-elem {
 		.checkbox:not(checked) + label {
 			font-size: 14px;
 		}
-		
-	}
 }
 .fontSizeMedium {
-	.checkbox-elem {
 		.checkbox:not(checked) + label {
 			font-size: 19px;
-			padding: 10px 0 15px 60px;
+			padding: 12px 0 15px 60px;
 		}
-	}
 }
 .fontSizeBig {
-	.checkbox-elem {
 		.checkbox:not(checked) + label {
 			font-size: 25px;
-			padding: 5px 0 15px 60px;
+			padding: 7px 0 15px 60px;
 		}
-
-	}
 }
