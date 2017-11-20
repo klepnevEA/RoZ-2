@@ -6,19 +6,49 @@
 	&__hr {
 		border: 0;
 		border-bottom: 3px solid #989898;
+		margin-top: 45px;
+    	margin-bottom: 40px;
 	}
 
 	&__title {
 		font-weight: bold;
 		font-size: 21px;
 		color: #000;
-		margin-bottom: 20px;
-		padding-bottom: 20px;
+		margin-bottom: @sp*2;
+		padding-bottom: 35px;
 		margin-top: 0;
 		border-bottom: 3px solid #989898;
 	}
 
+	&__btnblock {
+		.clearfix;
+		padding-bottom: 60px;
+		border-bottom: 3px solid #000;
+	}
+
 	&__item {
+
+		&.active {
+			.lk-edit {
+				&__wrap {
+					max-height: 10000px;
+				}
+
+				&__item-title {
+					background-color: #000;
+					color: #fff;
+					
+					i {
+						&:before {
+							color: #fff;
+							transform: rotate(0deg);
+							top: 0px;
+						}
+					}
+				}
+			}
+		}
+
 		&_width-50 {
 			width: 50%;
 		}
@@ -33,14 +63,14 @@
 				position: relative;
 			    font-size: 21px;
 			    font-weight: bold;
-			    padding-left: 60px;
+			    padding-left: 35px;
 			    color: #000;
 			    background-color: #fff;
 			    cursor: pointer;
 			    border: 3px solid black;
 			    margin-bottom: 15px;
-			    line-height: 52px;
-			    height: 58px;
+			    line-height: 48px;
+			    height: 55px;
 			    text-transform: none;
 			    margin-top: 15px;
 			    
@@ -55,11 +85,11 @@
 				    	content: "\F35D";
 	    				font-family: "Material Design Icons" !important;
 				    	position: absolute;
-						transform: rotate(90deg);
-						top: 7px;
-						left: 20px;
+						transform: rotate(-90deg);
+						top: 2px;
+						left: -5px;
 						color: #000;
-						font-size: 38px;
+						font-size: 43px;
 			    	}
 			    }
 			}
@@ -69,7 +99,7 @@
 	&__label {
 		font-size: 21px;
 		color: #000;
-		margin-bottom: 10px;
+		margin-bottom: @sp/3;
 		font-weight: bold;
 	}
 
@@ -80,16 +110,23 @@
 	}
 
 	&__line {
+
+		
 		&-input {
 			.clearfix;
 			
 			.dropdown {
 				float: left;
-				width: calc(~'100% - 112px');
+				width: calc(~'100% - 135px');
+				margin-bottom: 25px;
 				
 				&__btn {
 					width: 100%;
 				}
+			}
+
+			.btn {
+				padding: 0 25px;
 			}
 		}
 
@@ -102,12 +139,192 @@
 			color: #000;
 			background-color: #fff;
 			resize: none;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			outline: 0px;
 			
 		}
 
 		&_width-50 {
 			width: 50%;
 		}
+	}
+
+	&__wrap {
+		overflow: hidden;
+		max-height:0px;
+	}
+}
+
+
+.ColorBlack {
+	.lk-edit {
+		&__title {
+			color: #fff;
+			border-bottom: 3px solid #fff;
+		}
+
+		&__item {
+			&-title {
+				color: #fff;
+				
+				&_btn {
+					border: 3px solid #fff;
+					background-color: #000;
+					
+					i {
+				    	&:before {
+							color: #fff;
+				    	}
+				    }
+				}
+			}
+
+			&.active {
+				.lk-edit {
+					&__item-title {
+						background-color: #fff;
+						color: #000;
+						
+						i {
+							&:before {
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__label {
+			color: #fff;
+		}
+
+		&__text {
+			color: #fff;
+		}
+
+		&__line-textarea {
+			border: 3px solid #fff;
+			background-color: #000;
+			color: #fff;
+		}
+
+		&__hr {
+			border-bottom: 3px solid #fff;
+		}
+	}
+}
+.ColorBlue {
+	.lk-edit {
+		&__title {
+			color: @blue-dark;
+			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__item {
+			&-title {
+				color: @blue-dark;
+				
+				&_btn {
+					border: 3px solid @blue-dark;
+					background-color: @blue;
+					
+					i {
+				    	&:before {
+							color: @blue-dark;
+				    	}
+				    }
+				}
+			}
+
+			&.active {
+				.lk-edit {
+					&__item-title {
+						background-color: @blue-dark;
+						color: @blue;
+						
+						i {
+							&:before {
+								color: @blue;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__label {
+			color: @blue-dark;
+		}
+
+		&__text {
+			color: @blue-dark;
+		}
+
+		&__line-textarea {
+			border: 3px solid @blue-dark;
+			background-color: @blue;
+			color: @blue-dark;
+		}
+
+		&__hr {
+			border-bottom: 3px solid @blue-dark;
+		}
+	}
+}
+
+
+.fontSizeSmall {
+	.lk-edit {
+		&__item-title,
+		&__label {
+			font-size: 21px;
+		}
+
+		&__text,
+		&__line-textarea {
+			font-size: 14px;
+		}
+
+		// .dropdown__box span{
+		// 	font-size: 14px;
+		// }
+		
+	}
+}
+.fontSizeMedium {
+	.lk-edit {
+		&__item-title,
+		&__label {
+			font-size: 25px;
+		}
+
+		&__text,
+		&__line-textarea {
+			font-size: 17px;
+		}
+
+		// .dropdown__box span{
+		// 	font-size: 17px;
+		// 	line-height: 1.3;
+		// }
+	}
+}
+.fontSizeBig {
+	.lk-edit {
+		&__item-title,
+		&__label {
+			font-size: 36px;
+		}
+
+		&__text,
+		&__line-textarea {
+			font-size: 23px;
+		}
+
+		// .dropdown__box span{
+		// 	font-size: 23px;
+		// 	line-height: 1.1;
+		// }
 	}
 }
