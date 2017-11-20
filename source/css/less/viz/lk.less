@@ -1,0 +1,275 @@
+.lk {
+
+	&__wrap {
+		border-bottom: 3px solid #000;
+	}
+
+	&__title {
+		color: #000;
+		font-size: 21px;
+		margin: 0;
+		margin-bottom: 35px;
+		font-weight: bold;
+	}
+
+	&__userinfo {
+		padding: 30px 0 40px 0;
+		border-top: 3px solid #989898;
+		border-bottom: 3px solid #989898;
+		
+		&-title {
+			font-size: 21px;
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		&-name {
+			font-size: 14px;
+			margin-bottom: 20px;
+			color: #000;
+			
+			span {
+				font-weight: bold;
+			}
+		}
+
+		.btn {
+			padding: 0 25px;
+		}
+	}
+
+	&__contactblock {
+		padding: 30px 0;
+		
+		.btn {
+			padding: 0 25px;
+		}
+
+		&-title {
+			font-size: 21px;
+			color: #000;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		&-list {
+			padding-left: 0;
+		}
+
+		&-elem {
+			font-size: 14px;
+			color: #000;
+			margin-bottom: 21px;
+		}
+
+		&-bold-text {
+			font-weight: bold;
+		}
+
+		&-link {
+			font-weight: bold;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+
+	&__container {
+
+		.pagination {
+			border-bottom: 0px;
+		}
+
+		&.active {
+			.lk__container {
+				&-wrap {
+					max-height: 10000px;
+				}
+
+				&-title-btn {
+					background-color: #000;
+					color: #fff;
+					
+					i {
+						&:before {
+							color: #fff;
+							transform: rotate(0deg);
+							top: 0px;
+						}
+					}
+				}
+			}
+		}
+
+		&-wrap {
+			overflow: hidden;
+			max-height: 0;	
+		}
+
+		&-title-btn {
+	    	position: relative;
+		    font-size: 21px;
+		    font-weight: bold;
+		    padding-left: 35px;
+		    color: #000;
+		    background-color: #fff;
+		    cursor: pointer;
+		    border: 3px solid black;
+		    margin-bottom: 25px;
+		    line-height: 48px;
+		    height: 55px;
+		    text-transform: none;
+		    margin-top: @sp;
+		    
+		    i {
+			    &:before {
+					content: "\F35D";
+		    		font-family: "Material Design Icons" !important;
+					position: absolute;
+					transform: rotate(-90deg);
+					top: 2px;
+					left: -5px;
+					color: #000;
+					font-size: 43px;
+			    }
+			}
+
+			span {
+				font-size: 21px;
+			}
+		}
+
+		&-list {
+			padding-left: 0;
+		}
+
+		&-elem {
+			margin-bottom: 25px;
+			color: #000;
+			font-size: 14px;
+			
+			&-title {
+				text-decoration: underline;
+				font-weight: bold;
+				margin-bottom: 17px;
+			}
+
+			&-text {
+				margin-bottom: 7px;
+			}
+		}
+	}
+}
+
+
+.ColorBlack {
+	.lk {
+
+		&__wrap {
+			border-bottom: 3px solid #fff;
+		}
+
+		&__title,
+		&__userinfo-title,
+		&__userinfo-name,
+		&__contactblock-title,
+		&__contactblock-elem,
+		&__container-elem {
+			color: #fff;
+		}
+
+		&__userinfo {
+			border-top: 3px solid #fff;
+			border-bottom: 3px solid #fff;
+		}
+
+
+
+		&__container {
+
+			&-title-btn {
+				background-color: #000;
+				border: 3px solid #fff;
+				color: #fff;
+				
+				i {
+							&:before {
+						color: #000;
+							}
+				}
+				
+			}
+
+			&.active {
+				.lk__container {
+					&-title-btn {
+						background-color: #fff;
+						color: #000;
+						
+						i {
+							&:before {
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.ColorBlue {
+lk {
+
+		&__wrap {
+			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__title,
+		&__userinfo-title,
+		&__userinfo-name,
+		&__contactblock-title,
+		&__contactblock-elem,
+		&__container-elem {
+			color: @blue-dark;
+		}
+
+		&__userinfo {
+			border-top: 3px solid @blue-dark;
+			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__container {
+			&.active {
+				.lk__container {
+					&-title-btn {
+						background-color: @blue-dark;
+						color: @blue;
+						
+						i {
+							&:before {
+								color: @blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.fontSizeSmall {
+	.lk {
+		
+	}
+}
+.fontSizeMedium {
+	.lk {
+		
+	}
+}
+.fontSizeBig {
+	.lk {
+		
+	}
+}
