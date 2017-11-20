@@ -2,6 +2,7 @@
 
 	&__wrap {
 		border-bottom: 3px solid #000;
+		padding-bottom: 35px;
 	}
 
 	&__title {
@@ -78,6 +79,8 @@
 
 		.pagination {
 			border-bottom: 0px;
+			margin-top: 40px;
+			padding-bottom: @sp;
 		}
 
 		&.active {
@@ -193,9 +196,9 @@
 				color: #fff;
 				
 				i {
-							&:before {
-						color: #000;
-							}
+					&:before {
+						color: #fff;
+					}
 				}
 				
 			}
@@ -205,6 +208,7 @@
 					&-title-btn {
 						background-color: #fff;
 						color: #000;
+						
 						
 						i {
 							&:before {
@@ -218,7 +222,7 @@
 	}
 }
 .ColorBlue {
-lk {
+	.lk {
 
 		&__wrap {
 			border-bottom: 3px solid @blue-dark;
@@ -239,11 +243,26 @@ lk {
 		}
 
 		&__container {
+
+			&-title-btn {
+				background-color: @blue;
+				border: 3px solid @blue-dark;
+				color: @blue-dark;
+				
+				i {
+					&:before {
+						color: @blue-dark;
+					}
+				}
+				
+			}
+
 			&.active {
 				.lk__container {
 					&-title-btn {
 						background-color: @blue-dark;
 						color: @blue;
+						
 						
 						i {
 							&:before {
@@ -260,16 +279,61 @@ lk {
 
 .fontSizeSmall {
 	.lk {
-		
+		&__userinfo-title,
+		&__contactblock-title {
+			font-size: 21px;
+		}
+
+		&__userinfo-name,
+		&__contactblock-elem {
+			font-size: 14px;
+		}
+
+		&__container-title-btn {
+			span {
+				font-size: 21px;
+			}
+			font-size: 21px;
+		}
 	}
 }
 .fontSizeMedium {
 	.lk {
-		
+		&__userinfo-title,
+		&__contactblock-title {
+			font-size: 25px;
+		}
+
+		&__userinfo-name,
+		&__contactblock-elem {
+			font-size: 17px;
+		}
+
+		&__container-title-btn {
+			span {
+				font-size: 25px;
+			}
+			font-size: 25px;
+		}
 	}
 }
 .fontSizeBig {
 	.lk {
-		
+		&__userinfo-title,
+		&__contactblock-title {
+			font-size: 36px;
+		}
+
+		&__userinfo-name,
+		&__contactblock-elem {
+			font-size: 23px;
+		}
+
+		&__container-title-btn {
+			span {
+				font-size: 36px;
+			}
+			font-size: 36px;
+		}
 	}
 }
