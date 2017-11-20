@@ -1,9 +1,9 @@
 .lk {
 
-	&__wrap {
-		border-bottom: 3px solid #000;
-		padding-bottom: 35px;
-	}
+	// &__wrap {
+	// 	border-bottom: 3px solid #000;
+	// 	padding-bottom: 35px;
+	// }
 
 	&__title {
 		color: #000;
@@ -77,6 +77,10 @@
 
 	&__container {
 
+		    &:last-child {
+		    	border-bottom: 3px solid black;
+		    }
+
 		.pagination {
 			border-bottom: 0px;
 			margin-top: 40px;
@@ -84,14 +88,18 @@
 		}
 
 		&.active {
+
 			.lk__container {
+
 				&-wrap {
 					max-height: 10000px;
+					padding-bottom: 35px;
 				}
 
 				&-title-btn {
 					background-color: #000;
 					color: #fff;
+					margin-bottom: 25px;
 					
 					i {
 						&:before {
@@ -106,7 +114,7 @@
 
 		&-wrap {
 			overflow: hidden;
-			max-height: 0;	
+			max-height: 0;
 		}
 
 		&-title-btn {
@@ -117,13 +125,14 @@
 		    color: #000;
 		    background-color: #fff;
 		    cursor: pointer;
-		    border: 3px solid black;
-		    margin-bottom: 25px;
+		    border-top: 3px solid black;
+		    margin-bottom: 0px;
 		    line-height: 48px;
 		    height: 55px;
 		    text-transform: none;
-		    margin-top: @sp;
+		    margin-top: 0px;
 		    
+	    
 		    i {
 			    &:before {
 					content: "\F35D";
