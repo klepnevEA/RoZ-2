@@ -1,1074 +1,1070 @@
 <!DOCTYPE html>
 <html>
-	@@include('./file-include/head.html')
-	<body>
+@@include('./file-include/head.html')
+<body>
 
-		<div class="wrapper">
+<div class="wrapper">
 
-		    @@include('./file-include/header.html')
-
-
-		    <div class="lk gray-back">
+    @@include('./file-include/header.html')
 
 
-		        <div class="lk__top-mobil mob">
-		            <div class="lk__name_lecturer">Филимонов Семен Георгиевич</div>
-		            <div class="lk__stars">
-		                <div class="stars__star stars__star_full"></div>
-		                <div class="stars__star stars__star_full"></div>
-		                <div class="stars__star stars__star_half"></div>
-		                <div class="stars__star stars__star_empty"></div>
-		                <div class="stars__star stars__star_empty"></div>
-		                <div class="lk__stars-count">9 оценок</div>
-		            </div>
-		        </div>
-
-		        <div class="lk__wrap">
-
-		            <div class="lk__userinfo lk__userinfo_padding-bottom">
-
-		                <div class="lk__userinfo-edit hidden-xs"><i class="icon-pencel"></i></div>
-
-		                <div class="lk__userinfo-edit mob"><i class="mdi mdi-dots-vertical"></i></div>
-		                <ul class="lk__userinfo-edit-menu active"> 
-		                	<li class="lk__userinfo-edit-item">Редактировать</li>
-		                	<li class="lk__userinfo-edit-item">Настроить подписку</li>
-		                	<li class="lk__userinfo-edit-item">Заявка-конкурс анотаций</li>
-		                </ul>
-
-		                <script>
-		                	$(document).ready(function(){
-		                	    $(".lk__userinfo-edit").click(function(){
-		                	        $('.lk__userinfo-edit-menu').toggleClass("active");
-		                	    });
-		                	});
-		                </script>
-
-		                
-		                <div class="row">
-		                    <div class="col-sm-8 col-xs-12">
-		                        <a href="#" class="lk__userphoto" style="background: url(../img/lektor.jpg);"></a>
-		                        <!-- <div class="lk__userphoto" style="background: url(@{imageBase}/lektor.jpg);"></div> -->
-
-		                        <div class="lk__name lk__name_lecturer hidden-xs">
-		                            Клюков Алексей Владимирович
-		                        </div>
-
-		                        <div class="lk__stars hidden-xs">
-		                            <div class="stars__star stars__star_full"></div>
-		                            <div class="stars__star stars__star_full"></div>
-		                            <div class="stars__star stars__star_full"></div>
-		                            <div class="stars__star stars__star_half"></div>
-		                            <div class="stars__star stars__star_empty"></div>
-		                            <div class="lk__stars-count">9 оценок</div>
-		                        </div>
-		                        <div class="lk__position">
-		                            <h4 class="lk__userinfo-title">Филология и искусствоведение</h4>
-		                            <div class="lk__position-text">Доктор филологических наук</div>
-		                        </div>
-		                        <div class="lk__honors">
-		                            <h4 class="lk__userinfo-title">Награды и достижения</h4>
-		                            <div class="lk__honors-item"><span>2014</span>Докторская степень</div>
-		                            <div class="lk__honors-item"><span>2013</span>Член отборочной комиссии DААD</div>
-		                            <div class="lk__honors-item"><span>2012</span>Докторская степень</div>
-		                            <div class="lk__honors-item"><span>2011</span>Обладатель стипендии МОН РФ для выдающихся
-		                                ученых
-		                            </div>
-		                            <div class="lk__honors-item"><span>2010</span>Докторская степень</div>
-		                            <div class="lk__honors-item"><span>2009</span>Докторская степень</div>
-		                        </div>
-		                        <div class="lk__userinfo-comment">
-		                            <div class="lk__userinfo-comment-quantity">23</div>
-		                            <a href="#">Новые комментарии от пользователей</a></div>
+    <div class="lk gray-back">
 
 
-		                    </div>
-		                    <div class="col-sm-4 col-xs-12">
-		                        <div class="lk__contactblock lk__contactblock_lecturer">
-		                            <ul>
-		                                <li>
-		                                    <a href="#" class="lk__tell"><i class="icon-tel"></i>+7 (902) 356-25-25</a>
-		                                </li>
-		                                <li>
-		                                    <a href="#" class="lk__mail"><i class="icon-mail"></i>aniscenko@znanie.org</a>
-		                                </li>
-		                                <li>
-		                                    <a href="#" class="lk__skype"><i class="icon-skype"></i>aniscenko</a>
-		                                </li>
-		                            </ul>
+        <div class="lk__top-mobil mob">
+            <div class="lk__name_lecturer">Филимонов Семен Георгиевич</div>
+            <div class="lk__stars">
+                <div class="stars__star stars__star_full"></div>
+                <div class="stars__star stars__star_full"></div>
+                <div class="stars__star stars__star_half"></div>
+                <div class="stars__star stars__star_empty"></div>
+                <div class="stars__star stars__star_empty"></div>
+                <div class="lk__stars-count">9 оценок</div>
+            </div>
+        </div>
 
-		                        </div>
-		                        <div class="lk__contactblock-btn">
-		                            <button class="btn btn__ring btn__ring_blue btn__ring_big btn__left"><i
-		                                    class="icon-mail"></i> настроить подписку
-		                            </button>
-		                            <button class="btn btn__ring btn__red_big  btn__ring_big btn__padding-19 btn__left"><i
-		                                    class="icon-sert"></i> сертифицировать лекцию
-		                            </button>
-		                        </div>
+        <div class="lk__wrap">
 
-		                        <div class="lk__contactblock lk__contactblock_lecturer">
-		                            <ul>
-		                                <li>
-		                                    <a href="#" class="lk__map-case"><i class="icon-map-case"></i>Заявка - конкурс
-		                                        аннотаций</a>
-		                                </li>
-		                                <li>
-		                                    <a href="#" class="lk__clock"><i class="icon-clock"></i>Доработка заявки - конкурс
-		                                        моделей</a>
-		                                </li>
-		                            </ul>
+            <div class="lk__userinfo lk__userinfo_padding-bottom">
 
-		                        </div>
+                <div class="lk__userinfo-edit hidden-xs"><i class="icon-pencel"></i></div>
 
-		                        <div class="lk__rezult">
-		                            <a href="#" class="lk__rezult-item"><i class="icon-mark-3"></i><span>3</span>В избранном</a>
-		                            <a href="#" class="lk__rezult-item"><i class="icon-flag"></i><span>12</span>Прослушано</a>
+                <div class="lk__userinfo-edit mob"><i class="mdi mdi-dots-vertical"></i></div>
+                <ul class="lk__userinfo-edit-menu active">
+                    <li class="lk__userinfo-edit-item">Редактировать</li>
+                    <li class="lk__userinfo-edit-item">Настроить подписку</li>
+                    <li class="lk__userinfo-edit-item">Заявка-конкурс анотаций</li>
+                </ul>
 
-		                        </div>
-		                    </div>
-		                </div>
-		                <div class="row">
-		                    <div class="col-xs-12">
-		                        <div class="lk__places">
-		                            <ul class="lk__places-list">
-		                                <li class="lk__places-elem">
-		                                    <i class="icon icon-geo-pin"></i>
-		                                    Краснодарский край
-		                                </li>
-		                                <li class="lk__places-elem">
-		                                    <i class="icon icon-geo-pin"></i>
-		                                    Самарская область
-		                                </li>
-		                                <li class="lk__places-elem">
-		                                    <i class="icon icon-geo-pin"></i>
-		                                    Ульяновская область
-		                                </li>
-		                                <li class="lk__places-elem">
-		                                    <i class="icon icon-geo-pin"></i>
-		                                    г.Москва
-		                                </li>
-		                                <li class="lk__places-elem">
-		                                    <i class="icon icon-geo-pin"></i>
-		                                    г.Санкт-Петербург
-		                                </li>
-		                            </ul>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
+                <script>
+                    $(document).ready(function () {
+                        $(".lk__userinfo-edit").click(function () {
+                            $('.lk__userinfo-edit-menu').toggleClass("active");
+                        });
+                    });
+                </script>
 
 
+                <div class="row">
+                    <div class="col-sm-8 col-xs-12">
+                        <a href="#" class="lk__userphoto" style="background: url(../img/lektor.jpg);"></a>
+                        <!-- <div class="lk__userphoto" style="background: url(@{imageBase}/lektor.jpg);"></div> -->
 
-
-
-
-
-
-		            <div class="lk__elect lk__elect_lecturer panel-group" id="accordeon">
-						<!-- ///////////////////////// первый блок аккордеона ///////////////-->
-		            	<div class="col-sx-12">   
-	                       <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
-	                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-	                                <i class="icon-doun"></i>Мои лекции: <span>26</span>
-	                            </a>
-	                        </h2>
+                        <div class="lk__name lk__name_lecturer hidden-xs">
+                            Клюков Алексей Владимирович
                         </div>
-		                
-			            <div class="collapse in" id="collapse1">
-							<div class="row lk__elect-slider slider">
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
 
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			            	</div>
-			            </div>
-
-			            <!-- ///////////////////////// второй блок аккордеона ///////////////-->
-		            	<div class="col-sx-12">   
-	                       <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
-	                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-	                                <i class="icon-doun"></i>Избранные мероприятия: <span>26</span>
-	                            </a>
-	                        </h2>
+                        <div class="lk__stars hidden-xs">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                            <div class="lk__stars-count">9 оценок</div>
                         </div>
-		                
-			            <div class="collapse in" id="collapse2">
-							<div class="row lk__elect-slider slider">
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <div class="all-events__item">
-			                            <div class="all-events__img"
-			                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-			                                <div class="all-events__data">
-			                                    <div class="all-events__data-day">27</div>
-			                                    <div class="all-events__data-month">окт</div>
-			                                </div>
-			                            </div>
-
-			                            <div class="all-events__footer">
-			                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-			                                    наркотикам и алкоголю»</a>
-
-			                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-			                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-			                                <div class="all-events__value-wrap">
-			                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-			                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-			                                </div>
-
-			                                <div class="tags">
-			                                    <a href="#" class="tags__tag">театр</a>
-			                                    <a href="#" class="tags__tag">здравоохранение</a>
-			                                </div>
-			                            </div>
-			                        </div>
-			            	</div>
-			            </div>
-
-			            <!-- ///////////////////////// второй блок аккордеона ///////////////-->
-		            	<div class="col-sx-12">   
-	                       <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
-	                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-	                                <i class="icon-doun"></i>Прослушанные мероприятия: <span>26</span>
-	                            </a>
-	                        </h2>
+                        <div class="lk__position">
+                            <h4 class="lk__userinfo-title">Филология и искусствоведение</h4>
+                            <div class="lk__position-text">Доктор филологических наук</div>
                         </div>
-		                
-			            <div class="collapse in" id="collapse3">
-							<div class="row lk__elect-slider slider">
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="all-events__item">
-		                            <div class="all-events__img"
-		                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
-		                                <div class="all-events__data">
-		                                    <div class="all-events__data-day">27</div>
-		                                    <div class="all-events__data-month">окт</div>
-		                                </div>
-		                            </div>
-
-		                            <div class="all-events__footer">
-		                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
-		                                    наркотикам и алкоголю»</a>
-
-		                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
-		                                <div class="all-events__place"><span>Место:</span> МГУ</div>
-		                                <div class="all-events__value-wrap">
-		                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
-		                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
-		                                </div>
-
-		                                <div class="tags">
-		                                    <a href="#" class="tags__tag">театр</a>
-		                                    <a href="#" class="tags__tag">здравоохранение</a>
-		                                </div>
-		                            </div>
-		                        </div>
-			            	</div>
-			            </div>
-		        	</div>
-
-					<!-- блок мои отзывы -->
-
-					<div class="mymarks">
-
-						
-							
-						<h2 class="lk__h2">
-							<i class="news__title-icon  icon-mes-dot"></i> 
-							Отзывы и оценки по моим лекциям: <span>9</span>
-						</h2>
-							
-						
-						
-						<div class=" slider-without-arrows">
-
-							<div class="feedback-events__item">
-								<div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
-								</div>
-								<div class="feedback-events__name">Воробъев Павел Андреевич</div>
-								<div class="feedback-events__data">10.11.1979</div>
-
-								<div class="feedback-events__stars">
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_half"></div>
-									<div class="stars__star stars__star_empty"></div>
-								</div>
-								<div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...</span></div>
-								<div class="feedback-events__iventname">
-									<div class="feedback-events__iventname-type">Лекция:</div>
-									 Современное искусство в разрезе новых веяний в теории относительности
-								</div>
-							</div>
-
-							<div class="feedback-events__item">
-								<div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
-								</div>
-								<div class="feedback-events__name">Воробъев Павел Андреевич</div>
-								<div class="feedback-events__data">10.11.1979</div>
-
-								<div class="feedback-events__stars">
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_half"></div>
-									<div class="stars__star stars__star_empty"></div>
-								</div>
-								<div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span></div>
-								<div class="feedback-events__iventname">
-									<div class="feedback-events__iventname-type">Лекция:</div>
-									 Современное искусство в разрезе новых веяний в теории относительности
-								</div>
-							</div>
-
-							<div class="feedback-events__item">
-								<div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
-								</div>
-								<div class="feedback-events__name">Воробъев Павел Андреевич</div>
-								<div class="feedback-events__data">10.11.1979</div>
-
-								<div class="feedback-events__stars">
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_half"></div>
-									<div class="stars__star stars__star_empty"></div>
-								</div>
-								<div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span></div>
-								<div class="feedback-events__iventname">
-									<div class="feedback-events__iventname-type">Лекция:</div>
-									 Современное искусство в разрезе новых веяний в теории относительности
-								</div>
-							</div>
-
-							<div class="feedback-events__item">
-								<div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
-								</div>
-								<div class="feedback-events__name">Воробъев Павел Андреевич</div>
-								<div class="feedback-events__data">10.11.1979</div>
-
-								<div class="feedback-events__stars">
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_half"></div>
-									<div class="stars__star stars__star_empty"></div>
-								</div>
-								<div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span></div>
-								<div class="feedback-events__iventname">
-									<div class="feedback-events__iventname-type">Лекция:</div>
-									 Современное искусство в разрезе новых веяний в теории относительности
-								</div>
-							</div>
-
-							<div class="feedback-events__item">
-								<div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
-								</div>
-								<div class="feedback-events__name">Воробъев Павел Андреевич</div>
-								<div class="feedback-events__data">10.11.1979</div>
-
-								<div class="feedback-events__stars">
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_full"></div>
-									<div class="stars__star stars__star_half"></div>
-									<div class="stars__star stars__star_empty"></div>
-								</div>
-								<div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span></div>
-								<div class="feedback-events__iventname">
-									<div class="feedback-events__iventname-type">Лекция:</div>
-									 Современное искусство в разрезе новых веяний в теории относительности
-								</div>
-							</div>
-						</div>
-						
-					</div>
+                        <div class="lk__honors">
+                            <h4 class="lk__userinfo-title">Награды и достижения</h4>
+                            <div class="lk__honors-item"><span>2014</span>Докторская степень</div>
+                            <div class="lk__honors-item"><span>2013</span>Член отборочной комиссии DААD</div>
+                            <div class="lk__honors-item"><span>2012</span>Докторская степень</div>
+                            <div class="lk__honors-item"><span>2011</span>Обладатель стипендии МОН РФ для выдающихся
+                                ученых
+                            </div>
+                            <div class="lk__honors-item"><span>2010</span>Докторская степень</div>
+                            <div class="lk__honors-item"><span>2009</span>Докторская степень</div>
+                        </div>
+                        <div class="lk__userinfo-comment">
+                            <div class="lk__userinfo-comment-quantity">23</div>
+                            <a href="#">Новые комментарии от пользователей</a></div>
 
 
-		        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="lk__contactblock lk__contactblock_lecturer">
+                            <ul>
+                                <li>
+                                    <a href="#" class="lk__tell"><i class="icon-tel"></i>+7 (902) 356-25-25</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="lk__mail"><i class="icon-mail"></i>aniscenko@znanie.org</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="lk__skype"><i class="icon-skype"></i>aniscenko</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="lk__contactblock-btn">
+                            <button class="btn btn__ring btn__ring_blue btn__ring_big btn__left"><i
+                                    class="icon-mail"></i> настроить подписку
+                            </button>
+                            <button class="btn btn__ring btn__red_big  btn__ring_big btn__padding-19 btn__left"><i
+                                    class="icon-sert"></i> сертифицировать лекцию
+                            </button>
+                        </div>
+
+                        <div class="lk__contactblock lk__contactblock_lecturer">
+                            <ul>
+                                <li>
+                                    <a href="#" class="lk__map-case"><i class="icon-map-case"></i>Заявка - конкурс
+                                        аннотаций</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="lk__clock"><i class="icon-clock"></i>Доработка заявки - конкурс
+                                        моделей</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="lk__rezult">
+                            <a href="#" class="lk__rezult-item"><i class="icon-mark-3"></i><span>3</span>В избранном</a>
+                            <a href="#" class="lk__rezult-item"><i class="icon-flag"></i><span>12</span>Прослушано</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lk__places">
+                            <ul class="lk__places-list">
+                                <li class="lk__places-elem">
+                                    <i class="icon icon-geo-pin"></i>
+                                    Краснодарский край
+                                </li>
+                                <li class="lk__places-elem">
+                                    <i class="icon icon-geo-pin"></i>
+                                    Самарская область
+                                </li>
+                                <li class="lk__places-elem">
+                                    <i class="icon icon-geo-pin"></i>
+                                    Ульяновская область
+                                </li>
+                                <li class="lk__places-elem">
+                                    <i class="icon icon-geo-pin"></i>
+                                    г.Москва
+                                </li>
+                                <li class="lk__places-elem">
+                                    <i class="icon icon-geo-pin"></i>
+                                    г.Санкт-Петербург
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-			</div>
-			
+            <div class="lk__elect lk__elect_lecturer panel-group" id="accordeon">
+                <!-- ///////////////////////// первый блок аккордеона ///////////////-->
+                <div class="col-sx-12">
+                    <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <i class="icon-doun"></i>Мои лекции: <span>26</span>
+                        </a>
+                    </h2>
+                </div>
+
+                <div class="collapse in" id="collapse1">
+                    <div class="row lk__elect-slider slider">
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ///////////////////////// второй блок аккордеона ///////////////-->
+                <div class="col-sx-12">
+                    <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <i class="icon-doun"></i>Избранные мероприятия: <span>26</span>
+                        </a>
+                    </h2>
+                </div>
+
+                <div class="collapse in" id="collapse2">
+                    <div class="row lk__elect-slider slider">
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ///////////////////////// второй блок аккордеона ///////////////-->
+                <div class="col-sx-12">
+                    <h2 class="lk__h2 lk__h2_elect lk__h2_doun-arrow">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <i class="icon-doun"></i>Прослушанные мероприятия: <span>26</span>
+                        </a>
+                    </h2>
+                </div>
+
+                <div class="collapse in" id="collapse3">
+                    <div class="row lk__elect-slider slider">
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-events__item">
+                            <div class="all-events__img"
+                                 style="background: url(../img/event-test.jpg) no-repeat;  background-size: cover;">
+                                <div class="all-events__data">
+                                    <div class="all-events__data-day">27</div>
+                                    <div class="all-events__data-month">окт</div>
+                                </div>
+                            </div>
+
+                            <div class="all-events__footer">
+                                <a href="#" class="all-events__title">Информационное театральное представление «Нет
+                                    наркотикам и алкоголю»</a>
+
+                                <div class="all-events__autor"><span>Лектор:</span> Андреев В.С.</div>
+                                <div class="all-events__place"><span>Место:</span> МГУ</div>
+                                <div class="all-events__value-wrap">
+                                    <div class="all-events__value"><i class="icon-run-man"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-message"></i> 152</div>
+                                    <div class="all-events__value"><i class="icon-eye"></i> 152</div>
+                                </div>
+
+                                <div class="tags">
+                                    <a href="#" class="tags__tag">театр</a>
+                                    <a href="#" class="tags__tag">здравоохранение</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- блок мои отзывы -->
+
+            <div class="mymarks">
 
 
-			<div class="footer__before"></div>
+                <h2 class="lk__h2">
+                    <i class="news__title-icon  icon-mes-dot"></i>
+                    Отзывы и оценки по моим лекциям: <span>9</span>
+                </h2>
 
-		</div>
 
-		@@include('./file-include/footer.html')
+                <div class=" slider-without-arrows">
 
-	</body>
+                    <div class="feedback-events__item">
+                        <div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
+                        </div>
+                        <div class="feedback-events__name">Воробъев Павел Андреевич</div>
+                        <div class="feedback-events__data">10.11.1979</div>
+
+                        <div class="feedback-events__stars">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                        </div>
+                        <div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...</span>
+                        </div>
+                        <div class="feedback-events__iventname">
+                            <div class="feedback-events__iventname-type">Лекция:</div>
+                            Современное искусство в разрезе новых веяний в теории относительности
+                        </div>
+                    </div>
+
+                    <div class="feedback-events__item">
+                        <div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
+                        </div>
+                        <div class="feedback-events__name">Воробъев Павел Андреевич</div>
+                        <div class="feedback-events__data">10.11.1979</div>
+
+                        <div class="feedback-events__stars">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                        </div>
+                        <div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span>
+                        </div>
+                        <div class="feedback-events__iventname">
+                            <div class="feedback-events__iventname-type">Лекция:</div>
+                            Современное искусство в разрезе новых веяний в теории относительности
+                        </div>
+                    </div>
+
+                    <div class="feedback-events__item">
+                        <div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
+                        </div>
+                        <div class="feedback-events__name">Воробъев Павел Андреевич</div>
+                        <div class="feedback-events__data">10.11.1979</div>
+
+                        <div class="feedback-events__stars">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                        </div>
+                        <div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span>
+                        </div>
+                        <div class="feedback-events__iventname">
+                            <div class="feedback-events__iventname-type">Лекция:</div>
+                            Современное искусство в разрезе новых веяний в теории относительности
+                        </div>
+                    </div>
+
+                    <div class="feedback-events__item">
+                        <div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
+                        </div>
+                        <div class="feedback-events__name">Воробъев Павел Андреевич</div>
+                        <div class="feedback-events__data">10.11.1979</div>
+
+                        <div class="feedback-events__stars">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                        </div>
+                        <div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span>
+                        </div>
+                        <div class="feedback-events__iventname">
+                            <div class="feedback-events__iventname-type">Лекция:</div>
+                            Современное искусство в разрезе новых веяний в теории относительности
+                        </div>
+                    </div>
+
+                    <div class="feedback-events__item">
+                        <div class="feedback-events__img" style="background: url(../img/lektor.jpg);">
+                        </div>
+                        <div class="feedback-events__name">Воробъев Павел Андреевич</div>
+                        <div class="feedback-events__data">10.11.1979</div>
+
+                        <div class="feedback-events__stars">
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_full"></div>
+                            <div class="stars__star stars__star_half"></div>
+                            <div class="stars__star stars__star_empty"></div>
+                        </div>
+                        <div class="feedback-events__text"><span>Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как завороженные. С нетерпением будем ждать следующих выступлений...Просто потрясающая лекция. Очень необычный подход в подаче материала. Слушали все, как</span>
+                        </div>
+                        <div class="feedback-events__iventname">
+                            <div class="feedback-events__iventname-type">Лекция:</div>
+                            Современное искусство в разрезе новых веяний в теории относительности
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer__before"></div>
+
+</div>
+
+@@include('./file-include/footer.html')
+
+</body>
 </html>
