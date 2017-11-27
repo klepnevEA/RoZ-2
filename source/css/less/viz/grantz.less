@@ -14,6 +14,17 @@
 		border-bottom: 3px solid #000;
 	}
 
+	&__result {
+		color: #000;
+		font-size: 21px;
+		font-weight: bold;
+		margin-bottom: 45px;
+		
+		span {
+			font-size: 21px;
+		}
+	}
+
 	&__tabs-list {
 		padding-left: 0;
 		margin-bottom: 30px;
@@ -114,7 +125,8 @@
 
 .ColorBlack {
 	.grantz {
-		&__h1 {
+		&__h1,
+		&__result {
 			color: #fff;
 		}
 
@@ -169,7 +181,8 @@
 
 .ColorBlue {
 	.grantz {
-		&__h1 {
+		&__h1,
+		&__result {
 			color: @blue-dark;
 		}
 
@@ -224,21 +237,27 @@
 
 .fontSizeSmall {
 	.grantz {
-		&__list-title-btn {
+		&__list-title-btn,
+		&__result,
+		&__result span {
 			font-size: 21px;
 		}
 	}
 }
 .fontSizeMedium {
 	.grantz {
-		&__list-title-btn {
+		&__list-title-btn,
+		&__result,
+		&__result span {
 			font-size: 25px;
 		}		
 	}
 }
 .fontSizeBig {
 	.grantz {
-		&__list-title-btn {
+		&__list-title-btn,
+		&__result,
+		&__result span {
 			font-size: 36px;
 		}
 	}
