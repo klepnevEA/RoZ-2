@@ -1,0 +1,245 @@
+.grantz {
+	&__h1 {
+		font-weight: bold;
+		color: #000;
+		font-size: 21px;
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	&__hr {
+		border: 0px;
+		margin-top: 45px;
+		margin-bottom: 0;
+		border-bottom: 3px solid #000;
+	}
+
+	&__tabs-list {
+		padding-left: 0;
+		margin-bottom: 30px;
+		.clearfix;
+		
+		.btn {
+			padding: 0 40px;
+			min-width: 245px;
+		}
+	}
+
+	&__buttoms-top {
+		.clearfix;
+		margin-bottom: 30px;
+		
+		i {
+			display: none;
+		}
+	}
+
+	&__list {
+		padding-left: 0;
+		
+		&-title-btn {
+			position: relative;
+		    font-size: 21px;
+		    font-weight: bold;
+		    padding-left: 37px;
+		    color: #000;
+		    background-color: #fff;
+		    cursor: pointer;
+		    border-top: 3px solid black;
+		    margin-bottom: 0px;
+		    line-height: 48px;
+		    height: 55px;
+		    text-transform: none;
+		    margin-top: 0px;
+		    
+		    .icon-doun {
+		    	&:before {
+		    		content: "\F35D";
+				    font-family: "Material Design Icons" !important;
+				    position: absolute;
+				    transform: rotate(-90deg);
+				    top: 2px;
+				    left: 0px;
+				    color: #000;
+				    font-size: 43px;
+		    	}
+		    }
+		}
+	}
+
+	&__elem {
+		ul {
+			padding-left: 0;
+			padding-top: 0px;
+			overflow: hidden;
+			max-height: 0px;
+		}
+
+		li {
+			margin-bottom: 20px;
+			
+			span {
+				font-weight: bold;
+			}
+		}
+
+		&.active {
+			.grantz {
+				&__list-title-btn {
+					background-color: #000;
+				    color: #fff;
+				    
+				    i {
+				    	&:before {
+				    		color: #fff;
+						    transform: rotate(0deg);
+						    top: 0px;
+						    left: 0;
+				    	}
+				    }
+				}
+
+			}
+
+			& ul {
+				max-height: 10000px;
+				padding-top: 25px;
+			}
+		}
+	}
+
+
+}
+
+
+.ColorBlack {
+	.grantz {
+		&__h1 {
+			color: #fff;
+		}
+
+		&__tabs-elem {
+			.btn {
+				&.active {
+					border: 3px solid #fff;
+					color: #fff;
+					background-color: #000;
+				}
+			}
+		}
+
+		&__hr {
+			border-bottom: 3px solid #fff;
+		}
+
+		&__list-title-btn {
+			background-color: #000;
+			border-top: 3px solid #fff;
+			color: #fff;
+			
+			i {
+				&:before {
+					color: #fff;
+				}
+			}
+		}
+
+		&__elem {
+			&.active {
+				.grantz {
+					&__list-title-btn {
+						background-color: #fff;
+						border-top: 3px solid #fff;
+						color: #000;
+						
+						i {
+							&:before {
+								color: #000;
+							}
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+}
+
+
+.ColorBlue {
+	.grantz {
+		&__h1 {
+			color: @blue-dark;
+		}
+
+		&__tabs-elem {
+			.btn {
+				&.active {
+					border: 3px solid @blue-dark;
+					color: @blue-dark;
+					background-color: @blue;
+				}
+			}
+		}
+
+		&__hr {
+			border-bottom: 3px solid @blue-dark;
+		}
+
+		&__list-title-btn {
+			background-color: @blue;
+			border-top: 3px solid @blue-dark;
+			color: @blue-dark;
+			
+			i {
+				&:before {
+					color: @blue-dark;
+				}
+			}
+		}
+
+		&__elem {
+			&.active {
+				.grantz {
+					&__list-title-btn {
+						background-color: @blue-dark;
+						border-top: 3px solid @blue-dark;
+						color: @blue;
+						
+						i {
+							&:before {
+								color: @blue;
+							}
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+}
+
+
+.fontSizeSmall {
+	.grantz {
+		&__list-title-btn {
+			font-size: 21px;
+		}
+	}
+}
+.fontSizeMedium {
+	.grantz {
+		&__list-title-btn {
+			font-size: 25px;
+		}		
+	}
+}
+.fontSizeBig {
+	.grantz {
+		&__list-title-btn {
+			font-size: 36px;
+		}
+	}
+}
