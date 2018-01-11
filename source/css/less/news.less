@@ -7,7 +7,7 @@
 		font-family: 'Scada-bold';
 		height: 130px;
 		margin: 0 auto;
-		width: 1150px;
+		width: 100%;
 		overflow: hidden;
 		font-size: 40px;
 		line-height: 130px;
@@ -120,6 +120,10 @@
 			font-size: 15px;
 			font-family: Scada;
 			margin-bottom: @sp;
+			
+			&_mb-0 {
+				margin-bottom: 0;
+			}
 		}
 		&-date {
 			color: @red;
@@ -130,6 +134,85 @@
 				font-size: 20px;
 				top: 2px;
 			}
+		}
+	}
+
+	&__region-marker {
+		display: inline-block;
+		padding:5px @sp;
+		margin-bottom: 10px;
+		background-color: @red;
+		font-family: Scada; 
+		font-size: 18px;
+		color: #fff;
+	}
+
+	&__tile-block {
+		margin-bottom: 25px;
+	}
+
+
+
+	&-slider {
+		box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+		
+		&__list {
+			padding-bottom: 25px;
+		}
+		
+		&__img {
+			position: relative;
+			height: 370px;
+	        background-size: cover;
+	        background-position: center;
+	        background-repeat: no-repeat;
+		}
+
+		&__date {
+			position: absolute;
+			width: 70px;
+			top: 0;
+			left: 0;
+			text-align: center;
+			background-color: #fff;
+		}
+
+		&__day {
+			font-family: Scada-bold;
+			color: #323232;
+			font-size: 44px;
+		}
+
+		&__month {
+			background-color: @blue;
+			color: #fff;
+			font-family: Scada-bold;
+			font-size: 22px;
+			height: 40px;
+			line-height: 40px;
+			text-transform: uppercase;
+		}
+
+		&__title {
+			font-family: Scada-bold;
+			display: inline-block;
+			font-size: 18px;
+			padding:20px 20px 10px;
+			color: #000;
+		}
+
+		&__text {
+			font-family: Scada;
+			color: #727272;
+			padding: 0 20px 25px;
+		}
+
+		.slick-dots {
+			position: relative;
+			bottom: 0;
+			left: 50%;
+			top: auto;
+			transform: translate(-50%, 0);
 		}
 	}
 }
