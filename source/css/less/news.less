@@ -23,12 +23,21 @@
 		}
 	}
 	&__block {
-		padding-bottom: @sp*3;
+		// padding-bottom: @sp*3;
+		.clearfix;
 		a {
 			text-decoration: none;
 			&:hover {
 				text-decoration: none;
 			}
+		}
+		&-wrap {
+			
+			display: flex;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			.clearfix;
+			
 		}
 	}
 	&__item {
@@ -60,32 +69,85 @@
 		color: darken(@gray, 50%);
 	}
 	&__photo {
-			position: relative;
-			height: 360px;
-			display: block;
-			
-			.news__name {
-			    color: white;
-			    background-color: rgba(0, 0, 0, 0.7);
-			    position: absolute;
-			    bottom: 61px;
-			    padding: 20px;
-			    margin-bottom: 0;
-			    padding-bottom: 0;
+		position: relative;
+		height: 360px;
+		display: block;
+		
+		.news__name {
+		    color: white;
+		    background-color: rgba(0, 0, 0, 0.7);
+		    position: absolute;
+		    bottom: 61px;
+		    padding: 20px;
+		    margin-bottom: 0;
+		    padding-bottom: 0;
 
-			}
-			.news__data {
-				background-color: rgba(0, 0, 0, 0.7);
-				position: absolute;
-				bottom: 0px;
-				left: 0;
-				right: 0;
-				padding: 20px 20px;
-				
-			}
-			.news__text {
-				display: none;
+		}
+		.news__data {
+			background-color: rgba(0, 0, 0, 0.7);
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			right: 0;
+			padding: 20px 20px;
+			
+		}
+		.news__text {
+			display: none;
+		}
+	}
+	&__tile {
+		margin-bottom: @sp*2;
+		&-img {
+			height: 180px;
+			width: 100%;
+			background-position: cower !important;
+			margin-bottom: @sp;
+			.clearfix;
+		}
+		&-title {
+			display: block;
+			color: black;
+			font-size: 18px;
+			font-family: Scada-Bold;
+			margin-bottom: @sp;
+			&:hover {
+				text-decoration: underline !important;
 			}
 		}
-
+		&-text {
+			color: #727272;
+			font-size: 15px;
+			font-family: Scada;
+			margin-bottom: @sp;
+		}
+		&-date {
+			color: @red;
+			font-family: Scada-Bold;
+			font-size: 15px;
+			i {
+				position: relative;
+				font-size: 20px;
+				top: 2px;
+			}
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
